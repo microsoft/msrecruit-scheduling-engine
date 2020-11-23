@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(EnvironmentConfig)" />
+  <PropertyGroup>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>  
+    <ProjectReference Include="..\OfferRuleService.csproj" />
+    <ProjectReference Include="..\OfferRuleService.Contracts.csproj" /> 
+    <ProjectReference Include="..\OfferRuleService.Data.csproj" />       
+  </ItemGroup>
+  <ItemGroup>
+    <CodesignSettings Include="..\Codesign\CodeSignSettings.xml" />
+  </ItemGroup>
+  <Import Project="$(PkgCodesign_AD)\Codesign.targets" />
+</Project>

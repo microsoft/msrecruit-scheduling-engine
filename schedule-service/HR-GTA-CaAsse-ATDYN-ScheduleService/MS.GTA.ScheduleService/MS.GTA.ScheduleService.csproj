@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web" ToolsVersion="15.0">
+  <PropertyGroup>
+    <ProjectGuid>{CC903419-3DD8-4ACC-85B3-EFEFE4FC51B7}</ProjectGuid>
+    <RootNamespace>MS.GTA.ScheduleService</RootNamespace>
+    <AssemblyName>MS.GTA.ScheduleService</AssemblyName>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <DelaySign>true</DelaySign>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\CodeSign\35MSSharedLib1024.snk</AssemblyOriginatorKeyFile>
+    <IsServiceFabricServiceProject>True</IsServiceFabricServiceProject>
+    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <NoWarn>NU1701</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RuntimeFrameworkVersion>2.1.*</RuntimeFrameworkVersion>
+    <ApplicationIcon />
+    <StartupObject>MS.GTA.ScheduleService.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\V1\ScheduleServiceAdminController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PackageRoot\Config\Settings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="PackageRoot\ServiceManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.4" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.3.0" />    
+    <PackageReference Include="Microsoft.ServiceFabric" Version="6.1.480" />
+    <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="3.0.480" />
+    <PackageReference Include="Microsoft.ServiceFabric.Data" Version="3.0.480" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" version="2.0.0" />
+    <PackageReference Include="MS.GTA.CommonLibrary" Version="2020.11.9.1" />
+    <PackageReference Include="StackExchange.Redis.StrongName" version="1.2.4.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
+    <PackageReference Include="System.Reactive.Linq" Version="4.0.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\stylecop.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MS.GTA.ScheduleService.BusinessLibrary\MS.GTA.ScheduleService.BusinessLibrary.csproj" />
+    <ProjectReference Include="..\MS.GTA.ScheduleService.Data\MS.GTA.ScheduleService.Data.csproj" />
+    <ProjectReference Include="..\MS.GTA.ScheduleService.FalconData\MS.GTA.ScheduleService.FalconData.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+</Project>

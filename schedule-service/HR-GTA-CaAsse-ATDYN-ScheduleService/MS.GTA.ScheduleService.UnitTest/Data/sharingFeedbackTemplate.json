@@ -1,0 +1,22 @@
+{
+  "templateName": "University Interview Loop - Feedback is ready for your review",
+  "appName": "Attract",
+  "templateType": "SharingFeedback",
+  "to": [
+    "AA"
+  ],
+  "subject": "University Interview Loop - Feedback is ready for your review",
+  "header": null,
+  "body": "<p>Hi,</p><br/><p>You have been identified as a interview loop participant who requires special viewing privileges for the University Recruiting(UR) interview loop running today for UR candidate, <strong style=\"color: green;\">[CANDIDATE]</strong></p><br/><p><span style=\"color: black;\">The link below will take you to a build-on experience, unique to you and your role on this loop, which will grant you visibility to all interview feedback for <strong style=\"color: green;\">[CANDIDATE]</strong>. Once you have clicked on the below, we recommend keeping the window open for the duration of the loop today and refresh your browser to see feedback as it is entered. You will also be able to submit your own feedback per standard process. </span></p><br/><p><a href=\"{Call_To_Action_Link}\" target=\"_blank\" style=\"color: rgb(5, 99, 193);\"><u>Interview feedback</u></a></p><br/><p>Thank you,</p><p>Microsoft Recruiting</p>",
+  "closing": null,
+  "footer": null,
+  "isDefault": false,
+  "language": "en-US",
+  "Type": "FalconEmailTemplate",
+  "id": "Test id",
+  "_rid": "CLhLAKXyHVviCgcAAAAAAA==",
+  "_self": "dbs/CLhLAA==/colls/CLhLAKXyHVs=/docs/CLhLAKXyHVviCgcAAAAAAA==/",
+  "_etag": "\"65007804-0000-0800-0000-5e4515a50000\"",
+  "_attachments": "attachments/",
+  "_ts": 1581585829
+}

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="BearerTokenAuthentication">
+    <Parameter Name="Audience" Value="__Audience__" />
+    <Parameter Name="Authority" Value="__Authority__" />
+    <Parameter Name="Issuer" Value="__Issuer__" />
+    <Parameter Name="ValidAudiences" Value="__ValidAudiences__" />
+  </Section>
+  <Section Name="EnvironmentConfiguration">
+    <Parameter Name="XRMInstanceApiUrl" Value="__XRMInstanceApiUrl__" />
+    <Parameter Name="XRMEnvironment" Value="__XRMEnvironment__" />
+    <Parameter Name="FalconDatabaseId" Value="__FalconDatabaseId__" />
+    <Parameter Name="FalconIVContainerId" Value="__FalconIVContainerId__" />
+    <Parameter Name="FalconCommonContainerId" Value="__FalconCommonContainerId__" />
+  </Section>
+  <Section Name="CorsSetting">
+    <Parameter Name="AccessControlAllowMethods" Value="OPTIONS, GET, POST, PUT, DELETE, PATCH"/>
+    <Parameter Name="AccessControlAllowHeaders" Value="accept, content-type, authorization, x-ms-activity-vector, x-ms-root-activity-id, x-ms-session-id, x-ms-environment-id, x-ms-environment-mode, x-ms-on-behalf-user-id"/>
+    <Parameter Name="AccessControlAllowOrigin" Value="*"/>
+  </Section>
+  <Section Name="LoggingConfiguration">
+    <Parameter Name="InstrumentationKey" Value="__InstrumentationKey__" />
+  </Section>
+  <Section Name="PAFConfiguration">
+    <Parameter Name="PafAppName" Value="__PafAppName__" />
+    <Parameter Name="PAFResource" Value="__PAFResource__" />
+    <Parameter Name="PafServiceUrl" Value="__PafServiceUrl__" />
+    <Parameter Name="PafServiceVersion" Value="__PafServiceVersion__" />
+    <Parameter Name="Tenant" Value="__Tenant__" />
+  </Section>
+  <Section Name="NotificationServiceConfiguration">
+    <Parameter Name="EndpointUrl" Value="__NotifEndpointUrl__" />
+    <Parameter Name="SendNotificationUri" Value="__NotifSendUri__" />
+    <Parameter Name="ResendNotificationUri" Value="__NotifResendUri__" />
+    <Parameter Name="QueueNotificationUri" Value="__NotifQueueUri__" />
+    <Parameter Name="ApplicationName" Value="__NotifApplicationName__" />
+  </Section>
+  <Section Name="DocumentDBStorageConfiguration">
+    <Parameter Name="ConnectionStringSecretName" Value="DocDbConnectionString" />
+    <Parameter Name="KeyVaultUri" Value="__KeyVaultUri__" />
+    <Parameter Name="DatabaseId" Value="__FalconDatabaseId__" />
+    <Parameter Name="CommonContainerId" Value="__FalconCommonContainerId__" />
+    <Parameter Name="IVScheduleContainerId" Value="__FalconIVContainerId__" />
+    <Parameter Name="IVScheduleHistoryContainerID" Value="GTAIVScheduleHistory"/>
+    <Parameter Name="NumberOfDocumentsReturned" Value="50" />
+    <Parameter Name="ResponseUnitsPerSecond" Value="400" />
+  </Section>
+  <Section Name="AADClientConfiguration">
+    <Parameter Name="ClientId" Value="__Audience__"/>
+    <Parameter Name="AADInstance" Value="https://login.windows.net/{0}" />
+    <Parameter Name="ClientCertificateThumbprints" Value="__AzureADClientCertThumbPrint__" />
+    <Parameter Name="ClientCredential" Value="GTAReferAADAppSecret" />
+    <Parameter Name="XRMResource" Value="__XRMInstanceApiUrl__" />
+    <Parameter Name="TenantID" Value="__TenantID__" />
+  </Section>
+  <Section Name="IVClientConfiguration">
+    <Parameter Name="RecruitingHubClientUrl" Value="__RecruitingHubClientUrl__"/>
+  </Section>
+  <Section Name="SchedulerConfiguration">
+    <Parameter Name="EmailAddress" Value="__SchedulerServiceAccount__" />
+    <Parameter Name="UserProfileEmailAddress" Value="__SchedulerServiceUserAccount__" />
+    <Parameter Name="FreeBusyEmailAddress" Value="__SchedulerServiceFreeBusyAccount__" />
+    <Parameter Name="NativeClientAppId" Value="57eb1b17-c7f1-4433-b119-8cf3c67451ef"/>
+    <Parameter Name="SchedulerEmailPasswordSecret" Value="SchedulerEmailsPasswords" />
+  </Section>
+  <Section Name="MsGraphSetting">
+    <Parameter Name="GraphTenant" Value="common"/>
+    <Parameter Name="ClientId" Value="__GraphClientID__"/>
+    <Parameter Name="AADInstance" Value="https://login.windows.net/{0}"/>
+    <Parameter Name="GraphResourceId" Value="https://graph.microsoft.com"/>
+    <Parameter Name="GraphBaseUrl" Value="__GraphBaseUrl__"/>
+    <Parameter Name="AADGraphResourceId" Value="https://graph.windows.net"/>
+    <Parameter Name="AADGraphBaseUrl" Value="https://graph.windows.net"/>
+    <Parameter Name="AADGraphTenantTakeOverUrl" Value="/{0}/users/{1}?api-version=1.5"/>
+    <Parameter Name="CertThumbPrint" Value="1e7f2ffdc86efe463681970d0a714bc35a7cbc4b"/>
+    <Parameter Name="NotificationUrl" Value="__NotificationUrl__"/>
+    <Parameter Name="ClientCredential" Value="__GraphClientCredential__"/>
+  </Section>
+  <Section Name="GTA:ServicePlatform:AzureActiveDirectoryClientConfiguration">
+    <Parameter Name="Authority" Value="https://login.windows.net/microsoft.onmicrosoft.com/" />
+    <Parameter Name="ClientId" Value="__Audience__"/>
+    <Parameter Name="ClientCertificateThumbprints" Value="__AzureADClientCertThumbPrint__" />
+    <Parameter Name="ClientCertificateStoreLocation" Value="CurrentUser" />
+  </Section>
+  <Section Name="KeyVaultConfiguration">
+    <Parameter Name="KeyVaultUri" Value="__KeyVaultUri__" />
+  </Section>
+  <Section Name="MsGraphRedisCacheConfiguration">
+    <Parameter Name="RedisKeyNamespace" Value="HCMCommonMSGraph" />
+    <Parameter Name="EnableMemoryCache" Value="true" />
+    <Parameter Name="RedisSynchronizationChannelName" Value="HCMSyncChannel" />
+    <Parameter Name="RedisSecretName" Value="RedisCachePrimaryKey" />
+    <Parameter Name="SynchronizeChanges" Value="false" />
+    <Parameter Name="CacheLifeTimeInMinutes" Value="1440"/>
+    <Parameter Name="EnableMSGraphRedisCache" Value="false"/>
+    <Parameter Name="MemoryCacheSizeInMB" Value="20"/>
+    <Parameter Name="ApplicationName" Value="ScheduleService"/>
+  </Section>
+  <Section Name="EnvironmentNameConfiguration">
+    <Parameter Name="EnvironmentName" Value="__EnvironmentName__" />
+  </Section>
+  <Section Name="Environment">
+    <Parameter Name="Name" Value="__EnvironmentName__" />
+    <Parameter Name="IsConsoleApp" Value="true" />
+  </Section>
+  <Section Name="RunnerServiceSetting">
+    <Parameter Name="EnvironmentIdForRunnerService" Value="" />
+  </Section>
+  <Section Name="GTA:ServicePlatform:ECSProviderConfiguration">
+    <Parameter Name="EnvironmentName" Value="__ECSEnvironmentName__" />
+    <Parameter Name="EnvironmentType" Value="__ECSEnvironmentType__" />
+    <Parameter Name="FeatureConfigurationTemplate" Value="__ECSFeatureConfigurationTemplate__" />
+    <Parameter Name="ClientName" Value="__ECSClientName__" />
+    <Parameter Name="ProjectTeamName" Value="__ECSProjectTeamName__" />
+    <Parameter Name="EnableCaching" Value="__ECSEnableCaching__" />
+    <Parameter Name="ConfigurationAPIRootUrl" Value="__ECSConfigurationAPIRootUrl__" />
+  </Section>
+  <Section Name="GTA:ServicePlatform:CarbonFlightsProviderConfiguration">
+    <Parameter Name="ServiceCatalogId" Value="6763739"/>
+    <Parameter Name="EnvironmentName" Value="__EnvironmentName__"/>
+    <Parameter Name="CertificateStoreLocation" Value="CurrentUser"/>
+    <Parameter Name="CertificateSubjectName" Value="dev-gta-rp-adapters.redmond.corp.microsoft.com"/>
+    <Parameter Name="KeepEvaluationContext" Value="false"/>
+  </Section>
+  <Section Name="ServiceBusClientConfigration">
+    <Parameter Name="KeyVaultUri" Value="__KeyVaultUri__"/>
+    <Parameter Name="ServiceBusConnectionString" Value="ScheduleServiceBusConnectionString" />
+    <Parameter Name="ExportServiceBusQueueName" Value="invitationmail" />
+    <Parameter Name="NotificationServiceBusQueueName" Value="graphnotification"/>
+    <Parameter Name="ConnectorServiceBusConnectionString" Value="__ConnectorServiceBusConnectionString__" />
+    <Parameter Name="ConnectorServiceBusQueueName" Value="__connectorqueue__" />
+  </Section>
+  <Section Name="EmailTemplateConfiguaration">
+    <Parameter Name="InterviewerDeclineEmailTemplate" Value="__InterviewerDeclineEmailTemplate__"/>
+	<Parameter Name="InterviewerDeclineWithMessageEmailTemplate" Value="__InterviewerDeclineWithMessageEmailTemplate__"/>
+    <Parameter Name="InterviewerDeclineProposedTimeEmailTemplate" Value="__InterviewerDeclineProposedTimeEmailTemplate__"/>
+    <Parameter Name="InterviewerDeclineProposedTimeMessageEmailTemplate" Value="__InterviewerDeclineProposedTimeMessageEmailTemplate__"/>
+    <Parameter Name="FeedbackReminderEmailTemplate" Value="__FeedbackReminderEmailTemplate__"/>
+    <Parameter Name="InterviewerFeedbackReminderForUniversityReqs" Value="__InterviewerFeedbackReminderForUniversityReqs__"/>
+    <Parameter Name="SchedulerReminderEmailTemplate" Value="__SchedulerReminderEmailTemplate__"/>
+    <Parameter Name="InterviewInvitationFailedEmailTemplate" Value="__InterviewInvitationFailedEmailTemplate__"/>
+    <Parameter Name="ScheduleAssignmentEmailTemplate" Value="__ScheduleAssignmentEmailTemplate__"/>
+    <Parameter Name="FeedbackOnlyEmailTemplate" Value="__FeedbackOnlyEmailTemplate__"/>
+    <Parameter Name="PilotEmailTemplate" Value="__PilotEmailTemplate__"></Parameter>
+    <Parameter Name="ShareFeedbackEmailTemplate" Value="__ShareFeedbackEmailTemplate__"/>
+    <Parameter Name="DelegationAssignmentTemplate" Value="__DelegationAssignedEmailTemplate__"/>
+  </Section>
+  <Section Name="RedisCacheConfiguration">
+    <Parameter Name="IsEnabled" Value="__RedisCacheEnabled__" />
+    <Parameter Name="RedisCacheConnectionString" Value="RedisCacheConnectionString"/>
+  </Section>
+  <Section Name="DeepLinksConfiguration">
+    <Parameter Name="BaseUrl" Value ="__IVClientUrl__"/>
+    <Parameter Name="ScheduleSummaryUrl" Value ="__IVClientScheduleSummaryUrlTemplate__"/>
+  </Section>
+  <Section Name="WebNotificationServiceConfiguration">
+    <Parameter Name="BaseServiceUrl" Value="__NotificationServiceUrl__" />
+    <Parameter Name="PostWebNotificationsRelativeUrl" Value="v1/notifications/__NotificationApplicationName__" />
+  </Section>
+  <Section Name="AutomatedFeedbackReminderConfiguration">
+    <Parameter Name="FeedbackReminderOffsetDurationHours" Value="__FeedbackReminderOffsetDurationHours__" />
+    <Parameter Name="FeedbackReminderWindowMinutes" Value="__FeedbackReminderWindowMinutes__" />
+  </Section>
+  <Section Name="GTA:ServicePlatform:AppConfigurationFlightConfiguration">
+    <Parameter Name="ApiUrl" Value="__FlightApiURL__" />
+    <Parameter Name="AppName" Value="__AppNameInFlighting__" />
+    <Parameter Name="Environment" Value="__FlightingEnv__" />
+    <Parameter Name="AppClientId" Value="__FlightingAppClientID__" />
+    <Parameter Name="AppKey" Value="FlightAADAppKey" />
+  </Section>
+  <Section Name ="WOBConfiguration">
+    <Parameter Name ="CacheRefreshTimeInMins" Value="__CacheRefreshTimeInMins__" />
+  </Section>
+</Settings>
