@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.FalconData
+namespace MS.GTA.ScheduleService.UnitTest.FalconData
 {
     using System;
     using System.Linq.Expressions;

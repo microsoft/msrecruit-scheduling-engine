@@ -1,5 +1,6 @@
-﻿// <copyright file="PendingFeedback.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// <copyright file="PendingFeedback.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 
 using MS.GTA.Common.TalentEntities.Common;

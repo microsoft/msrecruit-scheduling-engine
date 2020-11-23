@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.Business.ScheduleManager_Tests
+namespace MS.GTA.ScheduleService.UnitTest.Business.ScheduleManager_Tests
 {
     using System;
     using System.Collections.Generic;

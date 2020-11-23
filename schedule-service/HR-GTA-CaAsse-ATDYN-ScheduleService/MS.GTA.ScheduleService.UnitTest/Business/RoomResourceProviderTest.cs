@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.Business
+namespace MS.GTA.ScheduleService.UnitTest.Business
 {
     using System;
     using System.Diagnostics.CodeAnalysis;

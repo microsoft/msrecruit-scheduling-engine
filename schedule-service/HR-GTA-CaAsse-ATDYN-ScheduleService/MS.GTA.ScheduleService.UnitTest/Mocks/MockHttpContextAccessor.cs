@@ -1,4 +1,4 @@
-﻿// <copyright file="MockHttpContextAccessor.cs" company="Microsoft">
+// <copyright file="MockHttpContextAccessor.cs" company="Microsoft">
 // Copyright (c) Microsoft. All rights reserved.
 // </copyright>
 

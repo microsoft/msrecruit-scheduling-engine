@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.Business.RoleManager
+namespace MS.GTA.ScheduleService.UnitTest.Business.RoleManager
 {
     using System;
     using System.Collections.Generic;

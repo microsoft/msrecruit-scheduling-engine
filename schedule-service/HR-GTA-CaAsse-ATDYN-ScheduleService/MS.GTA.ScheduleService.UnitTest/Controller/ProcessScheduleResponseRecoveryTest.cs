@@ -1,4 +1,4 @@
-﻿// <copyright file="ProcessScheduleResponseRecoveryTest.cs" company="PlaceholderCompany">
+// <copyright file="ProcessScheduleResponseRecoveryTest.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 

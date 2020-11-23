@@ -1,5 +1,6 @@
-﻿// <copyright file="IAccessTokenCache.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// <copyright file="IAccessTokenCache.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 
 namespace MS.GTA.ScheduleService.BusinessLibrary.Providers

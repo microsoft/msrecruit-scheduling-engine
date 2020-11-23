@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.Controller
+namespace MS.GTA.ScheduleService.UnitTest.Controller
 {
     using System;
     using System.Collections.Generic;

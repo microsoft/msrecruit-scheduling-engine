@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.Business.NotifyCandidate
+namespace MS.GTA.ScheduleService.UnitTest.Business.NotifyCandidate
 {
     using System;
     using System.Collections.Generic;

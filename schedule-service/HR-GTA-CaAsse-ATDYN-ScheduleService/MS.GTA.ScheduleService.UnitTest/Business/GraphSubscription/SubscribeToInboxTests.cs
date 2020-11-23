@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.Business.GraphSubscription
+namespace MS.GTA.ScheduleService.UnitTest.Business.GraphSubscription
 {
     using System;
     using System.Collections.Generic;
