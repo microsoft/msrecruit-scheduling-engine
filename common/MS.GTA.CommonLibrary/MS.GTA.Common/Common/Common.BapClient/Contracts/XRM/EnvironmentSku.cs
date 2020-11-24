@@ -1,3 +1,10 @@
+//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation" file="EnvironmentSku.cs">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+//----------------------------------------------------------------------------
+
 namespace MS.GTA.Common.BapClient.Contracts.XRM
 {
     using MS.GTA.Common.Base.Serialization;

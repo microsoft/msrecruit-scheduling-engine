@@ -1,3 +1,10 @@
+//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation" file="NamespaceMetadata.cs">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+//----------------------------------------------------------------------------
+
 namespace MS.GTA.Common.BapClient.Contracts.XRM
 {
     using System;
