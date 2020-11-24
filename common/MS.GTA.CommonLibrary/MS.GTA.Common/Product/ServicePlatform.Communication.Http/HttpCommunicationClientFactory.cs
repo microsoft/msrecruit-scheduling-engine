@@ -1,0 +1,60 @@
+//----------------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation. All rights reserved.
+//----------------------------------------------------------------------------
+
+using System;
+using System.Net.Http;
+using MS.GTA.CommonDataService.Common.Internal;
+using MS.GTA.CommonDataService.Instrumentation;
+using MS.GTA.ServicePlatform.Communication.Http.Internal;
+using Microsoft.Extensions.Logging;
+
+namespace MS.GTA.ServicePlatform.Communication.Http
+{
+    /// <summary>
+    /// This is developer interface to create ServicePlatform HttpServiceClient
+    /// </summary>
+    public sealed class HttpCommunicationClientFactory : IHttpCommunicationClientFactory
+    {
+        private readonly HttpMessageHandler sharedHttpMessageHandler = new HttpClientHandler();
+        private readonly ILoggerFactory loggerFactory;
+        private bool disposed;
+
+        public HttpCommunicationClientFactory(ILoggerFactory loggerFactory = null)
+        {
+            this.loggerFactory = loggerFactory;
+        }
+
+        /// <inheritdoc />
+        public IHttpCommunicationClient Create()
+        {
+            return Create(new HttpCommunicationClientOptions());
+        }
+
+        /// <inheritdoc />
+        public IHttpCommunicationClient Create(HttpCommunicationClientOptions options, HttpMessageHandler messageHandler = null)
+        {
+            Contract.CheckValue(options, nameof(options));
+
+            if (disposed)
+            {
+                throw new ObjectDisposedException(nameof(HttpCommunicationClientFactory));
+            }
+
+            var communicationClientHandler = HttpCommunicationClientUtil.CombineHandlers(messageHandler ?? this.sharedHttpMessageHandler, options.CustomHandlers);
+            var communicationClientOptions = new HttpCommunicationClientInternalOptions(options);
+
+            return new HttpCommunicationClient(communicationClientHandler, communicationClientOptions, loggerFactory);
+        }
+
+        public void Dispose()
+        {
+            if (!disposed)
+            {
+                this.sharedHttpMessageHandler?.Dispose();
+
+                disposed = true;
+            }
+        }
+    }
+}

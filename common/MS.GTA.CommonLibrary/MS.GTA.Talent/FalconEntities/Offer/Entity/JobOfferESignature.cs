@@ -1,0 +1,36 @@
+﻿//----------------------------------------------------------------------------
+// <copyright file="JobOfferESignature.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// </copyright>
+//----------------------------------------------------------------------------
+
+namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Offer
+{
+    using System.Runtime.Serialization;
+    using MS.GTA.Common.DocumentDB.Contracts;
+
+    [DataContract]
+    public class JobOfferESignature : DocDbEntity
+    {
+        [DataMember(Name = "JobOfferESignatureId")]
+        public string JobOfferESignatureId { get; set; }
+
+        [DataMember(Name = "JobOfferId")]
+        public string JobOfferId { get; set; }
+
+        [DataMember(Name = "ExternalDocumentReference")]
+        public string ExternalDocumentReference { get; set; }
+
+        [DataMember(Name = "EsignatureType")]
+        public ESignatureType? EsignatureType { get; set; }
+
+        [DataMember(Name = "SigningCandidateName")]
+        public string SigningCandidateName { get; set; }
+
+        [DataMember(Name = "RecruiterOId")]
+        public string RecruiterOId { get; set; }
+
+        [DataMember(Name = "ArtifactType")]
+        public string ArtifactType { get; set; }
+    }
+}

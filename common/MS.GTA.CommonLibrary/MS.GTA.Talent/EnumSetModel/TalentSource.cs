@@ -1,0 +1,16 @@
+//----------------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation. All rights reserved.
+//----------------------------------------------------------------------------
+
+using System.Runtime.Serialization;
+
+namespace MS.GTA.TalentEntities.Enum
+{
+    public enum TalentSource
+    {
+        [EnumMember(Value = "internal")]
+        Internal = 0,
+        [EnumMember(Value = "iCIMS")]
+        ICIMS = 4
+    }
+}

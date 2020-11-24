@@ -1,0 +1,29 @@
+﻿//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation" file="EnvironmentMetadata.cs">
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// </copyright>
+//----------------------------------------------------------------------------
+
+namespace MS.GTA.Common.TalentAttract.Contract
+{
+    using System.Runtime.Serialization;
+
+    /// <summary>
+    /// The environment metadata to display application count in candidate experience tenant hub page.
+    /// </summary>
+    [DataContract]
+    public class EnvironmentMetadata
+    {
+        /// <summary>
+        /// Gets or sets the environemnt id
+        /// </summary>
+        [DataMember(Name = "id")]
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets the application count
+        /// </summary>
+        [DataMember(Name = "applicationCount")]
+        public int ApplicationCount { get; set; }
+    }
+}

@@ -1,0 +1,21 @@
+//----------------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation. All rights reserved.
+//----------------------------------------------------------------------------
+
+using System.Runtime.Serialization;
+
+namespace MS.GTA.TalentEntities.Enum
+{
+    [DataContract(Namespace = "MS.GTA.TalentEngagement")]
+    public enum JobApplicationReferenceSource
+    {
+        [EnumMember(Value = "notSpecified")]
+        NotSpecified = 0,
+        [EnumMember(Value = "linkedIn")]
+        LinkedIn = 1,
+        [EnumMember(Value = "facebook")]
+        Facebook = 2,
+        [EnumMember(Value = "candidate")]
+        Candidate = 3
+    }
+}

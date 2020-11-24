@@ -1,0 +1,24 @@
+﻿//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// </copyright>
+//----------------------------------------------------------------------------
+
+namespace MS.GTA.Common.TalentAttract.Contract
+{
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+
+    /// <summary>
+    /// Contract class representing a list of role upserts to perform for numerous users
+    /// </summary>
+    [DataContract]
+    public class AppRoleUpsertRequestPayload
+    {
+        /// <summary>
+        /// List of user role upsert requests
+        /// </summary>
+        [DataMember(Name = "roleUpsertRequests", IsRequired = true, EmitDefaultValue = false)]
+        public IList<AppRoleUpsertRequest> RoleUpsertRequests { get; set; }
+    }
+}

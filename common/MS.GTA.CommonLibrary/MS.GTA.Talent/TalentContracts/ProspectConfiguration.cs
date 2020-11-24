@@ -1,0 +1,23 @@
+﻿//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation" file="ProspectConfiguration.cs">
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// </copyright>
+//----------------------------------------------------------------------------
+
+namespace MS.GTA.Common.TalentAttract.Contract
+{
+    using System.Runtime.Serialization;
+
+    /// <summary>
+    /// Configuration for Prospect activity.
+    /// </summary>
+    [DataContract]
+    public class ProspectConfiguration
+    {
+        /// <summary>
+        /// Gets or sets a value indicating whether hiring managers have access to prospects
+        /// </summary>
+        [DataMember(Name = "allowHiringManager", IsRequired = false, EmitDefaultValue = false)]
+        public bool AllowHiringManager { get; set; }
+    }
+}

@@ -1,0 +1,39 @@
+﻿//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation" file="Principal.cs">
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// </copyright>
+//----------------------------------------------------------------------------
+
+namespace MS.GTA.Common.BapClient.Contracts
+{
+    /// <summary>
+    /// The principal contract
+    /// </summary>
+    public class Principal
+    {
+        /// <summary>
+        /// Gets or sets the principal id.
+        /// </summary>
+        public string Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets the principal display name.
+        /// </summary>
+        public string DisplayName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the principal email.
+        /// </summary>
+        public string Email { get; set; }
+
+        /// <summary>
+        /// Gets or sets the principal object type.
+        /// </summary>
+        public string Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets AAD Tenant ID.
+        /// </summary>
+        public string TenantId { get; set; }
+    }
+}

@@ -1,0 +1,31 @@
+﻿//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation" file="AssessmentConnectionsRequest.cs">
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// </copyright>
+//----------------------------------------------------------------------------
+
+namespace MS.GTA.Common.TalentAttract.Contract
+{
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using MS.GTA.TalentEntities.Enum;
+
+    /// <summary>
+    /// Assessment connection missing request contract.
+    /// </summary>
+    [DataContract]
+    public class AssessmentConnectionsRequest
+    {
+        /// <summary>
+        /// Gets or sets Job Opening Id.
+        /// </summary>
+        [DataMember(Name = "jobOpeningId", IsRequired = false)]
+        public string JobOpeningId { get; set; }
+
+        /// <summary>
+        /// Gets or sets Assessment providers.
+        /// </summary>
+        [DataMember(Name = "providers", IsRequired = false)]
+        public IEnumerable<AssessmentProvider> Providers { get; set; }
+    }
+}

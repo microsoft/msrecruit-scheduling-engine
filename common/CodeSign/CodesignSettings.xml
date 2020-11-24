@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSignSettings xmlns="IdCodeSign/CodeSignSettings">
+  <Product>MS-GTA-Common</Product>
+  <BuildNumber>%BuildNumber%</BuildNumber>
+  <SourceControlServer>vstfrd:8080/Azure/One/_git</SourceControlServer>
+  <BranchName>master</BranchName>  
+  <Description>Microsoft GTA offer rule service</Description>
+  <SourcePath>%BinariesBuildTypeArchDirectory%</SourcePath>
+  <StrongNameCert>72</StrongNameCert>
+  <AuthenticodeCert>401</AuthenticodeCert>
+  <FileDescription>Microsoft HCM offer rule service</FileDescription>
+  <BatchDescription>Microsoft HCM offer rule service</BatchDescription>
+  <Approvers>johnheal;arthurgr</Approvers>
+  <Keywords>MS;GTA;</Keywords>
+  <FileUrl>https://www.microsoft.com/en-us/dynamics/default.aspx</FileUrl>
+  <CopyBack>true</CopyBack>
+
+  <Directories>
+    <SourceDirectory>
+      <PathFromRootSource>MS.IT.GTA.CommonLibrary</PathFromRootSource>
+      <FileData>
+        <FileTypes>.exe</FileTypes>
+      </FileData>
+    </SourceDirectory>
+    <SourceDirectory>
+      <PathFromRootSource>MS.IT.GTA.Common</PathFromRootSource>
+      <FileData>
+        <FileTypes>.dll</FileTypes>
+      </FileData>
+    </SourceDirectory>
+    <SourceDirectory>
+      <PathFromRootSource>MS.IT.GTA.Talent</PathFromRootSource>
+      <FileData>
+        <FileTypes>.dll</FileTypes>
+      </FileData>
+    </SourceDirectory>
+  </Directories>
+
+</CodeSignSettings>
