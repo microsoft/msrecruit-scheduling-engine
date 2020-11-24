@@ -1,3 +1,10 @@
+//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation" file="BapEnvironmentConfiguration.cs">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+//----------------------------------------------------------------------------
+
 using System.Collections.Generic;
 using MS.GTA.ServicePlatform.Configuration;
 

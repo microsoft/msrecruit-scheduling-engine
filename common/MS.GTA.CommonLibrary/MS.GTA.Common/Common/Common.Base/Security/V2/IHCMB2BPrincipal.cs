@@ -1,3 +1,10 @@
+//----------------------------------------------------------------------------
+// <copyright company="Microsoft Corporation" file="IHCMB2BPrincipal.cs">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+//----------------------------------------------------------------------------
+
 namespace MS.GTA.Common.Base.Security.V2
 {
     /// <summary>The HCMB2BPrincipal interface.</summary>
