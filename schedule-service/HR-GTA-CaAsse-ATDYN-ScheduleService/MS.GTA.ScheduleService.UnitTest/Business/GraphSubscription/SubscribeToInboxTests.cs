@@ -1,3 +1,8 @@
+// <copyright file="SubscribeToInboxTests.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+
 namespace MS.GTA.ScheduleService.UnitTest.Business.GraphSubscription
 {
     using System;

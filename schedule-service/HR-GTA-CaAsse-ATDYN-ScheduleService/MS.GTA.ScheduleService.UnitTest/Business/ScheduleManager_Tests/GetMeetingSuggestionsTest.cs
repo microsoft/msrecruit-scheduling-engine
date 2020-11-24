@@ -1,3 +1,8 @@
+// <copyright file="GetMeetingSuggestionsTest.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+
 namespace MS.GTA.ScheduleService.UnitTest.Business.ScheduleManager_Tests
 {
     using System;

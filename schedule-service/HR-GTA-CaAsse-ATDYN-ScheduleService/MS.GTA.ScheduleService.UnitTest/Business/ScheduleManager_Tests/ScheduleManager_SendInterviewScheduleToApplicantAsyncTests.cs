@@ -1,3 +1,7 @@
+// <copyright file="ScheduleManager_SendInterviewScheduleToApplicantAsyncTests.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
 namespace MS.GTA.ScheduleService.UnitTest.Business.ScheduleManager_Tests
 {
     using System;

@@ -1,5 +1,6 @@
-// <copyright file="QueueMessageToServiceBusTests.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
+// <copyright file="QueueMessageToServiceBusTests.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 
 namespace MS.GTA.ScheduleService.UnitTest.Business

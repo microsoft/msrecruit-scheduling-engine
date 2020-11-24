@@ -1,5 +1,6 @@
-// <copyright file="ProcessNotificationTest.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
+// <copyright file="ProcessScheduleResponseRecoveryTest.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 
 namespace MS.GTA.ScheduleService.UnitTest.Business
