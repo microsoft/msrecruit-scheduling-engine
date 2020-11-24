@@ -1,0 +1,46 @@
+[
+  
+  {
+    "id": "Test Schedule Id",
+    "meetingDetails": [
+      {
+        "id": "616b8c6f14ca779262229685abb7998d",
+        "subject": "Interview with Somebody",
+        "description": "Test",
+        "utcStart": "2020-03-06T12:00:00Z",
+        "utcEnd": "2020-03-06T13:00:00Z",
+        "isInterviewScheduleShared": true,
+        "isInterviewerNameShared": true,
+        "isInterviewTitleShared": true,
+        "meetingLocation": {
+          "roomList": {
+            "name": "At some building",
+            "address": "room@xyz.com",
+            "status": 0
+          },
+          "room": {
+            "name": "Room 1",
+            "address": null,
+            "status": 0
+          }
+        },
+
+        "attendees": [
+          {
+            "user": {
+              "name": "Mein hoon na",
+              "id": "Mein",
+              "title": "SOFTWARE ENGINEER II",
+              "email": "swe@xyz.com",
+              "givenName": "Mein Hoon Na"
+            },
+            "responseStatus": 4,
+            "isResponseStatusInvalid": false,
+            "freeBusyStatus": 0
+          }
+        ]
+      }
+    ]
+
+  }
+]

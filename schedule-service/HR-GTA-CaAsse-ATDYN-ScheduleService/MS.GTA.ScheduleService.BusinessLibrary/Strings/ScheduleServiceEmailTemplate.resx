@@ -1,0 +1,1237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmailTemplateWithoutButton" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name="viewport" content="width=device-width" /&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;title&gt;Microsoft GTA&lt;/title&gt;
+    &lt;style&gt;
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: Segoe UI;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0; 
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: Segoe UI;
+          font-size: 14px;
+          vertical-align: top; }
+
+      /* -------------------------------------
+          BODY &amp; CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        Margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 615px;
+        width: 615px; }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        Margin: 0 auto;
+        max-width: 615px;
+        padding-top: 100px; }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #fff;
+        border-radius: 3px;
+        width: 100%;
+       border-spacing: 0px; }
+
+      .wrapper {
+        box-sizing: border-box;
+	padding-top: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+	color: #212121; }
+
+.paragraph {
+		margin-bottom: 28px;
+                line-height: 20px;
+	}
+
+      .footer {
+        clear: both;
+        text-align: left;
+        width: 100%; }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #6D6E6C;
+          font-size: 12px;
+          text-align: left;
+          line-height: 20px; }
+
+.footer-content {
+	padding: 30px;
+	background-color: #E6E6E6;
+}
+
+.header-content {
+	border-bottom-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: #EAEAEA;
+	padding: 32px 32px 24px 32px;
+	background-color: #FFF;
+}
+
+.closing {
+	margin-bottom: 12px;
+}
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: Segoe UI;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        Margin-bottom: 30px; }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; }
+
+      p,
+      ul,
+      ol {
+        font-family: Segoe UI;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0; }
+		
+	    p li,
+	    ul li,
+	    ol li {
+	      list-style-position: inside;
+	      margin-left: 5px;
+	      list-style-type: disc;
+	      mso-special-format: bullet;
+	      margin-top: 0px; }
+
+      a {
+        color: #0084BF;
+        text-decoration: underline; }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn &gt; tbody &gt; tr &gt; td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #0084BF;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #0084BF;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; }
+
+      .btn-primary table td {
+        background-color: #0084BF; }
+
+      .btn-primary a {
+        background-color: #0084BF;
+        border-color: #0084BF;
+        color: #ffffff; }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+
+      .first {
+        margin-top: 0; }
+
+      .align-center {
+        text-align: center; }
+
+      .align-right {
+        text-align: right; }
+
+      .align-left {
+        text-align: left; }
+
+      .clear {
+        clear: both; }
+
+      .mt0 {
+        margin-top: 0; }
+
+      .mb0 {
+        margin-bottom: 0; }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+
+      .powered-by a {
+        text-decoration: none; }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        Margin: 20px 0; }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; }
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }}
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; } 
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
+
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body class=""&gt;
+    &lt;table border="0" cellpadding="0" cellspacing="0" class="body"&gt;      
+      &lt;tr&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td class="container"&gt;
+          &lt;div class="content"&gt;
+
+            &lt;!-- START CENTERED WHITE CONTAINER --&gt;
+            &lt;table class="main"&gt;
+              &lt;tr&gt;
+                &lt;td class="header-content"&gt;
+					&lt;img src='{EmailHeaderUrl}'/&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;!-- START MAIN CONTENT AREA --&gt;
+              &lt;tr&gt;
+                &lt;td class="wrapper"&gt;
+                  &lt;table border="0" cellpadding="0" cellspacing="0"&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;
+                        {EmailBodyContent}
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;!-- END MAIN CONTENT AREA --&gt;
+              &lt;/table&gt;
+
+           &lt;!-- START FOOTER --&gt;
+            &lt;div class="footer"&gt;
+              &lt;table border="0" cellpadding="0" cellspacing="0" class="footer-content"&gt;
+                &lt;tr&gt;
+                  &lt;td class="content-block"&gt;
+                    &lt;span class="apple-link"&gt;
+                      {CompanyInfoFooter}
+                      &lt;/span&gt;                    
+                  &lt;/td&gt;
+                &lt;/tr&gt;                
+              &lt;/table&gt;
+            &lt;/div&gt;
+            &lt;!-- END FOOTER --&gt;
+            
+          &lt;!-- END CENTERED WHITE CONTAINER --&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ResponsiveEmailTemplate" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name="viewport" content="width=device-width" /&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;title&gt;Microsoft GTA&lt;/title&gt;
+    &lt;style&gt;
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0; 
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; }
+
+      /* -------------------------------------
+          BODY &amp; CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        Margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 615px;
+        width: 615px; }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        Margin: 0 auto;
+        max-width: 615px;
+        padding-top: 100px; }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #fff;
+        border-radius: 3px;
+        width: 100%;
+       border-spacing: 0px; }
+
+      .wrapper {
+        box-sizing: border-box;
+	padding-top: 44px;
+        padding-left: 32px;
+        padding-right: 32px;
+	color: #212121; }
+
+.paragraph {
+		margin-bottom: 28px;
+                line-height: 20px;
+	}
+
+      .footer {
+        clear: both;
+        text-align: left;
+        width: 100%; }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #6D6E6C;
+          font-size: 12px;
+          text-align: left;
+          line-height: 20px; }
+
+.footer-content {
+	padding: 30px;
+	background-color: #E6E6E6;
+}
+
+.closing {
+	margin-bottom: 30px;
+}
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        Margin-bottom: 30px; }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; }
+
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        Margin-bottom: 15px; }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+
+      a {
+        color: #0084BF;
+        text-decoration: underline; }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn &gt; tbody &gt; tr &gt; td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #0084BF;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #0084BF;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; }
+
+      .btn-primary table td {
+        background-color: #0084BF; }
+
+      .btn-primary a {
+        background-color: #0084BF;
+        border-color: #0084BF;
+        color: #ffffff; }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+
+      .first {
+        margin-top: 0; }
+
+      .align-center {
+        text-align: center; }
+
+      .align-right {
+        text-align: right; }
+
+      .align-left {
+        text-align: left; }
+
+      .clear {
+        clear: both; }
+
+      .mt0 {
+        margin-top: 0; }
+
+      .mb0 {
+        margin-bottom: 0; }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+
+      .powered-by a {
+        text-decoration: none; }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        Margin: 20px 0; }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; }
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }}
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; } 
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
+
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body class=""&gt;
+    &lt;table border="0" cellpadding="0" cellspacing="0" class="body"&gt;      
+      &lt;tr&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td class="container"&gt;
+          &lt;div class="content"&gt;
+
+            &lt;!-- START CENTERED WHITE CONTAINER --&gt;
+            &lt;table class="main"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;&lt;img height="{HeaderImageHeight}" width="615" src='{EmailHeaderUrl}'/&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;!-- START MAIN CONTENT AREA --&gt;
+              &lt;tr&gt;
+                &lt;td class="wrapper"&gt;
+                  &lt;table border="0" cellpadding="0" cellspacing="0"&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;
+                        &lt;p&gt;{Greeting}&lt;/p&gt;
+                        &lt;p class="paragraph"&gt;{Paragraph1}&lt;/p&gt;
+                        &lt;table border="0" cellpadding="0" cellspacing="0" style="width:40%;height:40px"&gt;
+                          &lt;tbody&gt;
+                            &lt;tr&gt;
+                              &lt;td align="left" valign="middle"style="text-align:center;padding:10px;background-color:#0073B1;"&gt;
+                                &lt;a href='{OfferManagementAppLink}' style="color:#FFFFFF; text-decoration: none; font-size:14px;"&gt; {ButtonText} &lt;/a&gt;
+                              &lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/tbody&gt;
+                        &lt;/table&gt;
+                       &lt;br /&gt;
+                        &lt;p&gt;{Paragraph2}&lt;/p&gt;
+                        &lt;p class="closing"&gt;{Closing}&lt;/p&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/table&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;!-- END MAIN CONTENT AREA --&gt;
+              &lt;/table&gt;
+		
+           &lt;!-- START FOOTER --&gt;
+            &lt;div class="footer"&gt;
+              &lt;table border="0" cellpadding="0" cellspacing="0" class="footer-content"&gt;
+                &lt;tr&gt;
+                  &lt;td class="content-block"&gt;
+                    &lt;span class="apple-link"&gt;
+                      {CompanyInfoFooter}
+                      &lt;/span&gt;                    
+                  &lt;/td&gt;
+                &lt;/tr&gt;                
+              &lt;/table&gt;
+            &lt;/div&gt;
+            &lt;!-- END FOOTER --&gt;
+            
+          &lt;!-- END CENTERED WHITE CONTAINER --&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ReponsiveEmailLayout" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1256"&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    &lt;title&gt;Microsoft GTA&lt;/title&gt;
+    &lt;style&gt;
+        /* -------------------------------------
+              GLOBAL RESETS
+          ------------------------------------- */
+        img {
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100%;
+        }
+
+        body {
+            background-color: #f6f6f6;
+            font-family: Segoe UI;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table {
+            border-collapse: separate;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            width: 100%;
+        }
+
+        table td {
+            font-family: Segoe UI;
+            font-size: 14px;
+        }
+
+        /* -------------------------------------
+              BODY &amp; CONTAINER
+          ------------------------------------- */
+
+        .body {
+            background-color: #f6f6f6;
+            width: 100%;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+        .container {
+            display: block;
+            Margin: 0 auto !important;
+            /* makes it centered */
+            max-width: 615px;
+            width: 615px;
+        }
+
+        /* This should also be a block element, so that it will fill 100% of the .container */
+        .content {
+            box-sizing: border-box;
+            display: block;
+            Margin: 0 auto;
+            max-width: 615px;
+            padding-top: 100px;
+        }
+
+        /* -------------------------------------
+              HEADER, FOOTER, MAIN
+          ------------------------------------- */
+        .main {
+            background: #fff;
+            border-radius: 3px;
+            width: 100%;
+            border-spacing: 0px;
+        }
+
+        .wrapper {
+            box-sizing: border-box;
+            padding-top: 32px;
+            padding-left: 32px;
+            padding-right: 32px;
+            color: #212121;
+        }
+
+        .paragraph {
+            margin-bottom: 28px;
+            line-height: 20px;
+        }
+
+        .footer {
+            clear: both;
+            text-align: left;
+            width: 100%;
+        }
+
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+            color: #6D6E6C;
+            font-size: 12px;
+            text-align: left;
+            line-height: 20px;
+        }
+
+        .footer-content {
+            border-top-style: solid;
+            border-width: 1px 0 0 0;
+            border-color: #EAEAEA;
+            padding: 12px 32px 12px 32px;
+            background-color: #FFF;
+        }
+
+        .header-content {
+            border-bottom-style: solid;
+            border-width: 0 0 1px 0;
+            border-color: #EAEAEA;
+            padding: 32px 32px 24px 32px;
+            background-color: #FFF;
+        }
+
+        .closing {
+            margin-bottom: 12px;
+        }
+
+        /* -------------------------------------
+              TYPOGRAPHY
+          ------------------------------------- */
+
+        a {
+            color: #0084BF;
+            text-decoration: underline;
+        }
+
+        /* -------------------------------------
+              BUTTONS
+          ------------------------------------- */
+        .btn {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .btn&gt;tbody&gt;tr&gt;td {
+            padding-bottom: 15px;
+        }
+
+        .btn table {
+            width: auto;
+        }
+
+        .btn table td {
+            background-color: #ffffff;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn a {
+            background-color: #ffffff;
+            border: solid 1px #0084BF;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #0084BF;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+            padding: 12px 25px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .btn-primary table td {
+            background-color: #0084BF;
+        }
+
+        .btn-primary a {
+            background-color: #0084BF;
+            border-color: #0084BF;
+            color: #ffffff;
+        }
+
+        /* -------------------------------------
+              OTHER STYLES THAT MIGHT BE USEFUL
+          ------------------------------------- */
+        .last {
+            margin-bottom: 0;
+        }
+
+        .first {
+            margin-top: 0;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .mt0 {
+            margin-top: 0;
+        }
+
+        .mb0 {
+            margin-bottom: 0;
+        }
+
+        .preheader {
+            color: transparent;
+            display: none;
+            height: 0;
+            max-height: 0;
+            max-width: 0;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+            visibility: hidden;
+            width: 0;
+        }
+
+        .powered-by a {
+            text-decoration: none;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px solid #f6f6f6;
+            Margin: 20px 0;
+        }
+
+        /* -------------------------------------
+              RESPONSIVE AND MOBILE FRIENDLY STYLES
+          ------------------------------------- */
+        @media only screen and (max-width: 620px) {
+            table[class=body] h1 {
+                font-size: 28px !important;
+                margin-bottom: 10px !important;
+            }
+
+            table[class=body] ul,
+            table[class=body] ol,
+            table[class=body] td,
+            table[class=body] span {
+                font-size: 16px !important;
+            }
+
+            table[class=body] .wrapper,
+            table[class=body] .article {
+                padding: 32px 32px 0 32px !important;
+            }
+
+            table[class=body] .content {
+                padding: 0 !important;
+            }
+
+            table[class=body] .container {
+                padding: 0 !important;
+                width: 100% !important;
+            }
+
+            table[class=body] .main {
+                border-left-width: 0 !important;
+                border-radius: 0 !important;
+                border-right-width: 0 !important;
+            }
+
+            table[class=body] .btn table {
+                width: 100% !important;
+            }
+
+            table[class=body] .btn a {
+                width: 100% !important;
+            }
+
+            table[class=body] .img-responsive {
+                height: auto !important;
+                max-width: 100% !important;
+                width: auto !important;
+            }
+        }
+
+        /* -------------------------------------
+              PRESERVE THESE STYLES IN THE HEAD
+          ------------------------------------- */
+        @media all {
+            .ExternalClass {
+                width: 100%;
+            }
+
+            .ExternalClass,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%;
+            }
+
+            .apple-link a {
+                color: inherit !important;
+                font-family: inherit !important;
+                font-size: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+                text-decoration: none !important;
+            }
+
+            .btn-primary table td:hover {
+                background-color: #34495e !important;
+            }
+
+            .btn-primary a:hover {
+                background-color: #34495e !important;
+                border-color: #34495e !important;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class=""&gt;
+    &lt;table border="0" cellpadding="0" cellspacing="0" class="body"&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+                &lt;td class="container"&gt;
+                    &lt;div class="content"&gt;
+                        &lt;!-- START CENTERED WHITE CONTAINER --&gt;
+                        &lt;table class="main"&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td class="header-content"&gt;
+                                        &lt;img src='{EmailHeaderUrl}'/&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+
+                                &lt;!-- START MAIN CONTENT AREA --&gt;
+                                &lt;tr&gt;
+                                    &lt;td class="wrapper"&gt;
+                                        &lt;table border="0" cellpadding="0" cellspacing="0"&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;
+                                                    {EmailBodyContent}
+                                                &lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+
+                                &lt;!-- END MAIN CONTENT AREA --&gt;
+                        &lt;/table&gt;
+
+                        &lt;!-- START FOOTER --&gt;
+                        &lt;div class="footer"&gt;
+						  &lt;table border="0" cellpadding="0" cellspacing="0" class="footer-content"&gt;
+							&lt;tr&gt;
+							  &lt;td class="content-block"&gt;
+								&lt;span class="apple-link"&gt;
+								  {CompanyInfoFooter}
+								  &lt;/span&gt;                    
+							  &lt;/td&gt;
+							&lt;/tr&gt;                
+						  &lt;/table&gt;
+						&lt;/div&gt;
+                        &lt;!-- END FOOTER --&gt;
+
+                        &lt;!-- END CENTERED WHITE CONTAINER --&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+            &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="icsTemplate" xml:space="preserve">
+    <value>BEGIN:VCALENDAR
+PRODID:-//Compnay Inc//Product Application//EN
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:[StartDate]
+DTEND:[EndDate]
+DTSTAMP:[StartDate]
+UID:[GUID]
+CREATED:[StartDate]
+SUMMARY:[MailSubject]
+LOCATION:[Location]
+X-ALT-DESC;FMTTYPE=text/html:[HTMLBody]
+LAST-MODIFIED:[StartDate]
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR</value>
+  </data>
+</root>

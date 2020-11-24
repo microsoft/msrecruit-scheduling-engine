@@ -1,0 +1,17 @@
+using System.Runtime.Serialization;
+
+namespace MS.GTA.Common.TalentAttract.Contract
+{
+    /// <summary>
+    /// The information required for a login hint.
+    /// </summary>
+    [DataContract]
+    public class LoginHint
+    {
+        [DataMember(Name = "obfuscatedUsername", IsRequired = false, EmitDefaultValue = false)]
+        public string ObfuscatedUsername { get; set; }
+
+        [DataMember(Name = "identityProvider", IsRequired = false, EmitDefaultValue = false)]
+        public string IdentityProvider { get; set; }
+    }
+}
