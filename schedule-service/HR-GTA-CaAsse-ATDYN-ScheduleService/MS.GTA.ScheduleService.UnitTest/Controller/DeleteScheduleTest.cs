@@ -1,3 +1,8 @@
+// <copyright file="DeleteScheduleTest.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+
 namespace MS.GTA.ScheduleService.UnitTest.Controller
 {
     using System;
