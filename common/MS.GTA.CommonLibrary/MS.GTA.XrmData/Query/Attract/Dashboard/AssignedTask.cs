@@ -1,4 +1,4 @@
-﻿
+
 namespace MS.GTA.XrmData.Query.Attract.Dashboard
 {
     using System;

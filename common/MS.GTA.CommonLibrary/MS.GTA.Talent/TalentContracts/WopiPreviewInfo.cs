@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.Common.TalentAttract.Contract
+namespace MS.GTA.Common.TalentAttract.Contract
 {
     using System.Runtime.Serialization;
 

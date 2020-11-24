@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing
+namespace MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing
 {
     using System;
     using System.Collections.Generic;

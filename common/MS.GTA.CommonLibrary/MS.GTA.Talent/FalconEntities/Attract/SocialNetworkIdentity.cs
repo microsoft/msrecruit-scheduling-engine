@@ -1,4 +1,4 @@
-﻿using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
 using MS.GTA.Common.TalentEntities.Common;
 using MS.GTA.TalentEntities.Enum;
 using System;

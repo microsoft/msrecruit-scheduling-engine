@@ -1,4 +1,4 @@
-﻿
+
 
 namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
 {

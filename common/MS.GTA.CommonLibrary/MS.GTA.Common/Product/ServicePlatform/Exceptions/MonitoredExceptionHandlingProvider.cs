@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using MS.GTA.ServicePlatform.Communication.Http;
 using Microsoft.Extensions.Logging;
 

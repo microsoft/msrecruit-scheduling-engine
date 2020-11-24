@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.Common.Base.Security.V2
+namespace MS.GTA.Common.Base.Security.V2
 {
     using System.IdentityModel.Tokens.Jwt;
     using System.Linq;

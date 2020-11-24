@@ -1,4 +1,4 @@
-﻿using MS.GTA.Common.DocumentDB.Contracts;
+using MS.GTA.Common.DocumentDB.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;

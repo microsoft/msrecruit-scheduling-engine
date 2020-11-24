@@ -1,6 +1,7 @@
-﻿//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="S2SHandler.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 //----------------------------------------------------------------------------
 namespace MS.GTA.Common.Web.S2SHandler.V2

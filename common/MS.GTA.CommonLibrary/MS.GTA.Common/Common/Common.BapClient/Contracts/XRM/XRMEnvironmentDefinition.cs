@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.Common.BapClient.Contracts.XRM
+namespace MS.GTA.Common.BapClient.Contracts.XRM
 {
     public class XRMEnvironmentDefinition
     {

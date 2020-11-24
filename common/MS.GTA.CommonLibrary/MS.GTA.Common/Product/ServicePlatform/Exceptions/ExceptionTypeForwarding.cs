@@ -1,4 +1,4 @@
-﻿using MS.GTA.ServicePlatform.Exceptions;
+using MS.GTA.ServicePlatform.Exceptions;
 using MS.GTA.ServicePlatform.Privacy;
 using System.Runtime.CompilerServices;
 

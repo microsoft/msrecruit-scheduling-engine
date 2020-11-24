@@ -1,6 +1,7 @@
-﻿//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="BearerTokenAuthentication.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -54,7 +55,8 @@ namespace MS.GTA.Common.Base.Configuration
 
 //----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="BapEnvironmentConfiguration.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 //----------------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-﻿// <copyright file="DefaultWebNotificationBuilder_Tests.cs" company="PlaceholderCompany">
+// <copyright file="DefaultWebNotificationBuilder_Tests.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 

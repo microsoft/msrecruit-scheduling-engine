@@ -1,4 +1,4 @@
-﻿// <copyright file="AppInsightsTraceEventProvider.cs" company="Microsoft">
+// <copyright file="AppInsightsTraceEventProvider.cs" company="Microsoft">
 // Copyright (c) 2019 Microsoft Corporation. All rights reserved.
 // </copyright>
 

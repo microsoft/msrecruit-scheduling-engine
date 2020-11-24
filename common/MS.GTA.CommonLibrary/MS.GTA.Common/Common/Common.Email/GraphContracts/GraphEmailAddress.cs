@@ -1,8 +1,9 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 
 //----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 //----------------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-﻿
+
 
 namespace MS.GTA.Common.Email.SendGridContracts
 {

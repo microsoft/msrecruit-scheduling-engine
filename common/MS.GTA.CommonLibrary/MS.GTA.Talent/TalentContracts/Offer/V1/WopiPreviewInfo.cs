@@ -1,5 +1,6 @@
-﻿// <copyright file="WopiPreviewInfo.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// <copyright file="WopiPreviewInfo.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 
 namespace MS.GTA.Common.OfferManagement.Data.Contracts.V1

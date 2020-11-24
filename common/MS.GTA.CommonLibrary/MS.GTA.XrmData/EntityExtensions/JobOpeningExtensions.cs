@@ -1,4 +1,4 @@
-﻿using MS.GTA.Common.Provisioning.Entities.XrmEntities;
+using MS.GTA.Common.Provisioning.Entities.XrmEntities;
 using MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract;
 using MS.GTA.Common.Provisioning.Entities.XrmEntities.Optionset;
 using MS.GTA.Common.TalentAttract.Contract;

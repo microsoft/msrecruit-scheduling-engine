@@ -1,4 +1,4 @@
-﻿
+
 using System.Runtime.Serialization;
 
 namespace MS.GTA.Common.BapClient.Contracts.XRM

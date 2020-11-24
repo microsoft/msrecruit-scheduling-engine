@@ -1,5 +1,6 @@
-﻿// <copyright file="OfferParticipant.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// <copyright file="OfferParticipant.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 
 namespace MS.GTA.Common.OfferManagement.Contracts.V2

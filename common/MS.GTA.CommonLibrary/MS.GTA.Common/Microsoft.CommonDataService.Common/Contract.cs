@@ -1,5 +1,6 @@
-﻿//----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
+//----------------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 //----------------------------------------------------------------------------
 // NOTE: This file was forked from PowerBI (BI_Azure_Dev: Sql\InfoNav\src\Common\Contract.cs)
 //----------------------------------------------------------------------------

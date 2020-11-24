@@ -1,4 +1,4 @@
-﻿using MS.GTA.ServicePlatform.Exceptions;
+using MS.GTA.ServicePlatform.Exceptions;
 using MS.GTA.ServicePlatform.Privacy;
 
 namespace MS.GTA.CommonDataService.Instrumentation.Privacy

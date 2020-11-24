@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 
 namespace MS.GTA.Common.BapClient.Contracts.XRM
 {

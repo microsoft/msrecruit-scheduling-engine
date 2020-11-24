@@ -1,4 +1,4 @@
-﻿using MS.GTA.Common.TalentAttract.Contract;
+using MS.GTA.Common.TalentAttract.Contract;
 using MS.GTA.Common.XrmHttp;
 using MS.GTA.Common.XrmHttp.Model.Metadata;
 using System;

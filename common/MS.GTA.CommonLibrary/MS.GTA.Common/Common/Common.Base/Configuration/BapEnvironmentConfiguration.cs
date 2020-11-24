@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using MS.GTA.ServicePlatform.Configuration;
 
 namespace MS.GTA.Common.Cdm.Configuration

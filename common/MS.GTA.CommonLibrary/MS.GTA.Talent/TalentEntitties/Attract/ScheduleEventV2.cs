@@ -1,5 +1,6 @@
-﻿// <copyright file="ScheduleEvent.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
+// <copyright file="ScheduleEvent.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
 // </copyright>
 
 namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract

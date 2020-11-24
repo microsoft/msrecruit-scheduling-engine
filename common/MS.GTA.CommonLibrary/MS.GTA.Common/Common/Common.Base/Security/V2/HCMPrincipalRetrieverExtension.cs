@@ -1,4 +1,4 @@
-﻿namespace MS.GTA.Common.Base.Security.V2
+namespace MS.GTA.Common.Base.Security.V2
 {
     using Microsoft.Extensions.DependencyInjection;
 

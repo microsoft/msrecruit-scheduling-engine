@@ -1,4 +1,4 @@
-﻿using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;

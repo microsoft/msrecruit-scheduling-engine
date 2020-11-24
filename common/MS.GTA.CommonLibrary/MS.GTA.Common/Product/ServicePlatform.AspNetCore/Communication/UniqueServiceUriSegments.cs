@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace MS.GTA.ServicePlatform.AspNetCore.Communication
 {
