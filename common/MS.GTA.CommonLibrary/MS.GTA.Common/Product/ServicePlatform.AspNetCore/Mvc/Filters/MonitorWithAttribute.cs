@@ -20,7 +20,6 @@ using MS.GTA.ServicePlatform.Context;
 using MS.GTA.ServicePlatform.Exceptions;
 using MS.GTA.ServicePlatform.Hosting;
 using MS.GTA.ServicePlatform.Tracing;
-using Msit.Telemetry.Extensions.AI;
 
 namespace MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters
 {
@@ -124,11 +123,9 @@ namespace MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters
                             telemetryClient.InstrumentationKey = FabricXmlConfigurationHelper.Instance.ConfigurationManager.Get<LoggingConfiguration>().InstrumentationKey;
                             if (!string.IsNullOrEmpty(this.businessActivity))
                             {
-                                telemetryClient.TrackBusinessProcessEvent(new BusinessProcessEvent(this.businessActivity, Msit.Telemetry.Extensions.ComponentType.WebService));
                             }
                             if (!string.IsNullOrEmpty(this.featureName))
                             {
-                                telemetryClient.TrackFeatureUsageEvent(new FeatureUsageEvent(this.featureName, Msit.Telemetry.Extensions.ComponentType.WebService));
                             }
                         }
                         catch (Exception)

@@ -13,7 +13,6 @@ namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder
     using Microsoft.Extensions.DependencyInjection;
     using MS.GTA.Common.Common.Common.Base.Configuration;
     using MS.GTA.ServicePlatform.Configuration;
-    using Msit.Telemetry.Extensions.AI.AspNet;
 
     public static class UseApplicationInsightsExtensions
     {
@@ -29,7 +28,6 @@ namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder
             var telemetryConfiguration = builder.ApplicationServices.GetRequiredService<TelemetryConfiguration>();
             var loggingConfiguration = configurationManager.Get<LoggingConfiguration>();
             telemetryConfiguration.InstrumentationKey = loggingConfiguration.InstrumentationKey;
-            builder.AddInternalTelemetryInitializers(configuration);
             return builder;
         }
 
@@ -42,7 +40,6 @@ namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder
         public static IServiceCollection AddTelemetryService(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddApplicationInsightsTelemetry();
-            services.AddAspNetCorrelationProvider(configuration);
             return services;
         }
     }
