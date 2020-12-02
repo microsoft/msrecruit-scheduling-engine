@@ -12,7 +12,6 @@ jobs:
     runs-on: windows-latest
     defaults:
       run:
-        shell: powershell
         working-directory: common # set common/ as working directory
 
     steps:
@@ -22,7 +21,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1
 
     - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.2
+      uses: NuGet/setup-nuget@v1.0.5
 
     - name: Restore Packages
       run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
