@@ -31,7 +31,6 @@
       <dependency id="Microsoft.ServiceFabric.Data" version="3.0.480" />
       <dependency id="Microsoft.ServiceFabric.Services" version="3.0.480" />
       <dependency id="Microsoft.ServiceFabric" version="6.1.480" />
-      <dependency id="Microsoft.Skype.ECS.Client" version="6.3.0.31" />
       <dependency id="Moq" version="4.8.0" />
       <dependency id="MSTest.TestAdapter" version="1.2.1" />
       <dependency id="MSTest.TestFramework" version="1.2.1" />
