@@ -123,11 +123,9 @@ namespace MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters
                             telemetryClient.InstrumentationKey = FabricXmlConfigurationHelper.Instance.ConfigurationManager.Get<LoggingConfiguration>().InstrumentationKey;
                             if (!string.IsNullOrEmpty(this.businessActivity))
                             {
-                                //telemetryClient.TrackBusinessProcessEvent(new BusinessProcessEvent(this.businessActivity, Msit.Telemetry.Extensions.ComponentType.WebService));
                             }
                             if (!string.IsNullOrEmpty(this.featureName))
                             {
-                                //telemetryClient.TrackFeatureUsageEvent(new FeatureUsageEvent(this.featureName, Msit.Telemetry.Extensions.ComponentType.WebService));
                             }
                         }
                         catch (Exception)
