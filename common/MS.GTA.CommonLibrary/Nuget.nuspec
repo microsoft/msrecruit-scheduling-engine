@@ -3,11 +3,11 @@
   <metadata>
     <id>MS.GTA.CommonLibrary</id>
     <version>1.0.0</version>
-    <authors>GTA Applications team (cfehrgtaivftes@microsoft.com)</authors>
-    <description>MS.GTA.CommonLibrary</description>
-    <releaseNotes>Contains common components for Microsoft GTA Applications</releaseNotes>
-    <copyright>Copyright 2019</copyright>
-    <tags>GTA,Common</tags>
+    <authors>Microsoft Recruit Authors</authors>
+    <description>MS Recruit CommonLibrary</description>
+    <releaseNotes>Contains common components for Microsoft Recruit applications</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>MSRecruit,Common</tags>
     <dependencies>
       <dependency id="Microsoft.ApplicationInsights.AspNetCore" version="2.7.0" />
       <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="2.2.0" />
