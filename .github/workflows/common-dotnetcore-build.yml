@@ -9,21 +9,24 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     defaults:
       run:
-        shell: bash
+        shell: powershell
         working-directory: common # set common/ as working directory
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.301
-    - name: Install dependencies
-      run: dotnet restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
-    - name: Build
-      run: dotnet build MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln --configuration Release --no-restore
-    - name: Test
-      run: dotnet test MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln --no-restore --verbosity normal
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.2
+
+    - name: Restore Packages
+      run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
+
+    - name: Build Solution
+      run: |
+        msbuild.exe MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln /nologo /nr:false /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release"
