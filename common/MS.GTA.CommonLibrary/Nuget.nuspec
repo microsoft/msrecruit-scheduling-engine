@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>MS.GTA.CommonLibrary</id>
+    <id>MSRecruitCommonLibrary</id>
     <version>1.0.0</version>
-    <authors>Microsoft Recruit Authors</authors>
-    <description>MS Recruit CommonLibrary</description>
+    <authors>Microsoft</authors>
+    <description>MS Recruit Common Library</description>
     <releaseNotes>Contains common components for Microsoft Recruit applications</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>MSRecruit,Common</tags>
