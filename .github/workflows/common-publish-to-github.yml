@@ -5,6 +5,10 @@ jobs:
   publish:
     name: common nuget publish to github packages
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: common # set common/ as working directory
+
     steps:
     - uses: actions/checkout@v2
     - name: Setup MSBuild
