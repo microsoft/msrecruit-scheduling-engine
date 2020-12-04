@@ -1,4 +1,4 @@
-name: build common
+name: build-common
 
 on:
   push:
@@ -29,3 +29,9 @@ jobs:
     - name: Build Solution
       run: |
         msbuild.exe MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln /nologo /nr:false /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release"
+
+    - name: Setup VSTest.exe
+      uses: Malcolmnixon/Setup-VSTest@v4
+
+    - name: VSTest
+      run: vstest.console MS.GTA.CommonLibrary\MS.GTA.CommonLibrary.UnitTest\bin\Release\netcoreapp2.2\MS.GTA.CommonLibrary.UnitTest.dll
