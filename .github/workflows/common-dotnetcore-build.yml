@@ -33,5 +33,5 @@ jobs:
     - name: Setup VSTest.exe
       uses: Malcolmnixon/Setup-VSTest@v4
 
-    - name: VSTest
+    - name: Run unit tests
       run: vstest.console MS.GTA.CommonLibrary\MS.GTA.CommonLibrary.UnitTest\bin\Release\netcoreapp2.1\MS.GTA.CommonLibrary.UnitTest.dll

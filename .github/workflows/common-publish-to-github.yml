@@ -1,0 +1,17 @@
+name: publish-common-to-github
+on:
+  [workflow_dispatch]
+jobs:
+  publish:
+    name: common nuget publish to github packages
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+    - name: Pack
+      run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
+    - name: Publish
+      run: nuget push "MS.GTA.CommonLibrary/*.nupkg" -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
