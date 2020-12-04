@@ -17,10 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '2.2.0'
-
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
@@ -38,4 +34,4 @@ jobs:
       uses: Malcolmnixon/Setup-VSTest@v4
 
     - name: VSTest
-      run: vstest.console MS.GTA.CommonLibrary\MS.GTA.CommonLibrary.UnitTest\bin\Release\netcoreapp2.2\MS.GTA.CommonLibrary.UnitTest.dll
+      run: vstest.console MS.GTA.CommonLibrary\MS.GTA.CommonLibrary.UnitTest\bin\Release\netcoreapp2.1\MS.GTA.CommonLibrary.UnitTest.dll
