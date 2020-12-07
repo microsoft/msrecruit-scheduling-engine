@@ -22,9 +22,6 @@ jobs:
       with:
         dotnet-version: 2.1.811
 
-    - name: Install minicover
-      run: dotnet tool install --global minicover --version 3.0.6
-
     - name: Install dependencies
       run: dotnet restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
 

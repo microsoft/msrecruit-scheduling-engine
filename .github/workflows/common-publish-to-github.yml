@@ -1,38 +1,24 @@
 name: publish-common-to-github
 on:
   [workflow_dispatch]
-env:
-  source-url: "https://nuget.pkg.github.com/${{github.repository_owner}}/index.json"
+
 jobs:
   publish:
     name: common nuget publish to github packages
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: common
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
-
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.5
-
-    - name: Add Github registry as source
-      run: nuget sources Add -Source https://nuget.pkg.github.com/microsoft/index.json -Password $GITHUB_TOKEN -Username notused -Name "github" -StorePasswordInClearText
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Restore Packages
-      run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
-
-    - name: Build Solution
-      run: |
-        msbuild.exe MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln /nologo /nr:false /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release"
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.1.811
 
     - name: Pack
-      run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
-
+      run: dotnet pack MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj --configuration Release
+    
     - name: Publish
-      run: nuget push "*.nupkg" -Source https://nuget.pkg.github.com/microsoft/index.json -ApiKey "${{ secrets.GITHUB_TOKEN }}"
+      run: find ./MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release -iname "*.nupkg" | xargs dotnet nuget push -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
