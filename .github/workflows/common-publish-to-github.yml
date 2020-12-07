@@ -15,13 +15,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.5
-
-    - name: Where are we
-      run: pwd
-
-    - name: list contents
-      run: ls
-
+      
     - name: Restore Packages
       run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
 
@@ -31,5 +25,6 @@ jobs:
 
     - name: Pack
       run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
+
     - name: Publish
-      run: nuget push "MS.GTA.CommonLibrary/*.nupkg" -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
+      run: nuget push "MS.GTA.CommonLibrary/*.nupkg" -Source https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
