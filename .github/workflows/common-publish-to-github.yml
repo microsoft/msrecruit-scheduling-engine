@@ -17,10 +17,10 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
 
     - name: Where are we
-      uses: pwd
+      run: pwd
 
     - name: list contents
-      uses: ls
+      run: ls
 
     - name: Restore Packages
       run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
