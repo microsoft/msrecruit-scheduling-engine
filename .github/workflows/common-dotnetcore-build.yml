@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: common # set common/ as working directory
@@ -17,21 +17,19 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.1.811
 
-    - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.5
+    - name: Install minicover
+      run: dotnet tool install --global minicover --version 3.0.6
 
-    - name: Restore Packages
-      run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
+    - name: Install dependencies
+      run: dotnet restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
 
-    - name: Build Solution
-      run: |
-        msbuild.exe MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln /nologo /nr:false /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release"
+    - name: Build
+      run: dotnet build MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln --configuration Release --no-restore
 
-    - name: Setup VSTest.exe
-      uses: Malcolmnixon/Setup-VSTest@v4
-
-    - name: Run unit tests
-      run: vstest.console MS.GTA.CommonLibrary\MS.GTA.CommonLibrary.UnitTest\bin\Release\netcoreapp2.1\MS.GTA.CommonLibrary.UnitTest.dll
+    - name: Unit Test
+      run: dotnet test MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln --no-build --configuration Release --verbosity m
