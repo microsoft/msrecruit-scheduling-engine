@@ -19,6 +19,13 @@ jobs:
 
     - name: Pack
       run: dotnet pack MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj --configuration Release
+
+    - name: Publish NuGet
+      uses: brandedoutcast/publish-nuget@v2.5.5
+      with:
+          PROJECT_FILE_PATH: MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj
+          NUGET_KEY: ${{secrets.GITHUB_TOKEN}}
+          NUGET_SOURCE: https://nuget.pkg.github.com/microsoft/index.json
     
-    - name: Publish
-      run: find ./MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release -iname "*.nupkg" | xargs dotnet nuget push -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
+    # - name: Publish
+    #   run: find ./MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release -iname "*.nupkg" | xargs dotnet nuget push -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
