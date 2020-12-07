@@ -23,7 +23,7 @@ jobs:
     - name: Publish NuGet
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
-          PROJECT_FILE_PATH: MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj
+          PROJECT_FILE_PATH: common/MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj
           NUGET_KEY: ${{secrets.GITHUB_TOKEN}}
           NUGET_SOURCE: https://nuget.pkg.github.com/microsoft/index.json
     
