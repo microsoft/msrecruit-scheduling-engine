@@ -1,6 +1,8 @@
 name: publish-common-to-github
 on:
   [workflow_dispatch]
+env:
+  source-url: "https://nuget.pkg.github.com/${{github.repository_owner}}/index.json"
 jobs:
   publish:
     name: common nuget publish to github packages
@@ -8,13 +10,19 @@ jobs:
     defaults:
       run:
         working-directory: common
-
     steps:
     - uses: actions/checkout@v2
+
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
+
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.5
+
+    - name: Add Github to NuGet publication source
+      run: nuget sources add https://nuget.pkg.github.com/microsoft/index.json --password $GITHUB_TOKEN --username notused --store-password-in-clear-text --name "github"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Restore Packages
       run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
@@ -27,6 +35,4 @@ jobs:
       run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
 
     - name: Publish
-      run: nuget push "*.nupkg" -Source https://nuget.pkg.github.com/microsoft/index.json
-      env:
-        NUGET_AUTH_TOKEN: ${{ github.token }}
+      run: nuget push "*.nupkg" -Source https://nuget.pkg.github.com/microsoft/index.json -ApiKey "${{ secrets.GITHUB_TOKEN }}"
