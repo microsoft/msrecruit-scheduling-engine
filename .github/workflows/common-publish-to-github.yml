@@ -20,7 +20,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
 
     - name: Add Github registry as source
-      run: nuget sources Add https://nuget.pkg.github.com/microsoft/index.json -password $GITHUB_TOKEN -username notused -name "github" -StorePasswordInClearText
+      run: nuget sources Add -Source https://nuget.pkg.github.com/microsoft/index.json -Password $GITHUB_TOKEN -Username notused -Name "github" -StorePasswordInClearText
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
