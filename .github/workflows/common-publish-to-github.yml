@@ -20,12 +20,21 @@ jobs:
     - name: Pack
       run: dotnet pack MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj --configuration Release
 
-    - name: Publish NuGet
-      uses: brandedoutcast/publish-nuget@v2.5.5
-      with:
-          PROJECT_FILE_PATH: common/MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj
-          NUGET_KEY: ${{secrets.GITHUB_TOKEN}}
-          NUGET_SOURCE: https://nuget.pkg.github.com/microsoft/index.json
+    # dotnet nuget push seems to have some probs, this works
+    - name: Publish nuget
+      run: |
+           for f in MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release/*.nupkg
+           do
+             curl -vX PUT -u "[user]:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/microsoft/
+           done
+      shell: bash
+
+    # - name: Publish NuGet
+    #   uses: brandedoutcast/publish-nuget@v2.5.5
+    #   with:
+    #       PROJECT_FILE_PATH: common/MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj
+    #       NUGET_KEY: ${{secrets.GITHUB_TOKEN}}
+    #       NUGET_SOURCE: https://nuget.pkg.github.com/microsoft/index.json
     
     # - name: Publish
     #   run: find ./MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release -iname "*.nupkg" | xargs dotnet nuget push -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
