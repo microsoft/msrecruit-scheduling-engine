@@ -16,6 +16,6 @@ jobs:
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.5
     - name: Pack
-      run: nuget pack MS.GTA.CommonLibrary\Nuget.nuspec
+      run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
     - name: Publish
-      run: nuget push "MS.GTA.CommonLibrary\*.nupkg" -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
+      run: nuget push "MS.GTA.CommonLibrary/*.nupkg" -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
