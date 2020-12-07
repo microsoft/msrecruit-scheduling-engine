@@ -7,6 +7,7 @@
     <description>MS Recruit Common Library</description>
     <releaseNotes>Contains common components for Microsoft Recruit applications</releaseNotes>
     <copyright>Copyright 2020</copyright>
+    <repository type="git" url="https://github.com/microsoft/msrecruit-scheduling-engine"  />
     <tags>MSRecruit,Common</tags>
     <dependencies>
       <dependency id="Microsoft.ApplicationInsights.AspNetCore" version="2.7.0" />
