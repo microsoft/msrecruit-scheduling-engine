@@ -19,6 +19,11 @@ jobs:
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.5
 
+    - name: Add Github registry as source
+      run: nuget sources Add https://nuget.pkg.github.com/microsoft/index.json -password $GITHUB_TOKEN -username notused -name "github" -StorePasswordInClearText
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Restore Packages
       run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
 
