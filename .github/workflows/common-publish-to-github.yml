@@ -5,29 +5,48 @@ on:
 jobs:
   publish:
     name: common nuget publish to github packages
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     defaults:
       run:
         working-directory: common
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 2.1.811
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
 
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+
+    - name: Restore Packages
+      run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
+
+    - name: Build Solution
+      run: |
+        msbuild.exe MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln /nologo /nr:false /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release"
+    
     - name: Pack
-      run: dotnet pack MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj --configuration Release
+      run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
+
+    - name: Push Nupkg to GitHub Packages
+      uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
+      with:
+        nupkg-path:  '*.nupkg'
+        repo-owner:  'microsoft'
+        gh-user:  'microsoft'
+        token:  ${{ secrets.GITHUB_TOKEN }}
+
+    # - name: Publish
+    #   run: nuget push "*.nupkg" -Source https://nuget.pkg.github.com/microsoft/index.json -ApiKey "${{ secrets.GITHUB_TOKEN }}"
 
     # dotnet nuget push seems to have some probs, this works
-    - name: Publish nuget
-      run: |
-           for f in MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release/*.nupkg
-           do
-             curl -vX PUT -u "[user]:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/microsoft/
-           done
-      shell: bash
+    # - name: Publish nuget
+    #   run: |
+    #        for f in MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release/*.nupkg
+    #        do
+    #          curl -vX PUT -u "[user]:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/microsoft/
+    #        done
+    #   shell: bash
 
     # - name: Publish NuGet
     #   uses: brandedoutcast/publish-nuget@v2.5.5
