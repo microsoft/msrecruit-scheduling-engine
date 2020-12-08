@@ -28,32 +28,8 @@ jobs:
     - name: Pack
       run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
 
-    - name: Push Nupkg to GitHub Packages
-      uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
-      with:
-        nupkg-path:  '*.nupkg'
-        repo-owner:  'microsoft'
-        gh-user:  'microsoft'
-        token:  ${{ secrets.GITHUB_TOKEN }}
-
-    # - name: Publish
-    #   run: nuget push "*.nupkg" -Source https://nuget.pkg.github.com/microsoft/index.json -ApiKey "${{ secrets.GITHUB_TOKEN }}"
-
-    # dotnet nuget push seems to have some probs, this works
-    # - name: Publish nuget
-    #   run: |
-    #        for f in MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release/*.nupkg
-    #        do
-    #          curl -vX PUT -u "[user]:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/microsoft/
-    #        done
-    #   shell: bash
-
-    # - name: Publish NuGet
-    #   uses: brandedoutcast/publish-nuget@v2.5.5
-    #   with:
-    #       PROJECT_FILE_PATH: common/MS.GTA.CommonLibrary/MS.GTA.Common/MS.GTA.Common.csproj
-    #       NUGET_KEY: ${{secrets.GITHUB_TOKEN}}
-    #       NUGET_SOURCE: https://nuget.pkg.github.com/microsoft/index.json
-    
-    # - name: Publish
-    #   run: find ./MS.GTA.CommonLibrary/MS.GTA.Common/bin/Release -iname "*.nupkg" | xargs dotnet nuget push -s https://nuget.pkg.github.com/microsoft/index.json -k ${{secrets.GITHUB_TOKEN}}
+    - name: Publish NuGet
+      run: |
+        $path = "."
+        $FileName = Get-ChildItem -Path $path -Recurse -Name -Filter "MSRecruitCommonLibrary.*.nupkg"
+        curl -vX PUT -u "[user]:${{ secrets.GITHUB_APIKEY }}" -F package="@$path\$FileName" https://nuget.pkg.github.com/microsoft/
