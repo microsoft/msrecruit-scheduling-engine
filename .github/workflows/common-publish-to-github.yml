@@ -32,4 +32,4 @@ jobs:
       run: |
         $path = "."
         $FileName = Get-ChildItem -Path $path -Recurse -Name -Filter "MSRecruitCommonLibrary.*.nupkg"
-        curl -vX PUT -u "[user]:${{ secrets.GITHUB_APIKEY }}" -F package="@$path\$FileName" https://nuget.pkg.github.com/microsoft/
+        curl -vX PUT -u "[user]:${{ secrets.GITHUB_TOKEN }}" -F package="@$path\$FileName" https://nuget.pkg.github.com/microsoft/
