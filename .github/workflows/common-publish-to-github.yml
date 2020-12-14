@@ -28,6 +28,7 @@ jobs:
     - name: Pack
       run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
 
+    # https://github.community/t/github-package-registry-and-github-actions-500-bad-request/14666 for reference.
     - name: Publish NuGet
       run: |
         $path = "."

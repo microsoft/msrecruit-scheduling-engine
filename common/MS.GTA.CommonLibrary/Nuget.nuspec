@@ -58,8 +58,5 @@
     <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.dll" target="lib" />
     <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.pdb" target="lib" />
     <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.xml" target="lib" />
-    <file src="MS.GTA.XrmData\bin\Release\**\MS.GTA.XrmData.dll" target="lib" />
-    <file src="MS.GTA.XrmData\bin\Release\**\MS.GTA.XrmData.pdb" target="lib" />
-    <file src="MS.GTA.XrmData\bin\Release\**\MS.GTA.XrmData.xml" target="lib" />
   </files>
 </package>
