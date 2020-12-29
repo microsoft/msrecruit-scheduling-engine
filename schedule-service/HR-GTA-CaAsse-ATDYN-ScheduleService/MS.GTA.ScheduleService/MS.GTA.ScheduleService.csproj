@@ -41,7 +41,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="2.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.0" />
     <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.4" />
-    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.3.0" />    
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />    
     <PackageReference Include="Microsoft.ServiceFabric" Version="6.1.480" />
     <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="3.0.480" />
     <PackageReference Include="Microsoft.ServiceFabric.Data" Version="3.0.480" />

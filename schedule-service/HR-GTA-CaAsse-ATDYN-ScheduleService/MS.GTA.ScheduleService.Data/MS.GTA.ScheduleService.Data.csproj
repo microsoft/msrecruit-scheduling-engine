@@ -32,7 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
-    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.3.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
     <PackageReference Include="MS.GTA.CommonLibrary" Version="2020.11.9.1" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>

@@ -31,7 +31,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="4.0.0" />
     <PackageReference Include="Microsoft.Graph" Version="3.0.1" />
-    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.3.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
     <PackageReference Include="MS.GTA.CommonLibrary" Version="2020.11.9.1" />
     <PackageReference Include="RestSharpSigned" Version="105.2.3" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />

@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
-    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.3.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
     <PackageReference Include="Moq" Version="4.13.0" />
     <PackageReference Include="MS.GTA.CommonLibrary" Version="2020.11.9.1" />
