@@ -15,6 +15,7 @@
     <NoWarn>NU1701</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <RuntimeFrameworkVersion>2.1.*</RuntimeFrameworkVersion>
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
   </PropertyGroup>
@@ -33,7 +34,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
-    <PackageReference Include="MS.GTA.CommonLibrary" Version="2020.11.9.1" />
+	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>
@@ -43,7 +44,7 @@
     <QCustomInput Include="JSON\NamespaceMap.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MS.GTA.ScheduleService.Contracts\MS.GTA.ScheduleService.Contracts.csproj" />
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
   </ItemGroup>
   <Target Name="GetSDKTools">
     <Message Text="Copy the SDK development tools" />

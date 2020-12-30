@@ -16,7 +16,6 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers.User
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using Microsoft.Skype.ECS.Core;
     using MS.GTA.Common.Base.Configuration;
     using MS.GTA.Common.MSGraph;
     using MS.GTA.Common.MSGraph.Configuration;

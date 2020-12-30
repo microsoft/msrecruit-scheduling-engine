@@ -14,6 +14,7 @@
     <NoWarn>NU1701</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <RuntimeFrameworkVersion>2.1.*</RuntimeFrameworkVersion>
+    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
   </PropertyGroup>
@@ -32,7 +33,7 @@
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="4.0.0" />
     <PackageReference Include="Microsoft.Graph" Version="3.0.1" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
-    <PackageReference Include="MS.GTA.CommonLibrary" Version="2020.11.9.1" />
+	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.0" />
     <PackageReference Include="RestSharpSigned" Version="105.2.3" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
     <PackageReference Include="System.Security.Permissions" Version="4.5.0" />
@@ -86,9 +87,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MS.GTA.ScheduleService.Contracts\MS.GTA.ScheduleService.Contracts.csproj" />
-    <ProjectReference Include="..\MS.GTA.ScheduleService.Data\MS.GTA.ScheduleService.Data.csproj" />
-    <ProjectReference Include="..\MS.GTA.ScheduleService.FalconData\MS.GTA.ScheduleService.FalconData.csproj" />
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\FalconData\FalconData.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Providers\Room\" />

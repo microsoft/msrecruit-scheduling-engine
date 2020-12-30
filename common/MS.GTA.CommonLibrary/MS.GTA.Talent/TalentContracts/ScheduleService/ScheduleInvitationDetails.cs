@@ -7,6 +7,7 @@
 
 namespace MS.GTA.ScheduleService.Contracts.V1
 {
+    using MS.GTA.Talent.TalentContracts.InterviewService;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 
@@ -51,6 +52,13 @@ namespace MS.GTA.ScheduleService.Contracts.V1
         /// </summary>
         [DataMember(Name = "emailContent")]
         public string EmailContent { get; set; }
+
+        /// <summary>
+        /// Gets or sets attachments of the email
+        /// </summary>
+        [DataMember(Name = "emailAttachments", IsRequired = false)]
+        public FileAttachmentRequest EmailAttachments { get; set; }
+
         /// <summary>
         /// Gets or sets Interview Date
         /// </summary>

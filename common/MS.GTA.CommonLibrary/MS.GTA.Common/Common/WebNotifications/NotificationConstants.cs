@@ -72,6 +72,11 @@ namespace MS.GTA.Common.WebNotifications
         public const string Unknown = "Unknown";
 
         /// <summary>
+        /// This is to signify if the user is in wob context.
+        /// </summary>
+        public const string IsWobContext = "IsWobContext";
+
+        /// <summary>
         /// The unknown email constant.
         /// </summary>
         public const string UnknownEmail = "unknown@somemail.com";

@@ -5,6 +5,7 @@
 
 namespace MS.GTA.Talent.TalentContracts.ScheduleService
 {
+    using MS.GTA.Talent.TalentContracts.InterviewService;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
@@ -34,6 +35,15 @@ namespace MS.GTA.Talent.TalentContracts.ScheduleService
         [DataMember(Name = "emailContent", IsRequired = true)]
         [Required(ErrorMessage = " The email content is mandatory.", AllowEmptyStrings = false)]
         public string EmailContent { get; set; }
+
+        /// <summary>
+        /// Gets or sets attachments of the email
+        /// </summary>
+        /// <value>
+        /// The attachment of the  email.
+        /// </value>
+        [DataMember(Name = "emailAttachments", IsRequired = false)]
+        public FileAttachmentRequest EmailAttachments { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether the interview title is shared.
