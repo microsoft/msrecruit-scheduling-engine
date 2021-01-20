@@ -1,4 +1,4 @@
-// <copyright file="DefaultWebNotificationClient_Tests.cs" company="Microsoft">
+﻿// <copyright file="DefaultWebNotificationClient_Tests.cs" company="Microsoft">
 // Copyright (c) Microsoft. All rights reserved.
 // </copyright>
 

@@ -1,4 +1,4 @@
-using MS.GTA.ServicePlatform.Caching.Abstractions;
+﻿using MS.GTA.ServicePlatform.Caching.Abstractions;
 using System;
 using System.Threading.Tasks;
 using System.Threading;

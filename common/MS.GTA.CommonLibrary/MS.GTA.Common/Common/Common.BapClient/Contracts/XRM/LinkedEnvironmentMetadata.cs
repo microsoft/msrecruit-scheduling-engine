@@ -1,11 +1,4 @@
-//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="LinkedEnvironmentMetadata.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
-// </copyright>
-//----------------------------------------------------------------------------
-
-namespace MS.GTA.Common.BapClient.Contracts.XRM
+﻿namespace MS.GTA.Common.BapClient.Contracts.XRM
 {
     using System;
     using Newtonsoft.Json;

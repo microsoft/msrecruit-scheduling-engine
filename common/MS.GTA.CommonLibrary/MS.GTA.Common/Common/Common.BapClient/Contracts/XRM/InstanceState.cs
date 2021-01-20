@@ -1,11 +1,4 @@
-
-//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="InstanceState.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
-// </copyright>
-//----------------------------------------------------------------------------
-
+﻿
 using System.Runtime.Serialization;
 
 namespace MS.GTA.Common.BapClient.Contracts.XRM

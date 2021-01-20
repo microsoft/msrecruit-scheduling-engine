@@ -1,4 +1,4 @@
-using MS.GTA.CommonDataService.Common.Internal;
+﻿using MS.GTA.CommonDataService.Common.Internal;
 using MS.GTA.ServicePlatform.Exceptions.Cache;
 using System;
 using System.IO;

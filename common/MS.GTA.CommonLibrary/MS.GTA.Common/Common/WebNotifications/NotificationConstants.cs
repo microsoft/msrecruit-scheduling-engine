@@ -1,6 +1,5 @@
-// <copyright file="NotificationConstants.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="NotificationConstants.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.Common.WebNotifications
@@ -72,13 +71,18 @@ namespace MS.GTA.Common.WebNotifications
         public const string Unknown = "Unknown";
 
         /// <summary>
-        /// This is to signify if the user is in wob context.
-        /// </summary>
-        public const string IsWobContext = "IsWobContext";
-
-        /// <summary>
         /// The unknown email constant.
         /// </summary>
         public const string UnknownEmail = "unknown@somemail.com";
+
+        /// <summary>
+        /// This is to signify if the user is in wob context.
+        /// </summary>
+        public const string IsWobContext = "IsWobContext" ;
+
+        /// <summary>
+        /// The context user id .
+        /// </summary>
+        public const string ContextUserId = "ContextUserId";
     }
 }

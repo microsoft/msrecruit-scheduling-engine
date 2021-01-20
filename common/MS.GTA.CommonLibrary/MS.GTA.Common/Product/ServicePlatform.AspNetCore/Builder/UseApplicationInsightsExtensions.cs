@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="UseApplicationInsightsExtensions.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -28,6 +27,7 @@ namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder
             var telemetryConfiguration = builder.ApplicationServices.GetRequiredService<TelemetryConfiguration>();
             var loggingConfiguration = configurationManager.Get<LoggingConfiguration>();
             telemetryConfiguration.InstrumentationKey = loggingConfiguration.InstrumentationKey;
+            //builder.AddInternalTelemetryInitializers(configuration);
             return builder;
         }
 
@@ -40,6 +40,7 @@ namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder
         public static IServiceCollection AddTelemetryService(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddApplicationInsightsTelemetry();
+            //services.AddAspNetCorrelationProvider(configuration);
             return services;
         }
     }

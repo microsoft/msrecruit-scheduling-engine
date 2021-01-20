@@ -1,4 +1,4 @@
-using MS.GTA.Common.XrmHttp;
+﻿using MS.GTA.Common.XrmHttp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

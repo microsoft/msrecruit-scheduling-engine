@@ -1,11 +1,4 @@
-//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="EnvironmentProvisioningOperation.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
-// </copyright>
-//----------------------------------------------------------------------------
-
-using System.Net;
+﻿using System.Net;
 using Newtonsoft.Json;
 
 namespace MS.GTA.Common.BapClient.Contracts.XRM

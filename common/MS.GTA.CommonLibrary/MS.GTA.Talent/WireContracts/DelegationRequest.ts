@@ -11,10 +11,11 @@ export interface DelegationRequest extends TalentBaseContract {
     DelegationStatusReason?: string;
     RequestStatus?: RequestStatus;
     RequestStatusReason?: string;
+    FromDate: Date;
+    ToDate: Date;
+    UTCOffsetInMinutes: string;
     From: Person;
     To: Person;
     RequestedBy: Person;
     Notes?: string;
-    FromDate: Date;
-    ToDate: Date;
 }

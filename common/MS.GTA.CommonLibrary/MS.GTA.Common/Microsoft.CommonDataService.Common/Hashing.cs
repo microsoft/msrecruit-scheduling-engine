@@ -1,6 +1,5 @@
-//----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿//----------------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation. All rights reserved.
 //----------------------------------------------------------------------------
 // NOTE: This file was forked from PowerBI (BI_Azure_Dev: Sql\InfoNav\src\Common\Hashing.cs)
 //----------------------------------------------------------------------------

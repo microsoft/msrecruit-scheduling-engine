@@ -1,4 +1,4 @@
-// <copyright file="DefaultWebNotificationBuilder_Tests.cs" company="PlaceholderCompany">
+﻿// <copyright file="DefaultWebNotificationBuilder_Tests.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 
@@ -12,6 +12,7 @@ namespace MS.GTA.CommonLibrary.UnitTest.Common.WebNotifications.Internals
     using Microsoft.Extensions.Logging.Abstractions;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
+    using MS.GTA.Common.Base.ServiceContext;
     using MS.GTA.Common.WebNotifications;
     using MS.GTA.Common.WebNotifications.Interfaces;
     using MS.GTA.Common.WebNotifications.Internals;
@@ -37,6 +38,7 @@ namespace MS.GTA.CommonLibrary.UnitTest.Common.WebNotifications.Internals
                 { NotificationConstants.RecipientEmail, "recipient1@somedomain.com" },
                 { NotificationConstants.RecipientObjectId, Guid.NewGuid().ToString() },
                 { NotificationConstants.AppNotificationType, "Test Type" },
+                { NotificationConstants.IsWobContext, "false" },
             },
             new Dictionary<string, string>
             {
@@ -52,6 +54,7 @@ namespace MS.GTA.CommonLibrary.UnitTest.Common.WebNotifications.Internals
                 { NotificationConstants.RecipientEmail, "recipient2@somedomain.com" },
                 { NotificationConstants.RecipientObjectId, Guid.NewGuid().ToString() },
                 { NotificationConstants.AppNotificationType, "Test Type" },
+                { NotificationConstants.IsWobContext, "false" },
             },
         };
 
@@ -61,10 +64,13 @@ namespace MS.GTA.CommonLibrary.UnitTest.Common.WebNotifications.Internals
 
         private Mock<IWebNotificationTemplateProvider> templateProviderMock;
 
+        private Mock<IHCMServiceContext> hcmServiceContextMock;
+
         [TestInitialize]
         public void BeforeEach()
         {
             this.templateProviderMock = new Mock<IWebNotificationTemplateProvider>();
+            this.hcmServiceContextMock = new Mock<IHCMServiceContext>();
             this.notificationDataExtractorMock = new Mock<IWebNotificationDataExtractor>();
             this.notificationBuilder = new DefaultWebNotificationBuilder(NullLogger<DefaultWebNotificationBuilder>.Instance);
         }

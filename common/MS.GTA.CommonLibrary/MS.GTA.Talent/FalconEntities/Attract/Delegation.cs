@@ -1,6 +1,5 @@
-//----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿//----------------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation. All rights reserved.
 //----------------------------------------------------------------------------
 
 namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
@@ -48,6 +47,12 @@ namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
         public string RequestStatusReason { get; set; }
 
         /// <summary>
+        /// Get and Set Period
+        /// </summary>
+        [DataMember(Name = "Period", EmitDefaultValue = false, IsRequired = true)]
+        public Period Period { get; set; }
+
+        /// <summary>
         /// Get or set From Delegator
         /// </summary>
         [DataMember(Name = "From", EmitDefaultValue = false, IsRequired = true)]
@@ -70,12 +75,6 @@ namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
         /// </summary>
         [DataMember(Name = "Notes", EmitDefaultValue = false, IsRequired = false)]
         public string Notes { get; set; }
-
-        /// <summary>
-        /// Get and Set Period
-        /// </summary>
-        [DataMember(Name = "Period", EmitDefaultValue = false, IsRequired = true)]
-        public Period Period { get; set; }
 
         /// <summary>
         /// Get and Set Scope

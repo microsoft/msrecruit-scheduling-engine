@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="InterviewSchedule.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -38,6 +37,9 @@ namespace MS.GTA.Talent.TalentContracts.InterviewService
         /// <summary>Gets or sets the schedule status of interview.</summary>
         [DataMember(Name = "InterviewScheduleStatus", EmitDefaultValue = false, IsRequired = false)]
         public ScheduleStatus? InterviewScheduleStatus { get; set; }
-        
+
+        /// <summary>Gets or sets the location of the interview or teams meeting link if online.</summary>
+        [DataMember(Name = "InterviewLocationOrTeamsMeetingLink", EmitDefaultValue = false, IsRequired = false)]
+        public string InterviewLocationOrTeamsMeetingLink { get; set; }
     }
 }

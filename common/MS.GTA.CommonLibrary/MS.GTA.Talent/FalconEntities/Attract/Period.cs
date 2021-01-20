@@ -1,6 +1,5 @@
-//----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿//----------------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation. All rights reserved.
 //----------------------------------------------------------------------------
 
 using System;
@@ -31,6 +30,12 @@ namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
         /// </summary>
         [DataMember(Name = "ToDate", EmitDefaultValue = false, IsRequired = false)]
         public DateTime? ToDate { get; set; }
+
+        /// <summary>
+        /// Gets or sets UTCOffsetInMinutes
+        /// </summary>
+        [DataMember(Name = "UTCOffsetInMinutes", IsRequired = false, EmitDefaultValue = false)]
+        public string UTCOffsetInMinutes { get; set; }
 
     }
 }

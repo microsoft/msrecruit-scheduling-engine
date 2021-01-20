@@ -1,12 +1,12 @@
-// <copyright file="IWebNotificationBuilder.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="IWebNotificationBuilder.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.Common.WebNotifications.Interfaces
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
+    using MS.GTA.Common.Base.ServiceContext;
     using MS.GTA.Common.WebNotifications.Models;
 
     /// <summary>

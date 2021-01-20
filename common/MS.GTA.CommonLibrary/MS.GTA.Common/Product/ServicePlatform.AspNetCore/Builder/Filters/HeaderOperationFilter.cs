@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="HeaderOperationFilter.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 namespace MS.GTA.ServicePlatform.AspNetCore.Builder.Filters
@@ -26,6 +25,7 @@ namespace MS.GTA.ServicePlatform.AspNetCore.Builder.Filters
                 Name = "x-ms-session-id",
                 In = "header",
                 Type = "string",
+                Description = "Session Id to track the client activity in a given session",
                 Required = false
             });
 
@@ -34,6 +34,7 @@ namespace MS.GTA.ServicePlatform.AspNetCore.Builder.Filters
                 Name = "x-ms-root-activity-id",
                 In = "header",
                 Type = "string",
+                Description = "Unique identifier for the operation",
                 Required = false
             });
 
@@ -42,6 +43,16 @@ namespace MS.GTA.ServicePlatform.AspNetCore.Builder.Filters
                 Name = "x-ms-app-name",
                 In = "header",
                 Type = "string",
+                Description = "Indicates the app name",
+                Required = false
+            });
+
+            operation.Parameters.Add(new NonBodyParameter
+            {
+                Name = "X-CorrelationId",
+                In = "header",
+                Type = "string",
+                Description = "Correlation Id for telemetry",
                 Required = false
             });
         }

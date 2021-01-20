@@ -14,4 +14,5 @@ export interface CandidacyDetails {
     Recruiter?: string;
     CandidacyStage?: CandidacyStage;
     CandidacyStatus?: string;
+    CandidateScore?: string;
 }

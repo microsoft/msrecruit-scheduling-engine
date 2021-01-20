@@ -1,12 +1,12 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="EmailTemplate.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
 namespace MS.GTA.Common.Email.Contracts
 {
+    using MS.GTA.Common.Common.Common.Email.Contracts;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 
@@ -34,6 +34,9 @@ namespace MS.GTA.Common.Email.Contracts
         [DataMember(Name = "cc", IsRequired = false, EmitDefaultValue = false)]
         public List<string> Cc { get; set; }
 
+        [DataMember(Name = "additionalCc", IsRequired = false, EmitDefaultValue = false)]
+        public List<string> AdditionalCc { get; set; }
+
         [DataMember(Name = "bcc", IsRequired = false, EmitDefaultValue = false)]
         public List<string> Bcc { get; set; }
 
@@ -45,6 +48,9 @@ namespace MS.GTA.Common.Email.Contracts
 
         [DataMember(Name = "body", IsRequired = false)]
         public string Body { get; set; }
+
+        [DataMember(Name = "attachments", IsRequired = false)]
+        public FileAttachmentRequest Attachments { get; set; }
 
         [DataMember(Name = "closing", IsRequired = false)]
         public string Closing { get; set; }

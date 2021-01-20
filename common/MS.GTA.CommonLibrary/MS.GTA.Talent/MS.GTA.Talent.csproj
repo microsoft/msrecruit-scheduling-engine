@@ -663,6 +663,12 @@
     <None Update="WireContracts\IVUser.ts">
       <CustomToolNamespace>TalentContracts\InterviewService\IVUser.cs</CustomToolNamespace>
     </None>
+    <None Update="WireContracts\IVUserDefaults.ts">
+      <CustomToolNamespace>TalentContracts\InterviewService\IVUserDefaults.cs</CustomToolNamespace>
+    </None>
+    <None Update="WireContracts\IVUserProfile.ts">
+      <CustomToolNamespace>TalentContracts\InterviewService\IVUserProfile.cs</CustomToolNamespace>
+    </None>
     <None Update="WireContracts\IVWorker.ts">
       <CustomToolNamespace>TalentContracts\InterviewService\IVWorker.cs</CustomToolNamespace>
     </None>
@@ -1710,9 +1716,6 @@
     <None Update="WireContracts\XrmODataEntity.ts">
       <CustomToolNamespace>..\MS.IT.GTA.Common\Common\Common.XrmHttp\Model\XrmODataEntity.cs</CustomToolNamespace>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Integration\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MS.GTA.Common\MS.GTA.Common.csproj" />

@@ -13,10 +13,12 @@ export interface EmailTemplate {
     isGlobal?: boolean;
     to?: string[];
     cc?: string[];
+    additionalCc?: string[];
     bcc?: string[];
     subject?: string;
     header?: string;
     body?: string;
+    attachments?: FileAttachmentRequest;
     closing?: string;
     footer?: string;
     isDefault?: boolean;

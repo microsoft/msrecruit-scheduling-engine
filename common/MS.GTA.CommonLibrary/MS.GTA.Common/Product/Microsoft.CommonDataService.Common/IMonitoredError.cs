@@ -1,4 +1,4 @@
-namespace Microsoft.CommonDataService.Common.Internal
+﻿namespace Microsoft.CommonDataService.Common.Internal
 {
     public interface IMonitoredError
     {

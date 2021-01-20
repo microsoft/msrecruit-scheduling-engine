@@ -43,4 +43,5 @@ export enum EmailTemplateTokens {
     Job_Approver_Email = 34,
     Job_Requester_Name = 35,
     Job_Requester_Email = 36,
+    Requester_Signature_Name = 37,
 }

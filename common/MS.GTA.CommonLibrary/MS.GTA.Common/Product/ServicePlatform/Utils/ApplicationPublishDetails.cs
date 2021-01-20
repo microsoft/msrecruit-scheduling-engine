@@ -1,6 +1,5 @@
-// <copyright company="Microsoft Corporation" file="ApplicationPublishDetails.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright company="Microsoft Corporation" file="ApplicationPublishDetails.cs">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -35,6 +34,11 @@ namespace MS.GTA.Common.Product.ServicePlatform.Utils
         /// Gets or sets the name of <see cref="Contact"/>.
         /// </summary>
         public string ContactName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the url of <see cref="Contact"/>.
+        /// </summary>
+        public string ContactUrl { get; set; }
 
         /// <summary>
         /// Gets or sets a boolean to indicate whether the application is secured by Bearer token authentication.

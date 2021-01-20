@@ -1,7 +1,4 @@
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
-
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace MS.GTA.Common.Contracts
 {

@@ -1,4 +1,4 @@
-using MS.GTA.Common.DocumentDB.Contracts;
+﻿using MS.GTA.Common.DocumentDB.Contracts;
 using System.Runtime.Serialization;
 
 namespace MS.GTA.Talent.FalconEntities.Common

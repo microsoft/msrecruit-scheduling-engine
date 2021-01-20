@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="MsGraphProvider.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -128,7 +127,7 @@ namespace MS.GTA.Common.MSGraph
         /// <summary>
         /// AADClient uses MemoryCache and clean up code can go here
         /// </summary>
-        [Obsolete("Please use the user directory service client implementation for any future work on MSGraph. Going forward this will turn into an error.")]
+        [Obsolete("Please use the user directory service client implementation for any future work on MSGraph, any questions/issues email vanguard@microsoft.com. Going forward this will turn into an error.")]
         public void Dispose()
         {
             this.Dispose(false);

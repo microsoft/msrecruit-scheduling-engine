@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="DelegationRequest.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -50,6 +49,24 @@ namespace MS.GTA.Common.TalentAttract.Contract
         public string RequestStatusReason { get; set; }
 
         /// <summary>
+        /// Get or set delegator from date
+        /// </summary>
+        [DataMember(Name = "FromDate", EmitDefaultValue = false, IsRequired = true)]
+        public DateTime? FromDate { get; set; }
+
+        /// <summary>
+        /// Get or set delegator to date
+        /// </summary>
+        [DataMember(Name = "ToDate", EmitDefaultValue = false, IsRequired = true)]
+        public DateTime? ToDate { get; set; }
+
+        /// <summary>
+        /// Gets or sets UTCOffsetInMinutes
+        /// </summary>
+        [DataMember(Name = "UTCOffsetInMinutes", IsRequired = true, EmitDefaultValue = false)]
+        public string UTCOffsetInMinutes { get; set; }
+
+        /// <summary>
         /// Get or set From delegation person
         /// </summary>
         [DataMember(Name = "From", EmitDefaultValue = false, IsRequired = true)]
@@ -72,18 +89,6 @@ namespace MS.GTA.Common.TalentAttract.Contract
         /// </summary>
         [DataMember(Name = "Notes", EmitDefaultValue = false, IsRequired = false)]
         public string Notes { get; set; }
-
-        /// <summary>
-        /// Get or set delegator from date
-        /// </summary>
-        [DataMember(Name = "FromDate", EmitDefaultValue = false, IsRequired = true)]
-        public DateTime? FromDate { get; set; }
-
-        /// <summary>
-        /// Get or set delegator to date
-        /// </summary>
-        [DataMember(Name = "ToDate", EmitDefaultValue = false, IsRequired = true)]
-        public DateTime? ToDate { get; set; }
     }
 }
 

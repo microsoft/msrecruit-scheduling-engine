@@ -1,6 +1,5 @@
-// <copyright file="DefaultWebNotificationBuilder.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="DefaultWebNotificationBuilder.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.Common.WebNotifications.Internals
@@ -11,6 +10,7 @@ namespace MS.GTA.Common.WebNotifications.Internals
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
+    using MS.GTA.Common.Base.ServiceContext;
     using MS.GTA.Common.Base.Utilities;
     using MS.GTA.Common.WebNotifications;
     using MS.GTA.Common.WebNotifications.Exceptions;
@@ -122,6 +122,9 @@ namespace MS.GTA.Common.WebNotifications.Internals
                             Email = notificationData[NotificationConstants.RecipientEmail],
                         },
                         Title = notificationData[NotificationConstants.Title],
+                        IsWobContextUser = Convert.ToBoolean(notificationData[NotificationConstants.IsWobContext]),
+                        ContextUserId = Convert.ToBoolean(notificationData[NotificationConstants.IsWobContext]) ? 
+                                        notificationData[NotificationConstants.ContextUserId] : null,
                         AppNotificationType = notificationData[NotificationConstants.AppNotificationType],
                     };
 

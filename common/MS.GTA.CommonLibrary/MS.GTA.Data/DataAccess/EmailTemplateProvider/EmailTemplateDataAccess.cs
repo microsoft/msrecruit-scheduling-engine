@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -235,6 +234,7 @@ namespace MS.GTA.Data.DataAccess
                 IsGlobal = false,
                 To = templateModel.To,
                 Cc = templateModel.Cc,
+                AdditionalCc = templateModel.AdditionalCc,
                 Bcc = templateModel.Bcc,
                 Subject = templateModel.Subject,
                 Header = templateModel.Header,
@@ -262,6 +262,7 @@ namespace MS.GTA.Data.DataAccess
                 TemplateType = emailTemplate.TemplateType,
                 To = emailTemplate.To,
                 Cc = emailTemplate.Cc,
+                AdditionalCc = emailTemplate.AdditionalCc,
                 Bcc = emailTemplate.Bcc,
                 Subject = emailTemplate.Subject,
                 Header = emailTemplate.Header,

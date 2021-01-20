@@ -1,4 +1,4 @@
-namespace MS.GTA.ServicePlatform.Tracing
+﻿namespace MS.GTA.ServicePlatform.Tracing
 {
     /// <summary>
     /// Interface for a source of traces.

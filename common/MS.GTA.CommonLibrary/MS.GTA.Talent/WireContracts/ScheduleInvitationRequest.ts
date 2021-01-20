@@ -8,6 +8,7 @@
 export interface ScheduleInvitationRequest {
     subject: string;
     emailContent: string;
+    emailAttachments?: FileAttachmentRequest;
     isInterviewTitleShared: boolean;
     isInterviewScheduleShared: boolean;
     primaryEmailRecipient: string;

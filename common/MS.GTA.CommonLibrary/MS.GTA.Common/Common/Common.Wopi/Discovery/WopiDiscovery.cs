@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="WopiDiscovery.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -119,6 +118,8 @@ namespace MS.GTA.Common.Wopi.Discovery
         /// </summary>
         private MemoryCache cache = new MemoryCache("cache");
 
+        private readonly HttpClient httpClient;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="WopiDiscovery" /> class.
         /// </summary>
@@ -128,6 +129,8 @@ namespace MS.GTA.Common.Wopi.Discovery
             Contract.CheckValue(trace, "trace should be provided");
 
             this.trace = trace;
+            var retryHelper = new HttpRetryMessageHandler(new HttpClientHandler(), this.trace);
+            this.httpClient = new HttpClient(retryHelper);
         }
 
         /// <summary>
@@ -324,8 +327,6 @@ namespace MS.GTA.Common.Wopi.Discovery
         {
             Contract.CheckNonEmpty(wopiClientUrl, nameof(wopiClientUrl), "wopiClientUrl should not be null!");
 
-            var retryHelper = new HttpRetryMessageHandler(new HttpClientHandler(), this.trace);
-            var httpClient = new HttpClient(retryHelper);
             var url = this.GetDiscoveryURL(wopiClientUrl);
 
             return await CommonLogger.Logger.ExecuteAsync(
@@ -334,7 +335,7 @@ namespace MS.GTA.Common.Wopi.Discovery
                 {
                     try
                     {
-                        using (var response = await httpClient.GetAsync(url))
+                        using (var response = await this.httpClient.GetAsync(url))
                         {
                             response.EnsureSuccessStatusCode();
 

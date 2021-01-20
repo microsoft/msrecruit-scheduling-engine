@@ -1,6 +1,5 @@
-// <copyright file="ScheduleInvitationRequest.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="ScheduleInvitationRequest.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.Talent.TalentContracts.ScheduleService
@@ -58,7 +57,7 @@ namespace MS.GTA.Talent.TalentContracts.ScheduleService
         /// Gets or sets a value indicating whether the interview schedule is shared.
         /// </summary>
         /// <value>
-        ///   <c>true</c> if thinterview schedule is shared; otherwise, <c>false</c>.
+        ///   <c>true</c> if the interview schedule is shared; otherwise, <c>false</c>.
         /// </value>
         [DataMember(Name = "isInterviewScheduleShared", IsRequired = true)]
         public bool IsInterviewScheduleShared { get; set; }

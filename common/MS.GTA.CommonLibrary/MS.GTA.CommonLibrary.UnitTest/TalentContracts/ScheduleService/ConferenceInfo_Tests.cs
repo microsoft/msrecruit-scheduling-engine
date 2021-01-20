@@ -1,4 +1,4 @@
-namespace MS.GTA.CommonLibrary.UnitTest.TalentContracts.ScheduleService
+﻿namespace MS.GTA.CommonLibrary.UnitTest.TalentContracts.ScheduleService
 {
     using Microsoft.Graph;
     using Microsoft.VisualStudio.TestTools.UnitTesting;

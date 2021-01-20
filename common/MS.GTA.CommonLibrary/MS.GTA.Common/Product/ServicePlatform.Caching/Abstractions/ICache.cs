@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Threading.Tasks;
 
 namespace MS.GTA.ServicePlatform.Caching.Abstractions

@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="CandidacyDetails.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -63,5 +62,11 @@ namespace MS.GTA.Talent.TalentContracts.TeamsIntegration
         /// </summary>
         [DataMember(Name = "CandidacyStatus", EmitDefaultValue = false, IsRequired = false)]
         public string CandidacyStatus { get; set; }
+
+        /// <summary>
+        /// Gets or sets candidate score.
+        /// </summary>
+        [DataMember(Name = "CandidateScore", EmitDefaultValue = false, IsRequired = false)]
+        public string CandidateScore { get; set; }
     }
 }

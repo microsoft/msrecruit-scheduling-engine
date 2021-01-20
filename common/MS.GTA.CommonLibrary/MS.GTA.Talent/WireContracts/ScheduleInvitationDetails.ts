@@ -12,6 +12,7 @@ export interface ScheduleInvitationDetails {
     bccEmailAddressList?: string[];
     subject: string;
     emailContent: string;
+    emailAttachments?: FileAttachmentRequest;
     interviewDate?: string;
     startTime?: string;
     endTime?: string;

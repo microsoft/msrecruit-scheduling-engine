@@ -1,6 +1,5 @@
 //----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 //----------------------------------------------------------------------------
 
 using System;
@@ -119,14 +118,16 @@ namespace MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters
                         }
                         try
                         {
-                            TelemetryClient telemetryClient = new TelemetryClient();
-                            telemetryClient.InstrumentationKey = FabricXmlConfigurationHelper.Instance.ConfigurationManager.Get<LoggingConfiguration>().InstrumentationKey;
-                            if (!string.IsNullOrEmpty(this.businessActivity))
-                            {
-                            }
-                            if (!string.IsNullOrEmpty(this.featureName))
-                            {
-                            }
+                            //TelemetryClient telemetryClient = new TelemetryClient();
+                            //telemetryClient.InstrumentationKey = FabricXmlConfigurationHelper.Instance.ConfigurationManager.Get<LoggingConfiguration>().InstrumentationKey;
+                            //if (!string.IsNullOrEmpty(this.businessActivity))
+                            //{
+                            //    telemetryClient.TrackBusinessProcessEvent(new BusinessProcessEvent(this.businessActivity, Msit.Telemetry.Extensions.ComponentType.WebService));
+                            //}
+                            //if (!string.IsNullOrEmpty(this.featureName))
+                            //{
+                            //    telemetryClient.TrackFeatureUsageEvent(new FeatureUsageEvent(this.featureName, Msit.Telemetry.Extensions.ComponentType.WebService));
+                            //}
                         }
                         catch (Exception)
                         {

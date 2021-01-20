@@ -1,11 +1,4 @@
-//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="HCMPrincipalRetrieverExtension.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
-// </copyright>
-//----------------------------------------------------------------------------
-
-namespace MS.GTA.Common.Base.Security.V2
+﻿namespace MS.GTA.Common.Base.Security.V2
 {
     using Microsoft.Extensions.DependencyInjection;
 

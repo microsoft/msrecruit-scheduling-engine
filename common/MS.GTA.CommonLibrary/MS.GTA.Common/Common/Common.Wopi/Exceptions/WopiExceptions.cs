@@ -1,9 +1,8 @@
-[module: System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1649:FileHeaderFileNameDocumentationMustMatchTypeName", Justification = "Collation of WOPI monitored exceptions.")]
+﻿[module: System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1649:FileHeaderFileNameDocumentationMustMatchTypeName", Justification = "Collation of WOPI monitored exceptions.")]
 
 //----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="WopiExceptions.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 namespace MS.GTA.Common.Wopi.Exceptions

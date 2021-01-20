@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="AppConfigurationFlightProvider.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 using Microsoft.Extensions.Logging;
@@ -15,6 +14,7 @@ using MS.GTA.ServicePlatform.Flighting;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -98,7 +98,6 @@ namespace MS.GTA.Common.Product.ServicePlatform.Flighting.AppConfiguration
         {
             var url = "Evaluate";
             var lstFeatures = new List<string>();
-            if (evaluationContext == null || evaluationContext.Count == 0) return lstFeatures;
             var featureData = GetFeatureData(url, evaluationContext);
             if (string.IsNullOrWhiteSpace(featureData)) return lstFeatures;
             var features = JsonConvert.DeserializeObject(featureData, typeof(Dictionary<string,bool>)) as Dictionary<string,bool>;
@@ -177,7 +176,7 @@ namespace MS.GTA.Common.Product.ServicePlatform.Flighting.AppConfiguration
             string token =string.Empty;
             try
             {
-                string authority = string.Concat(aadConfig.AADInstance, aadConfig.TenantID);
+                string authority = String.Format(CultureInfo.InvariantCulture, aadConfig.AADInstance, aadConfig.TenantID); 
                 var clientSecret = await this.secretManager.GetSecretAsync(configuration.AppKey, logger);
                 ClientCredential cd = new ClientCredential(configuration.AppClientId, clientSecret);
                 var authContext = new AuthenticationContext(authority);

@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="FalconEmailTemplate.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -32,6 +31,9 @@ namespace MS.GTA.Common.Email.Contracts
 
         [DataMember(Name = "cc", EmitDefaultValue = false)]
         public List<string> Cc { get; set; }
+
+        [DataMember(Name = "additionalCc", EmitDefaultValue = false)]
+        public List<string> AdditionalCc { get; set; }
 
         [DataMember(Name = "bcc", EmitDefaultValue = false)]
         public List<string> Bcc { get; set; }

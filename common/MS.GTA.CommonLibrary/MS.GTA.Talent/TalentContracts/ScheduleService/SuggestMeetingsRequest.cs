@@ -1,6 +1,5 @@
-// <copyright file="SuggestMeetingsRequest.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="SuggestMeetingsRequest.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.Talent.TalentContracts.ScheduleService
