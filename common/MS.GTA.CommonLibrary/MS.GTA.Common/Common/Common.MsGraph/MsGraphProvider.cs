@@ -127,7 +127,7 @@ namespace MS.GTA.Common.MSGraph
         /// <summary>
         /// AADClient uses MemoryCache and clean up code can go here
         /// </summary>
-        [Obsolete("Please use the user directory service client implementation for any future work on MSGraph, any questions/issues email vanguard@microsoft.com. Going forward this will turn into an error.")]
+        [Obsolete("Please use the user directory service client implementation for any future work on MSGraph")]
         public void Dispose()
         {
             this.Dispose(false);
