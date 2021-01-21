@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright file="RoleManager.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -13,6 +12,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using System.Threading.Tasks;
     using Castle.Core.Internal;
     using Microsoft.Extensions.Logging;
+    using Microsoft.Skype.ECS.Core.Collections;
     using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.Common.Web.Contracts;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;

@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright file="EmailTemplateConfiguaration.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -47,14 +46,29 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Configurations
         public string FeedbackReminderEmailTemplate { get; set; }
 
         /// <summary>
+        /// Gets or sets AutomatedFeedbackReminderEmailTemplate
+        /// </summary>
+        public string AutomatedFeedbackReminderEmailTemplate { get; set; }
+
+        /// <summary>
         /// Gets or sets InterviewerFeedbackReminderForUniversityReqs
         /// </summary>
         public string InterviewerFeedbackReminderForUniversityReqs { get; set; }
 
         /// <summary>
-        /// Gets or sets holds key vault uri
+        /// Gets or sets InterviewerFeedbackReminderForUniversityReqs
+        /// </summary>
+        public string AutomatedInterviewerFeedbackReminderForUniversityReqs { get; set; }
+
+        /// <summary>
+        /// Gets or sets Scheduler Reminder Email Template
         /// </summary>
         public string SchedulerReminderEmailTemplate { get; set; }
+
+        /// <summary>
+        /// Gets or sets Scheduler Reminder Email Template with notes
+        /// </summary>
+        public string SchedulerReminderEmailTemplateWithNotes { get; set; }
 
         /// <summary>
         /// Gets or sets InterviewInvitationFailed
@@ -65,6 +79,11 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Configurations
         /// Gets or sets ScheduleAssignmentEmailTemplate
         /// </summary>
         public string ScheduleAssignmentEmailTemplate { get; set; }
+
+        /// <summary>
+        /// Gets or sets ScheduleAssignmentEmailTemplate with notes
+        /// </summary>
+        public string ScheduleAssignmentEmailTemplateWithNotes { get; set; }
 
         /// <summary>
         /// Gets or sets the feedback only email template.

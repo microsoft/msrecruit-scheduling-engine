@@ -1,6 +1,5 @@
-// <copyright file="CandidateCommunicator.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="CandidateCommunicator.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
@@ -112,7 +111,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
             };
 
             var notificationItems = new List<NotificationItem>() { notificationItem };
-            bool responseStatus = await this.communicatorMakers.NotificationClient.SendEmail(notificationItems);
+            this.logger.LogInformation($"{nameof(this.SendInvitation)}: send email  for job application id {jobApplication?.JobApplicationID}.");
+            bool responseStatus = await this.communicatorMakers.NotificationClient.SendEmail(notificationItems, jobApplication?.JobApplicationID);
             return responseStatus;
         }
 

@@ -1,7 +1,6 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // <copyright file="EmailManager.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 //----------------------------------------------------------------------------
 
@@ -19,6 +18,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using MS.GTA.Common.Base.Security;
     using MS.GTA.Common.Base.Utilities;
     using MS.GTA.Common.Common.Common.Email.Contracts;
+    using MS.GTA.Common.Email.Contracts;
     using MS.GTA.Common.TalentAttract.Contract;
     using MS.GTA.Common.TalentEntities.Common;
     using MS.GTA.CommonDataService.Common.Internal;
@@ -129,6 +129,15 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
             this.logger.LogInformation($"SendFeedbackReminder: get email template {emailTemplateConfiguaration.FeedbackReminderEmailTemplate}");
             var feedbackReminderEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.FeedbackReminderEmailTemplate);
             var jobApplication = await this.scheduleQuery.GetJobApplicationWithCandidateDetails(pendingFeedbackRequest.JobApplicationId);
+
+            var pendingSchedules = await this.scheduleQuery.GetPendingSchedulesForJobApplication(jobApplication);
+
+            if (pendingSchedules?.Where(ps => ps.Interviewer?.OfficeGraphIdentifier == pendingFeedbackRequest?.InterviewerOID)?.Count() == 0)
+            {
+                this.logger.LogInformation($"{nameof(this.SendFeedbackReminder)}: No pending feedback exists for interviewer {pendingFeedbackRequest.InterviewerOID} and job application {pendingFeedbackRequest.JobApplicationId} .");
+                return isFeedbackReminderSent;
+            }
+
             var universityReq = jobApplication?.JobOpening?.JobOpeningExtendedAttributes?.Any(x => x.EntityType == EntityType.JobOpening && x.Name.ToLower() == BusinessConstants.JobOpeningHireType && x.Value.ToLower() == BusinessConstants.UniversityHireType);
 
             if (universityReq != null && (bool)universityReq)
@@ -201,7 +210,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                         Body = this.ParseTemplate(feedbackReminderEmailTemplate.Body, messageParams)
                     };
 
-                    isFeedbackReminderSent = await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
+                    isFeedbackReminderSent = await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, pendingFeedbackRequest.JobApplicationId);
                 }
             }
 
@@ -292,8 +301,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                             notification = await this.AddWobUsersToNotificationRecepientAsync(notification, schedule.Requester.Id).ConfigureAwait(false);
                         }
 
-                        this.logger.LogInformation($"{nameof(this.SendDeclineEmailToScheduler)}: send email to scheduler for schedule {interviewerResponseNotification.ScheduleId}");
-                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
+                        this.logger.LogInformation($"{nameof(this.SendDeclineEmailToScheduler)}: send email to scheduler for schedule {interviewerResponseNotification?.ScheduleId}");
+                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, interviewerResponseNotification?.ScheduleId);
                     }
                 }
             }
@@ -318,106 +327,118 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
             var emailTemplateConfiguaration = this.configurationManager.Get<EmailTemplateConfiguaration>();
 
             this.logger.LogInformation($"SendSchedulerReminder: get email template {emailTemplateConfiguaration.FeedbackReminderEmailTemplate}");
-            var reminderEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.SchedulerReminderEmailTemplate);
             var clientUrl = this.configurationManager.Get<IVClientConfiguration>().RecruitingHubClientUrl;
 
-            if (reminderEmailTemplate == null)
+            this.logger.LogInformation($"SendSchedulerReminder: get schedules where interviewers are pending");
+            var schedules = await this.scheduleQuery.GetPendingSchedules();
+
+            if (schedules == null || schedules.Count() == 0)
             {
-                this.logger.LogError($"SendSchedulerReminder: email template {emailTemplateConfiguaration.SchedulerReminderEmailTemplate} does not exist");
+                this.logger.LogInformation($"SendSchedulerReminder: No pending schedules");
                 isSchedulerReminderSent = false;
             }
             else
             {
-                this.logger.LogInformation($"SendSchedulerReminder: get schedules where interviewers are pending");
-                var schedules = await this.scheduleQuery.GetPendingSchedules();
+                HashSet<string> uniqueParticipantIDs = new HashSet<string>();
+                HashSet<string> contributorOids = new HashSet<string>();
 
-                if (schedules == null || schedules.Count() == 0)
+                schedules.ForEach(s =>
                 {
-                    this.logger.LogInformation($"SendSchedulerReminder: No pending schedules");
-                    isSchedulerReminderSent = false;
-                }
-                else
-                {
-                    HashSet<string> uniqueParticipantIDs = new HashSet<string>();
-                    HashSet<string> contributorOids = new HashSet<string>();
+                    uniqueJobAppIds.Add(s?.JobApplicationID);
+                    s?.Participants?.ForEach(sp => uniqueParticipantIDs.Add(sp?.OID));
+                });
 
-                    schedules.ForEach(s =>
+                var scheduleParticipants = await this.scheduleQuery.GetWorkers(uniqueParticipantIDs.ToList());
+
+                var jobApplications = await this.scheduleQuery.GetJobApplications(uniqueJobAppIds.ToList());
+
+                jobApplications.ToList().ForEach(ja =>
+                {
+                    var contributors = ja?.JobApplicationParticipants?.ToList().FindAll(jap => jap.Role == JobParticipantRole.Contributor);
+                    contributors.ForEach(co => contributorOids.Add(co.OID));
+                });
+
+                var contributorWorkers = await this.scheduleQuery.GetWorkers(contributorOids.ToList());
+
+                foreach (var jobId in uniqueJobAppIds)
+                {
+                    HashSet<string> contributorEmails = new HashSet<string>();
+
+                    // Gets the schedules for a job.
+                    var schedulesforJob = schedules.ToList().FindAll(s => s.JobApplicationID == jobId);
+
+                    var jobApplication = jobApplications.ToList().Find(ja => ja.JobApplicationID == jobId);
+                    var title = await this.scheduleQuery.GetJobOpeningPositionTitle(jobApplication?.JobOpening?.JobOpeningID);
+
+                    // Gets the contributors email ids.
+                    var contributors = jobApplication?.JobApplicationParticipants?.ToList().FindAll(jap => jap.Role == JobParticipantRole.Contributor);
+
+                    contributors.ForEach(coj =>
                     {
-                        uniqueJobAppIds.Add(s?.JobApplicationID);
-                        s?.Participants?.ForEach(sp => uniqueParticipantIDs.Add(sp?.OID));
+                        var contributorWorker = contributorWorkers.First(c => c.OfficeGraphIdentifier == coj.OID);
+                        contributorEmails.Add(contributorWorker?.EmailPrimary);
                     });
 
-                    var scheduleParticipants = await this.scheduleQuery.GetWorkers(uniqueParticipantIDs.ToList());
+                    var contributorToString = string.Join(";", contributorEmails.ToList());
 
-                    var jobApplications = await this.scheduleQuery.GetJobApplications(uniqueJobAppIds.ToList());
+                    // Gets the summary to be attached at the end of the Body.
+                    var summary = this.GetReminderSummary(schedulesforJob.OrderBy(s => s.StartDateTime).ToList(), scheduleParticipants);
+                    var candidateName = jobApplication?.Candidate?.FullName?.GivenName + " " + jobApplication?.Candidate?.FullName?.Surname;
 
-                    jobApplications.ToList().ForEach(ja =>
+                    Dictionary<string, string> templateParams = new Dictionary<string, string>
                     {
-                        var contributors = ja?.JobApplicationParticipants?.ToList().FindAll(jap => jap.Role == JobParticipantRole.Contributor);
-                        contributors.ForEach(co => contributorOids.Add(co.OID));
-                    });
+                        { "External_Job_id", jobApplication?.JobOpening?.ExternalJobOpeningID?.ToString() },
+                        { "Job_Title", title?.ToString() },
+                        { "Candidate_Name", candidateName },
+                        { "Company_Name", "Microsoft" },
+                        { "Header_Image_Url", BusinessConstants.MicrosoftLogoUrl },
+                        { "Privacy_Policy_Link", BusinessConstants.PrivacyPolicyUrl },
+                        { "Terms_And_Conditions_Link", BusinessConstants.TermsAndConditionsUrl },
+                        { "Call_To_Action_Link", clientUrl + $"iv/candidate-view/interview/{jobApplication?.JobApplicationID?.ToString()}" }
+                    };
 
-                    var contributorWorkers = await this.scheduleQuery.GetWorkers(contributorOids.ToList());
-
-                    foreach (var jobId in uniqueJobAppIds)
+                    var notification = new NotificationItem
                     {
-                        HashSet<string> contributorEmails = new HashSet<string>();
+                        To = contributorToString
+                    };
+                    Common.Email.Contracts.EmailTemplate reminderEmailTemplate = null;
 
-                        // Gets the schedules for a job.
-                        var schedulesforJob = schedules.ToList().FindAll(s => s.JobApplicationID == jobId);
-
-                        var jobApplication = jobApplications.ToList().Find(ja => ja.JobApplicationID == jobId);
-                        var title = await this.scheduleQuery.GetJobOpeningPositionTitle(jobApplication?.JobOpening?.JobOpeningID);
-
-                        // Gets the contributors email ids.
-                        var contributors = jobApplication?.JobApplicationParticipants?.ToList().FindAll(jap => jap.Role == JobParticipantRole.Contributor);
-
-                        contributors.ForEach(coj =>
+                    if (WobUserFeatureFlight.IsEnabled)
+                    {
+                        this.logger.LogInformation($"Status of the WOB Flight : true. Adding WOB Participants in CC.");
+                        foreach (string schedulerOid in contributors?.Select(sch => sch.OID))
                         {
-                            var contributorWorker = contributorWorkers.First(c => c.OfficeGraphIdentifier == coj.OID);
-                            contributorEmails.Add(contributorWorker?.EmailPrimary);
-                        });
-
-                        var contributorToString = string.Join(";", contributorEmails.ToList());
-
-                        // Gets the summary to be attached at the end of the Body.
-                        var summary = this.GetReminderSummary(schedulesforJob.OrderBy(s => s.StartDateTime).ToList(), scheduleParticipants);
-                        var candidateName = jobApplication?.Candidate?.FullName?.GivenName + " " + jobApplication?.Candidate?.FullName?.Surname;
-
-                        Dictionary<string, string> templateParams = new Dictionary<string, string>
-                        {
-                            { "External_Job_id", jobApplication?.JobOpening?.ExternalJobOpeningID?.ToString() },
-                            { "Job_Title", title?.ToString() },
-                            { "Candidate_Name", candidateName },
-                            { "Company_Name", "Microsoft" },
-                            { "Header_Image_Url", BusinessConstants.MicrosoftLogoUrl },
-                            { "Privacy_Policy_Link", BusinessConstants.PrivacyPolicyUrl },
-                            { "Terms_And_Conditions_Link", BusinessConstants.TermsAndConditionsUrl },
-                            { "Call_To_Action_Link", clientUrl + $"iv/candidate-view/interview/{jobApplication?.JobApplicationID?.ToString()}" }
-                        };
-
-                        var notification = new NotificationItem
-                        {
-                            To = contributorToString,
-                            Subject = this.ParseTemplate(reminderEmailTemplate.Subject, templateParams),
-                            Body = this.ParseTemplate(reminderEmailTemplate.Body, templateParams) + summary
-                        };
-
-                        if (WobUserFeatureFlight.IsEnabled)
-                        {
-                            this.logger.LogInformation($"Status of the WOB Flight : true. Adding WOB Participants in CC.");
-                            foreach (string schedulerOid in contributors?.Select(sch => sch.OID))
-                            {
-                                notification = await this.AddWobUsersToNotificationRecepientAsync(notification, schedulerOid).ConfigureAwait(false);
-                            }
+                            notification = await this.AddWobUsersToNotificationRecepientAsync(notification, schedulerOid).ConfigureAwait(false);
                         }
 
-                        this.logger.LogInformation($"SendSchedulerReminder: send email to scheduler for job applicaion {jobId}");
-                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
+                        if (!string.IsNullOrEmpty(notification.CC))
+                        {
+                            reminderEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.SchedulerReminderEmailTemplateWithNotes);
+                        }
+                        else
+                        {
+                            reminderEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.SchedulerReminderEmailTemplate);
+                        }
+                    }
+                    else
+                    {
+                        reminderEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.SchedulerReminderEmailTemplate);
                     }
 
-                    isSchedulerReminderSent = true;
+                    if (reminderEmailTemplate == null)
+                    {
+                        this.logger.LogError($"SendSchedulerReminder: email template {emailTemplateConfiguaration.SchedulerReminderEmailTemplate} does not exist");
+                        isSchedulerReminderSent = false;
+                    }
+
+                    notification.Subject = this.ParseTemplate(reminderEmailTemplate.Subject, templateParams);
+                    notification.Body = this.ParseTemplate(reminderEmailTemplate.Body, templateParams) + summary;
+
+                    this.logger.LogInformation($"SendSchedulerReminder: send email to scheduler for job applicaion {jobId}");
+                    await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, jobId);
                 }
+
+                isSchedulerReminderSent = true;
             }
 
             this.logger.LogInformation($"Finished {nameof(this.SendSchedulerReminder)} method in {nameof(EmailManager)}.");
@@ -488,7 +509,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                         }
 
                         this.logger.LogInformation($"SendInviteFailReminder: send email to scheduler for schedule {scheduleID}");
-                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
+                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, scheduleID);
                         isInviteFailReminderSent = true;
                     }
                 }
@@ -519,66 +540,76 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
             try
             {
                 this.logger.LogInformation($"SendAssignmentEmailToScheduler: get email template {emailTemplateConfiguaration.ScheduleAssignmentEmailTemplate}");
-                var inviteFailEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.ScheduleAssignmentEmailTemplate);
+                this.logger.LogInformation($"SendAssignmentEmailToScheduler: get job application id {jobApplicationId}");
+                var jobApplication = await this.scheduleQuery.GetJobApplication(jobApplicationId);
+                var schedulerWorker = await this.falconQuery.GetWorker(schedulerOid);
+                var recruiterOid = jobApplication?.JobApplicationParticipants.Where(a => a.Role == TalentEntities.Enum.JobParticipantRole.Recruiter).FirstOrDefault()?.OID;
+                var recruiterWorker = await this.falconQuery.GetWorker(recruiterOid);
+                var hiringManagerOid = jobApplication?.JobApplicationParticipants.Where(a => a.Role == TalentEntities.Enum.JobParticipantRole.HiringManager).FirstOrDefault()?.OID;
+                var hiringManagerWorker = await this.falconQuery.GetWorker(hiringManagerOid);
 
-                if (inviteFailEmailTemplate == null)
+                if (jobApplication == null)
                 {
-                    this.logger.LogError($"SendAssignmentEmailToScheduler: email template {emailTemplateConfiguaration.ScheduleAssignmentEmailTemplate} does not exist");
+                    this.logger.LogError($"SendAssignmentEmailToScheduler: job application {jobApplication} does not exist");
                     isAssignmentEmailToSchedulerSent = false;
                 }
                 else
                 {
-                    this.logger.LogInformation($"SendAssignmentEmailToScheduler: get job application id {jobApplicationId}");
-                    var jobApplication = await this.scheduleQuery.GetJobApplication(jobApplicationId);
-                    var schedulerWorker = await this.falconQuery.GetWorker(schedulerOid);
-                    var recruiterOid = jobApplication?.JobApplicationParticipants.Where(a => a.Role == TalentEntities.Enum.JobParticipantRole.Recruiter).FirstOrDefault()?.OID;
-                    var recruiterWorker = await this.falconQuery.GetWorker(recruiterOid);
-                    var hiringManagerOid = jobApplication?.JobApplicationParticipants.Where(a => a.Role == TalentEntities.Enum.JobParticipantRole.HiringManager).FirstOrDefault()?.OID;
-                    var hiringManagerWorker = await this.falconQuery.GetWorker(hiringManagerOid);
+                    var title = await this.scheduleQuery.GetJobOpeningPositionTitle(jobApplication?.JobOpening?.JobOpeningID);
+                    var clientUrl = this.configurationManager.Get<IVClientConfiguration>().RecruitingHubClientUrl;
 
-                    if (jobApplication == null)
+                    Dictionary<string, string> templateParams = new Dictionary<string, string>
                     {
-                        this.logger.LogError($"SendAssignmentEmailToScheduler: job application {jobApplication} does not exist");
-                        isAssignmentEmailToSchedulerSent = false;
+                        { "Job_Title", title?.ToString() },
+                        { "Candidate_Name", candidateName },
+                        { "Job_Id", jobApplication?.JobOpening?.ExternalJobOpeningID ?? string.Empty },
+                        { "Call_To_Action_Link", clientUrl + $"iv/candidate-view/interview/{jobApplicationId}" },
+                        { "Scheduler_First_Name", schedulerWorker.Name.GivenName },
+                        { "Recruiter_Name", recruiterWorker?.FullName },
+                        { "HiringManager_Name", hiringManagerWorker?.FullName },
+                        { "Requester_Email", recruiterWorker?.EmailPrimary },
+                        { "Requester_Name", recruiterWorker?.FullName },
+                        { "Company_Name", "Microsoft" },
+                        { "Privacy_Policy_Link", BusinessConstants.PrivacyPolicyUrl },
+                        { "Terms_And_Conditions_Link", BusinessConstants.TermsAndConditionsUrl }
+                    };
+
+                    var notification = new NotificationItem
+                    {
+                        To = schedulerWorker.EmailPrimary
+                    };
+                    Common.Email.Contracts.EmailTemplate inviteFailEmailTemplate = null;
+
+                    if (WobUserFeatureFlight.IsEnabled)
+                    {
+                        this.logger.LogInformation($"Status of the WOB Flight : true. Adding WOB Participants in CC.");
+                        notification = await this.AddWobUsersToNotificationRecepientAsync(notification, schedulerOid).ConfigureAwait(false);
+
+                        if (!string.IsNullOrEmpty(notification.CC))
+                        {
+                            inviteFailEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.ScheduleAssignmentEmailTemplateWithNotes);
+                        }
+                        else
+                        {
+                            inviteFailEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.ScheduleAssignmentEmailTemplate);
+                        }
                     }
                     else
                     {
-                        var title = await this.scheduleQuery.GetJobOpeningPositionTitle(jobApplication?.JobOpening?.JobOpeningID);
-                        var clientUrl = this.configurationManager.Get<IVClientConfiguration>().RecruitingHubClientUrl;
-
-                        Dictionary<string, string> templateParams = new Dictionary<string, string>
-                        {
-                            { "Job_Title", title?.ToString() },
-                            { "Candidate_Name", candidateName },
-                            { "Job_Id", jobApplication?.JobOpening?.ExternalJobOpeningID ?? string.Empty },
-                            { "Call_To_Action_Link", clientUrl + $"iv/candidate-view/interview/{jobApplicationId}" },
-                            { "Scheduler_First_Name", schedulerWorker.Name.GivenName },
-                            { "Recruiter_Name", recruiterWorker?.FullName },
-                            { "HiringManager_Name", hiringManagerWorker?.FullName },
-                            { "Requester_Email", recruiterWorker?.EmailPrimary },
-                            { "Requester_Name", recruiterWorker?.FullName },
-                            { "Company_Name", "Microsoft" },
-                            { "Privacy_Policy_Link", BusinessConstants.PrivacyPolicyUrl },
-                            { "Terms_And_Conditions_Link", BusinessConstants.TermsAndConditionsUrl }
-                        };
-
-                        var notification = new NotificationItem
-                        {
-                            To = schedulerWorker.EmailPrimary,
-                            Subject = this.ParseTemplate(inviteFailEmailTemplate.Subject, templateParams),
-                            Body = this.ParseTemplate(inviteFailEmailTemplate.Body, templateParams)
-                        };
-
-                        if (WobUserFeatureFlight.IsEnabled)
-                        {
-                            this.logger.LogInformation($"Status of the WOB Flight : true. Adding WOB Participants in CC.");
-                            notification = await this.AddWobUsersToNotificationRecepientAsync(notification, schedulerOid).ConfigureAwait(false);
-                        }
-
-                        this.logger.LogInformation($"SendAssignmentEmailToScheduler: send email to scheduler for job application id {jobApplicationId}");
-                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
-                        isAssignmentEmailToSchedulerSent = true;
+                        inviteFailEmailTemplate = await this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.ScheduleAssignmentEmailTemplate);
                     }
+
+                    if (inviteFailEmailTemplate == null)
+                    {
+                        this.logger.LogError($"SendAssignmentEmailToScheduler: email template {emailTemplateConfiguaration.ScheduleAssignmentEmailTemplate} does not exist");
+                        isAssignmentEmailToSchedulerSent = false;
+                    }
+
+                    notification.Subject = this.ParseTemplate(inviteFailEmailTemplate.Subject, templateParams);
+                    notification.Body = this.ParseTemplate(inviteFailEmailTemplate.Body, templateParams);
+                    this.logger.LogInformation($"SendAssignmentEmailToScheduler: send email to scheduler for job application id {jobApplicationId}");
+                    await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, jobApplicationId);
+                    isAssignmentEmailToSchedulerSent = true;
                 }
             }
             catch (Exception ex)
@@ -625,7 +656,9 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                 this.logger.LogInformation($"Added {wobUsers.Count} WOB Participants in CC.");
             }
 
-            mailSent = await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
+            this.logger.LogInformation($"{nameof(this.SendFeedbackEmailAsync)}: send feedback email to added WOB participant {userOid}");
+            mailSent = await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, userOid);
+
             this.logger.LogInformation($"Finished {nameof(this.SendFeedbackEmailAsync)} method in {nameof(EmailManager)}.");
             return mailSent;
         }
@@ -682,7 +715,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                             Body = this.ParseTemplate(inviteFailEmailTemplate.Body, templateParams)
                         };
                         this.logger.LogInformation($"SendPilotNotification: send email to scheduler for job application id {requisitionId}");
-                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
+                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, requisitionId);
                         isPilotEmailSent = true;
                     }
                 }
@@ -757,7 +790,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                         };
 
                         this.logger.LogInformation($"SendShareFeedbackEmailToAA: send email to scheduler for job application id {jobApplicationId} and aaOid {aaUserID}");
-                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
+                        await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, jobApplicationId);
                         isShareFeedbackEmailToAASent = true;
                     }
                 }
@@ -824,7 +857,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                 }
             }
 
-            mailSent = await this.notificationClient.SendEmail(new List<NotificationItem> { notification });
+            this.logger.LogInformation($"{nameof(this.SendEmailNotification)}: send email  for job application id {jobApplicationId}.");
+            mailSent = await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, jobApplicationId);
             this.logger.LogInformation($"Finished {nameof(this.SendEmailNotification)} method in {nameof(EmailManager)}.");
             return mailSent;
         }
@@ -848,8 +882,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
             var pendingFeedbacks = await this.scheduleQuery.GetAllPendingFeedbacksForReminderAsync(notificationReminderOffsetHours, notificationReminderWindowMinutes);
             var notificationItems = new List<NotificationItem>();
 
-            var feedbackReminderEmailTemplateForNonUVReqs = this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.FeedbackReminderEmailTemplate).Result;
-            var feedbackReminderEmailTemplateForUVReqs = this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.InterviewerFeedbackReminderForUniversityReqs).Result;
+            var feedbackReminderEmailTemplateForNonUVReqs = this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.AutomatedFeedbackReminderEmailTemplate).Result;
+            var feedbackReminderEmailTemplateForUVReqs = this.scheduleQuery.GetTemplate(emailTemplateConfiguaration.AutomatedInterviewerFeedbackReminderForUniversityReqs).Result;
 
             pendingFeedbacks?.ForEach(pendingFeedback =>
             {
@@ -902,8 +936,6 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                     {
                         { EmailTemplateTokens.Job_Title.ToString(), pendingFeedback?.PositionTitle ?? string.Empty },
                         { EmailTemplateTokens.Candidate_Name.ToString(), pendingFeedback?.CandidateName ?? string.Empty },
-                        { EmailTemplateTokens.Requester_Name.ToString(), scheduleRequester?.FullName ?? string.Empty },
-                        { EmailTemplateTokens.Requester_Email.ToString(), scheduleRequester?.EmailPrimary ?? string.Empty },
                         { EmailTemplateTokens.External_Job_Id.ToString(), pendingFeedback?.ExternalJobOpeningId ?? string.Empty },
                         { EmailTemplateTokens.Interviewer_FirstName.ToString(), interviewer?.Name?.GivenName ?? string.Empty },
                         { EmailTemplateTokens.HiringManager_Name.ToString(), hiringManager?.FullName ?? string.Empty },
@@ -915,7 +947,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                             To = this.PopulateToOrCCListInEmail(feedbackReminderEmailTemplate.To, interviewer, hiringManager, recruiter, scheduleRequester),
                             CC = this.PopulateToOrCCListInEmail(feedbackReminderEmailTemplate.Cc, interviewer, hiringManager, recruiter, scheduleRequester),
                             Subject = this.ParseTemplate(feedbackReminderEmailTemplate.Subject, messageParams),
-                            Body = this.ParseTemplate(feedbackReminderEmailTemplate.Body, messageParams)
+                            Body = this.ParseTemplate(feedbackReminderEmailTemplate.Body, messageParams),
+                            TrackingId = pendingFeedback.JobApplicationId
                         };
 
                         notificationItems.Add(notification);
@@ -925,7 +958,9 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
 
             if (notificationItems.Count > 0)
             {
-                allMailsSent &= await this.notificationClient.SendEmail(notificationItems);
+                this.logger.LogInformation($"{nameof(this.SendFeedbackReminderToAllAsync)}: sending feedback remainder email.");
+                ////added trackingID at notification item level
+                allMailsSent &= await this.notificationClient.SendEmail(notificationItems, string.Empty);
             }
 
             this.logger.LogInformation($"Finished {nameof(this.SendFeedbackReminderToAllAsync)} method in {nameof(EmailManager)}.");
@@ -1005,7 +1040,9 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
                                 Body = this.ParseTemplate(delegationAssignmentEmailTemplate.Body, messageParams)
                             };
 
-                            if (await this.notificationClient.SendEmail(new List<NotificationItem> { notification }).ConfigureAwait(false))
+                            this.logger.LogInformation($"{nameof(this.SendDelegationAssignmentToSchedulerAsync)}: Sending email for delegation request {delegationRequest.DelegationId}.");
+
+                            if (await this.notificationClient.SendEmail(new List<NotificationItem> { notification }, delegationRequest.DelegationId).ConfigureAwait(false))
                             {
                                 if (string.IsNullOrWhiteSpace(mailSentForDelegations))
                                 {

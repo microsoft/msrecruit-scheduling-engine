@@ -9,19 +9,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\nuget.config = ..\nuget.config
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{4E7DD185-7DD2-4428-9E25-671682F7BE4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.ScheduleService.Data", "MS.GTA.ScheduleService.Data\MS.GTA.ScheduleService.Data.csproj", "{4E7DD185-7DD2-4428-9E25-671682F7BE4F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FalconData", "FalconData\FalconData.csproj", "{14CA026A-B167-4429-A52E-ED379F1427FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.ScheduleService.FalconData", "MS.GTA.ScheduleService.FalconData\MS.GTA.ScheduleService.FalconData.csproj", "{14CA026A-B167-4429-A52E-ED379F1427FB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{4E7DD185-7DD2-4428-9E25-671682F7BAAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.ScheduleService.Contracts", "MS.GTA.ScheduleService.Contracts\MS.GTA.ScheduleService.Contracts.csproj", "{4E7DD185-7DD2-4428-9E25-671682F7BAAA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLibrary", "BusinessLibrary\BusinessLibrary.csproj", "{BB5E52B0-CE31-4936-8970-3D57BF735D05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScheduleService", "ScheduleService\ScheduleService.csproj", "{CC903419-3DD8-4ACC-85B3-EFEFE4FC51B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.ScheduleService", "MS.GTA.ScheduleService\MS.GTA.ScheduleService.csproj", "{CC903419-3DD8-4ACC-85B3-EFEFE4FC51B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadTest", "LoadTest\LoadTest.csproj", "{345764B2-0A0F-432E-A20F-1F533A46B66E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.GTA.ScheduleService.LoadTest", "MS.GTA.ScheduleService.LoadTest\MS.GTA.ScheduleService.LoadTest.csproj", "{345764B2-0A0F-432E-A20F-1F533A46B66E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{FB75232F-82AA-433D-A1D1-15D48A6077AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.ScheduleService.UnitTest", "MS.GTA.ScheduleService.UnitTest\MS.GTA.ScheduleService.UnitTest.csproj", "{FB75232F-82AA-433D-A1D1-15D48A6077AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

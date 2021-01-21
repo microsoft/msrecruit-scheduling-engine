@@ -1,6 +1,5 @@
-// <copyright file="UserDetailsProvider.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="UserDetailsProvider.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.ScheduleService.BusinessLibrary.Providers.User
@@ -16,6 +15,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers.User
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Skype.ECS.Core;
     using MS.GTA.Common.Base.Configuration;
     using MS.GTA.Common.MSGraph;
     using MS.GTA.Common.MSGraph.Configuration;

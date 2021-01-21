@@ -1,6 +1,5 @@
-// <copyright file="IOutlookProvider.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="IOutlookProvider.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.ScheduleService.BusinessLibrary.Providers

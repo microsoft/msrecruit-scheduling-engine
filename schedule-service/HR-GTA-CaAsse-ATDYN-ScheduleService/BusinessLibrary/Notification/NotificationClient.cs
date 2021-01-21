@@ -1,7 +1,6 @@
-// ----------------------------------------------------------------------------
+﻿// ----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="NotificationClient.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 // ----------------------------------------------------------------------------
 
@@ -136,9 +135,10 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
         /// send email
         /// </summary>
         /// <param name="notificationItems">notification items</param>
+        /// <param name="trackingId">trackingId</param>
         /// <returns>response</returns>
         [MonitorWith("GTASendEmail")]
-        public async Task<bool> SendEmail(List<NotificationItem> notificationItems)
+        public async Task<bool> SendEmail(List<NotificationItem> notificationItems, string trackingId)
         {
             ResourceManager rm = new ResourceManager(typeof(ScheduleServiceEmailTemplate).Namespace + ".ScheduleServiceEmailTemplate", typeof(ScheduleServiceEmailTemplate).Assembly);
             var emailStyleTemplate = rm.GetString(BusinessConstants.EmailTemplateWithoutButton);
@@ -155,6 +155,10 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
                     { "Terms_And_Conditions_Link", BusinessConstants.TermsAndConditionsUrl },
                 };
                 notificationItem.Body = this.ParseTemplate(emailStyleTemplate, templateParams);
+                if (string.IsNullOrEmpty(notificationItem.TrackingId) && !string.IsNullOrEmpty(trackingId))
+                {
+                    notificationItem.TrackingId = trackingId;
+                }
             });
 
             try

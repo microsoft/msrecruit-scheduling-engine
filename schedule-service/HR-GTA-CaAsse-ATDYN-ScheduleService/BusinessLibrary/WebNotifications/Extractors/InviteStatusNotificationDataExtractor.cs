@@ -1,6 +1,5 @@
-// <copyright file="InviteStatusNotificationDataExtractor.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="InviteStatusNotificationDataExtractor.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Extractors
@@ -139,8 +138,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Extractors
                         List<string> participantsOids = new List<string>();
                         participantsOids.AddRange(recruiterData.Select(rd => rd.ObjectIdentifier));
                         participantsOids.AddRange(schedulerData.Select(sd => sd.ObjectIdentifier));
-                        List<ParticipantData> wobUsersParticipants = this.ExtractWobUserDataAsync(participantsOids).Result;
-                        notificationsData.AddRange(wobUsersParticipants.Select(wp => this.ExtractNotificationProperties(interviewerInviteResponseInfo, wp, true)));
+                        notificationsData.AddRange(this.ExtractNotificationPropertiesForWobUserAsync(participantsOids, interviewerInviteResponseInfo).Result);
                     }
                     catch (Exception ex)
                     {
@@ -346,10 +344,11 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Extractors
         /// This method is to extract wob users data for each of participant
         /// </summary>
         /// <param name="oids"> list of recruiters</param>
+        /// <param name="interviewerInviteResponseInfo">Interview Response Info</param>
         /// <returns>list of wobusers</returns>
-        private async Task<List<ParticipantData>> ExtractWobUserDataAsync(List<string> oids)
+        private async Task<List<Dictionary<string, string>>> ExtractNotificationPropertiesForWobUserAsync(List<string> oids, InterviewerInviteResponseInfo interviewerInviteResponseInfo)
         {
-            List<ParticipantData> wobUsersData = new List<ParticipantData>();
+            var notificationDatas = new List<Dictionary<string, string>>();
             if (oids.Any())
             {
                 var wobUsers = await this.scheduleQuery.GetWobUsersDelegationAsync(oids).ConfigureAwait(false);
@@ -358,15 +357,17 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Extractors
                     wobUsers.ForEach(wu =>
                     {
                         ParticipantData participantData = new ParticipantData();
-                        participantData.Email = wu.To.EmailPrimary;
-                        participantData.Name = wu.To.Name.GivenName;
-                        participantData.ObjectIdentifier = wu.To.OfficeGraphIdentifier;
-                        wobUsersData.Add(participantData);
+                        participantData.Email = wu.To?.EmailPrimary;
+                        participantData.Name = wu.To?.Name?.GivenName;
+                        participantData.ObjectIdentifier = wu.To?.OfficeGraphIdentifier;
+                        var notificationData = this.ExtractNotificationProperties(interviewerInviteResponseInfo, participantData, true);
+                        notificationData.Add(NotificationConstants.ContextUserId, wu.From?.OfficeGraphIdentifier);
+                        notificationDatas.Add(notificationData);
                     });
                 }
             }
 
-            return wobUsersData;
+            return notificationDatas;
         }
     }
 }

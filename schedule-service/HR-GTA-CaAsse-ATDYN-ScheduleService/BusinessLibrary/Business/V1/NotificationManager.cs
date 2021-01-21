@@ -1,6 +1,5 @@
-// <copyright file="NotificationManager.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+﻿// <copyright file="NotificationManager.cs" company="Microsoft Corporation">
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 
 namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
@@ -176,10 +175,20 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
 
                 // Pass the sender or the from address to graph along with the service account for which the token has to be generated
                 var graphResponse = await this.outlookProvider.SearchUserByEmail(messageContent?.Sender?.EmailAddress?.Address, messageContent.ToRecipients.FirstOrDefault().EmailAddress.Address).ConfigureAwait(false);
-                var graphUser = graphResponse?.Users?.FirstOrDefault();
+                var responseSender = graphResponse?.Users?.FirstOrDefault();
+
+                Microsoft.Graph.User responseFrom = null;
+                if (!string.Equals(messageContent?.Sender?.EmailAddress?.Address, messageContent?.From?.EmailAddress?.Address, StringComparison.OrdinalIgnoreCase))
+                {
+                    // In some cases business admins are responding on the invites and the actual interviewer details not present in the sender object in graph response message.
+                    // Hence, capturing from details in the response message to save the invite response against to schedule participants.
+                    // These changes are made to resolve Incident : [CRI][MSRecruit] Admin Accepting Invites on Behalf of Interviewer
+                    var graphResponse1 = await this.outlookProvider.SearchUserByEmail(messageContent?.From?.EmailAddress?.Address, messageContent.ToRecipients.FirstOrDefault().EmailAddress.Address).ConfigureAwait(false);
+                    responseFrom = graphResponse1?.Users?.FirstOrDefault();
+                }
 
                 this.logger.LogInformation($"ProcessNotificationContent: Adding Request to update schedule response");
-                updateScheduleResponseTasks.Add(this.scheduleQuery.UpdateScheduleWithResponse(messageContent, graphUser));
+                updateScheduleResponseTasks.Add(this.scheduleQuery.UpdateScheduleWithResponse(messageContent, responseSender, responseFrom));
             }
 
             var interviewerInviteResponseInfos = await Task.WhenAll(updateScheduleResponseTasks);

@@ -1,7 +1,6 @@
-// ----------------------------------------------------------------------------
+﻿// ----------------------------------------------------------------------------
 // <copyright company="Microsoft Corporation" file="INotificationClient.cs">
-// Copyright (c) Microsoft Corporation.
-// Licensed under the MIT License.
+// Copyright (c) Microsoft Corporation. All rights reserved.
 // </copyright>
 // ----------------------------------------------------------------------------
 
@@ -29,7 +28,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
         /// send e-mail notification item
         /// </summary>
         /// <param name="notificationItems">notification items</param>
+        /// <param name="trackingID">Schedule ID/JobApplication ID</param>
         /// <returns>response</returns>
-        Task<bool> SendEmail(List<NotificationItem> notificationItems);
+        Task<bool> SendEmail(List<NotificationItem> notificationItems, string trackingID);
     }
 }
