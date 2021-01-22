@@ -60,7 +60,6 @@ namespace MS.GTA.ScheduleService
     using MS.GTA.ServicePlatform.Communication.Http;
     using MS.GTA.ServicePlatform.Configuration;
     using MS.GTA.ServicePlatform.Flighting;
-    using MS.GTA.ServicePlatform.Flighting.ECSProvider;
     using MS.GTA.ServicePlatform.Security;
     using MS.GTA.ServicePlatform.Tracing;
     using MS.GTA.Talent.FalconEntities.Attract.Conference;
@@ -120,7 +119,7 @@ namespace MS.GTA.ScheduleService
             }
             else
             {
-                services.AddSingleton<IFlightsProvider<IDictionary<string, string>>, ECSConfigurationProvider>();
+                // services.AddSingleton<IFlightsProvider<IDictionary<string, string>>, ECSConfigurationProvider>();
             }
 
             services.AddSingleton<IRoleManager, RoleManager>()

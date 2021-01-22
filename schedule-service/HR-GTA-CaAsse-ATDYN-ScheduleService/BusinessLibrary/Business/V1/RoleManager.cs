@@ -12,7 +12,6 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using System.Threading.Tasks;
     using Castle.Core.Internal;
     using Microsoft.Extensions.Logging;
-    using Microsoft.Skype.ECS.Core.Collections;
     using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.Common.Web.Contracts;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
