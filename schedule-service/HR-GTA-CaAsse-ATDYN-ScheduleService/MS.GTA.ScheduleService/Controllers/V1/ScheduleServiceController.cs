@@ -200,6 +200,37 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         }
 
         /// <summary>
+        /// Create schedule api
+        /// </summary>
+        /// <param name="meetingInfo">The schedule object.</param>
+        /// <param name="sourceExternalId">SourceExternalId</param>
+        /// <returns>The response.</returns>
+        [HttpPost("createctschedule/{sourceExternalId}")]
+        [MonitorWith("GTAV1CTCreateSchedule")]
+        public async Task<MeetingInfo> CreateCTSchedule([FromBody] MeetingInfo meetingInfo, string sourceExternalId)
+        {
+            MeetingInfo meetingInfoResult;
+            this.logger.LogInformation($"Started {nameof(this.CreateCTSchedule)} method in {nameof(ScheduleServiceController)}.");
+            if (meetingInfo == null || string.IsNullOrEmpty(sourceExternalId))
+            {
+                throw new BusinessRuleViolationException("Input request does not contain a valid meeting info").EnsureLogged(this.logger);
+            }
+
+            // todo: add validation for CT if required.
+            if (true)
+            {
+                ////Schedule status as saved
+                meetingInfoResult = await this.schedule.CreateSchedule(meetingInfo, sourceExternalId);
+            }
+            else
+            {
+                throw new BusinessRuleViolationException($"Input request does not contain a valid schedule participant").EnsureLogged(this.logger);
+            }
+
+            return meetingInfoResult;
+        }
+
+        /// <summary>
         /// Suggest and Create schedules api
         /// </summary>
         /// <param name="suggestMeetingsRequest">The meeting suggestion request object.</param>
