@@ -516,6 +516,23 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
         }
 
         /// <summary>
+        /// Update schedule
+        /// </summary>
+        /// <param name="scheduleID">Schedule identifier</param>
+        /// <param name="participantOid">participant office graph identifier</param>
+        /// <param name="responseStatus">response</param>
+        /// <returns>The task response</returns>
+        public async Task<bool> UpdateScheduleParticipantResponse(string scheduleID, string participantOid, InvitationResponseStatus responseStatus)
+        {
+            this.logger.LogInformation($"Started {nameof(this.UpdateScheduleParticipantResponse)} method in {nameof(ScheduleManager)}.");
+
+            await this.scheduleQuery.UpdateScheduleParticipantResponseManualAsync(scheduleID, participantOid, responseStatus);
+
+            this.logger.LogInformation($"Finished {nameof(this.UpdateScheduleParticipantResponse)} method in {nameof(ScheduleManager)}.");
+            return true;
+        }
+
+        /// <summary>
         /// Get schedule By Job ID
         /// </summary>
         /// <param name="jobApplicationId">jobApplicationId</param>

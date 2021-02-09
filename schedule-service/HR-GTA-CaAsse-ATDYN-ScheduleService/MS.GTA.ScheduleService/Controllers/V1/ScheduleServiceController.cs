@@ -17,6 +17,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using Microsoft.Extensions.Logging;
     using MS.GTA.Common.Base.ServiceContext;
     using MS.GTA.Common.Common.Common.Web.Extensions;
+    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.Common.Web;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
@@ -28,12 +29,15 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using MS.GTA.Talent.EnumSetModel;
     using MS.GTA.Talent.TalentContracts.InterviewService;
     using MS.GTA.Talent.TalentContracts.ScheduleService;
+    using MS.GTA.TalentEntities.Enum;
+
+    // TODO: Enable authentication for the APIs.
 
     /// <summary>
     /// Interface to perform Interview Scheduling operations in Microsoft Recruit.
     /// </summary>
     [Route("v1/schedule")]
-    public class ScheduleServiceController : HCMWebApiAuthenticatedController
+    public class ScheduleServiceController : ControllerBase
     {
         /// <summary>
         /// holds read only schedule value
@@ -69,7 +73,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
             IScheduleManager scheduler,
             IRoleManager roleMananger,
             ILogger<ScheduleServiceController> logger)
-                : base(httpContextAccessor)
+                : base()
         {
             this.schedule = scheduler;
             this.roleManager = roleMananger;
@@ -163,70 +167,40 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// Create schedule api
         /// </summary>
         /// <param name="meetingInfo">The schedule object.</param>
-        /// <param name="jobApplicationId">JobApplicationId</param>
+        /// <param name="sourceExternalId">SourceExternalId</param>
         /// <returns>The response.</returns>
-        [HttpPost("createschedule/{jobApplicationId}")]
+        [HttpPost("createschedule/{sourceExternalId}")]
         [MonitorWith("GTAV1CreateSchedule")]
-        public async Task<MeetingInfo> CreateSchedule([FromBody]MeetingInfo meetingInfo, string jobApplicationId)
+        public async Task<MeetingInfo> CreateSchedule([FromBody] MeetingInfo meetingInfo, string sourceExternalId)
         {
             MeetingInfo meetingInfoResult;
             this.logger.LogInformation($"Started {nameof(this.CreateSchedule)} method in {nameof(ScheduleServiceController)}.");
-            if (meetingInfo == null || string.IsNullOrEmpty(jobApplicationId))
-            {
-                throw new BusinessRuleViolationException("Input request does not contain a valid meeting info").EnsureLogged(this.logger);
-            }
-
-            await this.schedule.ValidateApplicationByApplicationId(jobApplicationId);
-            var hcmContextUserId = this.hcmServiceContext.UserId;
-            if (await this.roleManager.IsUserHMorRecOrContributor(hcmContextUserId, jobApplicationId, string.Empty))
-            {
-                if (meetingInfo.UserGroups?.Users?.Count == 0 || await this.roleManager.AreParticipantsInterviewer(meetingInfo.UserGroups?.Users?.Select(user => user.Id).ToList(), jobApplicationId))
-                {
-                    ////Schedule status as saved
-                    meetingInfoResult = await this.schedule.CreateSchedule(meetingInfo, jobApplicationId);
-                }
-                else
-                {
-                    throw new BusinessRuleViolationException($"Input request does not contain a valid schedule participant").EnsureLogged(this.logger);
-                }
-            }
-            else
-            {
-                throw new UnauthorizedStatusException("You are unauthorized to access application").EnsureLogged(this.logger);
-            }
-
-            this.logger.LogInformation($"Finished {nameof(this.CreateSchedule)} method in {nameof(ScheduleServiceController)}.");
-            return meetingInfoResult;
-        }
-
-        /// <summary>
-        /// Create schedule api
-        /// </summary>
-        /// <param name="meetingInfo">The schedule object.</param>
-        /// <param name="sourceExternalId">SourceExternalId</param>
-        /// <returns>The response.</returns>
-        [HttpPost("createctschedule/{sourceExternalId}")]
-        [MonitorWith("GTAV1CTCreateSchedule")]
-        public async Task<MeetingInfo> CreateCTSchedule([FromBody] MeetingInfo meetingInfo, string sourceExternalId)
-        {
-            MeetingInfo meetingInfoResult;
-            this.logger.LogInformation($"Started {nameof(this.CreateCTSchedule)} method in {nameof(ScheduleServiceController)}.");
             if (meetingInfo == null || string.IsNullOrEmpty(sourceExternalId))
             {
                 throw new BusinessRuleViolationException("Input request does not contain a valid meeting info").EnsureLogged(this.logger);
             }
 
-            // todo: add validation for CT if required.
-            if (true)
-            {
-                ////Schedule status as saved
-                meetingInfoResult = await this.schedule.CreateSchedule(meetingInfo, sourceExternalId);
-            }
-            else
-            {
-                throw new BusinessRuleViolationException($"Input request does not contain a valid schedule participant").EnsureLogged(this.logger);
-            }
+            meetingInfoResult = await this.schedule.CreateSchedule(meetingInfo, sourceExternalId);
 
+            // await this.schedule.ValidateApplicationByApplicationId(sourceExternalId);
+            // var hcmContextUserId = this.hcmServiceContext.UserId;
+            // if (await this.roleManager.IsUserHMorRecOrContributor(hcmContextUserId, sourceExternalId, string.Empty))
+            // {
+            //    if (meetingInfo.UserGroups?.Users?.Count == 0 || await this.roleManager.AreParticipantsInterviewer(meetingInfo.UserGroups?.Users?.Select(user => user.Id).ToList(), jobApplicationId))
+            //    {
+            //        ////Schedule status as saved
+            //        meetingInfoResult = await this.schedule.CreateSchedule(meetingInfo, sourceExternalId);
+            //    }
+            //    else
+            //    {
+            //        throw new BusinessRuleViolationException($"Input request does not contain a valid schedule participant").EnsureLogged(this.logger);
+            //    }
+            // }
+            // else
+            // {
+            //    throw new UnauthorizedStatusException("You are unauthorized to access application").EnsureLogged(this.logger);
+            // }
+            this.logger.LogInformation($"Finished {nameof(this.CreateSchedule)} method in {nameof(ScheduleServiceController)}.");
             return meetingInfoResult;
         }
 
@@ -301,6 +275,27 @@ namespace MS.GTA.ScheduleService.Controllers.V1
 
             this.logger.LogInformation($"Finished {nameof(this.UpdateSchedule)} method in {nameof(ScheduleServiceController)}.");
             return meetingInfoResult;
+        }
+
+        /// <summary>
+        /// Manually updates the schedule participant response for a schedule.
+        /// This is required in Candidate Tracker which allows manually overriding the schedule response.
+        /// </summary>
+        /// <param name="scheduleID">The unique id of the schedule</param>
+        /// <param name="participantOid">The office graph identifier of the participant</param>
+        /// <param name="responseStatus">The new status of the schedule</param>
+        /// <returns>The operation status</returns>
+        [HttpPut("getschedulesbyjobid/{scheduleId}/{participantOid}/{responseStatus}")]
+        [MonitorWith("GTAV1UpdateScheduleParticipantResponse")]
+        public async Task<bool> UpdateScheduleParticipantResponse(string scheduleID, string participantOid, InvitationResponseStatus responseStatus)
+        {
+            this.logger.LogInformation($"Started {nameof(this.UpdateScheduleParticipantResponse)} method in {nameof(ScheduleServiceController)}.");
+
+            // TODO: add validation
+            await this.schedule.UpdateScheduleParticipantResponse(scheduleID, participantOid, responseStatus);
+
+            this.logger.LogInformation($"Finished {nameof(this.UpdateScheduleParticipantResponse)} method in {nameof(ScheduleServiceController)}.");
+            return true;
         }
 
         /// <summary>

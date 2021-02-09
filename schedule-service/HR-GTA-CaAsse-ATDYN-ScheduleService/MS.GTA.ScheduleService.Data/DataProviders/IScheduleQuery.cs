@@ -17,6 +17,7 @@ namespace MS.GTA.ScheduleService.Data.DataProviders
     using MS.GTA.Talent.FalconEntities.Attract;
     using MS.GTA.Talent.FalconEntities.Attract.Conference;
     using MS.GTA.Talent.TalentContracts.ScheduleService;
+    using MS.GTA.TalentEntities.Enum;
     using CommonContracts = MS.GTA.Common.Email.Contracts;
 
     /// <summary>
@@ -99,6 +100,15 @@ namespace MS.GTA.ScheduleService.Data.DataProviders
         /// <param name="serviceAccountName">service Account Name</param>
         /// <returns>returns task</returns>
         Task UpdateJobApplicationScheduleDetails(Dictionary<string, CalendarEvent> scheduleIdEventIdMap, ScheduleStatus status, string serviceAccountName);
+
+        /// <summary>
+        /// Override the schedule participant response manually.
+        /// </summary>
+        /// <param name="scheduleId">Schedule object</param>
+        /// <param name="participantOid">participant office graph identifier</param>
+        /// <param name="responseStatus">response</param>
+        /// <returns>The instance of <see cref="bool"/></returns>
+        Task<bool> UpdateScheduleParticipantResponseManualAsync(string scheduleId, string participantOid, InvitationResponseStatus responseStatus);
 
         /// <summary>
         /// Update jobApplication schedule with invite response

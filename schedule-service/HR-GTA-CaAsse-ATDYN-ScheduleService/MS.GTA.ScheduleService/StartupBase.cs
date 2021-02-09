@@ -171,7 +171,7 @@ namespace MS.GTA.ScheduleService
             services.SetupEnvironmentAuthorization();
             services.Replace(ServiceDescriptor.Singleton<ILoggerFactory, LoggerFactoryWithoutDispose>());
             services.AddAuthentication("Bearer").AddJwtBearer(options =>
-               SetJwtBearerOptions(options, FabricXmlConfigurationHelper.Instance.ConfigurationManager));
+                SetJwtBearerOptions(options, FabricXmlConfigurationHelper.Instance.ConfigurationManager));
             services.AddSwagger(this.ServiceDetailsToPublish);
             services.AddSwaggerGen(c =>
             {

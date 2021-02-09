@@ -552,6 +552,46 @@ namespace MS.GTA.ScheduleService.FalconData.Query
         }
 
         /// <summary>
+        /// Override the schedule participant response manually.
+        /// </summary>
+        /// <param name="scheduleId">Schedule object</param>
+        /// <param name="participantOid">participant office graph identifier</param>
+        /// <param name="responseStatus">response</param>
+        /// <returns>The instance of <see cref="bool"/></returns>
+        public async Task<bool> UpdateScheduleParticipantResponseManualAsync(string scheduleId, string participantOid, InvitationResponseStatus responseStatus)
+        {
+            this.logger.LogInformation($"Started {nameof(this.UpdateScheduleParticipantResponseManualAsync)} method in {nameof(ScheduleQuery)}.");
+
+            var client = await this.FalconQueryClient.GetFalconClient(this.ConfigurationManager.DatabaseId, this.ConfigurationManager.IVScheduleContainerId);
+            var schedule = await client.GetFirstOrDefault<JobApplicationSchedule>(a => a.ScheduleID == scheduleId);
+
+            if (schedule == null)
+            {
+                throw new OperationFailedException("UpdateScheduleParticipantResponseManualAsync: Schedule with given id doesn't exist.");
+            }
+
+            bool success = false;
+            foreach (var participant in schedule.Participants)
+            {
+                if (participant.OID == participantOid)
+                {
+                    participant.ParticipantStatus = responseStatus;
+                    success = true;
+                }
+            }
+
+            if (!success)
+            {
+                throw new OperationFailedException("UpdateScheduleParticipantResponseManualAsync: Participant with given id doesn't exist in the schedule.");
+            }
+
+            await client.Update(schedule).ConfigureAwait(false);
+
+            this.logger.LogInformation($"Finished {nameof(this.UpdateScheduleParticipantResponseManualAsync)} method in {nameof(ScheduleQuery)}.");
+            return true;
+        }
+
+        /// <summary>
         /// Update jobApplication schedule with interviewer response
         /// </summary>
         /// <param name="responseMessage">Response Message</param>
@@ -1588,9 +1628,11 @@ namespace MS.GTA.ScheduleService.FalconData.Query
                     {
                         jobApplication.IsScheduleSentToCandidate = false;
                     }
-                }
 
-                await commonClient.Update<JobApplication>(jobApplication);
+                    // For use cases like Candidate Tracker, we don't have an actual
+                    // job application in place. Hence this update should be done inside the check.
+                    await commonClient.Update<JobApplication>(jobApplication);
+                }
             }
 
             ScheduleStatusHistory statusHistory = new ScheduleStatusHistory()

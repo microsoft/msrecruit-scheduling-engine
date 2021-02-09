@@ -11,6 +11,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.Talent.EnumSetModel;
     using MS.GTA.Talent.TalentContracts.ScheduleService;
+    using MS.GTA.TalentEntities.Enum;
 
     /// <summary>
     /// IScheduleManager interface
@@ -54,6 +55,15 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
         /// <param name="schedule">Schedule object</param>
         /// <returns>The task response</returns>
         Task<MeetingInfo> UpdateSchedule(MeetingInfo schedule);
+
+        /// <summary>
+        /// Update schedule
+        /// </summary>
+        /// <param name="scheduleId">Schedule object</param>
+        /// <param name="participantOid">participant office graph identifier</param>
+        /// <param name="responseStatus">response</param>
+        /// <returns>The task response</returns>
+        Task<bool> UpdateScheduleParticipantResponse(string scheduleId, string participantOid, InvitationResponseStatus responseStatus);
 
         /// <summary>
         /// Get schedule By Job ID
