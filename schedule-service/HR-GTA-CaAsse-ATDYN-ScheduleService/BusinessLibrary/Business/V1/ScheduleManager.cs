@@ -188,6 +188,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
             var applicationID = await this.scheduleQuery.GetJobApplicationIdForSchedule(scheduleID);
             if (applicationID != null)
             {
+                // For the case of CT, this would return null.
+                // Which doesn't affect the logic.
                 var jobApplicationStatus = await this.scheduleQuery.GetJobApplicationWithStatus(applicationID);
                 if (jobApplicationStatus != null)
                 {

@@ -430,20 +430,23 @@ namespace MS.GTA.ScheduleService.Controllers.V1
                 throw new BusinessRuleViolationException($"Input request does not contain a valid schedule id").EnsureLogged(this.logger);
             }
 
+            // this check is redundant but doesn't interfere with CT use case since job application itself will be null.
             await this.schedule.ValidateApplicationByScheduleId(scheduleId);
+
             var hcmContextUserId = this.hcmServiceContext.UserId;
             var rootActivityId = this.hcmServiceContext.RootActivityId;
-            if (await this.roleManager.IsUserHMorRecOrContributor(hcmContextUserId, string.Empty, scheduleId))
-            {
-                bool isWobUser = this.roleManager.IsUserWobAuthenticated(this.hcmServiceContext.isWobAuthenticated);
-                ////Schedule status as queued
-                meetingInfoResult = await this.schedule.QueueSchedule(scheduleId, ScheduleStatus.Queued, emailTemplate, rootActivityId, hcmContextUserId, this.hcmServiceContext.Email, isWobUser);
-            }
-            else
-            {
-                throw new UnauthorizedStatusException($"You are unauthorized to send invitation").EnsureLogged(this.logger);
-            }
+            meetingInfoResult = await this.schedule.QueueSchedule(scheduleId, ScheduleStatus.Queued, emailTemplate, rootActivityId, hcmContextUserId, this.hcmServiceContext.Email, false);
 
+            // if (await this.roleManager.IsUserHMorRecOrContributor(hcmContextUserId, string.Empty, scheduleId))
+            // {
+            //    bool isWobUser = this.roleManager.IsUserWobAuthenticated(this.hcmServiceContext.isWobAuthenticated);
+            //    ////Schedule status as queued
+            //    meetingInfoResult = await this.schedule.QueueSchedule(scheduleId, ScheduleStatus.Queued, emailTemplate, rootActivityId, hcmContextUserId, this.hcmServiceContext.Email, isWobUser);
+            // }
+            // else
+            // {
+            //    throw new UnauthorizedStatusException($"You are unauthorized to send invitation").EnsureLogged(this.logger);
+            // }
             this.logger.LogInformation($"Finished {nameof(this.SendSchedule)} method in {nameof(ScheduleServiceController)}.");
             return meetingInfoResult;
         }
