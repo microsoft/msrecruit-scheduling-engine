@@ -1,6 +1,7 @@
-﻿// <copyright file="Message.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 /*
  *  Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
