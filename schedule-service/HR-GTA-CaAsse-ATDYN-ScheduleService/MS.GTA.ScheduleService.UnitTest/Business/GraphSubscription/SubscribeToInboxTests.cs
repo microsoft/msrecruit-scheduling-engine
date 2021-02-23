@@ -1,4 +1,8 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.Business.GraphSubscription
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------'r'n
+namespace MS.GTA.ScheduleService.UnitTest.Business.GraphSubscription
 {
     using System;
     using System.Collections.Generic;

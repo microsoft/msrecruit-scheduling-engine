@@ -1,7 +1,7 @@
-﻿// <copyright file="QueueMessageToServiceBusTests.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
-// </copyright>
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 namespace MS.GTA.ScheduleService.UnitTest.Business
 {
     using System;

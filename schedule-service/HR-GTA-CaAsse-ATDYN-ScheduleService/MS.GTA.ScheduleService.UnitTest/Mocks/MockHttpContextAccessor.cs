@@ -1,7 +1,7 @@
-﻿// <copyright file="MockHttpContextAccessor.cs" company="Microsoft">
-// Copyright (c) Microsoft. All rights reserved.
-// </copyright>
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 namespace MS.GTA.ScheduleService.UnitTest.Mocks
 {
     using System.Collections.Generic;
