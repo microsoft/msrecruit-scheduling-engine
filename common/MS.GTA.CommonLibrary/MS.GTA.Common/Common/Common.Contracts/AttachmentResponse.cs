@@ -1,4 +1,9 @@
-﻿namespace MS.GTA.Common.Contracts
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+namespace MS.GTA.Common.Contracts
 {
     using System;
     using System.IO;
