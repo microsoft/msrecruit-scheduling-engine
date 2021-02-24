@@ -1,4 +1,9 @@
-﻿using MS.GTA.ServicePlatform.Privacy;
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+using MS.GTA.ServicePlatform.Privacy;
 
 namespace MS.GTA.CommonDataService.Instrumentation.Privacy
 {

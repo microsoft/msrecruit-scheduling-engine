@@ -1,4 +1,9 @@
-﻿using MS.GTA.CommonDataService.Common.Internal;
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+using MS.GTA.CommonDataService.Common.Internal;
 using MS.GTA.ServicePlatform.Exceptions.Cache;
 using System;
 using System.IO;

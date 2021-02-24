@@ -1,8 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="AppConfigurationFlightProvider.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-//----------------------------------------------------------------------------
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;

@@ -1,8 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-//----------------------------------------------------------------------------
-// NOTE: This file was forked from PowerBI (BI_Azure_Dev: Sql\InfoNav\src\Common\DataContractValidation.cs)
-//----------------------------------------------------------------------------
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 using System;
 using System.Collections.Generic;
