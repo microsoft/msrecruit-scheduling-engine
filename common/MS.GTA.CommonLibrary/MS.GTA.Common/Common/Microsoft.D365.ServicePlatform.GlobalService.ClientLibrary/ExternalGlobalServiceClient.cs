@@ -1,4 +1,9 @@
-﻿using System;
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+using System;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using MS.GTA.CommonDataService.Common.Internal;

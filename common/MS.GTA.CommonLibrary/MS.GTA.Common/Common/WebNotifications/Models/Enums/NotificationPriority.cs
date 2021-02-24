@@ -1,7 +1,7 @@
-﻿// <copyright file="NotifciationPriority.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 namespace MS.GTA.Common.WebNotifications.Models.Enums
 {
     /// <summary>
