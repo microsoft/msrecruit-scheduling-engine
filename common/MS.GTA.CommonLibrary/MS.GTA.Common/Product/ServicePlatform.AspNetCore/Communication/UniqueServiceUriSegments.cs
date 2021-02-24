@@ -2,6 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
+using System;
+
+namespace MS.GTA.ServicePlatform.AspNetCore.Communication
+{
+    /// <summary>
     /// Defines segments to be used for unique service uri.
     /// </summary>
     [Flags]
