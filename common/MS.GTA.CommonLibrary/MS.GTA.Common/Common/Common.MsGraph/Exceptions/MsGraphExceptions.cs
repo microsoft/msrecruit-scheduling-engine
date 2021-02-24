@@ -1,9 +1,7 @@
-﻿[module: System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1649:FileHeaderFileNameDocumentationMustMatchTypeName", Justification = "Small closely related classes may be combined.")]
-
-//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="MsGraphExceptions.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 //----------------------------------------------------------------------------
 
 namespace MS.GTA.Common.MSGraph.Exceptions

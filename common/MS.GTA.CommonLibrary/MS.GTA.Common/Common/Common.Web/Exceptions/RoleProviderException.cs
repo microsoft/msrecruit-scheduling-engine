@@ -1,8 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="RoleProviderException.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-//----------------------------------------------------------------------------
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 namespace MS.GTA.Common.Web.Exceptions
 {
     using MS.GTA.Common.Base;

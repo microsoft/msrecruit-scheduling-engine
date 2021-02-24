@@ -1,8 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="S2SHandler.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-//----------------------------------------------------------------------------
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 namespace MS.GTA.Common.Web.S2SHandler.V2
 {
     using Microsoft.Extensions.Logging;
