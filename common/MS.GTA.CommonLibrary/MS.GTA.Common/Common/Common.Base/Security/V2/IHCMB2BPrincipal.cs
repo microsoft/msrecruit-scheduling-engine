@@ -1,4 +1,8 @@
-﻿namespace MS.GTA.Common.Base.Security.V2
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+namespace MS.GTA.Common.Base.Security.V2
 {
     /// <summary>The HCMB2BPrincipal interface.</summary>
     public interface IHCMB2BPrincipal : IHCMPrincipal

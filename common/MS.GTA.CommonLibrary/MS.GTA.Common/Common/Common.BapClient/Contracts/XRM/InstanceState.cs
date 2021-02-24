@@ -1,4 +1,8 @@
-﻿
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------'r'n
+
 using System.Runtime.Serialization;
 
 namespace MS.GTA.Common.BapClient.Contracts.XRM

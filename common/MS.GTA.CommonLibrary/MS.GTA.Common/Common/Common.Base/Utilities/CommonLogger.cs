@@ -1,7 +1,7 @@
-﻿// <copyright file="CommonLogger.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------'r'n
 namespace MS.GTA.Common.Base.Utilities
 {
     using MS.GTA.ServicePlatform.Tracing;

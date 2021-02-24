@@ -1,4 +1,9 @@
-﻿namespace MS.GTA.Common.Base.Security.V2
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+namespace MS.GTA.Common.Base.Security.V2
 {
     public interface IHCMPrincipalRetriever
     {
