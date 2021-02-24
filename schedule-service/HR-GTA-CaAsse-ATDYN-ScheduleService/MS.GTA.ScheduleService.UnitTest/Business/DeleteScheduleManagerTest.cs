@@ -1,4 +1,8 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.Business
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------'r'n
+namespace MS.GTA.ScheduleService.UnitTest.Business
 {
     using System;
     using System.Threading.Tasks;

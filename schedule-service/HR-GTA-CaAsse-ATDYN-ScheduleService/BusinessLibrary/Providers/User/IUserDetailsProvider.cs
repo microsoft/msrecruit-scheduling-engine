@@ -1,14 +1,15 @@
-﻿// <copyright file="IUserDetailsProvider.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-
-using System.Collections.Generic;
-using System.IO;
-using System.Threading.Tasks;
-using MS.GTA.ScheduleService.Contracts.V1;
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
 {
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Threading.Tasks;
+    using MS.GTA.ScheduleService.Contracts.V1;
+
     /// <summary>
     /// Interface to define room resource related operations
     /// </summary>

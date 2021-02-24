@@ -1,4 +1,8 @@
-﻿namespace MS.GTA.ScheduleService.UnitTest.FalconData
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------'r'n
+namespace MS.GTA.ScheduleService.UnitTest.FalconData
 {
     using System;
     using System.Collections.Generic;
