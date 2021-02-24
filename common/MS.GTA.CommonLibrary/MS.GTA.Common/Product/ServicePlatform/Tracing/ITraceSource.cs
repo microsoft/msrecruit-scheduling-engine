@@ -1,4 +1,9 @@
-﻿namespace MS.GTA.ServicePlatform.Tracing
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+namespace MS.GTA.ServicePlatform.Tracing
 {
     /// <summary>
     /// Interface for a source of traces.

@@ -1,4 +1,9 @@
-﻿using MS.GTA.ServicePlatform.Caching.Abstractions;
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+using MS.GTA.ServicePlatform.Caching.Abstractions;
 using System;
 using System.Threading.Tasks;
 using System.Threading;
