@@ -1,7 +1,12 @@
-//-----------------------------------------------------------------------
+﻿//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
+
+using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+using MS.GTA.Common.TalentEntities.Common;
+using MS.GTA.TalentEntities.Enum;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
