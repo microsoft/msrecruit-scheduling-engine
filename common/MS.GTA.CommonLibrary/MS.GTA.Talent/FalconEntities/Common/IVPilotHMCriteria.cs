@@ -2,6 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
+
+using MS.GTA.Common.DocumentDB.Contracts;
+using System.Runtime.Serialization;
+
+namespace MS.GTA.Talent.FalconEntities.Common
+{
+    /// <summary>
     /// IV Pilot Hiring Manger criteria for ring 0,1,2..
     /// </summary>
     [DataContract]
