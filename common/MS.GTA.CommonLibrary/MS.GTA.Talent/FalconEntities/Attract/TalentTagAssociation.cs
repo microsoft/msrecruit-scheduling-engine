@@ -1,7 +1,7 @@
-﻿using MS.GTA.TalentEntities.Enum;
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 using System.Text;
 
 namespace MS.GTA.Talent.FalconEntities.Attract

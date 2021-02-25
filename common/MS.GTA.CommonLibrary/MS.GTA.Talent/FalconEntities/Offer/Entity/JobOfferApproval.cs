@@ -1,8 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-//----------------------------------------------------------------------------
-
-/// <summary>
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 /// Namespace Offer Management Entities and Enums
 /// </summary>
 
