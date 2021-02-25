@@ -1,7 +1,7 @@
-//----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-//----------------------------------------------------------------------------
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System.Collections.Generic;

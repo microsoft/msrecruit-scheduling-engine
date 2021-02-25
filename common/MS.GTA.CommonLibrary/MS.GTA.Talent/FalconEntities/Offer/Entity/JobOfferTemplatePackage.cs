@@ -1,9 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// <copyright file="JobOfferTemplatePackage.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-//----------------------------------------------------------------------------
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 /// <summary>
 /// Namespace Offer Management Entities and Enums
 /// </summary>
