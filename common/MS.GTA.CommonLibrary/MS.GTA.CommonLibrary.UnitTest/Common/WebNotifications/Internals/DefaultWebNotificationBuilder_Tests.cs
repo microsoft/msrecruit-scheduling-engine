@@ -1,6 +1,7 @@
-﻿// <copyright file="DefaultWebNotificationBuilder_Tests.cs" company="PlaceholderCompany">
-// Copyright (c) PlaceholderCompany. All rights reserved.
-// </copyright>
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 namespace MS.GTA.CommonLibrary.UnitTest.Common.WebNotifications.Internals
 {
