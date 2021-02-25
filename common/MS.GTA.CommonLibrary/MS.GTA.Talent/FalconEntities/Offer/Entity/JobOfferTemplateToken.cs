@@ -1,7 +1,9 @@
-//-----------------------------------------------------------------------
+﻿//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
+
+/// <summary>
 /// Namespace Offer Management Entities and Enums
 /// </summary>
 namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Offer
