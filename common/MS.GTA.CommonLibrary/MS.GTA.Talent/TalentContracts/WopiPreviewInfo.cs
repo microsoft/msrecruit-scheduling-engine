@@ -1,4 +1,9 @@
-﻿namespace MS.GTA.Common.TalentAttract.Contract
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+namespace MS.GTA.Common.TalentAttract.Contract
 {
     using System.Runtime.Serialization;
 

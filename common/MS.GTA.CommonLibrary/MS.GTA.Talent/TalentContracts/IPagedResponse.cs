@@ -1,8 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="PagedResponse.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-//----------------------------------------------------------------------------
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 using MS.GTA.Common.Contracts;
 using System.Collections.Generic;

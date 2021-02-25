@@ -1,6 +1,7 @@
-﻿// <copyright file="OfferConnectorIntegrationDetails.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 using MS.GTA.Common.OfferManagement.Contracts.Enums.V1;
 

@@ -1,8 +1,7 @@
-﻿// ----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation" file="AssessmentInstanceAnonymousIdentifier.cs">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-// ----------------------------------------------------------------------------
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 // Note: This namespace needs to stay the same since the docdb collection name depends on it.
 namespace MS.GTA.Common.Attract.Contract
