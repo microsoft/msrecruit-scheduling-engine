@@ -1,8 +1,7 @@
-//----------------------------------------------------------------------------
-// Copyright (c) Microsoft Corporation. All rights reserved.
-//----------------------------------------------------------------------------
-
-// Generated file! Regenerate with RelationalEntityConverter
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 using System.Runtime.Serialization;
 
 namespace MS.GTA.TalentEntities.Enum
