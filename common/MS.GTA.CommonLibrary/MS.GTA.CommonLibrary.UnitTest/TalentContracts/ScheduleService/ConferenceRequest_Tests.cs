@@ -1,4 +1,9 @@
-﻿namespace MS.GTA.CommonLibrary.UnitTest.TalentContracts.ScheduleService
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+namespace MS.GTA.CommonLibrary.UnitTest.TalentContracts.ScheduleService
 {
     using System;
     using System.Collections.Generic;

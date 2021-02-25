@@ -1,9 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// <copyright file="JobOfferTemplatePackageArtifact.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-//----------------------------------------------------------------------------
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Offer
 {
     using System.Runtime.Serialization;

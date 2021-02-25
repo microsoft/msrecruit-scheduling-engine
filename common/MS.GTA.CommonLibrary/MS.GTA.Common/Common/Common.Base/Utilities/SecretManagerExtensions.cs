@@ -1,8 +1,7 @@
-﻿// //----------------------------------------------------------------------------
-// // <copyright company="Microsoft Corporation" file="SecretManagerExtensions.cs">
-// // Copyright (c) Microsoft Corporation. All rights reserved.
-// // </copyright>
-// //----------------------------------------------------------------------------
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------'r'n
 namespace MS.GTA.Common.Base.Utilities
 {
     using CommonDataService.Common.Internal;

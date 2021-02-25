@@ -1,4 +1,8 @@
-﻿using System.Net;
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------'r'n
+using System.Net;
 using Newtonsoft.Json;
 
 namespace MS.GTA.Common.BapClient.Contracts.XRM

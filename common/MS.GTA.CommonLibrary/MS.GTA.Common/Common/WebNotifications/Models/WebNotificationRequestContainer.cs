@@ -1,7 +1,7 @@
-﻿// <copyright file="WebNotificationRequestContainer.cs" company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 namespace MS.GTA.Common.WebNotifications.Models
 {
     using System.Collections.Generic;

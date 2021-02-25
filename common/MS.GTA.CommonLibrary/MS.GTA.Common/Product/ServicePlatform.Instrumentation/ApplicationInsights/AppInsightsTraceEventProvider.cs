@@ -1,6 +1,7 @@
-﻿// <copyright file="AppInsightsTraceEventProvider.cs" company="Microsoft">
-// Copyright (c) 2019 Microsoft Corporation. All rights reserved.
-// </copyright>
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 namespace MS.GTA.Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
 {

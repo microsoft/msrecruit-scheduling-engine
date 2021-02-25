@@ -1,4 +1,9 @@
-﻿namespace MS.GTA.Common.Base.Security.V2
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+namespace MS.GTA.Common.Base.Security.V2
 {
     using System.IdentityModel.Tokens.Jwt;
     using System.Linq;

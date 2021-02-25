@@ -1,4 +1,9 @@
-﻿using System.Collections.Generic;
+﻿//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
+
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using MS.GTA.ServicePlatform.GlobalService.Contracts;

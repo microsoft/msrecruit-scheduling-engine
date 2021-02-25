@@ -1,8 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright>
-//----------------------------------------------------------------------------
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//-----------------------------------------------------------------------
 
 namespace MS.GTA.Talent.EnumSetModel.SchedulingService
 {
@@ -60,7 +59,7 @@ namespace MS.GTA.Talent.EnumSetModel.SchedulingService
         OfferNotificationTemplate = 8,
 
         /// <summary>
-        /// new candidate to schedule – to scheduler
+        /// new candidate to schedule � to scheduler
         /// </summary>
         NewCandidateScheduler = 9,
 
