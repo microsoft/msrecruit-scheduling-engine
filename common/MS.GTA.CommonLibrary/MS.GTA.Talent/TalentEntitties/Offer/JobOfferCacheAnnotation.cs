@@ -1,9 +1,7 @@
-﻿//----------------------------------------------------------------------------
-// <copyright company="Microsoft Corporation">
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// </copyright> {{?/plural/key}}
-//----------------------------------------------------------------------------
-
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//------------------------------------------------------------------------
 namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Offer
 {
     using MS.GTA.Common.XrmHttp;

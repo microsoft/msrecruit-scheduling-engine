@@ -1,7 +1,13 @@
-//-----------------------------------------------------------------------
+﻿//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Text;
+
 namespace MS.GTA.Talent.FalconEntities.Common
 {
     [DataContract]
