@@ -1,4 +1,8 @@
-﻿using MS.GTA.Common.XrmHttp;
+//-----------------------------------------------------------------------
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//------------------------------------------------------------------------
+using MS.GTA.Common.XrmHttp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
