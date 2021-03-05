@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.ODataStream
+namespace Common.XrmHttp.ODataStream
 {
     using System;
     using System.Collections.Generic;

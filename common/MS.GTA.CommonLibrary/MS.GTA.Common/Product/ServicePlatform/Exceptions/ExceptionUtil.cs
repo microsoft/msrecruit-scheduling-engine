@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,9 +8,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Threading;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     /// <summary>
     /// Exception utility methods.
@@ -28,7 +28,7 @@ namespace MS.GTA.ServicePlatform.Exceptions
         /// - System.SEHException
         /// - System.StackOverflowException
         /// - System.TypeInitializationException
-        /// - MS.GTA.ServicePlatform.MonitoredException marked as Fatal
+        /// - ServicePlatform.MonitoredException marked as Fatal
         /// </summary>
         public static bool IsFatal(this Exception exception)
         {

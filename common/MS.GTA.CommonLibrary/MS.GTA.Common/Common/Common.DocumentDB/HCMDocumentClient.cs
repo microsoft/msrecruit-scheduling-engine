@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB
+namespace Common.DocumentDB
 {
     using System;
     using System.Collections.Generic;
@@ -23,9 +23,9 @@ namespace MS.GTA.Common.DocumentDB
     using CommonDataService.Common.Internal;
     using Contracts;
     using Exceptions;
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.Common.DocumentDB.Attributes;
-    using MS.GTA.Common.DocumentDB.Expressions;
+    using Common.Contracts;
+    using Common.DocumentDB.Attributes;
+    using Common.DocumentDB.Expressions;
     using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;
     using ServicePlatform.Context;

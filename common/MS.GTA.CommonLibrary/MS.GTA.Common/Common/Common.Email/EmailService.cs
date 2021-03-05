@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email
+namespace Common.Email
 {
     using System;
     using System.Collections.Generic;
@@ -17,22 +17,22 @@ namespace MS.GTA.Common.Email
     using Castle.Core.Logging;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Common.Common.Email;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.Common.Email.Exceptions;
-    using MS.GTA.Common.Email.GraphContracts;
-    using MS.GTA.Common.Email.SendGridContracts;
-    using MS.GTA.Common.MSGraph;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.Common.TestBase;
-    using MS.GTA.CommonDataService.Common;
-    using MS.GTA.ServicePlatform.Azure.Security;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Tracing;
+    using Common.Base.Configuration;
+    using Common.Base.Utilities;
+    using Common.Common.Common.Email;
+    using Common.Common.Common.Email.Contracts;
+    using Common.Email.Exceptions;
+    using Common.Email.GraphContracts;
+    using Common.Email.SendGridContracts;
+    using Common.MSGraph;
+    using Common.MSGraph.Configuration;
+    using Common.TestBase;
+    using CommonDataService.Common;
+    using ServicePlatform.Azure.Security;
+    using ServicePlatform.Configuration;
+    using ServicePlatform.Context;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Tracing;
     using Newtonsoft.Json;
 
     public class EmailService : IEmailService

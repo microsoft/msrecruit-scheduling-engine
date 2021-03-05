@@ -1,10 +1,10 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 
-namespace MS.GTA.Common.Utils
+namespace Common.Utils
 {
     using System;
     using System.Threading.Tasks;

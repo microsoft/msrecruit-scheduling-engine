@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ServicePlatform.Azure.Queue.Exceptions
+namespace ServicePlatform.Azure.Queue.Exceptions
 {
     using System;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using ServicePlatform.Exceptions;
 
     public sealed class MessageLeaseExpiredException : MonitoredException
     {

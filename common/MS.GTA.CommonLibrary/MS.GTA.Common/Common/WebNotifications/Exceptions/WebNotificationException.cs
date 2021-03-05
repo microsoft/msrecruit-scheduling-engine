@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Exceptions
+namespace Common.WebNotifications.Exceptions
 {
     using System;
 

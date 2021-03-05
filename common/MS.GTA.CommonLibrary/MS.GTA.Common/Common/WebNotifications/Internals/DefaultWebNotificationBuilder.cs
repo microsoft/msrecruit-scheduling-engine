@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Internals
+namespace Common.WebNotifications.Internals
 {
     using System;
     using System.Collections.Generic;
@@ -10,13 +10,13 @@ namespace MS.GTA.Common.WebNotifications.Internals
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.WebNotifications;
-    using MS.GTA.Common.WebNotifications.Exceptions;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.Common.WebNotifications.Models;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using Common.Base.ServiceContext;
+    using Common.Base.Utilities;
+    using Common.WebNotifications;
+    using Common.WebNotifications.Exceptions;
+    using Common.WebNotifications.Interfaces;
+    using Common.WebNotifications.Models;
+    using CommonDataService.Common.Internal;
 
     /// <summary>
     /// The <see cref="DefaultWebNotificationBuilder"/> class builds the web ntifications.

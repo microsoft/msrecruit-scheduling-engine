@@ -6,7 +6,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace MS.GTA.ServicePlatform.Azure.AAD
+namespace ServicePlatform.Azure.AAD
 {
     /// <summary>
     /// An interface for class to return the access token to authenticate access to azure resource.

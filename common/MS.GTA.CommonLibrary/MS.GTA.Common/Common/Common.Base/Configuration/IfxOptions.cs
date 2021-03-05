@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Configuration
+namespace Common.Base.Configuration
 {
-    using MS.GTA.ServicePlatform.Configuration;
+    using ServicePlatform.Configuration;
 
     /// <summary>The IFX options.</summary>
     [SettingsSection("Ifx")]

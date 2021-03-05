@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Exceptions
+namespace Common.Web.Exceptions
 {
     using System.Net;
     using System.Net.Http.Headers;    
-    using MS.GTA.ServicePlatform.Exceptions;
+    using ServicePlatform.Exceptions;
 
     /// <summary>The external API exception.</summary>
     /// TODO: Ideally we would make the kind "Remote" but jarvis does not monitor for that so we'll leave it as service for now.

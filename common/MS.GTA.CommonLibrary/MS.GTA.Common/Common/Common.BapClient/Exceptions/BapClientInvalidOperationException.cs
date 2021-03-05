@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient.Exceptions
+namespace Common.BapClient.Exceptions
 {
-    using MS.GTA.Common.Base;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Privacy;
+    using Common.Base;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Privacy;
     using System;
     using System.Net;
 
@@ -15,7 +15,7 @@ namespace MS.GTA.Common.BapClient.Exceptions
     /// Invalid BAP Client operation exception
     /// </summary>
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "MS.GTA.Common.BapClient.Exceptions", nameof(BapClientInvalidOperationException), MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Common.BapClient.Exceptions", nameof(BapClientInvalidOperationException), MonitoredExceptionKind.Benign)]
     public sealed class BapClientInvalidOperationException : MonitoredException
     {
         /// <summary>

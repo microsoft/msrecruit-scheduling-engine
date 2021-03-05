@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.BlobStore.Configuration
+namespace Common.BlobStore.Configuration
 {
     using ServicePlatform.Configuration;
 

@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Models
+namespace Common.WebNotifications.Models
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.WebNotifications.Models.Enums;
-    using MS.GTA.Common.WebNotifications.Models;
+    using Common.WebNotifications.Models.Enums;
+    using Common.WebNotifications.Models;
 
     /// <summary>
     /// The <see cref="WebNotificationRequest"/> class stores the web notification request data.

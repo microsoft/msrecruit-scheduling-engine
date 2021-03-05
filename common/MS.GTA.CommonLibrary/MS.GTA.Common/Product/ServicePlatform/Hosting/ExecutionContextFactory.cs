@@ -1,17 +1,17 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Tracing;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication;
+using ServicePlatform.Context;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Tracing;
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.Hosting
+namespace ServicePlatform.Hosting
 {
     internal static class ExecutionContextFactory
     {

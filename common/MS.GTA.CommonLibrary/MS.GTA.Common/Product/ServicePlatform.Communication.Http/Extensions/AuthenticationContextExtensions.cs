@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -10,13 +10,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Web;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Communication.Http.Routers;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Context;
+using ServicePlatform.Communication.Http.Routers;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Extensions
+namespace ServicePlatform.Communication.Http.Extensions
 {
     public static class AuthenticationContextExtensions
     {

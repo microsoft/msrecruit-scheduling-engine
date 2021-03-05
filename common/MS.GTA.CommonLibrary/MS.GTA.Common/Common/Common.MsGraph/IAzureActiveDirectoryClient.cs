@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.MSGraph
+namespace Common.MSGraph
 {
     using System.Threading.Tasks;
     using AD = Microsoft.IdentityModel.Clients.ActiveDirectory;

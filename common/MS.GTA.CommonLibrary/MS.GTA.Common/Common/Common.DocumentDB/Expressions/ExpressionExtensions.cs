@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.Expressions
+namespace Common.DocumentDB.Expressions
 {
     using System;
     using System.Linq.Expressions;

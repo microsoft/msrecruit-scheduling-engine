@@ -4,11 +4,11 @@
 //-----------------------------------------------------------------------
 using System;
 using Microsoft.AspNetCore.Builder;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions;
-using UseStatelessHttpMiddlewareMock = System.Func<Microsoft.AspNetCore.Builder.IApplicationBuilder, MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions.IStatelessHttpMiddleware, Microsoft.AspNetCore.Builder.IApplicationBuilder>;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Http.Abstractions;
+using UseStatelessHttpMiddlewareMock = System.Func<Microsoft.AspNetCore.Builder.IApplicationBuilder, ServicePlatform.AspNetCore.Http.Abstractions.IStatelessHttpMiddleware, Microsoft.AspNetCore.Builder.IApplicationBuilder>;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder
+namespace ServicePlatform.AspNetCore.Builder
 {
     /// <summary>
     /// Helper methods over an <see cref="IApplicationBuilder"/>.

@@ -1,19 +1,19 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Base.Security.V2
+namespace Common.Base.Security.V2
 {
     using System.IdentityModel.Tokens.Jwt;
     using System.Linq;
     using System.Net;
     using Microsoft.Extensions.Logging;
     using Microsoft.AspNetCore.Http;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.Common.Base.Exceptions;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Tracing;
+    using CommonDataService.Common.Internal;
+    using Common.Base.Exceptions;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Tracing;
 
     using Newtonsoft.Json;
 
@@ -81,7 +81,7 @@ namespace MS.GTA.Common.Base.Security.V2
     }
 
     /// <summary>The principal exception.</summary>
-    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "MS.GTA.Common.Principals.Exceptions", "PrincipalException", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "Common.Principals.Exceptions", "PrincipalException", MonitoredExceptionKind.Benign)]
     public class PrincipalException : BenignException
     {
         /// <summary>Initializes a new instance of the <see cref="PrincipalException"/> class.</summary>

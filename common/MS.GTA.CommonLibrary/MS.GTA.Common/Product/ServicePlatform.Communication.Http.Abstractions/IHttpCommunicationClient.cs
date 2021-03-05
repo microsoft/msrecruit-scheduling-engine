@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// An abstraction over components responsible for routing requests among endpoints. The specific

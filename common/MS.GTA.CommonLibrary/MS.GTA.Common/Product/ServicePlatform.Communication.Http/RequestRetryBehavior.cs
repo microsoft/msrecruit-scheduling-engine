@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using System;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// Defines a router retry behavior for

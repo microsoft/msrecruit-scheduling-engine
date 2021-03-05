@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.GraphContracts
+namespace Common.Email.GraphContracts
 {
-    using MS.GTA.Common.Email.SendGridContracts;
+    using Common.Email.SendGridContracts;
     using Newtonsoft.Json;
     using System.Collections.Generic;
 

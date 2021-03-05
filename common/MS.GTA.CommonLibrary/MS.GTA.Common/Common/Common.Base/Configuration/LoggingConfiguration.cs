@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-using MS.GTA.ServicePlatform.Configuration;
+using ServicePlatform.Configuration;
 
-namespace MS.GTA.Common.Common.Common.Base.Configuration
+namespace Common.Common.Common.Base.Configuration
 {
     /// <summary>
     /// Logging Configuration

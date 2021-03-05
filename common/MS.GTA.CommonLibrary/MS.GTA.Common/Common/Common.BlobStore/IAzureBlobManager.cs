@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -7,9 +7,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.Storage.Blob;
-using MS.GTA.Common.Contracts;
+using Common.Contracts;
 
-namespace MS.GTA.Common.BlobStore
+namespace Common.BlobStore
 {
     /// <summary>
     /// Azure Blob Store.

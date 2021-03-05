@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.Configuration
+namespace Common.Routing.Configuration
 {
     /// <summary> Global service configuration </summary>
     public sealed class GlobalServiceConfiguration

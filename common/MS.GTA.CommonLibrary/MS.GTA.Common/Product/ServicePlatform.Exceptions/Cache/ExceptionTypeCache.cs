@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace MS.GTA.ServicePlatform.Exceptions.Cache
+namespace ServicePlatform.Exceptions.Cache
 {
     /// <summary>
     /// Provides caching functionality for exception reflection.

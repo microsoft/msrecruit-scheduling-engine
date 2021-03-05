@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.MsGraph
+namespace Common.MsGraph
 {
     /// <summary>
     /// Graph constants

@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     /// <summary>
     /// Exception Kind.

@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Exceptions
+namespace Common.Base.Exceptions
 {
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Privacy;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Privacy;
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Net;
@@ -16,7 +16,7 @@ namespace MS.GTA.Common.Base.Exceptions
     /// </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.Unauthorized, "MS.GTA.Common.Base.Exceptions", nameof(ApplicationPrincipalNotProvisionedException), MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.Unauthorized, "Common.Base.Exceptions", nameof(ApplicationPrincipalNotProvisionedException), MonitoredExceptionKind.Benign)]
     public sealed class ApplicationPrincipalNotProvisionedException : MonitoredException
     {
         /// <summary>

@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Configuration
+namespace Common.Wopi.Configuration
 {
     using System;
     using System.Collections.Generic;
-    using MS.GTA.Common.Base.Helper;
-    using MS.GTA.ServicePlatform.Configuration;
+    using Common.Base.Helper;
+    using ServicePlatform.Configuration;
 
     /// <summary>
     /// Microsoft Graph settings class

@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     public static class ErrorNamespaces
     {

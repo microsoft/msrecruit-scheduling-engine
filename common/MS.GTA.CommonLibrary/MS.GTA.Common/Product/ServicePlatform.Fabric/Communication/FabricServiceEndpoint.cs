@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 using Microsoft.ServiceFabric.Services.Client;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Routers
+namespace ServicePlatform.Communication.Http.Routers
 {
     /// <summary>
     /// Identifies a Fabric service endpoint

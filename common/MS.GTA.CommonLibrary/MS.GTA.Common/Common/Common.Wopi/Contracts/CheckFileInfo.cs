@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Contracts
+namespace Common.Wopi.Contracts
 {
     using System.Runtime.Serialization;
 

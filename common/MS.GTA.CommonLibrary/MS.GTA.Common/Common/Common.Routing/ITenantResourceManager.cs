@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing
+namespace Common.Routing
 {
-    using MS.GTA.Common.DocumentDB.Configuration;
-    using MS.GTA.Common.Routing.Contracts;
-    using MS.GTA.ServicePlatform.GlobalService.Contracts.Client;
+    using Common.DocumentDB.Configuration;
+    using Common.Routing.Contracts;
+    using ServicePlatform.GlobalService.Contracts.Client;
     using System.Threading;
     using System.Threading.Tasks;
 

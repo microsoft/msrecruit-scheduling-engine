@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,15 +8,15 @@ using System.Diagnostics;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using Activity = MS.GTA.ServicePlatform.Context.ServiceContext.Activity;
+using Activity = ServicePlatform.Context.ServiceContext.Activity;
 
-namespace MS.GTA.ServicePlatform.Context
+namespace ServicePlatform.Context
 {
     using Microsoft.ApplicationInsights;
     using Microsoft.ApplicationInsights.DataContracts;
     using Microsoft.ApplicationInsights.Extensibility;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Common.Common.Base.Configuration;
+    using Common.Base.Configuration;
+    using Common.Common.Common.Base.Configuration;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -150,8 +150,8 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static void Execute(this ILogger logger, EventId eventId, ActivityType activityType, Action action, Type[] exceptionTypesToIgnore)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
 
             using (ServiceContext.Activity.GetActivityContext(new ActivityScope(activityType), logger))
             {
@@ -177,8 +177,8 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static TResult Execute<TResult>(this ILogger logger, EventId eventId, ActivityType activityType, Func<TResult> func, Type[] exceptionTypesToIgnore)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(func, nameof(func));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(func, nameof(func));
 
             using (ServiceContext.Activity.GetActivityContext(new ActivityScope(activityType), logger))
             {
@@ -205,8 +205,8 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static async Task ExecuteAsync(this ILogger logger, EventId eventId, ActivityType activityType, Func<Task> action, Type[] exceptionTypesToIgnore, string rootActivityId = null, string sessionId = null)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
 
             using (ServiceContext.Activity.GetActivityContext(new ActivityScope(activityType), logger, rootActivityId, sessionId))
             {
@@ -229,8 +229,8 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static async Task<TResult> ExecuteAsync<TResult>(this ILogger logger, EventId eventId, ActivityType activityType, Func<Task<TResult>> action, Type[] exceptionTypesToIgnore)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
 
             using (ServiceContext.Activity.GetActivityContext(new ActivityScope(activityType), logger))
             {
@@ -254,9 +254,9 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static void ExecuteRoot(this ILogger logger, EventId eventId, RootExecutionContext rootContext, ActivityType activityType, Action action, Type[] exceptionTypesToIgnore)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(rootContext, nameof(rootContext));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
+            CommonDataService.Common.Internal.Contract.CheckValue(rootContext, nameof(rootContext));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
 
             using (ServiceContext.Activity.GetActivityContext(new ActivityScope(rootContext, activityType), logger))
             {
@@ -277,9 +277,9 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static TResult ExecuteRoot<TResult>(this ILogger logger, EventId eventId, RootExecutionContext rootContext, ActivityType activityType, Func<TResult> func, Type[] exceptionTypesToIgnore)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(rootContext, nameof(rootContext));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(func, nameof(func));
+            CommonDataService.Common.Internal.Contract.CheckValue(rootContext, nameof(rootContext));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(func, nameof(func));
 
             using (ServiceContext.Activity.GetActivityContext(new ActivityScope(rootContext, activityType), logger))
             {
@@ -302,9 +302,9 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static async Task ExecuteRootAsync(this ILogger logger, EventId eventId, RootExecutionContext rootContext, ActivityType activityType, Func<Task> action, Type[] exceptionTypesToIgnore)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(rootContext, nameof(rootContext));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
+            CommonDataService.Common.Internal.Contract.CheckValue(rootContext, nameof(rootContext));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
 
             using (ServiceContext.Activity.GetActivityContext(new ActivityScope(rootContext, activityType), logger))
             {
@@ -326,9 +326,9 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static async Task<TResult> ExecuteRootAsync<TResult>(this ILogger logger, EventId eventId, RootExecutionContext rootContext, ActivityType activityType, Func<Task<TResult>> action, Type[] exceptionTypesToIgnore)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(rootContext, nameof(rootContext));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
+            CommonDataService.Common.Internal.Contract.CheckValue(rootContext, nameof(rootContext));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(action, nameof(action));
 
             using (ServiceContext.Activity.GetActivityContext(new ActivityScope(rootContext, activityType), logger))
             {
@@ -351,7 +351,7 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static Stopwatch LogActivityStart(this ILogger logger, ActivityType activityType)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
             var stopwatch = Stopwatch.StartNew();
             try
             {                
@@ -372,8 +372,8 @@ namespace MS.GTA.ServicePlatform.Context
 
         public static void LogActivityEnd(this ILogger logger, ActivityType activityType, Stopwatch stopwatch, Type[] exceptionTypesToIgnore)
         {
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
-            MS.GTA.CommonDataService.Common.Internal.Contract.CheckValue(stopwatch, nameof(stopwatch));
+            CommonDataService.Common.Internal.Contract.CheckValue(activityType, nameof(activityType));
+            CommonDataService.Common.Internal.Contract.CheckValue(stopwatch, nameof(stopwatch));
             try
             {
                 logger.Log(LogLevel.Information, ActivityLogData.End(activityType, stopwatch));

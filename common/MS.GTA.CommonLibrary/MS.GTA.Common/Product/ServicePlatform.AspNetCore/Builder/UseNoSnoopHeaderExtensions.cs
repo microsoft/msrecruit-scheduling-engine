@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 using Microsoft.AspNetCore.Builder;
-using MS.GTA.ServicePlatform.AspNetCore.Http;
+using ServicePlatform.AspNetCore.Http;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder
+namespace ServicePlatform.AspNetCore.Builder
 {
     public static class UseNoSnoopHeaderExtensions
     {

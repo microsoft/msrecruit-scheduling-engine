@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
 using System.Net;
-using MS.GTA.ServicePlatform.Exceptions;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// A convenience exception for wrapping <see cref="WebException"/>s thrown 

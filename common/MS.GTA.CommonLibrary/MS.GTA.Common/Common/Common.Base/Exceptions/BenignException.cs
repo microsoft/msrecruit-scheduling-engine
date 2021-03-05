@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Exceptions
+namespace Common.Base.Exceptions
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Net;
-    using MS.GTA.Common.Base;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Privacy;
+    using Common.Base;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Privacy;
 
     /// <summary>
     /// Benign exception class

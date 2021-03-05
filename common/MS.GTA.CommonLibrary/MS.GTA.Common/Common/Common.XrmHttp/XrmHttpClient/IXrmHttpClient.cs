@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp
+namespace Common.XrmHttp
 {
-    using MS.GTA.Common.XrmHttp;
+    using Common.XrmHttp;
     using Microsoft.Extensions.Logging;
     using System;
     using System.Collections.Generic;

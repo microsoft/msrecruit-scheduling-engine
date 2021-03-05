@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using Microsoft.Extensions.Caching.Memory;
 
-namespace MS.GTA.Common.MSGraph
+namespace Common.MSGraph
 {
     using System;
     using System.Collections.Specialized;

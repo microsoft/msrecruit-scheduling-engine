@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.Exceptions
+namespace Common.Email.Exceptions
 {
     using System;
     using System.Net;

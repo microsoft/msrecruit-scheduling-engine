@@ -3,18 +3,18 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.GlobalService
+namespace Common.Routing.GlobalService
 {
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Routing.Constants;
-    using MS.GTA.Common.Routing.Contracts;
-    using MS.GTA.Common.Routing.Exceptions;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.GlobalService.ClientLibrary;
-    using MS.GTA.ServicePlatform.GlobalService.Contracts;
-    using MS.GTA.ServicePlatform.GlobalService.Contracts.Client;
+    using CommonDataService.Common.Internal;
+    using Common.Base.Utilities;
+    using Common.Routing.Constants;
+    using Common.Routing.Contracts;
+    using Common.Routing.Exceptions;
+    using ServicePlatform.Context;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.GlobalService.ClientLibrary;
+    using ServicePlatform.GlobalService.Contracts;
+    using ServicePlatform.GlobalService.Contracts.Client;
     using Microsoft.Extensions.Logging;
     using System.Collections.Generic;
     using System.Threading;

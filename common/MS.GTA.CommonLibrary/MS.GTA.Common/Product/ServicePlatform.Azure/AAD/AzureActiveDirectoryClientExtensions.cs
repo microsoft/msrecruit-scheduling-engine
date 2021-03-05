@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Configuration;
-using MS.GTA.ServicePlatform.Security;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Configuration;
+using ServicePlatform.Security;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MS.GTA.ServicePlatform.Azure.AAD
+namespace ServicePlatform.Azure.AAD
 {
     public static class AzureActiveDirectoryClientExtensions
     {

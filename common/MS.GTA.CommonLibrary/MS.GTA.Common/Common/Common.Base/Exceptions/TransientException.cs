@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.Base.Exceptions
+namespace Common.Base.Exceptions
 {
-    using MS.GTA.Common.Base;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Privacy;
+    using Common.Base;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Privacy;
     using System;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
@@ -17,7 +17,7 @@ namespace MS.GTA.Common.Base.Exceptions
     /// Transient Exception class
     /// </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.Base", "TransientException", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.Base", "TransientException", MonitoredExceptionKind.Benign)]
     [Serializable]
     public class TransientException : MonitoredException
     {

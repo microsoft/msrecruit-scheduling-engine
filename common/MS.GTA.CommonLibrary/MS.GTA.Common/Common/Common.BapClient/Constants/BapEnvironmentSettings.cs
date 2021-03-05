@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient.Constants
+namespace Common.BapClient.Constants
 {
     using CommonDataService.Common.Internal;
     using Configuration;
-    using MS.GTA.Common.Base;
+    using Common.Base;
     using Exceptions;
     using ServicePlatform.Exceptions;
 

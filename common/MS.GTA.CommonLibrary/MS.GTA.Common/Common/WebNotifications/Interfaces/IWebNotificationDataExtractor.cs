@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Interfaces
+namespace Common.WebNotifications.Interfaces
 {
-    using MS.GTA.Common.Base.ServiceContext;
+    using Common.Base.ServiceContext;
     using System.Collections.Generic;
     using System.Threading.Tasks;
 

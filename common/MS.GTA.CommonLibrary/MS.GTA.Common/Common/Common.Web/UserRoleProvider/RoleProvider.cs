@@ -2,23 +2,23 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Web.UserRoleProvider
+namespace Common.Web.UserRoleProvider
 {
     using Microsoft.ServiceFabric.Services.Client;
-    using MS.GTA.Common.BapClient;
-    using MS.GTA.Common.BapClient.Exceptions;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Web.Configuration;
-    using MS.GTA.Common.Web.Exceptions;
-    using MS.GTA.CommonDataService.Common;
-    using MS.GTA.ServicePlatform.Communication.Http;
-    using MS.GTA.ServicePlatform.Communication.Http.Routers;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Tracing;
+    using Common.BapClient;
+    using Common.BapClient.Exceptions;
+    using Common.Base.Security.V2;
+    using Common.Base.ServiceContext;
+    using Common.Base.Utilities;
+    using Common.Web.Configuration;
+    using Common.Web.Exceptions;
+    using CommonDataService.Common;
+    using ServicePlatform.Communication.Http;
+    using ServicePlatform.Communication.Http.Routers;
+    using ServicePlatform.Configuration;
+    using ServicePlatform.Context;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Tracing;
     using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;

@@ -4,9 +4,9 @@
 //-----------------------------------------------------------------------'r'n
 
 
-namespace MS.GTA.Common.Base.ServiceContext
+namespace Common.Base.ServiceContext
 {
-    using MS.GTA.Common.Contracts;
+    using Common.Contracts;
 
     /// <summary>The HCM ServiceContext interface.</summary>
     public interface IHCMServiceContext

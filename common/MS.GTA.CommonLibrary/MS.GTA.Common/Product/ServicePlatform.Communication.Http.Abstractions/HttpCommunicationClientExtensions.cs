@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -9,9 +9,9 @@ using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// Convenience extension methods over <see cref="IHttpCommunicationClient"/>.

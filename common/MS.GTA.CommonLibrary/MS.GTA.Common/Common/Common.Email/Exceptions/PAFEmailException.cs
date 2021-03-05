@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.Exceptions
+namespace Common.Email.Exceptions
 {
     using System;
     using System.Net;
@@ -13,7 +13,7 @@ namespace MS.GTA.Common.Email.Exceptions
     /// GraphEmailException class
     /// </summary>
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "MS.GTA.Common.Email.Exceptions", "PAFEmailException", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Common.Email.Exceptions", "PAFEmailException", MonitoredExceptionKind.Service)]
     public class PAFEmailException : MonitoredException
     {
         /// <summary>

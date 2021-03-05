@@ -4,12 +4,12 @@
 //-----------------------------------------------------------------------
 using System;
 using System.Net.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.CommonDataService.Instrumentation;
-using MS.GTA.ServicePlatform.Communication.Http.Internal;
+using CommonDataService.Common.Internal;
+using CommonDataService.Instrumentation;
+using ServicePlatform.Communication.Http.Internal;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// This is developer interface to create ServicePlatform HttpServiceClient

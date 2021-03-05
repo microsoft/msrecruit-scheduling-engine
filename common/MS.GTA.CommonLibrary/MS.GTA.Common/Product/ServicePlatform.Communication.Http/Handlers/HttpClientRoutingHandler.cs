@@ -9,17 +9,17 @@ using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.CommonDataService.Instrumentation;
-using MS.GTA.ServicePlatform.Communication.Http.Internal;
-using MS.GTA.ServicePlatform.Communication.Http.Routers;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Fabric;
-using MS.GTA.ServicePlatform.Utils;
+using CommonDataService.Common.Internal;
+using CommonDataService.Instrumentation;
+using ServicePlatform.Communication.Http.Internal;
+using ServicePlatform.Communication.Http.Routers;
+using ServicePlatform.Context;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Fabric;
+using ServicePlatform.Utils;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Handlers
+namespace ServicePlatform.Communication.Http.Handlers
 {
     /// <summary>
     /// A routing handler that executes an inner retry loop around an instance of <see cref="IHttpRouter"/> provided

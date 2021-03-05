@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.DelegatingHandlers
+namespace Common.Web.DelegatingHandlers
 {
     using System;
     using System.Net;
@@ -12,8 +12,8 @@ namespace MS.GTA.Common.Web.DelegatingHandlers
     using System.Threading;
     using System.Threading.Tasks;
 
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using ServicePlatform.Context;
+    using ServicePlatform.Exceptions;
     using Microsoft.Extensions.Logging;
 
     /// <summary>The poll handler.</summary>
@@ -74,7 +74,7 @@ namespace MS.GTA.Common.Web.DelegatingHandlers
                             this.logger.LogInformation($"Sending poll request to {newLocation}");
 
                             var token = await this.getTokenFunction();
-                            newRequest.Headers.Authorization = new AuthenticationHeaderValue(MS.GTA.Common.Base.Constants.BearerAuthenticationScheme, token);
+                            newRequest.Headers.Authorization = new AuthenticationHeaderValue(Common.Base.Constants.BearerAuthenticationScheme, token);
 
                             response = await base.SendAsync(newRequest, cancellationToken);
 

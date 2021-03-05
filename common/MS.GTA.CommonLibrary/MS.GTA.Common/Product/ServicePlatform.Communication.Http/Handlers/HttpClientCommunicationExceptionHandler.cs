@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Handlers
+namespace ServicePlatform.Communication.Http.Handlers
 {
 
     /// <summary>

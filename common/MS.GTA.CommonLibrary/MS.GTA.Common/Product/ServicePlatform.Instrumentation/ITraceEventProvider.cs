@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Product.ServicePlatform.Instrumentation
+namespace Common.Product.ServicePlatform.Instrumentation
 {
     /// <summary>
     /// The <see cref="ITraceEventProvider"/> provides mechanism to log.

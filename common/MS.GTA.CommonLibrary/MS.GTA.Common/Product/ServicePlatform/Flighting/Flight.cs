@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,10 +8,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Context;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Context;
 
-namespace MS.GTA.ServicePlatform.Flighting
+namespace ServicePlatform.Flighting
 {
     /// <summary>
     /// Base class for all flights.

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.Constants
+namespace Common.Routing.Constants
 {
     /// <summary>Storage configuration settings and constants.</summary>
     public sealed class StorageConfigurationSettings

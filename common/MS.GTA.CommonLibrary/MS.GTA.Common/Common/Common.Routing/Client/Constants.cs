@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Routing.Client
+namespace Common.Routing.Client
 {
     internal static class Constants
     {

@@ -1,17 +1,17 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Collections.Generic;
 using System.Fabric;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Configuration;
-using MS.GTA.ServicePlatform.Fabric.Configuration;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Configuration;
+using ServicePlatform.Fabric.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MS.GTA.ServicePlatform.Fabric.Extensions
+namespace ServicePlatform.Fabric.Extensions
 {
     /// <summary>
     /// Extensions for GTA Service Fabric Configuration

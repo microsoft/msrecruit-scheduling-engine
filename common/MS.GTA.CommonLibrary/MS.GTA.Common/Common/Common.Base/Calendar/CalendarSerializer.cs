@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.Base.Calendar
+namespace Common.Base.Calendar
 {
     using System;
     using System.Collections.Generic;

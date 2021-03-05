@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Privacy;
+using ServicePlatform.Privacy;
 
-namespace MS.GTA.CommonDataService.Instrumentation.Privacy
+namespace CommonDataService.Instrumentation.Privacy
 {
     /// <summary>
     /// Extension methods to tag sensitive information in convinient way.

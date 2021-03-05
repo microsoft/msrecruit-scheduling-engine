@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -11,14 +11,14 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Flighting;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Flighting;
 
-using MS.GTA.ServicePlatform.Tracing;
+using ServicePlatform.Tracing;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Context
+namespace ServicePlatform.Context
 {
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
     public sealed partial class ServiceContext

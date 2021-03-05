@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,9 +8,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 
-namespace MS.GTA.ServicePlatform.Configuration.FeatureSwitches
+namespace ServicePlatform.Configuration.FeatureSwitches
 {
     /// <summary>
     /// Base class for all features.

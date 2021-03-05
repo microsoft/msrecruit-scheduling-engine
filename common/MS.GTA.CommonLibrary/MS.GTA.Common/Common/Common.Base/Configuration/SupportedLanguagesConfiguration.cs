@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Configuration
+namespace Common.Base.Configuration
 {
     using System;
     using System.Globalization;

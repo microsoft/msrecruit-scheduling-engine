@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -7,12 +7,12 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace MS.GTA.CommonDataService.Common
+namespace CommonDataService.Common
 {
     /// <summary>
     /// Utility methods for generating and combining hash codes.
     /// </summary>
-    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the MS.GTA.CommonDataService.Common.Internal namespace instead.")]
+    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the CommonDataService.Common.Internal namespace instead.")]
     internal static class Hashing
     {
         // A fallback hash code to use for null values.  Avoid zero just to give a better distribution.

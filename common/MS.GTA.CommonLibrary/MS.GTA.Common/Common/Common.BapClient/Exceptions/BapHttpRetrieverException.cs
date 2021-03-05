@@ -3,17 +3,17 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient.Exceptions
+namespace Common.BapClient.Exceptions
 {
     using System;
     using System.Net;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using ServicePlatform.Exceptions;
 
     /// <summary>The bap http retriever exception.</summary>
     [Serializable]
     [MonitoredExceptionMetadata(
         HttpStatusCode.InternalServerError,
-        "MS.GTA.Common.BapClient",
+        "Common.BapClient",
         "BAPServiceHttp_Exception",
         MonitoredExceptionKind.Service)]
 

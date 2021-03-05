@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.TestBase
+namespace Common.TestBase
 {
     using System;
     using System.IdentityModel.Tokens.Jwt;
@@ -18,7 +18,7 @@ namespace MS.GTA.Common.TestBase
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Tokens;
-    using MS.GTA.Common.Web.Configuration;
+    using Common.Web.Configuration;
     using Moq;
     using Newtonsoft.Json;
     using ServicePlatform.AspNetCore.Security;

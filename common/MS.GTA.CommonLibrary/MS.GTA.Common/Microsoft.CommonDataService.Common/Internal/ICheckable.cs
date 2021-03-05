@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.CommonDataService.Common.Internal
+namespace CommonDataService.Common.Internal
 {
     /// <summary>
     /// Implement this interface for compatibility with CheckAll and AssertAll.

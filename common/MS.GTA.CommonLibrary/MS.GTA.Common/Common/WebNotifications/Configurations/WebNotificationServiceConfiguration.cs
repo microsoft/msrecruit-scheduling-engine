@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Common.WebNotifications.Configurations
+namespace Common.Common.WebNotifications.Configurations
 {
-    using MS.GTA.ServicePlatform.Configuration;
+    using ServicePlatform.Configuration;
 
     /// <summary>
     /// The <see cref="WebNotificationServiceConfiguration"/> class holds configuration information to connect to web notifications service.

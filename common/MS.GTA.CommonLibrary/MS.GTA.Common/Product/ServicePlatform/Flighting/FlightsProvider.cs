@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,9 +6,9 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 
-namespace MS.GTA.ServicePlatform.Flighting
+namespace ServicePlatform.Flighting
 {
     // TODO - 846272 : Remove with https://msazure.visualstudio.com/OneAgile/_workitems/edit/846272
     [Obsolete("These APIs are obsolete and will be removed in a future release. Use IFlightsProvider<TEvaluationContext> instead.")]

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.Configuration
+namespace Common.DocumentDB.Configuration
 {
     using ServicePlatform.Configuration;
 

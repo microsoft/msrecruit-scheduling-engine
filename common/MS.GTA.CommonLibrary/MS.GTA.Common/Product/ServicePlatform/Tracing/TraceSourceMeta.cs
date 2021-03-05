@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,7 +6,7 @@
 using System;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Tracing
+namespace ServicePlatform.Tracing
 {
     /// <summary>
     /// Meta class to used internally by TraceSourceBase

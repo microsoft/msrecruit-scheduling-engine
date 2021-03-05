@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Utils
+namespace Common.Web.Utils
 {
     using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
     using CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Tracing;
+    using ServicePlatform.Tracing;
 
     /// <summary>
     /// Handler class to handle http client call retries

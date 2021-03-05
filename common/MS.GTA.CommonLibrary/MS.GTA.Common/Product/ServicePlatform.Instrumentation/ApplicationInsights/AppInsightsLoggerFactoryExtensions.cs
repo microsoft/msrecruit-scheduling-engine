@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
+namespace Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
 {
     using Microsoft.Extensions.Logging;
 

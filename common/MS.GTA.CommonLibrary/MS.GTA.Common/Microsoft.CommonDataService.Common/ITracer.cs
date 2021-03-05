@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,7 +6,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace MS.GTA.CommonDataService.Common
+namespace CommonDataService.Common
 {
     /// <summary>
     /// Interface for tracer objects that can be consumed by the InfoNav Interpretation
@@ -17,7 +17,7 @@ namespace MS.GTA.CommonDataService.Common
     /// This interface is adapted from <see cref="ITraceSource"/> in the Cloud Platform assembly
     /// but can also be implemented using standard .NET tracing for standalone operations
     /// </remarks>
-    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the MS.GTA.CommonDataService.Common.Internal namespace instead.")]
+    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the CommonDataService.Common.Internal namespace instead.")]
     [SuppressMessage("Microsoft.InfoNav.StyleCop.CSharp.InfoNavAnalyzer", "IN0001:InfoNavPublicObjectsMustBeInInternalNamespace", Justification = "Not worth introducing namespace reference everywhere for this common class.")]
     internal interface ITracer
     {

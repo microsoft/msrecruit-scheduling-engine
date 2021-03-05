@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Utils
+namespace Common.Wopi.Utils
 {
     /// <summary>
     /// Token information

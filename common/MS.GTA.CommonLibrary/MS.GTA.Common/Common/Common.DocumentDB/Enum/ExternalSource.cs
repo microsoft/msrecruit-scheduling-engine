@@ -5,9 +5,9 @@
 
 using System.Runtime.Serialization;
 
-namespace MS.GTA.Common.DocumentDB.Enums
+namespace Common.DocumentDB.Enums
 {
-    [DataContract(Namespace = "MS.GTA.TalentEngagement")]
+    [DataContract(Namespace = "TalentEngagement")]
     public enum ExternalSource
     {
 

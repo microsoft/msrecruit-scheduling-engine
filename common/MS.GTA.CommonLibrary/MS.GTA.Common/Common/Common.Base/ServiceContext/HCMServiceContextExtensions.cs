@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.Base.ServiceContext
+namespace Common.Base.ServiceContext
 {
     using Microsoft.Extensions.DependencyInjection;
 

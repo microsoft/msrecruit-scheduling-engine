@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.SendGridContracts
+namespace Common.Email.SendGridContracts
 {    
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
@@ -11,7 +11,7 @@ namespace MS.GTA.Common.Email.SendGridContracts
     using System.Net;    
     using Base.Utilities;
     using CommonDataService.Common.Internal;
-    using MS.GTA.Common.Email.GraphContracts;
+    using Common.Email.GraphContracts;
     using Newtonsoft.Json;
     using Constants = Email.Constants;
 

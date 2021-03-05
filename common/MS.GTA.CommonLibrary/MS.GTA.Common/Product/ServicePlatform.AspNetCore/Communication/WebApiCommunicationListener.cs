@@ -12,17 +12,17 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.Server.Features;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Utils;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Fabric.Extensions;
-using MS.GTA.ServicePlatform.Tracing;
-using MS.GTA.ServicePlatform.Utils;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Utils;
+using ServicePlatform.Context;
+using ServicePlatform.Fabric.Extensions;
+using ServicePlatform.Tracing;
+using ServicePlatform.Utils;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Communication
+namespace ServicePlatform.AspNetCore.Communication
 {
     using System.Reflection;
     using Builder;

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -10,7 +10,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Text;
 
-namespace MS.GTA.CommonDataService.Common.Internal
+namespace CommonDataService.Common.Internal
 {
     /// <summary>
     /// String manipulation utility methods.

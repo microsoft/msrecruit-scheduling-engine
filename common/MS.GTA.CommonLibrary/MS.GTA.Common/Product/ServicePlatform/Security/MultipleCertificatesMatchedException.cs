@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
-using MS.GTA.ServicePlatform.Exceptions;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Security
+namespace ServicePlatform.Security
 {
     [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, ErrorNamespaces.ServicePlatform, ErrorCodes.GenericServiceError, MonitoredExceptionKind.Service)]
     public sealed class MultipleCertificatesMatchedException : MonitoredException

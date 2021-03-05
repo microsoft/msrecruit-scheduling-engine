@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Web.Exceptions
+namespace Common.Web.Exceptions
 {
-    using MS.GTA.Common.Base;
-    using MS.GTA.Common.Base.Exceptions;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Privacy;
+    using Common.Base;
+    using Common.Base.Exceptions;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Privacy;
     using System;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
@@ -18,7 +18,7 @@ namespace MS.GTA.Common.Web.Exceptions
     /// Exception thrown based on role provider service error.
     /// </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.Web", "RolePorviderRemoteServiceException", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.Web", "RolePorviderRemoteServiceException", MonitoredExceptionKind.Benign)]
     [Serializable]
     public sealed class RoleProviderRemoteServiceException : BenignException
     {
@@ -52,7 +52,7 @@ namespace MS.GTA.Common.Web.Exceptions
     /// Exception thrown based on role provider permission issue.
     /// </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
-    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "MS.GTA.Common.Web", "RoleProviderUnauthorizedException", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "Common.Web", "RoleProviderUnauthorizedException", MonitoredExceptionKind.Benign)]
     [Serializable]
     public sealed class RoleProviderException : BenignException
     {

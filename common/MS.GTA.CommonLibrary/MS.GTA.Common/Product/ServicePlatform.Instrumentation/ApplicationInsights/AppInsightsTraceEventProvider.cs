@@ -1,20 +1,20 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
+namespace Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
 {
     using System.Collections.Generic;
     using Microsoft.ApplicationInsights;
     using Microsoft.ApplicationInsights.DataContracts;
     using Microsoft.ApplicationInsights.Extensibility;
-    using MS.GTA.CommonDataService.Common;
+    using CommonDataService.Common;
 
     /// <summary>
     /// The <see cref="AppInsightsTraceEventProvider"/> defines the trace event provider.
     /// </summary>
-    /// <seealso cref="MS.GTA.Common.Product.ServicePlatform.Instrumentation.ITraceEventProvider" />
+    /// <seealso cref="Common.Product.ServicePlatform.Instrumentation.ITraceEventProvider" />
     internal sealed class AppInsightsTraceEventProvider : ITraceEventProvider
     {
         private static string instrumentationKey = string.Empty;

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.Constants
+namespace Common.Routing.Constants
 {
     using Base;
     using CommonDataService.Common.Internal;

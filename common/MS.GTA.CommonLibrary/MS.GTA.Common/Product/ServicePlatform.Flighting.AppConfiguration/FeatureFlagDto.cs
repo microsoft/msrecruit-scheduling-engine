@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MS.GTA.Common.Product.ServicePlatform.Flighting.AppConfiguration
+namespace Common.Product.ServicePlatform.Flighting.AppConfiguration
 {
     internal class FeatureFlagDto
     {

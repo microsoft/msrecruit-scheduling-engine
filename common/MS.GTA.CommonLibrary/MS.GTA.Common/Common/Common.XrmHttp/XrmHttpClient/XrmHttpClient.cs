@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp
+namespace Common.XrmHttp
 {
     using System;
     using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace MS.GTA.Common.XrmHttp
     using Base.Utilities;
     using Microsoft.AspNetCore.WebUtilities;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.XrmHttp.RelevanceSearch;
+    using Common.XrmHttp.RelevanceSearch;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
 

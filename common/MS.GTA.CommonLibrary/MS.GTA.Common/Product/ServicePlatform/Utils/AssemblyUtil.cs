@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -7,10 +7,10 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Tracing;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.ServicePlatform.Utils
+namespace ServicePlatform.Utils
 {
     /// <summary>
     /// A collection of assembly manipulation utilities.

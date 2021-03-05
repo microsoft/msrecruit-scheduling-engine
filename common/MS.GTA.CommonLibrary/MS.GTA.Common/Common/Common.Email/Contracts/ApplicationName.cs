@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.Contracts
+namespace Common.Email.Contracts
 {
     /// <summary>
     /// Application Name

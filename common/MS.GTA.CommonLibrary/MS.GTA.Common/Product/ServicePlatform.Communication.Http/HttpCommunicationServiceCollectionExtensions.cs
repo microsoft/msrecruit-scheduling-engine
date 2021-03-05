@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// Convenience extension methods over <see cref="IServiceCollection"/>.

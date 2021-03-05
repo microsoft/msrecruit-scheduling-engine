@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,9 +6,9 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
-////using MS.GTA.CommonDataService.Common.Internal;
+////using CommonDataService.Common.Internal;
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     /// <summary>
     /// Metadata used to define values on a <see cref="MonitoredException"/>.

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.Contracts
+namespace Common.Routing.Contracts
 {
     /// <summary>
     /// The storage configuration type

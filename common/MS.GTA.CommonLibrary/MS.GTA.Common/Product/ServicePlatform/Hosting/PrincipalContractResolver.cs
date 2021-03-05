@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Security;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Security;
 using Newtonsoft.Json.Serialization;
 
-namespace MS.GTA.ServicePlatform.Hosting.Security
+namespace ServicePlatform.Hosting.Security
 {
     internal sealed class PrincipalContractResolver : DefaultContractResolver
     {

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi
+namespace Common.Wopi
 {
     using System;
     using System.Diagnostics.Contracts;

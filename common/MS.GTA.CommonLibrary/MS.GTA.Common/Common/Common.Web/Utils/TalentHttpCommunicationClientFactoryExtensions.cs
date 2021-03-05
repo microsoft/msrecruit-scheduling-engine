@@ -3,17 +3,17 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Utils
+namespace Common.Web.Utils
 {
     using System;
     using System.Collections.Generic;
     using System.Net.Http;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Web.DelegatingHandlers;
-    using MS.GTA.ServicePlatform.Communication.Http;
-    using MS.GTA.ServicePlatform.Communication.Http.Routers;
+    using Common.Web.DelegatingHandlers;
+    using ServicePlatform.Communication.Http;
+    using ServicePlatform.Communication.Http.Routers;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.CommonDataService.Common;
+    using CommonDataService.Common;
 
     /// <summary>The talent http communication client factory extensions.</summary>
     public static class TalentHttpCommunicationClientFactoryExtensions

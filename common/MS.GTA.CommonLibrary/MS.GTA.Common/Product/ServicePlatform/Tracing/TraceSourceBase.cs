@@ -1,22 +1,22 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
-using MS.GTA.ServicePlatform.Tracing;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Context;
+using ServicePlatform.Tracing;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Context;
 using Microsoft.Extensions.Logging;
 using Microsoft.ApplicationInsights;
 using Microsoft.Azure.Documents;
 using System.Collections.Generic;
 using Microsoft.ApplicationInsights.Extensibility;
-using MS.GTA.Common.Base.Configuration;
-using MS.GTA.Common.Common.Common.Base.Configuration;
+using Common.Base.Configuration;
+using Common.Common.Common.Base.Configuration;
 
-namespace MS.GTA.ServicePlatform.Tracing
+namespace ServicePlatform.Tracing
 {
     /// <summary>
     /// Base class for all trace sources. The class is aware of the current execution context 

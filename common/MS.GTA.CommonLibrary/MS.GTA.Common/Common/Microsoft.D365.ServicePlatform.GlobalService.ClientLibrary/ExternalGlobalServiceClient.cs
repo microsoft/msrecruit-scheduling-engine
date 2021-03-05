@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,17 +6,17 @@
 using System;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication.Http;
-using MS.GTA.ServicePlatform.Communication.Http.Routers;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication.Http;
+using ServicePlatform.Communication.Http.Routers;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.GlobalService.ClientLibrary
+namespace ServicePlatform.GlobalService.ClientLibrary
 {
     /// <summary>
     /// A global service client which uses single uri routing.
     /// </summary>
-    /// <seealso cref="MS.GTA.ServicePlatform.GlobalService.ClientLibrary.GlobalServiceClient" />
+    /// <seealso cref="ServicePlatform.GlobalService.ClientLibrary.GlobalServiceClient" />
     public class ExternalGlobalServiceClient : GlobalServiceClient
     {
         /// <summary>

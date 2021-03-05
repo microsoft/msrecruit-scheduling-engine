@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Discovery
+namespace Common.Wopi.Discovery
 {
     /// <summary>
     /// WOPI proof validation pack class <see cref="http://wopi.readthedocs.io/en/latest/scenarios/proofkeys.html#troubleshooting-proof-keys"/>

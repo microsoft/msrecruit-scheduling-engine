@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Models.Enums
+namespace Common.WebNotifications.Models.Enums
 {
     /// <summary>
     /// The <see cref="NotificationPriority"/> enum defines the web notification priorities.

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,11 +6,11 @@
 using System;
 using System.IO;
 using System.Text;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Utils;
+using ServicePlatform.Context;
+using ServicePlatform.Utils;
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.Communication
+namespace ServicePlatform.Communication
 {
     /// <summary>
     /// This class contains Json Serializer/Deserializer

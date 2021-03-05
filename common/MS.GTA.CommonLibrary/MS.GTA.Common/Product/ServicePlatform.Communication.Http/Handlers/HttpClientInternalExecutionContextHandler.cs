@@ -5,10 +5,10 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Context;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Context;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Handlers
+namespace ServicePlatform.Communication.Http.Handlers
 {
     /// <summary>
     /// Adds the entire execution context to the request. Use when calling into an

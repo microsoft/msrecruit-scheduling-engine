@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,10 +6,10 @@
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Exceptions;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Utils
+namespace ServicePlatform.Utils
 {
     /// <summary>
     /// Collection of methods to executes tasks according to given retry policy.

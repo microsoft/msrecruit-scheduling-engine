@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -12,15 +12,15 @@ using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication.Http.Routers;
-using MS.GTA.ServicePlatform.Context;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication.Http.Routers;
+using ServicePlatform.Context;
 using Microsoft.Extensions.Logging;
 using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.ServiceFabric.Services.Communication;
-using PlatformServiceContext = MS.GTA.ServicePlatform.Context.ServiceContext;
+using PlatformServiceContext = ServicePlatform.Context.ServiceContext;
 
-namespace MS.GTA.ServicePlatform.Fabric.Communication.Internal
+namespace ServicePlatform.Fabric.Communication.Internal
 {
     internal sealed class FabricServiceRouterRequest : IRetriableRouterRequest
     {

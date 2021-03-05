@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder
+namespace Common.Product.ServicePlatform.AspNetCore.Builder
 {
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using MS.GTA.Common.Common.Common.Base.Configuration;
-    using MS.GTA.ServicePlatform.Configuration;
+    using Common.Common.Common.Base.Configuration;
+    using ServicePlatform.Configuration;
 
     public static class UseApplicationInsightsExtensions
     {

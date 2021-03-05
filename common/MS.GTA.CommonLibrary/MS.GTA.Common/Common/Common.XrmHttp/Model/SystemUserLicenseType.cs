@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.Model
+namespace Common.XrmHttp.Model
 {
     public enum SystemUserLicenseType
     {

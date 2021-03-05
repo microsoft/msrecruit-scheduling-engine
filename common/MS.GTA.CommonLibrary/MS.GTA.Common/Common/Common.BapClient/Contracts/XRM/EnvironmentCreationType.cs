@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient.Contracts.XRM
+namespace Common.BapClient.Contracts.XRM
 {
     using Base.Serialization;
     using Newtonsoft.Json;

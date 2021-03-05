@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Configuration.FeatureSwitches;
+using ServicePlatform.Configuration.FeatureSwitches;
 
-namespace MS.GTA.ServicePlatform.Configuration
+namespace ServicePlatform.Configuration
 {
     /// <summary>
     /// Contract for a class that can provide feature switch values.

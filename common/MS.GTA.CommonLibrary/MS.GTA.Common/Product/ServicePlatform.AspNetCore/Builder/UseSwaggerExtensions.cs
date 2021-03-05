@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder
+namespace Common.Product.ServicePlatform.AspNetCore.Builder
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.Extensions.DependencyInjection;
-    using MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder.Filters;
-    using MS.GTA.Common.Product.ServicePlatform.Utils;
-    using MS.GTA.ServicePlatform.AspNetCore.Builder.Filters;
+    using Common.Product.ServicePlatform.AspNetCore.Builder.Filters;
+    using Common.Product.ServicePlatform.Utils;
+    using ServicePlatform.AspNetCore.Builder.Filters;
     using Swashbuckle.AspNetCore.Swagger;
     using Swashbuckle.AspNetCore.SwaggerGen;
     using System;

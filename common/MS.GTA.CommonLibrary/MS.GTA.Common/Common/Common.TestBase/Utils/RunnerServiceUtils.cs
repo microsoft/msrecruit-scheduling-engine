@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TestBase.Utils
+namespace Common.TestBase.Utils
 {
     using System;
     using System.Collections.Generic;
@@ -11,25 +11,25 @@ namespace MS.GTA.Common.TestBase.Utils
     using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.CommonDataService.Instrumentation;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Base.KeyVault;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Routing;
-    using MS.GTA.Common.Routing.Constants;
-    using MS.GTA.Common.Routing.DocumentDb;
-    using MS.GTA.Common.TestBase.Contracts;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Security;
-    using MS.GTA.ServicePlatform.Tracing;
+    using CommonDataService.Common.Internal;
+    using CommonDataService.Instrumentation;
+    using Common.Base.Configuration;
+    using Common.Base.KeyVault;
+    using Common.DocumentDB;
+    using Common.Routing;
+    using Common.Routing.Constants;
+    using Common.Routing.DocumentDb;
+    using Common.TestBase.Contracts;
+    using ServicePlatform.Configuration;
+    using ServicePlatform.Context;
+    using ServicePlatform.Security;
+    using ServicePlatform.Tracing;
     using Microsoft.Extensions.Caching.Memory;
     using Microsoft.Extensions.Logging;
     using Moq;
 
     using AAD = ServicePlatform.Azure.AAD;
-    using MS.GTA.ServicePlatform.Azure.Security;
+    using ServicePlatform.Azure.Security;
 
     public static class RunnerServiceUtils
     {

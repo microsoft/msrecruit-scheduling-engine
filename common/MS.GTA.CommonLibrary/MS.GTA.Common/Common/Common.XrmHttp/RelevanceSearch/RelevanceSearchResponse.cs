@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.RelevanceSearch
+namespace Common.XrmHttp.RelevanceSearch
 {
     using Newtonsoft.Json.Linq;
     using System.Collections.Generic;

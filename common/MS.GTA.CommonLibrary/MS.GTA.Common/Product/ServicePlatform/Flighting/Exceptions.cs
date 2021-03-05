@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
 using System.Net;
-using MS.GTA.ServicePlatform.Exceptions;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Flighting
+namespace ServicePlatform.Flighting
 {
     /// <summary>
     /// Thrown when the configured flights provider is missing from the service dependency container.

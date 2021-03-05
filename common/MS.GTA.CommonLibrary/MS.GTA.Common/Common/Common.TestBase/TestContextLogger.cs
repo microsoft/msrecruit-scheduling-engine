@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TestBase
+namespace Common.TestBase
 {
     using System;
 
     using Microsoft.Extensions.Logging;
-    using MS.GTA.CommonDataService.Instrumentation;
-    using MS.GTA.ServicePlatform.Context;
+    using CommonDataService.Instrumentation;
+    using ServicePlatform.Context;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>The test context logger.</summary>

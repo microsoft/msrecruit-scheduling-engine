@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,7 +6,7 @@
 using System;
 using System.IO;
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     /// <summary>
     /// Defines the contract for implementing a handler capable to understand exceptions thrown within a service.

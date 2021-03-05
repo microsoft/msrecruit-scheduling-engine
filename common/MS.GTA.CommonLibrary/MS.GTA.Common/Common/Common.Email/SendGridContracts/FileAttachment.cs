@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.SendGridContracts
+namespace Common.Email.SendGridContracts
 {
     using System;
     using System.Drawing;

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -9,7 +9,7 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MS.GTA.ServicePlatform.GlobalService.ClientLibrary
+namespace ServicePlatform.GlobalService.ClientLibrary
 {
     internal class AuthorizationHandler : DelegatingHandler
     {

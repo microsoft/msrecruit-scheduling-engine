@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.CommonDataService.Instrumentation
+namespace CommonDataService.Instrumentation
 {
     /// <summary>
     /// Extensions to ILogger for IFX Metrics using MDM Multi-Dimensional Monitoring

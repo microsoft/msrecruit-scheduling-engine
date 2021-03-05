@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 using System;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Internal
+namespace ServicePlatform.Communication.Http.Internal
 {
     internal sealed class HttpCommunicationClientInternalOptions
     {

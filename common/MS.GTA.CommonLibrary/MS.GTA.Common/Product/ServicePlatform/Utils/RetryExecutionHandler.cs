@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,12 +6,12 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Utils;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Context;
+using ServicePlatform.Utils;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Utils
+namespace ServicePlatform.Utils
 {
     /// <summary>
     /// The retry execution handler that executes the function using the specified delay function.

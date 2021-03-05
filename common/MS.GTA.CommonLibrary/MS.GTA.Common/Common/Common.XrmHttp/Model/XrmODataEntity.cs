@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp
+namespace Common.XrmHttp
 {
     using System;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp.Model;
+    using Common.XrmHttp.Model;
 
     [DataContract]
     [ODataNamespace(Namespace = "Microsoft.Dynamics.CRM")]

@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
+namespace Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
 {
     using System;
     using System.Collections.Concurrent;
@@ -13,11 +13,11 @@ namespace MS.GTA.Common.Product.ServicePlatform.Instrumentation.ApplicationInsig
     using Microsoft.CommonDataService.Instrumentation;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Logging.Internal;
-    using MS.GTA.Common.Base.Exceptions;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.CommonDataService.Instrumentation.Privacy;
-    using MS.GTA.ServicePlatform.Context;
+    using Common.Base.Exceptions;
+    using Common.Base.Security;
+    using CommonDataService.Common.Internal;
+    using CommonDataService.Instrumentation.Privacy;
+    using ServicePlatform.Context;
     using Newtonsoft.Json;
 
     /// <summary>

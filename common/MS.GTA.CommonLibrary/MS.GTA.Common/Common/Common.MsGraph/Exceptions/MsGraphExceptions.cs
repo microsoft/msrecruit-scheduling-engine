@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 //----------------------------------------------------------------------------
 
-namespace MS.GTA.Common.MSGraph.Exceptions
+namespace Common.MSGraph.Exceptions
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
@@ -63,11 +63,11 @@ namespace MS.GTA.Common.MSGraph.Exceptions
     /// </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.ServiceUnavailable, "MS.GTA.Common.MsGraph", "MsGraphServiceUnavailableException", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.ServiceUnavailable, "Common.MsGraph", "MsGraphServiceUnavailableException", MonitoredExceptionKind.Service)]
     public sealed class MsGraphServiceUnavailableException : MonitoredException
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MS.GTA.Common.MSGraph.Exceptions.MsGraphServiceUnavailableException" /> class.
+        /// Initializes a new instance of the <see cref="Common.MSGraph.Exceptions.MsGraphServiceUnavailableException" /> class.
         /// </summary>
         /// <param name="exception">Exception during graph call.</param>
         public MsGraphServiceUnavailableException(Exception exception) : base($"Issue while thrown by graph sdk, ErrorMessage: {exception.Message}, stacktrace:{exception.StackTrace}")
@@ -80,11 +80,11 @@ namespace MS.GTA.Common.MSGraph.Exceptions
     /// </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "MS.GTA.Common.MsGraph", "MsGraphInvalidInputException", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Common.MsGraph", "MsGraphInvalidInputException", MonitoredExceptionKind.Service)]
     public sealed class MsGraphInvalidInputException : MonitoredException
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MS.GTA.Common.MSGraph.Exceptions.MsGraphInvalidInputException" /> class.
+        /// Initializes a new instance of the <see cref="Common.MSGraph.Exceptions.MsGraphInvalidInputException" /> class.
         /// </summary>
         /// <param name="exception">Exception during graph call.</param>
         public MsGraphInvalidInputException(Exception exception) : base($"Issue while thrown by graph sdk, ErrorMessage: {exception.Message}, stacktrace:{exception.StackTrace}")
@@ -143,7 +143,7 @@ namespace MS.GTA.Common.MSGraph.Exceptions
     /// </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.MsGraph", "AcquireGraphTokenException", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.MsGraph", "AcquireGraphTokenException", MonitoredExceptionKind.Service)]
     internal sealed class AcquireGraphTokenException : MonitoredException
     {
         /// <summary>

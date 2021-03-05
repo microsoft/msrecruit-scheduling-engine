@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.V2
+namespace Common.DocumentDB.V2
 {
     using System.Threading.Tasks;
 

@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing
+namespace Common.Routing
 {
     using System.Threading;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Routing.Contracts;
+    using Common.Routing.Contracts;
     using ServicePlatform.GlobalService.Contracts.Client;
 
     /// <summary>

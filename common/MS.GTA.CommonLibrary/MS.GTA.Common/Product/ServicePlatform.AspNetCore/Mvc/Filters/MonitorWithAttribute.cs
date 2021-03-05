@@ -11,16 +11,16 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Primitives;
-using MS.GTA.Common.Base.Configuration;
-using MS.GTA.Common.Common.Common.Base.Configuration;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Hosting;
-using MS.GTA.ServicePlatform.Tracing;
+using Common.Base.Configuration;
+using Common.Common.Common.Base.Configuration;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication;
+using ServicePlatform.Context;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Hosting;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters
+namespace ServicePlatform.AspNetCore.Mvc.Filters
 {
     /// <summary>
     /// Action Filter Attribute that applies a monitored scope to the execution of the activity.

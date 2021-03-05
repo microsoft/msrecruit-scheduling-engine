@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.CustomSerializers
+namespace Common.DocumentDB.CustomSerializers
 {
     using System;
     using Contracts;

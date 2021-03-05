@@ -5,7 +5,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace MS.GTA.Common.BapClient.Contracts.XRM
+namespace Common.BapClient.Contracts.XRM
 {
     /// <summary>
     /// The environment entity properties.

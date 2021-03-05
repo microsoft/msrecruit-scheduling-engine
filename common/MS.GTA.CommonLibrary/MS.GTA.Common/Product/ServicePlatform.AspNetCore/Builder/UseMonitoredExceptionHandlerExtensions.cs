@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 using Microsoft.AspNetCore.Builder;
-using MS.GTA.ServicePlatform.AspNetCore.Http;
-using MS.GTA.ServicePlatform.Exceptions;
+using ServicePlatform.AspNetCore.Http;
+using ServicePlatform.Exceptions;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder
+namespace ServicePlatform.AspNetCore.Builder
 {
     public static class UseMonitoredExceptionHandlerExtensions
     {

@@ -1,16 +1,16 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Exceptions.Cache;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Exceptions.Cache;
 using System;
 using System.IO;
 using System.Linq;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     /// <summary>
     /// Provides the default implementation for <see cref="IServiceExceptionHandlingProvider"/>.

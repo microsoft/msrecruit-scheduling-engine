@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.Model
+namespace Common.XrmHttp.Model
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
+    using Common.XrmHttp;
 
     [ODataEntity(PluralName = "activitypointers", SingularName = "activitypointer")]
     public class ActivityPointer : XrmODataEntity

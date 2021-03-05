@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Azure.KeyVault.Models;
 using Microsoft.Extensions.Logging;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 
-namespace MS.GTA.ServicePlatform.Azure.Security
+namespace ServicePlatform.Azure.Security
 {
     public interface ISecretManager
     {

@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Models
+namespace Common.WebNotifications.Models
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;

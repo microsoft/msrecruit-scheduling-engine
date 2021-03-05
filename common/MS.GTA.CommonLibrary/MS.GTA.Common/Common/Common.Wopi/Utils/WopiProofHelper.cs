@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Utils
+namespace Common.Wopi.Utils
 {
     using System;
     using System.Collections.Generic;
@@ -12,8 +12,8 @@ namespace MS.GTA.Common.Wopi.Utils
     using System.Text;
     using CommonDataService.Common.Internal;
     using Configuration;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Tracing;
+    using ServicePlatform.Configuration;
+    using ServicePlatform.Tracing;
     using Discovery;
     using Interfaces;
 

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.GlobalService
+namespace Common.Routing.GlobalService
 {
     using System;
     using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace MS.GTA.Common.Routing.GlobalService
     using CommonDataService.Common.Internal;
     using DocumentDB.V2;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Contracts;
+    using Common.Contracts;
     using Microsoft.Extensions.Logging;
     using Routing.Configuration;
     using Routing.Constants;

@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.MSGraph.Configuration
+namespace Common.MSGraph.Configuration
 {
     using System;
     using System.Collections.Generic;
-    using MS.GTA.Common.Base.Helper;
+    using Common.Base.Helper;
     using ServicePlatform.Configuration;
 
     /// <summary>

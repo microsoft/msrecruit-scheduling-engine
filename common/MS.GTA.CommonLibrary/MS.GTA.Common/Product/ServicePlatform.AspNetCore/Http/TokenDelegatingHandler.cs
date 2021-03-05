@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Http
+namespace Common.Product.ServicePlatform.AspNetCore.Http
 {
     using System;
     using System.Net;

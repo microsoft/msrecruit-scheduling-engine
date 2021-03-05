@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Interfaces
+namespace Common.Wopi.Interfaces
 {
     using System.Threading.Tasks;
     using Utils;

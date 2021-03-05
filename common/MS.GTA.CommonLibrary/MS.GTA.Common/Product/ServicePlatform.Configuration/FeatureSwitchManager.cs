@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Configuration.FeatureSwitches;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Configuration.FeatureSwitches;
 
-namespace MS.GTA.ServicePlatform.Configuration
+namespace ServicePlatform.Configuration
 {
     public sealed class FeatureSwitchManager : IFeatureSwitchManager
     {

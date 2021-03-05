@@ -5,7 +5,7 @@
 
 using System.Collections.Generic;
 
-namespace MS.GTA.Common.Email
+namespace Common.Email
 {
     /// <summary>
     /// Class to encapsulate all the constants.

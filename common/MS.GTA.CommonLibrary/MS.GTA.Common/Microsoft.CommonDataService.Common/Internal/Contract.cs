@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 
-namespace MS.GTA.CommonDataService.Common.Internal
+namespace CommonDataService.Common.Internal
 {
     /// <summary>
     /// Execution contract assertions with two sets of contract assertions:

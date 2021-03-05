@@ -1,10 +1,10 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.ServicePlatform.Configuration;
+using ServicePlatform.Configuration;
 
-namespace MS.GTA.Common.Product.ServicePlatform.Flighting.AppConfiguration
+namespace Common.Product.ServicePlatform.Flighting.AppConfiguration
 {
     /// <summary>
     /// Configuration options for the Flighting Api Configuration provider implementation.

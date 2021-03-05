@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.Extensions
+namespace Common.Routing.Extensions
 {
     using CommonDataService.Common.Internal;
     using Constants;
     using DocumentDB.Configuration;
     using Exceptions;
-    using MS.GTA.Common.BlobStore.Configuration;
+    using Common.BlobStore.Configuration;
     using ServicePlatform.GlobalService.Contracts.Client;
     using SqlDB.Configuration;
     using StorageAccount.Configuration;

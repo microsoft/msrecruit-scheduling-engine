@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications
+namespace Common.WebNotifications
 {
     using System;
-    using MS.GTA.Common.WebNotifications.Interfaces;
+    using Common.WebNotifications.Interfaces;
 
     /// <summary>
     /// The <see cref="WebNotificationBuilderClient"/> class holds web notication client and builder together.

@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Hosting.Security;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Hosting.Security;
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.Hosting
+namespace ServicePlatform.Hosting
 {
     internal static class ContextSerializerFactory
     {

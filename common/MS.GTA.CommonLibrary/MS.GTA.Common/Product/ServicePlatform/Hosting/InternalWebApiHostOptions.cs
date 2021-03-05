@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Security;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Security;
 
-namespace MS.GTA.ServicePlatform.Hosting
+namespace ServicePlatform.Hosting
 {
     public sealed class InternalWebApiHostOptions
     {

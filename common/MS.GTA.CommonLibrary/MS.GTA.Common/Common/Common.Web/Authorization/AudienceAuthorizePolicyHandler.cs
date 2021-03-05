@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Authorization
+namespace Common.Web.Authorization
 {
     using System;
     using System.Collections.Generic;
@@ -12,10 +12,10 @@ namespace MS.GTA.Common.Web.Authorization
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Configuration;
-    using MS.GTA.Common.Base;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Web.Contracts;
-    using MS.GTA.ServicePlatform.Tracing;
+    using Common.Base;
+    using Common.Base.Security.V2;
+    using Common.Web.Contracts;
+    using ServicePlatform.Tracing;
 
     /// <summary>
     /// Handler for evaluation of AudienceAuthorizeRequirement Policy.

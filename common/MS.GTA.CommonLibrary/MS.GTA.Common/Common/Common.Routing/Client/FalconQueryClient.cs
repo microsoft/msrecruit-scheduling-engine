@@ -3,16 +3,16 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.Client
+namespace Common.Routing.Client
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Routing.DocumentDb;
-    using MS.GTA.ServicePlatform.Tracing;
+    using Common.Base.Security.V2;
+    using Common.Base.ServiceContext;
+    using Common.DocumentDB;
+    using Common.Routing.DocumentDb;
+    using ServicePlatform.Tracing;
 
 
     /// <summary>

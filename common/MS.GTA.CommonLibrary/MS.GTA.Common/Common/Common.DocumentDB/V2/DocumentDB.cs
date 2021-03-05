@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.V2
+namespace Common.DocumentDB.V2
 {
     using System;
     using System.Collections.Concurrent;
@@ -24,7 +24,7 @@ namespace MS.GTA.Common.DocumentDB.V2
     using ServicePlatform.Exceptions;
     using ServicePlatform.Tracing;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.ServicePlatform.Azure.Security;
+    using ServicePlatform.Azure.Security;
 
     /// <summary>
     /// The document database class.

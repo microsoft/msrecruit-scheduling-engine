@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,7 +6,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace MS.GTA.ServicePlatform.Caching.Abstractions
+namespace ServicePlatform.Caching.Abstractions
 {
     /// <summary>
     /// An interface for a cache in which any given item could be a different type than any other.

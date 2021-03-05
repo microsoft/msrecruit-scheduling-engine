@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -11,7 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MS.GTA.Common.XrmHttp.ODataStream
+namespace Common.XrmHttp.ODataStream
 {
     public class XrmAnnotationDocumentStream : Stream
     {

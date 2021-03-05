@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
 
-namespace MS.GTA.CommonDataService.Instrumentation.Privacy
+namespace CommonDataService.Instrumentation.Privacy
 {
     /// <summary>
     /// Used for objects that contain Private Information

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.GlobalService
+namespace Common.Routing.GlobalService
 {
     using ServicePlatform.GlobalService.ClientLibrary;
 

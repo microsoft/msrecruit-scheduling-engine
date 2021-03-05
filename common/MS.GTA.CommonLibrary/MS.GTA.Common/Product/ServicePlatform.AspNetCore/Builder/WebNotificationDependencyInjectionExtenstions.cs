@@ -2,15 +2,15 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder
+namespace Common.Product.ServicePlatform.AspNetCore.Builder
 {
     using System;
     using System.Net.Http;
     using Microsoft.Extensions.DependencyInjection;
-    using MS.GTA.Common.Product.ServicePlatform.AspNetCore.Http;
-    using MS.GTA.Common.WebNotifications;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.Common.WebNotifications.Internals;
+    using Common.Product.ServicePlatform.AspNetCore.Http;
+    using Common.WebNotifications;
+    using Common.WebNotifications.Interfaces;
+    using Common.WebNotifications.Internals;
 
     /// <summary>
     /// The <see cref="WebNotificationDependencyInjectionExtenstions"/> class provides extension methods to add web notifications services

@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.ServicePlatform.Tracing;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Internal
+namespace ServicePlatform.Communication.Http.Internal
 {
     /// <summary>
     /// Internal trace source for the communication stack.

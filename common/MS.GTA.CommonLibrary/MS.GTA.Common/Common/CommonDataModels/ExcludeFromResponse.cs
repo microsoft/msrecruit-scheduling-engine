@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
-namespace MS.GTA.Common.CommonDataModels
+namespace Common.CommonDataModels
 {
     /// <summary>
     /// Custom Attribute.

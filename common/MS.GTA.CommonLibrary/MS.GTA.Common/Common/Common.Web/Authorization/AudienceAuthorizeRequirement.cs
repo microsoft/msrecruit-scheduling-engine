@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Authorization
+namespace Common.Web.Authorization
 {
     using Microsoft.AspNetCore.Authorization;
-    using MS.GTA.Common.Web.Contracts;
+    using Common.Web.Contracts;
 
     /// <summary>
     /// Authorization Requirement to validate the request for the given token type with Valid Audiences.

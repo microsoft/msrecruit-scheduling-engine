@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient
+namespace Common.BapClient
 {
     using System;
     using System.Collections.Concurrent;
@@ -16,7 +16,7 @@ namespace MS.GTA.Common.BapClient
 
     using Contracts;
     using Contracts.XRM;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonDataService.Common.Internal;
     using Exceptions;
     using Extensions;
     using Microsoft.Extensions.Logging;

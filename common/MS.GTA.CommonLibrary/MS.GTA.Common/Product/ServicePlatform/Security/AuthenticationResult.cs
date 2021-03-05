@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Security;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Security;
 
-namespace MS.GTA.ServicePlatform.Security
+namespace ServicePlatform.Security
 {
     /// <summary>
     /// Represents the result provided by specific authenticator implementations.

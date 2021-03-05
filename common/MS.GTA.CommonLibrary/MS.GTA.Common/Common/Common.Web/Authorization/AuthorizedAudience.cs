@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Authorization
+namespace Common.Web.Authorization
 {
     using System.Collections.Generic;
     using System.Linq;
-    using MS.GTA.Common.Base;
-    using MS.GTA.ServicePlatform.Configuration;  
+    using Common.Base;
+    using ServicePlatform.Configuration;  
 
     /// <summary>
     /// authorized audiences class

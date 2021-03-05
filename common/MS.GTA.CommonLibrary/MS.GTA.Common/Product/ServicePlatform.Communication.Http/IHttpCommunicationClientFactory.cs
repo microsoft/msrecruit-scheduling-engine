@@ -5,7 +5,7 @@
 using System;
 using System.Net.Http;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// A factory for <see cref="IHttpCommunicationClient"/>. The interface declares <see cref="IDisposable"/> to allow

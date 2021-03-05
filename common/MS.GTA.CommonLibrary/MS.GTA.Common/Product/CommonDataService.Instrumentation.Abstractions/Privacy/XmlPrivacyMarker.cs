@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Privacy;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Privacy;
 
-namespace MS.GTA.CommonDataService.Instrumentation.Privacy
+namespace CommonDataService.Instrumentation.Privacy
 {
     /// <summary>
     /// An implementation of <see cref="IPrivacyMarker"/> that marks sensitive data using XML tags.

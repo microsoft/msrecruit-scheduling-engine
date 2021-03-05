@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Tracing;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Tracing;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Utils
+namespace ServicePlatform.AspNetCore.Utils
 {
     /// <summary>
     /// Extension utilities over <see cref="IServiceCollection"/>

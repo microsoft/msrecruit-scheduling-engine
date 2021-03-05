@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Security.V2
+namespace Common.Base.Security.V2
 {
     /// <summary>The AAD names.</summary>
     public static class AadNames

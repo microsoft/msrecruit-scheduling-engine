@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Extensions
+namespace Common.Web.Extensions
 {
-    using MS.GTA.Common.Web.S2SHandler;
-    using MS.GTA.ServicePlatform.Azure.AAD;
+    using Common.Web.S2SHandler;
+    using ServicePlatform.Azure.AAD;
     using Microsoft.Extensions.DependencyInjection;
-    using MS.GTA.Common.Web.S2SHandler.V2;
+    using Common.Web.S2SHandler.V2;
 
     public static class EnvironmentAuthorizationExtensions
     {

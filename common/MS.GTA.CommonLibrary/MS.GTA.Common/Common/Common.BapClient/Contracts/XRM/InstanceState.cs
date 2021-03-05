@@ -5,7 +5,7 @@
 
 using System.Runtime.Serialization;
 
-namespace MS.GTA.Common.BapClient.Contracts.XRM
+namespace Common.BapClient.Contracts.XRM
 {
     /// <summary>
     /// The instance type.

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Security.V2
+namespace Common.Base.Security.V2
 {
     using System.Collections.Generic;
     using System.IdentityModel.Tokens.Jwt;
@@ -11,8 +11,8 @@ namespace MS.GTA.Common.Base.Security.V2
     using System.Security.Claims;
     using Microsoft.Extensions.Logging;
     using Microsoft.AspNetCore.Http;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Tracing;
+    using CommonDataService.Common.Internal;
+    using ServicePlatform.Tracing;
 
     /// <summary>The hcm principal.</summary>
     public abstract class HCMPrincipal

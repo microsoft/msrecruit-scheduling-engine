@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -12,12 +12,12 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Tracing;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Tracing;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// An exception wrapping non-successful http responses.

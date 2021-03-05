@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.KeyVault
+namespace Common.Base.KeyVault
 {
     using System;
     using System.Collections.Concurrent;

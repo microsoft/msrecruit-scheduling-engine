@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.ServicePlatform.Context;
+using ServicePlatform.Context;
 
-namespace MS.GTA.ServicePlatform.Caching.Activities
+namespace ServicePlatform.Caching.Activities
 {
     /// <summary>
     /// Represents an activity for a remove command on an extended <c>redis</c> cache.

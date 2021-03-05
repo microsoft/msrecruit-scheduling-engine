@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.Base.Exceptions
+namespace Common.Base.Exceptions
 {
     using System;
     using System.Runtime.Serialization;
@@ -12,7 +12,7 @@ namespace MS.GTA.Common.Base.Exceptions
     /// <summary>
     /// Data validation exception.
     /// </summary>
-    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "MS.GTA.Common.Base.Exceptions", "DataValidationException", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Common.Base.Exceptions", "DataValidationException", MonitoredExceptionKind.Benign)]
     [Serializable]
     public sealed class DataValidationException : BenignException
     {

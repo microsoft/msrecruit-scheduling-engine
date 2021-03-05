@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.GlobalService
+namespace Common.Routing.GlobalService
 {
-    using MS.GTA.Common.Routing.Contracts;
-    using MS.GTA.ServicePlatform.GlobalService.Contracts.Client;
+    using Common.Routing.Contracts;
+    using ServicePlatform.GlobalService.Contracts.Client;
     using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;

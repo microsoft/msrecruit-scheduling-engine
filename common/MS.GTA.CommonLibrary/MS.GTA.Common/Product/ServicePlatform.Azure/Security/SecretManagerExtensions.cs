@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Azure.AAD;
-using MS.GTA.ServicePlatform.Azure.Security;
-using MS.GTA.ServicePlatform.Configuration;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Azure.AAD;
+using ServicePlatform.Azure.Security;
+using ServicePlatform.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MS.GTA.ServicePlatform.Azure.Extensions
+namespace ServicePlatform.Azure.Extensions
 {
     public static class SecretManagerExtensions
     {

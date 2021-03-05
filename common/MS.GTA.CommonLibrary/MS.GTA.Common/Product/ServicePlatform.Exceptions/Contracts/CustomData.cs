@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.CommonDataService.Instrumentation.Privacy;
-using MS.GTA.ServicePlatform.Privacy;
+using CommonDataService.Instrumentation.Privacy;
+using ServicePlatform.Privacy;
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     public sealed class CustomData : PrivateDataContainer<string>
     {

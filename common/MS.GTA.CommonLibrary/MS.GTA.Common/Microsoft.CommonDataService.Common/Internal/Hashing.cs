@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,7 +6,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace MS.GTA.CommonDataService.Common.Internal
+namespace CommonDataService.Common.Internal
 {
     /// <summary>
     /// Utility methods for generating and combining hash codes.

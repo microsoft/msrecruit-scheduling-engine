@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.Client
+namespace Common.Routing.Client
 {
     using System.Threading.Tasks;
-    using MS.GTA.Common.DocumentDB;
+    using Common.DocumentDB;
 
     /// <summary>
     /// Falcon query client used for storing the client across a single request.

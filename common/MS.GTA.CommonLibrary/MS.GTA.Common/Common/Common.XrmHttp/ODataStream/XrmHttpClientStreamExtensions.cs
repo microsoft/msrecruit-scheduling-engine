@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.ODataStream
+namespace Common.XrmHttp.ODataStream
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace MS.GTA.Common.XrmHttp.ODataStream
     using System.Security.Cryptography;
     using System.Text;
     using System.Threading.Tasks;
-    using MS.GTA.Common.XrmHttp.Model;
+    using Common.XrmHttp.Model;
 
     public static class XrmHttpClientStreamExtensions
     {

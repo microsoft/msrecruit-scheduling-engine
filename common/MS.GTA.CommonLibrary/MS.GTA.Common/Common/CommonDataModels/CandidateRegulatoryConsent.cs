@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MS.GTA.Common.CommonDataModels
+namespace Common.CommonDataModels
 {
     /// <summary>
     /// Holds CandidateRegulatoryConsent

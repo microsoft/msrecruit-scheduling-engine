@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -11,7 +11,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 
-namespace MS.GTA.CommonDataService.Common
+namespace CommonDataService.Common
 {
     /// <summary>
     /// Execution contract assertions with two sets of contract assertions:
@@ -29,7 +29,7 @@ namespace MS.GTA.CommonDataService.Common
     /// Failing either Check or Assert is considered an application (programming) error so these 
     /// methods should never be used to validate end-user input.
     /// </summary>
-    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the MS.GTA.CommonDataService.Common.Internal namespace instead.")]
+    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the CommonDataService.Common.Internal namespace instead.")]
     internal static class Contract
     {
         /// <summary>

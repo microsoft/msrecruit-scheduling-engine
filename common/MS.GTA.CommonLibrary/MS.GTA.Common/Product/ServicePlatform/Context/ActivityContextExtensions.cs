@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 
-namespace MS.GTA.ServicePlatform.Context
+namespace ServicePlatform.Context
 {
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonDataService.Common.Internal;
 
     internal static class ActivityContextExtensions
     {

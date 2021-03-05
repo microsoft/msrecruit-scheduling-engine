@@ -8,20 +8,20 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.CommonDataService.Instrumentation;
-using MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions;
-using MS.GTA.ServicePlatform.Communication;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Hosting;
-using MS.GTA.ServicePlatform.Tracing;
-using MS.GTA.ServicePlatform.Utils;
+using CommonDataService.Common.Internal;
+using CommonDataService.Instrumentation;
+using ServicePlatform.AspNetCore.Http.Abstractions;
+using ServicePlatform.Communication;
+using ServicePlatform.Context;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Hosting;
+using ServicePlatform.Tracing;
+using ServicePlatform.Utils;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Http
+namespace ServicePlatform.AspNetCore.Http
 {
     // TODO - 0000: [anbencic] Add static flights and principal deserialization here
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]

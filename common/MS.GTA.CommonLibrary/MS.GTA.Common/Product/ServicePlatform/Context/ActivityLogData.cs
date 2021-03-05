@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -7,10 +7,10 @@ using System;
 using System.Diagnostics;
 using System.Linq;
 using Microsoft.Extensions.Logging;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Exceptions;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Context
+namespace ServicePlatform.Context
 {
     public enum ActivityLogKind
     {

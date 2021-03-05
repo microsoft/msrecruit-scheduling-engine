@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Tracing;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.ServicePlatform.Security
+namespace ServicePlatform.Security
 {
     internal sealed class CertificateManagerTrace : TraceSourceBase<CertificateManagerTrace>
     {

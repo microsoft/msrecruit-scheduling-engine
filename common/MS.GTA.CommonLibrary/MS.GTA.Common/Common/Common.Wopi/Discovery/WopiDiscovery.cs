@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Discovery
+namespace Common.Wopi.Discovery
 {
     using System;
     using System.IO;
@@ -13,14 +13,14 @@ namespace MS.GTA.Common.Wopi.Discovery
     using System.Runtime.Caching;
     using System.Threading.Tasks;
     using System.Xml.Linq;
-    using MS.GTA.Common.Base.Utilities;
+    using Common.Base.Utilities;
     using CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Tracing;
+    using ServicePlatform.Context;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Tracing;
     using Exceptions;
     using Interfaces;
-    using MS.GTA.Common.Web.Utils;
+    using Common.Web.Utils;
 
     /// <summary>
     /// The WOPIDiscovery class

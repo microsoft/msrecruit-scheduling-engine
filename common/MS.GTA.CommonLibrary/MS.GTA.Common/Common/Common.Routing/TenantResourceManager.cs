@@ -3,17 +3,17 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing
+namespace Common.Routing
 {
     using Microsoft.AspNetCore.Http;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.DocumentDB.Configuration;
-    using MS.GTA.Common.Routing.Contracts;
-    using MS.GTA.Common.Routing.Exceptions;
-    using MS.GTA.Common.Routing.Extensions;
-    using MS.GTA.ServicePlatform.GlobalService.Contracts.Client;
+    using CommonDataService.Common.Internal;
+    using Common.Base.Security;
+    using Common.Base.ServiceContext;
+    using Common.DocumentDB.Configuration;
+    using Common.Routing.Contracts;
+    using Common.Routing.Exceptions;
+    using Common.Routing.Extensions;
+    using ServicePlatform.GlobalService.Contracts.Client;
     using Microsoft.Extensions.Logging;
     using System.Threading;
     using System.Threading.Tasks;

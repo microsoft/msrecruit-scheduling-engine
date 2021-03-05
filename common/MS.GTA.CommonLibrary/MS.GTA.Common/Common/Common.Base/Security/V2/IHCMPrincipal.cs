@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Security.V2
+namespace Common.Base.Security.V2
 {
-    using MS.GTA.ServicePlatform.Security;
+    using ServicePlatform.Security;
 
     /// <summary>The HCMPrincipal interface.</summary>
     public interface IHCMPrincipal : IServiceContextPrincipal

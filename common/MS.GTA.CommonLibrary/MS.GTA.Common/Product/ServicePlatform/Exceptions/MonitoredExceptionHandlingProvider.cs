@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
-using MS.GTA.ServicePlatform.Communication.Http;
+using ServicePlatform.Communication.Http;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     /// <summary>
     /// An specialization of <see cref="DefaultServiceExceptionHandlingProvider"/> to provide additional support for <see cref="MonitoredException"/>.

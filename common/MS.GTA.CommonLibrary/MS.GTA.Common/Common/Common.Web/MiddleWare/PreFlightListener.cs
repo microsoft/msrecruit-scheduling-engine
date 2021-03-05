@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.MiddleWare
+namespace Common.Web.MiddleWare
 {
     using System;
     using System.Diagnostics.CodeAnalysis;

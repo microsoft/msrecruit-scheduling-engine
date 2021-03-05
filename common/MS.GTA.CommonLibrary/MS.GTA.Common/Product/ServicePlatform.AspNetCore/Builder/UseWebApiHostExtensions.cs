@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 using Microsoft.AspNetCore.Builder;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Http;
-using MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Hosting;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Http;
+using ServicePlatform.AspNetCore.Http.Abstractions;
+using ServicePlatform.Context;
+using ServicePlatform.Hosting;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder
+namespace ServicePlatform.AspNetCore.Builder
 {
     public static class UseWebApiHostExtensions
     {

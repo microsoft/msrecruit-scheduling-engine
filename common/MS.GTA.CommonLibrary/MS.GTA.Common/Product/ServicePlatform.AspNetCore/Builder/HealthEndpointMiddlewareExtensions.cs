@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Builder.Abstractions;
-using MS.GTA.ServicePlatform.AspNetCore.Builder.Contracts;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Builder.Abstractions;
+using ServicePlatform.AspNetCore.Builder.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder
+namespace ServicePlatform.AspNetCore.Builder
 {
     /// <summary>
     /// Middleware extensions for creating a health endpoint.

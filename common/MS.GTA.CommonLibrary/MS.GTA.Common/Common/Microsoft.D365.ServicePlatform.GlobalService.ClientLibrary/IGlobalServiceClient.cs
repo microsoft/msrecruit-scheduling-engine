@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,10 +6,10 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.ServicePlatform.GlobalService.Contracts;
-using MS.GTA.ServicePlatform.GlobalService.Contracts.Client;
+using ServicePlatform.GlobalService.Contracts;
+using ServicePlatform.GlobalService.Contracts.Client;
 
-namespace MS.GTA.ServicePlatform.GlobalService.ClientLibrary
+namespace ServicePlatform.GlobalService.ClientLibrary
 {
     /// <summary>
     /// A global service client.

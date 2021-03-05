@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Exceptions;
+using ServicePlatform.Exceptions;
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
-using MS.GTA.ServicePlatform.Privacy;
+using ServicePlatform.Privacy;
 
-namespace MS.GTA.Common.Routing.Exceptions
+namespace Common.Routing.Exceptions
 {
     /// <summary>
     /// Failed call to the global service
@@ -17,7 +17,7 @@ namespace MS.GTA.Common.Routing.Exceptions
     [Serializable]
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass",
        Justification = "Small closely related classes may be combined.")]
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.Routing.Exceptions", "GlobalService_Exception", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.Routing.Exceptions", "GlobalService_Exception", MonitoredExceptionKind.Service)]
     public class GlobalServiceException : MonitoredException
     {
         /// <summary>
@@ -45,7 +45,7 @@ namespace MS.GTA.Common.Routing.Exceptions
     [Serializable]
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass",
        Justification = "Small closely related classes may be combined.")]
-    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "MS.GTA.Common.Routing.Exceptions", "GlobalServiceInvalidOperation_Exception", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Common.Routing.Exceptions", "GlobalServiceInvalidOperation_Exception", MonitoredExceptionKind.Benign)]
     public class GlobalServiceInvalidOperationException : MonitoredException
     {
         /// <summary>
@@ -77,7 +77,7 @@ namespace MS.GTA.Common.Routing.Exceptions
     [Serializable]
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass",
        Justification = "Small closely related classes may be combined.")]
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.Routing.Exceptions", "GlobalServiceMappingsRetrieval_Exception", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.Routing.Exceptions", "GlobalServiceMappingsRetrieval_Exception", MonitoredExceptionKind.Service)]
     public class GlobalServiceMappingsRetrievalException : MonitoredException
     {
         /// <summary>

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Utils
+namespace Common.Wopi.Utils
 {
     /// <summary>
     /// Request header keys based off definition at <see cref="http://wopi.readthedocs.io/projects/wopirest/en/latest/common_headers.html?highlight=X-WOPI-TimeStamp"/>

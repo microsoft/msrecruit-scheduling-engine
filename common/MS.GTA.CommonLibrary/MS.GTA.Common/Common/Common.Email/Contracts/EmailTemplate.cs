@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.Contracts
+namespace Common.Email.Contracts
 {
-    using MS.GTA.Common.Common.Common.Email.Contracts;
+    using Common.Common.Common.Email.Contracts;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 

@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.MiddleWare
+namespace Common.Web.MiddleWare
 {
     using System.Net;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc.Filters;
-    using MS.GTA.Common.Base;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using Common.Base;
+    using ServicePlatform.Exceptions;
     using Newtonsoft.Json;
 
     /// <summary>

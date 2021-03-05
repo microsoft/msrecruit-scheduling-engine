@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Common.Common.Web.Extensions
+namespace Common.Common.Common.Web.Extensions
 {
     using System.Collections.Generic;
     using System.Linq;

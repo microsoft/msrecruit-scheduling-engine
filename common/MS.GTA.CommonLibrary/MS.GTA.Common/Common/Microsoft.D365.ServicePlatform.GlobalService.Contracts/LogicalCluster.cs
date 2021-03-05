@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.GlobalService.Contracts.Client
+namespace ServicePlatform.GlobalService.Contracts.Client
 {
     /// <summary>
     /// A cluster partition that identifies a logical compute boundary that is

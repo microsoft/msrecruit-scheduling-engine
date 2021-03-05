@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,7 +6,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace MS.GTA.CommonDataService.Common.Internal
+namespace CommonDataService.Common.Internal
 {
     /// <summary>
     /// To help with representing and performing operations on semantic versions (<see cref="http://semver.org/spec/v2.0.0.html"/>).

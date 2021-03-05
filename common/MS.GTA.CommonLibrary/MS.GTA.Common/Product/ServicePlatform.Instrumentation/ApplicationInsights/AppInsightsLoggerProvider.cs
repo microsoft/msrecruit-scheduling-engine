@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
+namespace Common.Product.ServicePlatform.Instrumentation.ApplicationInsights
 {
     using Microsoft.Extensions.Logging;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonDataService.Common.Internal;
 
     /// <summary>
     /// The <see cref="AppInsightsLoggerProvider"/> defines the mechanism to provision the <see cref="ILogger"/> instances.

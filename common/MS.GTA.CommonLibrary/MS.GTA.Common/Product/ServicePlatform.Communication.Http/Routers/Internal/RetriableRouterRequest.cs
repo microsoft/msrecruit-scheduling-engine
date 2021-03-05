@@ -7,14 +7,14 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication.Http.Internal;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Fabric;
-using MS.GTA.ServicePlatform.Utils;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication.Http.Internal;
+using ServicePlatform.Context;
+using ServicePlatform.Fabric;
+using ServicePlatform.Utils;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Routers.Internal
+namespace ServicePlatform.Communication.Http.Routers.Internal
 {
     /// <summary>
     /// Base class for retriable router requests.

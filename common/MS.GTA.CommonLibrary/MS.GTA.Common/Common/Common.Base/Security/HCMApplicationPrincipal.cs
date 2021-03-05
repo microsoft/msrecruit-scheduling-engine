@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Security
+namespace Common.Base.Security
 {
     using System.Linq;
     using System.Security.Claims;
     using Microsoft.AspNetCore.Http;
-    using MS.GTA.ServicePlatform.Tracing;
+    using ServicePlatform.Tracing;
 
     /// <summary>
     /// HCM Application Principal which leverages HttpContext as a container.

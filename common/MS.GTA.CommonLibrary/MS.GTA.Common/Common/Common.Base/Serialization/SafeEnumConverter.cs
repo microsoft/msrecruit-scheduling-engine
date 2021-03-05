@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Serialization
+namespace Common.Base.Serialization
 {
     using System;
     using System.Linq;

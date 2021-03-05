@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,10 +6,10 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 using Microsoft.Extensions.Configuration;
 
-namespace MS.GTA.ServicePlatform.Configuration
+namespace ServicePlatform.Configuration
 {
     /// <summary>
     /// Default implementation for the configuration manager.

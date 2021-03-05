@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp
+namespace Common.XrmHttp
 {
     using System;
     using System.Collections.Generic;
@@ -12,9 +12,9 @@ namespace MS.GTA.Common.XrmHttp
     using System.Net;
     using System.Net.Http;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Base.Helper;
-    using MS.GTA.Common.XrmHttp.Model.Metadata;
-    using MS.GTA.ServicePlatform.Context;
+    using Common.Base.Helper;
+    using Common.XrmHttp.Model.Metadata;
+    using ServicePlatform.Context;
     using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;

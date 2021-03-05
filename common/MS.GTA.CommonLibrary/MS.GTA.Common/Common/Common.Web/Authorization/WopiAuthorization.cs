@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Authorization
+namespace Common.Web.Authorization
 {
     using System.IdentityModel.Tokens.Jwt;
     using System.Linq;
@@ -12,10 +12,10 @@ namespace MS.GTA.Common.Web.Authorization
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc.Filters;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Tracing;
+    using Common.Base.ServiceContext;
+    using Common.Base.Utilities;
+    using ServicePlatform.Context;
+    using ServicePlatform.Tracing;
     using Microsoft.Extensions.Logging;
 
     /// <summary>The WOPI authorization.</summary>

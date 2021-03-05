@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.XrmHttp.Model.Metadata
+namespace Common.XrmHttp.Model.Metadata
 {
     using System;
     using System.Runtime.Serialization;

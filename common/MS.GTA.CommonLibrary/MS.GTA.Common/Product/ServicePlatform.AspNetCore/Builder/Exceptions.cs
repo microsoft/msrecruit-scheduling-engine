@@ -4,10 +4,10 @@
 //-----------------------------------------------------------------------
 using System;
 using System.Net;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Exceptions;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder
+namespace ServicePlatform.AspNetCore.Builder
 {
     [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, ErrorNamespaces.ServicePlatform, ErrorCodes.GenericServiceError, MonitoredExceptionKind.Service)]
     public sealed class WebApiHostAlreadyRegisteredException : MonitoredException

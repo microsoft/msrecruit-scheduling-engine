@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Security
+namespace Common.Base.Security
 {
     using ServicePlatform.Security;
 

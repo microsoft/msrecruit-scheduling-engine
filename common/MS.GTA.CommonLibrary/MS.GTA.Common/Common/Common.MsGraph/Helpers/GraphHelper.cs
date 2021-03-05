@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Common.Common.MsGraph.Helpers
+namespace Common.Common.Common.MsGraph.Helpers
 {
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.ServicePlatform.Azure.Security;
+    using Common.Base.Configuration;
+    using Common.MSGraph.Configuration;
+    using ServicePlatform.Azure.Security;
     using System.Globalization;
     using System.Threading.Tasks;
 

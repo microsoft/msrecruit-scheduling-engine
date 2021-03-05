@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Base.Security.V2
+namespace Common.Base.Security.V2
 {
     using Microsoft.Extensions.DependencyInjection;
 

@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.TestBase
+namespace Common.TestBase
 {
     using System;
     using Microsoft.VisualStudio.TestTools.UnitTesting;

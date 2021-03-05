@@ -5,12 +5,12 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions;
-using MS.GTA.ServicePlatform.Communication;
-using MS.GTA.ServicePlatform.Context;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Http.Abstractions;
+using ServicePlatform.Communication;
+using ServicePlatform.Context;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Http
+namespace ServicePlatform.AspNetCore.Http
 {
     /// <summary>
     /// Adds session id, root activity id, and activity vector on outbound response.

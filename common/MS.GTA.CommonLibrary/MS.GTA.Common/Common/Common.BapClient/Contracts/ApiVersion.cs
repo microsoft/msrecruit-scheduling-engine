@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient.Contracts
+namespace Common.BapClient.Contracts
 {
     /// <summary>
     /// The BAP API version

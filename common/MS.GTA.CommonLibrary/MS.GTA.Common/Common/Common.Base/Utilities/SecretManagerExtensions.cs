@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.Base.Utilities
+namespace Common.Base.Utilities
 {
     using CommonDataService.Common.Internal;
     using Microsoft.Extensions.DependencyInjection;

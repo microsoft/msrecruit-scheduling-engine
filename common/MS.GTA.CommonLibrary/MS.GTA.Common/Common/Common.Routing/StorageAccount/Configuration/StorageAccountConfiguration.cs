@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MS.GTA.Common.Routing.StorageAccount.Configuration
+namespace Common.Routing.StorageAccount.Configuration
 {
     using ServicePlatform.Configuration;
 

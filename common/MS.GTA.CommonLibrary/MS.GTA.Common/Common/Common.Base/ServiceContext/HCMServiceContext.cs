@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.ServiceContext
+namespace Common.Base.ServiceContext
 {
     using Microsoft.AspNetCore.Http;
-    using MS.GTA.Common.Contracts;
+    using Common.Contracts;
     using Security.V2;
     using System.Fabric.Management.ServiceModel;
 

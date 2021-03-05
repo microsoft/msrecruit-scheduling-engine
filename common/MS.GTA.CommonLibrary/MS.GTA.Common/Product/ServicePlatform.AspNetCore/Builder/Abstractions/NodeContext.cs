@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using System.Fabric;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder.Abstractions
+namespace ServicePlatform.AspNetCore.Builder.Abstractions
 {
     /// <summary>
     /// The node context interface, abstracting the implementation of retrieving 

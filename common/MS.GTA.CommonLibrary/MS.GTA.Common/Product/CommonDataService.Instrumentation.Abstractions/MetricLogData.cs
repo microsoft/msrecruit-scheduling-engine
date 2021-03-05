@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Collections.Generic;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 
-namespace MS.GTA.CommonDataService.Instrumentation
+namespace CommonDataService.Instrumentation
 {
     /// <summary>
     /// Container for metric data. This allows implementation of ILogger to detect input type and perform corresponding operation.

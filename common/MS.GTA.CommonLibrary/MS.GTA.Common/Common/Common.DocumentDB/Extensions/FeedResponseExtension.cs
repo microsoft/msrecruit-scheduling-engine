@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB
+namespace Common.DocumentDB
 {
     using Microsoft.Azure.Documents.Client;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonDataService.Common.Internal;
     using System.Collections.Generic;
 
     /// <summary>

@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Common.Common.Web.Validations
+namespace Common.Common.Common.Web.Validations
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Reflection;
-    using MS.GTA.CommonDataService.Common;
+    using CommonDataService.Common;
 
     /// <summary>
     /// The <see cref="RequiredIfAttribute"/> class mandates requirement of value presence based on another propertry value.

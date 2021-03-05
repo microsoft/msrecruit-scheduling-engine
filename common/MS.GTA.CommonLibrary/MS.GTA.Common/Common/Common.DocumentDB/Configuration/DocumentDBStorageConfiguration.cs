@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Configuration;
+using ServicePlatform.Configuration;
 
-namespace MS.GTA.Common.DocumentDB.Configuration
+namespace Common.DocumentDB.Configuration
 {
     /// <summary>
     /// Document database storage configuration settings class

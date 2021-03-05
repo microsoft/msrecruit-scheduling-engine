@@ -4,9 +4,9 @@
 //-----------------------------------------------------------------------
 using System;
 using System.Net;
-using MS.GTA.ServicePlatform.Exceptions;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// Thrown when retriable router retries have been exhausted

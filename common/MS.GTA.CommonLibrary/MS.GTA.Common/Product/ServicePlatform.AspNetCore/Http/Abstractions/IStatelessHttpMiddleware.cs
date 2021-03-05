@@ -6,7 +6,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions
+namespace ServicePlatform.AspNetCore.Http.Abstractions
 {
     /// <summary>
     /// A strongly-typed abstraction for a stateless HTTP middleware. This is

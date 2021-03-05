@@ -1,16 +1,16 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Collections.Generic;
 using System.Fabric.Description;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Tracing;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Context;
+using ServicePlatform.Tracing;
 using Microsoft.Extensions.Configuration;
 
-namespace MS.GTA.ServicePlatform.Fabric.Configuration
+namespace ServicePlatform.Fabric.Configuration
 {
     internal sealed class FabricSettingsConfigurationProvider : ConfigurationProvider
     {

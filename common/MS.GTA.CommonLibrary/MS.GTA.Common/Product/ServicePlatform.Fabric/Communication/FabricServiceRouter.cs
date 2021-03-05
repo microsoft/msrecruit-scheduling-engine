@@ -1,16 +1,16 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Fabric.Communication.Internal;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Fabric.Communication.Internal;
 using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.Extensions.Logging;
 using System;
 
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Routers
+namespace ServicePlatform.Communication.Http.Routers
 {
     /// <summary>
     /// Router targeting Fabric HTTP services.

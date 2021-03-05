@@ -8,11 +8,11 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Context;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Context;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Handlers
+namespace ServicePlatform.Communication.Http.Handlers
 {
     /// <summary>
     /// Adds D365 correlation headers and logs them if not already present:

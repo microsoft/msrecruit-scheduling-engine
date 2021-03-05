@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Routing.Extensions
+namespace Common.Routing.Extensions
 {
     using Microsoft.Extensions.DependencyInjection;
-    using MS.GTA.Common.Routing.DocumentDb;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using Common.Routing.DocumentDb;
+    using CommonDataService.Common.Internal;
 
     /// <summary>The HCM document client extensions.</summary>
     public static class HcmDocumentClientExtensions

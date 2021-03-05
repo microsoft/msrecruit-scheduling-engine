@@ -1,15 +1,15 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;
-using MS.GTA.Common.Base.Configuration;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Azure.Security;
-using MS.GTA.ServicePlatform.Configuration;
-using MS.GTA.ServicePlatform.Flighting;
+using Common.Base.Configuration;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Azure.Security;
+using ServicePlatform.Configuration;
+using ServicePlatform.Flighting;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -20,7 +20,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace MS.GTA.Common.Product.ServicePlatform.Flighting.AppConfiguration
+namespace Common.Product.ServicePlatform.Flighting.AppConfiguration
 {
     /// <summary>
     /// A flights provider implementation of the Azure App Configuration.

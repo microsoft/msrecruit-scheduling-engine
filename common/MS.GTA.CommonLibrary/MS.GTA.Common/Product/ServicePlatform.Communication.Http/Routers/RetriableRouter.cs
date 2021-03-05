@@ -4,12 +4,12 @@
 //-----------------------------------------------------------------------
 using System;
 using System.Threading;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication.Http.Routers.Internal;
-using MS.GTA.ServicePlatform.Utils;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication.Http.Routers.Internal;
+using ServicePlatform.Utils;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Routers
+namespace ServicePlatform.Communication.Http.Routers
 {
     /// <summary>
     /// Base class for router implementations with inbuilt request retry.

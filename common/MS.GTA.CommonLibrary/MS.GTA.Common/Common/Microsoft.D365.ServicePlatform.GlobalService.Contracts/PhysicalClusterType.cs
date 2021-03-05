@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,7 +6,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace MS.GTA.ServicePlatform.GlobalService.Contracts
+namespace ServicePlatform.GlobalService.Contracts
 {
     /// <summary>
     /// Types of physical clusters

@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.Model
+namespace Common.XrmHttp.Model
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
+    using Common.XrmHttp;
 
     [ODataEntity(PluralName = "tasks", SingularName = "task")]
     public class TaskActivity: ActivityPointer

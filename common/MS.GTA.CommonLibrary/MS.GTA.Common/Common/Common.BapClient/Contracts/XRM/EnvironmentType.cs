@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.BapClient.Contracts.XRM
+namespace Common.BapClient.Contracts.XRM
 {
-    using MS.GTA.Common.Base.Serialization;
+    using Common.Base.Serialization;
     using Newtonsoft.Json;
 
     /// <summary>

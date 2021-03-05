@@ -10,28 +10,28 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
-using MS.GTA.Common.BapClient;
-using MS.GTA.Common.BapClient.Contracts;
-using MS.GTA.Common.BapClient.Exceptions;
-using MS.GTA.Common.Base.Configuration;
-using MS.GTA.Common.Base.Utilities;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.Common.Routing.Constants;
-using MS.GTA.Common.Routing.Contracts;
-using MS.GTA.Common.DocumentDB.V2;
-using MS.GTA.Common.Routing.Exceptions;
-using MS.GTA.Common.Routing.Extensions;
-using MS.GTA.Common.Contracts;
+using Common.BapClient;
+using Common.BapClient.Contracts;
+using Common.BapClient.Exceptions;
+using Common.Base.Configuration;
+using Common.Base.Utilities;
+using CommonDataService.Common.Internal;
+using Common.Routing.Constants;
+using Common.Routing.Contracts;
+using Common.DocumentDB.V2;
+using Common.Routing.Exceptions;
+using Common.Routing.Extensions;
+using Common.Contracts;
 using Microsoft.Extensions.Logging;
-using MS.GTA.ServicePlatform.Communication.Http;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.GlobalService.ClientLibrary;
-using MS.GTA.ServicePlatform.GlobalService.Contracts;
-using MS.GTA.ServicePlatform.GlobalService.Contracts.Client;
-using GlobalServiceEnvironment = MS.GTA.ServicePlatform.GlobalService.Contracts.Client.Environment;
-using MS.GTA.Common.Common.Common.Resources;
+using ServicePlatform.Communication.Http;
+using ServicePlatform.Context;
+using ServicePlatform.GlobalService.ClientLibrary;
+using ServicePlatform.GlobalService.Contracts;
+using ServicePlatform.GlobalService.Contracts.Client;
+using GlobalServiceEnvironment = ServicePlatform.GlobalService.Contracts.Client.Environment;
+using Common.Common.Common.Resources;
 
-namespace MS.GTA.Common.Routing.GlobalService
+namespace Common.Routing.GlobalService
 {
     /// <summary>
     /// Routing client used for making requests to the global service for cluster uris and associated resources

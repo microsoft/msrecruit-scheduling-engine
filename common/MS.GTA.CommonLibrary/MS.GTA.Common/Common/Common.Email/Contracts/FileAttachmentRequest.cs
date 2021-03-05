@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace MS.GTA.Common.Common.Common.Email.Contracts
+namespace Common.Common.Common.Email.Contracts
 {
     /// <summary>
     /// Specifies the Data Contract for Email Attachment Request

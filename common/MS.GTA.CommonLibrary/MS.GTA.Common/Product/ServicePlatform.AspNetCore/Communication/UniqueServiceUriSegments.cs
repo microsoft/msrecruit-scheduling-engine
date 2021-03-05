@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using System;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Communication
+namespace ServicePlatform.AspNetCore.Communication
 {
     /// <summary>
     /// Defines segments to be used for unique service uri.

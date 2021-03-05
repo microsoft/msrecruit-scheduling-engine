@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ServicePlatform.Configuration
+namespace ServicePlatform.Configuration
 {
     /// <summary>
     /// Contract for a class that can provide configuration settings.

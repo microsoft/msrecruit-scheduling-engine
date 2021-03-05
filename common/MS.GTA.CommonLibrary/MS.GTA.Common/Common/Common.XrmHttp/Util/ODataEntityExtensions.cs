@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.Util
+namespace Common.XrmHttp.Util
 {
     using System.Collections.Generic;
     using Contracts;

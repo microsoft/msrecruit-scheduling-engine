@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Privacy;
+using ServicePlatform.Privacy;
 
-namespace MS.GTA.CommonDataService.Instrumentation.Privacy
+namespace CommonDataService.Instrumentation.Privacy
 {
     /// <summary>
     /// Represents a type used to wrap sensitive information.

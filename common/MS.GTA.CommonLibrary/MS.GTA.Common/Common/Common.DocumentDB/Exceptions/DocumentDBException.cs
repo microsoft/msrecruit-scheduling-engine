@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.Exceptions
+namespace Common.DocumentDB.Exceptions
 {
     using System;
     using System.Net;
@@ -13,7 +13,7 @@ namespace MS.GTA.Common.DocumentDB.Exceptions
     /// DocumentDBException class
     /// </summary>
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.DocumentDB.Exceptions", "KeyVaultAccessError", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.DocumentDB.Exceptions", "KeyVaultAccessError", MonitoredExceptionKind.Service)]
     public class DocumentDBException : MonitoredException
     {
         /// <summary>

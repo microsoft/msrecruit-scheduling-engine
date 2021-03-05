@@ -1,15 +1,15 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Privacy;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Privacy;
 using System.Runtime.CompilerServices;
 
 /*
  * To prevent breaking changes as types were moved out of this assembly to allow consumption by portable code,
- * here we forward those types to the MS.GTA.ServicePlatform.Exceptions assembly.
+ * here we forward those types to the ServicePlatform.Exceptions assembly.
  */
 //[assembly: TypeForwardedTo(typeof(MonitoredExceptionMetadataAttribute))]
 //[assembly: TypeForwardedTo(typeof(ExceptionCustomDataAttribute))]

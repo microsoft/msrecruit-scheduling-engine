@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.Attributes
+namespace Common.DocumentDB.Attributes
 {
     using System;
 

@@ -7,12 +7,12 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 using System.Net.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication.Http.Handlers;
-using MS.GTA.ServicePlatform.Communication.Http.Routers;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication.Http.Handlers;
+using ServicePlatform.Communication.Http.Routers;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// Convenience monitored  and context extension methods over <see cref="IHttpCommunicationClientFactory"/>.

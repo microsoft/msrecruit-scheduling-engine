@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,7 +6,7 @@
 using System;
 using System.Text;
 using Microsoft.Extensions.Logging;
-using MS.GTA.CommonDataService.Instrumentation;
+using CommonDataService.Instrumentation;
 
 namespace Microsoft.CommonDataService.Instrumentation
 {

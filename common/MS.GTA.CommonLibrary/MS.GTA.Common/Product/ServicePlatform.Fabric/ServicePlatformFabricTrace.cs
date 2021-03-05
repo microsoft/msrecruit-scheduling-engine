@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Tracing;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.ServicePlatform.Fabric
+namespace ServicePlatform.Fabric
 {
     internal sealed class ServicePlatformFabricTrace : TraceSourceBase<ServicePlatformFabricTrace>
     {

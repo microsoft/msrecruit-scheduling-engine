@@ -5,7 +5,7 @@
 using System;
 using Microsoft.AspNetCore.Hosting;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Communication
+namespace ServicePlatform.AspNetCore.Communication
 {
     /// <summary>
     /// Options to configure communication listener

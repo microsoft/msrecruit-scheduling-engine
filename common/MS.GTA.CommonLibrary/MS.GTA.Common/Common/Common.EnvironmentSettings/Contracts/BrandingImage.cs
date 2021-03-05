@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.EnvironmentSettings.Contracts
+namespace Common.EnvironmentSettings.Contracts
 {
     using System.Runtime.Serialization;
 

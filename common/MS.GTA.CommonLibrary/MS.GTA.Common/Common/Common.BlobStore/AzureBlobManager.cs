@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -11,14 +11,14 @@ using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
-using MS.GTA.Common.Base.KeyVault;
-using MS.GTA.Common.BlobStore.Configuration;
-using MS.GTA.Common.Contracts;
-using MS.GTA.CommonDataService.Common;
-using MS.GTA.ServicePlatform.Configuration;
-using MS.GTA.ServicePlatform.Tracing;
+using Common.Base.KeyVault;
+using Common.BlobStore.Configuration;
+using Common.Contracts;
+using CommonDataService.Common;
+using ServicePlatform.Configuration;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.Common.BlobStore
+namespace Common.BlobStore
 {
     /// <summary>
     /// Blob Storage

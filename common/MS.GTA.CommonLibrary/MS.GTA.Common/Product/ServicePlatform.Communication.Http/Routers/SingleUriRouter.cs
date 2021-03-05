@@ -6,10 +6,10 @@ using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication.Http.Internal;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication.Http.Internal;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Routers
+namespace ServicePlatform.Communication.Http.Routers
 {
     /// <summary>
     /// A simple router implementation with a single static URI and no retry behavior.

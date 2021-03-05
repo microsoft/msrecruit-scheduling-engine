@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Interfaces
+namespace Common.WebNotifications.Interfaces
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.WebNotifications.Models;
+    using Common.Base.ServiceContext;
+    using Common.WebNotifications.Models;
 
     /// <summary>
     /// The <see cref="IWebNotificationBuilder"/> interface provides mechanism to build the web notifications.

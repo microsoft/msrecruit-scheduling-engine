@@ -3,19 +3,19 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp
+namespace Common.XrmHttp
 {
     using System;
     using System.Collections.Concurrent;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.ServicePlatform.Azure.AAD;
-    using MS.GTA.ServicePlatform.Azure.Security;
-    using MS.GTA.ServicePlatform.Configuration;
+    using Common.Base.Configuration;
+    using Common.Base.Security.V2;
+    using Common.Base.ServiceContext;
+    using ServicePlatform.Azure.AAD;
+    using ServicePlatform.Azure.Security;
+    using ServicePlatform.Configuration;
 
     /// <summary>
     /// XRM HTTP Client generator used for storing the Client across a single request.

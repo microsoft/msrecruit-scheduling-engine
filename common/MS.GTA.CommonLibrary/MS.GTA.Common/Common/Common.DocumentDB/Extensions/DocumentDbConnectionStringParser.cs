@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.Extensions
+namespace Common.DocumentDB.Extensions
 {
     using System;
     using System.Collections.Generic;

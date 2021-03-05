@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.S2SHandler.Exceptions
+namespace Common.Web.S2SHandler.Exceptions
 {
     using System;
     using System.Net;
 
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using Common.Base.Security.V2;
+    using ServicePlatform.Exceptions;
 
     /// <summary>The invalid context exception.</summary>
     [Serializable]

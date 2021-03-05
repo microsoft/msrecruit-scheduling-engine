@@ -4,7 +4,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Base.Configuration
+namespace Common.Base.Configuration
 {
     using System;
     using System.Diagnostics.CodeAnalysis;

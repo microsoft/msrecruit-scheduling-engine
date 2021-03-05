@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TestBase.Utils
+namespace Common.TestBase.Utils
 {
     using System;
     using System.Collections.Generic;
@@ -11,17 +11,17 @@ namespace MS.GTA.Common.TestBase.Utils
     using System.Linq;
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Routing.Configuration;
-    using MS.GTA.Common.Routing.Constants;
-    using MS.GTA.Common.Routing.GlobalService;
-    using MS.GTA.ServicePlatform.Azure.AAD;
-    using MS.GTA.ServicePlatform.Communication.Http;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.GlobalService.ClientLibrary;
-    using MS.GTA.ServicePlatform.Tracing;
-    using MS.GTA.ServicePlatform.Security;
+    using Common.Base.Configuration;
+    using Common.Base.Utilities;
+    using Common.Routing.Configuration;
+    using Common.Routing.Constants;
+    using Common.Routing.GlobalService;
+    using ServicePlatform.Azure.AAD;
+    using ServicePlatform.Communication.Http;
+    using ServicePlatform.Configuration;
+    using ServicePlatform.GlobalService.ClientLibrary;
+    using ServicePlatform.Tracing;
+    using ServicePlatform.Security;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
 

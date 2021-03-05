@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.Model
+namespace Common.XrmHttp.Model
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.Common.XrmHttp.Model;
+    using Common.XrmHttp;
+    using Common.XrmHttp.Model;
 
     [ODataEntity(PluralName = "activityparties", SingularName = "activityparty")]
     public class ActivityParty : XrmODataEntity

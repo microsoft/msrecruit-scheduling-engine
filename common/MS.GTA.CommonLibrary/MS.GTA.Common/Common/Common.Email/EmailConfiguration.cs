@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email
+namespace Common.Email
 {
     using ServicePlatform.Configuration;
 

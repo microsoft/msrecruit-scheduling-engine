@@ -6,15 +6,15 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 using Microsoft.Extensions.Logging;
-using MS.GTA.ServicePlatform.Configuration;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Security;
-using MS.GTA.ServicePlatform.Tracing;
+using ServicePlatform.Configuration;
+using ServicePlatform.Context;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Security;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.ServicePlatform.Azure.AAD
+namespace ServicePlatform.Azure.AAD
 {
     //// Using statement inside namespace to avoid ambigutity with AuthenticationResult
     using Microsoft.IdentityModel.Clients.ActiveDirectory;

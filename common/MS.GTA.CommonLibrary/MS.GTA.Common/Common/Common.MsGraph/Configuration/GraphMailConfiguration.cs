@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.MSGraph.Configuration
+namespace Common.MSGraph.Configuration
 {
-    using MS.GTA.ServicePlatform.Configuration;
+    using ServicePlatform.Configuration;
 
     /// <summary>
     /// Graph Configuration

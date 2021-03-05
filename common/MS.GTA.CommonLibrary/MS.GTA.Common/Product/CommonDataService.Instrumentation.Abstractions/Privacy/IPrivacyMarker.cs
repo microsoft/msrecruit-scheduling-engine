@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.CommonDataService.Instrumentation.Privacy
+namespace CommonDataService.Instrumentation.Privacy
 {
     /// <summary>
     /// Represents a type used to mark sensitive information in <see cref="IPrivateDataContainer"/>.

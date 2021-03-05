@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,11 +6,11 @@
 using System.Collections.Concurrent;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Exceptions;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Context;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Security
+namespace ServicePlatform.Security
 {
     /// <summary>
     /// A certificate helper to do certificate operations.

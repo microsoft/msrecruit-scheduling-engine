@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Routers
+namespace ServicePlatform.Communication.Http.Routers
 {
     /// <summary>
     /// An abstraction over components responsible for routing requests among endpoints. The specific

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base
+namespace Common.Base
 {
     /// <summary>
     /// Class to encapsulate all the constants.

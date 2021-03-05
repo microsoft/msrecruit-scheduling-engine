@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Configuration
+namespace Common.Base.Configuration
 {
     using Exceptions;
-    using MS.GTA.ServicePlatform.Configuration;
+    using ServicePlatform.Configuration;
     using Microsoft.Extensions.Configuration.Json;
     using System.Text.RegularExpressions;
 

@@ -5,10 +5,10 @@
 using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting.Server.Features;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Http;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Http;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder
+namespace ServicePlatform.AspNetCore.Builder
 {
     public static class UseServiceFabricRoutingExtensions
     {

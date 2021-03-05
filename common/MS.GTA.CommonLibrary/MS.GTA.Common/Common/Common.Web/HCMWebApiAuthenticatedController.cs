@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web
+namespace Common.Web
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Http;

@@ -5,10 +5,10 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Communication.Http.Handlers;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Communication.Http.Handlers;
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Internal
+namespace ServicePlatform.Communication.Http.Internal
 {
     /// <summary>
     /// Internal communication utilities.

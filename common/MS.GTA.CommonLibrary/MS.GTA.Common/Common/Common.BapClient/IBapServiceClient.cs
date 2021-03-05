@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.BapClient
+namespace Common.BapClient
 {
     using Contracts;
     using Contracts.XRM;

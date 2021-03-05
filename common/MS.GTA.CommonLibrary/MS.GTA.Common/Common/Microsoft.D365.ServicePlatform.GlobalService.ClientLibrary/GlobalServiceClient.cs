@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -11,22 +11,22 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Caching;
-using MS.GTA.ServicePlatform.Caching.Abstractions;
-using MS.GTA.ServicePlatform.Communication.Http;
-using MS.GTA.ServicePlatform.Communication.Http.Routers;
-using MS.GTA.ServicePlatform.GlobalService.Contracts.Client;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Caching;
+using ServicePlatform.Caching.Abstractions;
+using ServicePlatform.Communication.Http;
+using ServicePlatform.Communication.Http.Routers;
+using ServicePlatform.GlobalService.Contracts.Client;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using GSContracts = MS.GTA.ServicePlatform.GlobalService.Contracts.Client;
+using GSContracts = ServicePlatform.GlobalService.Contracts.Client;
 
-namespace MS.GTA.ServicePlatform.GlobalService.ClientLibrary
+namespace ServicePlatform.GlobalService.ClientLibrary
 {
     /// <summary>
     /// Implementation of global service client.
     /// </summary>
-    /// <seealso cref="MS.GTA.ServicePlatform.GlobalService.ClientLibrary.IGlobalServiceClient" />
+    /// <seealso cref="ServicePlatform.GlobalService.ClientLibrary.IGlobalServiceClient" />
     public abstract class GlobalServiceClient : IGlobalServiceClient
     {
         protected const string DefaultApplicationName = "GlobalService";

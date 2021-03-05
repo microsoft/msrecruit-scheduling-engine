@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
 using System.Net;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Exceptions;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Fabric
+namespace ServicePlatform.Fabric
 {
     /// <summary>
     /// Thrown when a resolved endpoint address is not a valid absolute URL.

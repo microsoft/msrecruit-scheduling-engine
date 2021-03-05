@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Product.ServicePlatform.Utils
+namespace Common.Product.ServicePlatform.Utils
 {
     /// <summary>
     /// Details related to an application that can be published to external consumers.

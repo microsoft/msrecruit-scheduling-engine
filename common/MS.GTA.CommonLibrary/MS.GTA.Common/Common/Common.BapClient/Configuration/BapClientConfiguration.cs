@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient.Configuration
+namespace Common.BapClient.Configuration
 {
     /// <summary> BAP Service Client Configuration. </summary>
     public class BapClientConfiguration

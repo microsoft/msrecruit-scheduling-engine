@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Web.S2SHandler.V2
+namespace Common.Web.S2SHandler.V2
 {
     /// <summary>
     /// The service URLs enum.

@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.Contracts
+namespace Common.Email.Contracts
 {
-    using MS.GTA.Common.XrmHttp;
+    using Common.XrmHttp;
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
@@ -13,7 +13,7 @@ namespace MS.GTA.Common.Email.Contracts
     /// <summary>
     /// Xrm Email Template Class
     /// </summary>
-    /// <seealso cref="MS.GTA.Common.XrmHttp.XrmODataEntity" />
+    /// <seealso cref="Common.XrmHttp.XrmODataEntity" />
     [ODataEntity(PluralName = "msdyn_talentemailtemplates", SingularName = "msdyn_talentemailtemplate")]
     public class XrmEmailTemplate : XrmODataEntity
     {

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.RelevanceSearch
+namespace Common.XrmHttp.RelevanceSearch
 {
     /// <summary>
     /// Constants for relevance search

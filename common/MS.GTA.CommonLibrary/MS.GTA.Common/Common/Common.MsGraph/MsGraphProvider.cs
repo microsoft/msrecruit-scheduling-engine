@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.MSGraph
+namespace Common.MSGraph
 {
     using System;
     using System.Collections.Generic;
@@ -23,12 +23,12 @@ namespace MS.GTA.Common.MSGraph
     using Exceptions;
     using Microsoft.Extensions.Logging;
     using Microsoft.Graph;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Common.Common.MsGraph.Helpers;
-    using MS.GTA.Common.MsGraph;
-    using MS.GTA.Common.TestBase;
-    using MS.GTA.ServicePlatform.Communication.Http;
-    using MS.GTA.ServicePlatform.Communication.Http.Routers;
+    using Common.Base.Utilities;
+    using Common.Common.Common.MsGraph.Helpers;
+    using Common.MsGraph;
+    using Common.TestBase;
+    using ServicePlatform.Communication.Http;
+    using ServicePlatform.Communication.Http.Routers;
     using ServicePlatform.Azure.Security;
     using ServicePlatform.Communication.Http.Extensions;
     using ServicePlatform.Configuration;

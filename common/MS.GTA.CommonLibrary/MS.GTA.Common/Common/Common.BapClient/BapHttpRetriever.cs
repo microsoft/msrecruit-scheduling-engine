@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient
+namespace Common.BapClient
 {
     using System;
     using System.Net;
@@ -20,7 +20,7 @@ namespace MS.GTA.Common.BapClient
     using Configuration;
     using Constants;
     using Exceptions;
-    using MS.GTA.ServicePlatform.Utils;
+    using ServicePlatform.Utils;
     using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;

@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Configuration
+namespace Common.Base.Configuration
 {
     using System.Collections.Generic;
 
-    using MS.GTA.ServicePlatform.Configuration;
+    using ServicePlatform.Configuration;
 
     /// <summary>The auth settings.</summary>
     [SettingsSection("Auth")]

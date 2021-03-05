@@ -3,16 +3,16 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.Contracts
+namespace Common.Email.Contracts
 {
-    using MS.GTA.Common.DocumentDB.Contracts;
+    using Common.DocumentDB.Contracts;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 
     /// <summary>
     /// Falcon Email template Class
     /// </summary>
-    /// <seealso cref="MS.GTA.Common.DocumentDB.Contracts.DocDbEntity" />
+    /// <seealso cref="Common.DocumentDB.Contracts.DocDbEntity" />
     [DataContract]
     public class FalconEmailTemplate : DocDbEntity
     {

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -11,12 +11,12 @@ using System.Net;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Threading;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Privacy;
-using MS.GTA.ServicePlatform.Exceptions.Cache;
-using MS.GTA.CommonDataService.Instrumentation.Privacy;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Privacy;
+using ServicePlatform.Exceptions.Cache;
+using CommonDataService.Instrumentation.Privacy;
 
-namespace MS.GTA.ServicePlatform.Exceptions
+namespace ServicePlatform.Exceptions
 {
     /// <summary>
     /// Base class for all service exceptions.

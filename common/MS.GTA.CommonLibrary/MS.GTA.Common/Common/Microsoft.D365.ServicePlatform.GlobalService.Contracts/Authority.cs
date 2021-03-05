@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.GlobalService.Contracts.Client
+namespace ServicePlatform.GlobalService.Contracts.Client
 {
     /// <summary>
     /// An authority principal.

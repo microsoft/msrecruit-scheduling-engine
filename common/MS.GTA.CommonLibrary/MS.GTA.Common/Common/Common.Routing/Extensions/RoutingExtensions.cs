@@ -2,15 +2,15 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Routing.Extensions
+namespace Common.Routing.Extensions
 {
     using Microsoft.Extensions.DependencyInjection;
-    using MS.GTA.Common.BapClient.Extensions;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Routing;
-    using MS.GTA.Common.Routing.GlobalService;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using Common.BapClient.Extensions;
+    using Common.Base.Security.V2;
+    using Common.Base.ServiceContext;
+    using Common.Routing;
+    using Common.Routing.GlobalService;
+    using CommonDataService.Common.Internal;
 
 
     /// <summary> Routing Extension class </summary>

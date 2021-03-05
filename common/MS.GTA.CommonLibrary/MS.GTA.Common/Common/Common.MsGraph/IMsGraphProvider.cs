@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.MSGraph
+namespace Common.MSGraph
 {
     using System;
     using System.Collections.Generic;
@@ -10,7 +10,7 @@ namespace MS.GTA.Common.MSGraph
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
     using Microsoft.Graph;
-    using MS.GTA.Common.TestBase;
+    using Common.TestBase;
 
     public interface IMsGraphProvider
     {

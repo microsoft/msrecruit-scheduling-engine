@@ -5,10 +5,10 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Utils;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Utils;
 
-namespace MS.GTA.ServicePlatform.Communication.Http
+namespace ServicePlatform.Communication.Http
 {
     /// <summary>
     /// Contains options for modifying <see cref="IHttpCommunicationClient"/> behavior.

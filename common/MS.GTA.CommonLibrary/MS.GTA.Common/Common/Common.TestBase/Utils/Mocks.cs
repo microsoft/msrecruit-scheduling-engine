@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TestBase.Utils
+namespace Common.TestBase.Utils
 {
     using System.IO;
     using System.Security.Cryptography.X509Certificates;

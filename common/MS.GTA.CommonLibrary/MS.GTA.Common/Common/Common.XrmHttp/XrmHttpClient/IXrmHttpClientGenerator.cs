@@ -6,7 +6,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace MS.GTA.Common.XrmHttp
+namespace Common.XrmHttp
 {
     public interface IXrmHttpClientGenerator
     {

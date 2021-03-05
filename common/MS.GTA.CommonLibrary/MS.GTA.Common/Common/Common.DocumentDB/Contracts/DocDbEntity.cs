@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.Contracts
+namespace Common.DocumentDB.Contracts
 {
     using System;
     using System.Runtime.Serialization;
 
-    using MS.GTA.Common.DocumentDB.Attributes;
-    using MS.GTA.Common.DocumentDB.Enums;
+    using Common.DocumentDB.Attributes;
+    using Common.DocumentDB.Enums;
 
     /// <summary>The Document DB entity.</summary>
     [DataContract]

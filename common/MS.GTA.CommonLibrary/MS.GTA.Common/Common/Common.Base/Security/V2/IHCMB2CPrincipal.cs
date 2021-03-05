@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Security.V2
+namespace Common.Base.Security.V2
 {
     /// <summary>
     /// The HCM B2C principal, to be used for B2C Authentication scenarios where TFP is present.

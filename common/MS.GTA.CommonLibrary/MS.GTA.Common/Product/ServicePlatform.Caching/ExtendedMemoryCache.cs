@@ -1,24 +1,24 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Caching.Abstractions;
+using ServicePlatform.Caching.Abstractions;
 using System;
 using System.Threading.Tasks;
 using System.Threading;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Caching.Activities;
-using MS.GTA.ServicePlatform.Context;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Caching.Activities;
+using ServicePlatform.Context;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace MS.GTA.ServicePlatform.Caching
+namespace ServicePlatform.Caching
 {
     /// <summary>
     /// An implementation of a cache where entries share a common type.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <seealso cref="MS.GTA.ServicePlatform.Caching.Abstractions.ICache{T}" />
+    /// <seealso cref="ServicePlatform.Caching.Abstractions.ICache{T}" />
     public class ExtendedMemoryCache<T> : IDisposable, ICache<T>
     {
         private readonly TimeSpan defaultAbsoluteExpirationTimeSpan;

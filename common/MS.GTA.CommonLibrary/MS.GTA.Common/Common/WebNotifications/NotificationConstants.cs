@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications
+namespace Common.WebNotifications
 {
     /// <summary>
     /// The <see cref="NotificationConstants"/> class holds the common constants specific to web notifications.

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TestBase.Contracts
+namespace Common.TestBase.Contracts
 {
     using System.Runtime.Serialization;
 

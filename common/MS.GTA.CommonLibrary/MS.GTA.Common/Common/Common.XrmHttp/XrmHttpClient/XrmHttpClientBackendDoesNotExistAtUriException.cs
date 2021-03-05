@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp
+namespace Common.XrmHttp
 {
     using System;
     using System.Net;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using ServicePlatform.Exceptions;
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XrmBackendDoesNotExistAtUri", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XrmBackendDoesNotExistAtUri", MonitoredExceptionKind.Remote)]
     public class XrmEnvironmentBackendDoesNotExistAtUri : MonitoredException
     {
         public XrmEnvironmentBackendDoesNotExistAtUri(string backendUri, Exception innerException)

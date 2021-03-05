@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TestBase
+namespace Common.TestBase
 {
     /// <summary>
     /// User Name Password Secret

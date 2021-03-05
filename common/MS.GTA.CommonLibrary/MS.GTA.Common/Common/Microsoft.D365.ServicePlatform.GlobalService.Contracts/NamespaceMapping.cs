@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ServicePlatform.GlobalService.Contracts.Client
+namespace ServicePlatform.GlobalService.Contracts.Client
 {
     /// <summary>
     /// Namespace Domain Mapping POCO

@@ -8,15 +8,15 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-using MS.GTA.CommonDataService.Common;
-using MS.GTA.Common.Web.Exceptions;
-using MS.GTA.ServicePlatform.Communication.Http.Handlers;
-using MS.GTA.ServicePlatform.Context;
+using CommonDataService.Common;
+using Common.Web.Exceptions;
+using ServicePlatform.Communication.Http.Handlers;
+using ServicePlatform.Context;
 using Microsoft.Extensions.Logging;
 
 using Newtonsoft.Json;
 
-namespace MS.GTA.Common.Web.DelegatingHandlers
+namespace Common.Web.DelegatingHandlers
 {
     /// <summary>The external API handler.</summary>
     public class ExternalApiHandler : DelegatingHandler

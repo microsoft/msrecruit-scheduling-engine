@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Runtime.Serialization;
 
-namespace MS.GTA.Common.Contracts
+namespace Common.Contracts
 {
     [DataContract]
     public enum CandidateAttachmentDocumentType

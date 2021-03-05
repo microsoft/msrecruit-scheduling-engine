@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Configuration
+namespace Common.Base.Configuration
 {
     using ServicePlatform.Configuration;
     using System.Collections.Generic;
@@ -57,7 +57,7 @@ namespace MS.GTA.Common.Base.Configuration
 // </copyright>
 //----------------------------------------------------------------------------
 
-namespace MS.GTA.Common.Cdm.Configuration
+namespace Common.Cdm.Configuration
 {
 }
 

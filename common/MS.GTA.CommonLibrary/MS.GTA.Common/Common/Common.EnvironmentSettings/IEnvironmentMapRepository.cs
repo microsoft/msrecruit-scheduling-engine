@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.EnvironmentSettings
+namespace Common.EnvironmentSettings
 {
     using System;
     using System.Collections.Generic;
     using System.Linq.Expressions;
     using System.Threading.Tasks;
-    using MS.GTA.Common.EnvironmentSettings.Contracts;
+    using Common.EnvironmentSettings.Contracts;
 
     /// <summary>The EnvironmentMapRepository interface.</summary>
     public interface IEnvironmentMapRepository

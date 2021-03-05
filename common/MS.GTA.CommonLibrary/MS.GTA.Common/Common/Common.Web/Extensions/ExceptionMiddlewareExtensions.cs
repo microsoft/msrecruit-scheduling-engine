@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.Extensions
+namespace Common.Web.Extensions
 {
     using Microsoft.Extensions.DependencyInjection;
-    using MS.GTA.Common.Web.MiddleWare;    
+    using Common.Web.MiddleWare;    
 
     public static class ExceptionMiddlewareExtensions
     {

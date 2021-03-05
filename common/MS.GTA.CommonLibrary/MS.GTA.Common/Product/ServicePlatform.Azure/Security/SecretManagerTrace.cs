@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.ServicePlatform.Tracing;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.ServicePlatform.Azure.Security
+namespace ServicePlatform.Azure.Security
 {
     internal sealed class SecretManagerTrace : TraceSourceBase<SecretManagerTrace>
     {

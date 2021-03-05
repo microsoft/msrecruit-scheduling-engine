@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using MS.GTA.ServicePlatform.Configuration;
+using ServicePlatform.Configuration;
 
-namespace MS.GTA.ServicePlatform.Azure.AAD
+namespace ServicePlatform.Azure.AAD
 {
     using System.Security.Cryptography.X509Certificates;
 

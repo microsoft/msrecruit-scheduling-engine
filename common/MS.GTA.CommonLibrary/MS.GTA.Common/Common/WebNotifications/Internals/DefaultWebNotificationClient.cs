@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Internals
+namespace Common.WebNotifications.Internals
 {
     using System;
     using System.Collections.Generic;
@@ -12,11 +12,11 @@ namespace MS.GTA.Common.WebNotifications.Internals
     using System.Text;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Common.WebNotifications.Configurations;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.Common.WebNotifications.Models;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Configuration;
+    using Common.Common.WebNotifications.Configurations;
+    using Common.WebNotifications.Interfaces;
+    using Common.WebNotifications.Models;
+    using CommonDataService.Common.Internal;
+    using ServicePlatform.Configuration;
     using Newtonsoft.Json;
 
     /// <summary>

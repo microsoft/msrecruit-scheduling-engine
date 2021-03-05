@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Exceptions
+namespace Common.Base.Exceptions
 {
     using System;
     using System.Net;
@@ -13,7 +13,7 @@ namespace MS.GTA.Common.Base.Exceptions
     /// KeyVaultAccessException class
     /// </summary>
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.Base.Exceptions", "KeyVaultAccessError", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.Base.Exceptions", "KeyVaultAccessError", MonitoredExceptionKind.Service)]
     public class KeyVaultAccessException : MonitoredException
     {
         /// <summary>

@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace MS.GTA.Common.CommonDataModels
+namespace Common.CommonDataModels
 {
     /// <summary>
     /// Holds Candidate 

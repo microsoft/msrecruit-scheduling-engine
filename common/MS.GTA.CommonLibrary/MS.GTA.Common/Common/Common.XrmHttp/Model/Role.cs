@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.Model
+namespace Common.XrmHttp.Model
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp.Model.Metadata;
+    using Common.XrmHttp.Model.Metadata;
 
     [ODataNamespace(Namespace = "Microsoft.Dynamics.CRM")]
     [ODataEntity(PluralName = "roles", SingularName = "role")]

@@ -5,7 +5,7 @@
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace MS.GTA.ServicePlatform.Azure.AAD
+namespace ServicePlatform.Azure.AAD
 {
     /// <summary>
     /// Wrapper of ADAL AuthenticationContext to allow mocking in unit tests.

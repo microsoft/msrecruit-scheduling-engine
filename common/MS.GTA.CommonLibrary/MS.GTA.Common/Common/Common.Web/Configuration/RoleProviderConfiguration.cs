@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Web.Configuration
+namespace Common.Web.Configuration
 {
     using Base.Configuration;
-    using MS.GTA.ServicePlatform.Configuration;
+    using ServicePlatform.Configuration;
 
     /// <summary>The Role provider configuration with cache configuration.</summary>
     [SettingsSection(nameof(RoleProviderConfiguration))]

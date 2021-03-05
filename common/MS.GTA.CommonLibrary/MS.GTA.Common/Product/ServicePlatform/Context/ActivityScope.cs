@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.ServicePlatform.Context;
+using ServicePlatform.Context;
 
-namespace MS.GTA.ServicePlatform.Context
+namespace ServicePlatform.Context
 {
     public sealed class ActivityScope
     {

@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,7 +8,7 @@ using System.Collections.Concurrent;
 using System.Linq;
 using Microsoft.Extensions.Logging.Internal;
 
-namespace MS.GTA.CommonDataService.Instrumentation.Privacy
+namespace CommonDataService.Instrumentation.Privacy
 {
     /// <summary>
     /// Represents a formatter that knows how to mark sensitive information inside of <see cref="FormattedLogValues"/>. 

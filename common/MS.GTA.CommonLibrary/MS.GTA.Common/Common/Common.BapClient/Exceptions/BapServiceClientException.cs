@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.BapClient.Exceptions
+namespace Common.BapClient.Exceptions
 {
     using System;
     using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace MS.GTA.Common.BapClient.Exceptions
     /// BAP service client exceptions
     /// </summary>
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.BapClient", "BAPService_Exception", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.BapClient", "BAPService_Exception", MonitoredExceptionKind.Service)]
     public class BapServiceClientException : MonitoredException
     {
         /// <summary>

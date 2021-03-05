@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.Base.Security.V2
+namespace Common.Base.Security.V2
 {
     /// <summary>
     /// The HCM application principal, used for application context requests.

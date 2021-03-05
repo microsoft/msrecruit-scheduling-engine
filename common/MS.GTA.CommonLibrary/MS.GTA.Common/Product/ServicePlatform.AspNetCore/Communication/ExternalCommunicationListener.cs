@@ -5,10 +5,10 @@
 using System.Fabric;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using MS.GTA.ServicePlatform.AspNetCore.Builder;
+using ServicePlatform.AspNetCore.Builder;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Communication
+namespace ServicePlatform.AspNetCore.Communication
 {
     /// <summary>
     /// This class provides an External Web API Communication Listener and sets the EnvironmentContext with values from Service Fabric.

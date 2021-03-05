@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MS.GTA.Common.CommonDataModels
+namespace Common.CommonDataModels
 {
     /// <summary>
     /// Stores the Generic Schema for all Cosmos DB Entities.

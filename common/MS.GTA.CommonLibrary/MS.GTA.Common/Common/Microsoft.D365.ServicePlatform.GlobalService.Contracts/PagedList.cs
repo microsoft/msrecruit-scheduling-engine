@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace MS.GTA.ServicePlatform.GlobalService.Contracts.Client
+namespace ServicePlatform.GlobalService.Contracts.Client
 {
     /// <summary>
     /// The Paged list class.

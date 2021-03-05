@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web
+namespace Common.Web
 {
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Base.Security;
-    using MS.GTA.ServicePlatform.Context;
+    using ServicePlatform.Context;
     using Microsoft.AspNetCore.Authorization;
 
     /// <summary>

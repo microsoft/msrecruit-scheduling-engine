@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Web.Configuration
+namespace Common.Web.Configuration
 {
     using System;
     using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace MS.GTA.Common.Web.Configuration
     using Base;
     using Base.Configuration;
     using CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Configuration;
+    using ServicePlatform.Configuration;
     using S2SHandler.V2;
 
     /// <summary>The s 2 s handler configuration.</summary>

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Discovery
+namespace Common.Wopi.Discovery
 {
     /// <summary>
     /// The WOPI Proof Information class

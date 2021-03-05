@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.SqlDB.Configuration 
+namespace Common.Routing.SqlDB.Configuration 
 {
     using ServicePlatform.Configuration;
 

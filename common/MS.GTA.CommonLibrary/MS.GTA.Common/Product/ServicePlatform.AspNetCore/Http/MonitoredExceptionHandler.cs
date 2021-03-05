@@ -6,13 +6,13 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions;
-using MS.GTA.ServicePlatform.Communication;
-using MS.GTA.ServicePlatform.Exceptions;
-using MS.GTA.ServicePlatform.Tracing;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Http.Abstractions;
+using ServicePlatform.Communication;
+using ServicePlatform.Exceptions;
+using ServicePlatform.Tracing;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Http
+namespace ServicePlatform.AspNetCore.Http
 {
     internal sealed class MonitoredExceptionHandler : IStatelessHttpMiddleware
     {

@@ -9,12 +9,12 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions;
-using MS.GTA.ServicePlatform.Exceptions;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Http.Abstractions;
+using ServicePlatform.Exceptions;
 using System.Text.RegularExpressions;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Http
+namespace ServicePlatform.AspNetCore.Http
 {
     /// <summary>
     /// Service Fabric Routing

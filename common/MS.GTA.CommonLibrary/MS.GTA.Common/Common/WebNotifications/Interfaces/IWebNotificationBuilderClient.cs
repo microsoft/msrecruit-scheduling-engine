@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.WebNotifications.Interfaces
+namespace Common.WebNotifications.Interfaces
 {
     /// <summary>
     /// The <see cref="IWebNotificationBuilderClient"/> interface provides mechanism to hold the web notification builder and service client.

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.Model.Metadata
+namespace Common.XrmHttp.Model.Metadata
 {
     using System.Collections.Generic;
     using System.Globalization;

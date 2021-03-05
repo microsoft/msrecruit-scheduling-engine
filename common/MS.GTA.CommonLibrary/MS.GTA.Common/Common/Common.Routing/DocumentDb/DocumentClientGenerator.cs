@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Routing.DocumentDb
+namespace Common.Routing.DocumentDb
 {
     using System;
     using System.Collections.Generic;
@@ -22,12 +22,12 @@ namespace MS.GTA.Common.Routing.DocumentDb
     using Exceptions;
     using Extensions;
 
-    using MS.GTA.Common.Routing.Constants;
+    using Common.Routing.Constants;
     using Microsoft.Extensions.Caching.Memory;
     using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Azure.Security;
+    using ServicePlatform.Configuration;
+    using ServicePlatform.Azure.Security;
 
     /// <summary>The HCM document client provider.</summary>
     public class DocumentClientGenerator : IDocumentClientGenerator

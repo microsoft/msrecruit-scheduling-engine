@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB
+namespace Common.DocumentDB
 {
     /// <summary>
     /// Class to encapsulate all the constants.

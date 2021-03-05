@@ -5,11 +5,11 @@
 using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Flighting;
-using MS.GTA.ServicePlatform.Flighting;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Flighting;
+using ServicePlatform.Flighting;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder
+namespace ServicePlatform.AspNetCore.Builder
 {
     /// <summary>
     /// Extension methods for integrating flight providers into the ASP.NET Core request execution pipeline.

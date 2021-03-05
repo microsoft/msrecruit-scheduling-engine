@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Common.Common.Email.Contracts
+namespace Common.Common.Common.Email.Contracts
 {
     using System;
     using System.Collections.Generic;

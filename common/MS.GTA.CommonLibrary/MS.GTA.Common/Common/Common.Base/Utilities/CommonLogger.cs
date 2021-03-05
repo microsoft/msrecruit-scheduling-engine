@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.Base.Utilities
+namespace Common.Base.Utilities
 {
-    using MS.GTA.ServicePlatform.Tracing;
+    using ServicePlatform.Tracing;
     using Microsoft.Extensions.Logging;
     using System.Collections.Concurrent;
 

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Utilities
+namespace Common.Base.Utilities
 {
     using System;
     using System.Collections.Generic;

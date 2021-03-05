@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,12 +6,12 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace MS.GTA.CommonDataService.Common
+namespace CommonDataService.Common
 {
     /// <summary>
     /// Factory class for constructing instances of TryGetResult{T}.
     /// </summary>
-    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the MS.GTA.CommonDataService.Common.Internal namespace instead.")]
+    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the CommonDataService.Common.Internal namespace instead.")]
     internal static class TryGetResult
     {
         internal static TryGetResult<T> CreateFromStruct<T>(T result)
@@ -72,7 +72,7 @@ namespace MS.GTA.CommonDataService.Common
     /// <summary>
     /// A utility data contract for passing a boolean and an out parameter (or) an exception from a Try* method.
     /// </summary>
-    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the MS.GTA.CommonDataService.Common.Internal namespace instead.")]
+    [Obsolete("These APIs are obsolete and will be removed in a future release. Use an implementation under the CommonDataService.Common.Internal namespace instead.")]
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]
     internal class TryGetResult<T>
     {

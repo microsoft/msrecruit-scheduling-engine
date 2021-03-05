@@ -3,16 +3,16 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email
+namespace Common.Email
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text.RegularExpressions;
 
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Common.Common.Email;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using Common.Base.Utilities;
+    using Common.Common.Common.Email;
+    using CommonDataService.Common.Internal;
     
     /// <summary>
     /// Templates class

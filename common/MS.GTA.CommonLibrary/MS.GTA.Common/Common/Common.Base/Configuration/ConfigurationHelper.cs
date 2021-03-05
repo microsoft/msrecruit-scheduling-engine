@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Configuration
+namespace Common.Base.Configuration
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace MS.GTA.Common.Base.Configuration
     using Microsoft.Extensions.Configuration.Json;
     using Microsoft.Extensions.Configuration.Memory;
     using Microsoft.Extensions.FileProviders;
-    using MS.GTA.ServicePlatform.Configuration;
+    using ServicePlatform.Configuration;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;

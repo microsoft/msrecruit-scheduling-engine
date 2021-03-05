@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.Common.Base.Exceptions
+namespace Common.Base.Exceptions
 {
     using System.Net;
     using ServicePlatform.Exceptions;

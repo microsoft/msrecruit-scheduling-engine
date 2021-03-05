@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp.Model.Metadata
+namespace Common.XrmHttp.Model.Metadata
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
+    using Common.XrmHttp;
 
     [ODataEntity(PluralName = "EntityDefinitions", SingularName = "EntityMetadata")]
     public class EntityMetadata : MetadataBase

@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
-namespace MS.GTA.Common.BapClient.Extensions
+namespace Common.BapClient.Extensions
 {
     using CommonDataService.Common.Internal;
     using Microsoft.Extensions.DependencyInjection;

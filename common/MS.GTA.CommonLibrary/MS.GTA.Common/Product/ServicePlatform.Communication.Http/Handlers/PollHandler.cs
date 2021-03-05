@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Handlers
+namespace ServicePlatform.Communication.Http.Handlers
 {
     using System;
     using System.Net;

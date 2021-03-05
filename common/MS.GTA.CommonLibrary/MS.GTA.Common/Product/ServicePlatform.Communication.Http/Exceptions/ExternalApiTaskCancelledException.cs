@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ServicePlatform.Communication.Http.Exceptions
+namespace ServicePlatform.Communication.Http.Exceptions
 {
     using System.Net;
     using ServicePlatform.Exceptions;

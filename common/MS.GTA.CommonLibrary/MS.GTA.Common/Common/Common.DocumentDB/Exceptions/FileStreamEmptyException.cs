@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB.Exceptions
+namespace Common.DocumentDB.Exceptions
 {
     using System;
     using System.Net;
@@ -13,7 +13,7 @@ namespace MS.GTA.Common.DocumentDB.Exceptions
     /// FileStreamEmptyException class
     /// </summary>
     [Serializable]
-    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "MS.GTA.Common.DocumentDB.Exceptions", "EmptyFile", MonitoredExceptionKind.Service)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Common.DocumentDB.Exceptions", "EmptyFile", MonitoredExceptionKind.Service)]
     public class FileStreamEmptyException : MonitoredException
     {
         /// <summary>

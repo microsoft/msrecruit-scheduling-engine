@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Builder.Contracts
+namespace ServicePlatform.AspNetCore.Builder.Contracts
 {
     /// <summary>
     /// The contract representing the health of a service.

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.DocumentDB
+namespace Common.DocumentDB
 {
     using System;
     using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace MS.GTA.Common.DocumentDB
     using Microsoft.Azure.Documents.Client;
     using Microsoft.Azure.Documents.Linq;
     using Contracts;
-    using MS.GTA.Common.Contracts;
+    using Common.Contracts;
 
     /// <summary>The HCM DocumentClient interface.</summary>
     public interface IHcmDocumentClient

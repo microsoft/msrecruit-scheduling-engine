@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Email.Exceptions
+namespace Common.Email.Exceptions
 {
     using System;
     using System.Net;
 
-    using MS.GTA.ServicePlatform.Exceptions;
+    using ServicePlatform.Exceptions;
     
     [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Microsoft.D365.HCM.Common.Email.Exceptions", "EmailTemplates_InvalidOperation", MonitoredExceptionKind.Service)]
     [Serializable]

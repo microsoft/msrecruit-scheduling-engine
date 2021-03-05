@@ -8,7 +8,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 using System.Linq;
 
-namespace MS.GTA.Common.Product.ServicePlatform.AspNetCore.Builder.Filters
+namespace Common.Product.ServicePlatform.AspNetCore.Builder.Filters
 {
     /// <summary>
     /// Swagger File Upload Operation

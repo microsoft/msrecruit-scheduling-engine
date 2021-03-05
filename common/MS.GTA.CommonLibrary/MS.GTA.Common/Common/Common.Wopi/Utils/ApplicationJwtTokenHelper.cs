@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Utils
+namespace Common.Wopi.Utils
 {
     using System;
     using System.Collections.Generic;
@@ -15,15 +15,15 @@ namespace MS.GTA.Common.Wopi.Utils
     using System.Threading.Tasks;
     using CommonDataService.Common.Internal;
     using Microsoft.Azure.KeyVault;
-    using MS.GTA.Common.Base.KeyVault;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Security;
+    using Common.Base.KeyVault;
+    using ServicePlatform.Configuration;
+    using ServicePlatform.Context;
+    using ServicePlatform.Security;
     
     
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Tokens;
-    using MS.GTA.Common.Wopi.Interfaces;
+    using Common.Wopi.Interfaces;
 
     public class ApplicationJwtTokenHelper : IApplicationJwtTokenHelper
     {

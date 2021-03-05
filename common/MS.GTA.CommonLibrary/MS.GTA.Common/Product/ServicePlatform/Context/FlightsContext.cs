@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,10 +6,10 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Flighting;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Flighting;
 
-namespace MS.GTA.ServicePlatform.Context
+namespace ServicePlatform.Context
 {
     public sealed partial class ServiceContext
     {

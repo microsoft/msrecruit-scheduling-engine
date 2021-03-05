@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System;
 using System.Threading.Tasks;
-using MS.GTA.ServicePlatform.Utils;
+using ServicePlatform.Utils;
 using Microsoft.Extensions.Logging;
 
-namespace MS.GTA.ServicePlatform.Context.Retry
+namespace ServicePlatform.Context.Retry
 {
     /// <summary>
     /// The Activity context extension class to retry tasks using supported delay function.

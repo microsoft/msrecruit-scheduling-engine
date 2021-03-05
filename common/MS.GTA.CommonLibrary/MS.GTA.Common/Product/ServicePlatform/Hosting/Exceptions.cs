@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,9 +6,9 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
-using MS.GTA.ServicePlatform.Exceptions;
+using ServicePlatform.Exceptions;
 
-namespace MS.GTA.ServicePlatform.Hosting
+namespace ServicePlatform.Hosting
 {
     // These exceptions are exposed on internal APIs only and it is therefore safe to communicate the nature of the error
     [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, ErrorNamespaces.ServicePlatform, "InvalidExecutionContext", MonitoredExceptionKind.Service)]

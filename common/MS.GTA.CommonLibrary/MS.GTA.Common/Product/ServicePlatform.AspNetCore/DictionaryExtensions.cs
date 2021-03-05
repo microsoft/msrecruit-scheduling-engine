@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 using System.Collections.Generic;
-using MS.GTA.CommonDataService.Common.Internal;
+using CommonDataService.Common.Internal;
 using Microsoft.Extensions.Primitives;
 
-namespace MS.GTA.ServicePlatform.AspNetCore
+namespace ServicePlatform.AspNetCore
 {
     internal static class DisctionaryExtensions
     {

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Wopi.Discovery
+namespace Common.Wopi.Discovery
 {
     /// <summary>
     /// Supported WOPI actions <see cref="http://wopi.readthedocs.io/en/latest/discovery.html#wopi-actions"/>

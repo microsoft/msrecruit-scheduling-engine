@@ -2,22 +2,22 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.Web.S2SHandler.V2
+namespace Common.Web.S2SHandler.V2
 {
     using Microsoft.Extensions.Logging;
     using Microsoft.ServiceFabric.Services.Client;
-    using MS.GTA.Common.Base;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.Common.Web.Configuration;
-    using MS.GTA.CommonDataService.Common;
-    using MS.GTA.ServicePlatform.Azure.AAD;
-    using MS.GTA.ServicePlatform.Communication.Http;
-    using MS.GTA.ServicePlatform.Communication.Http.Routers;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Fabric;
+    using Common.Base;
+    using Common.Base.Configuration;
+    using Common.Base.Security.V2;
+    using Common.Contracts;
+    using Common.Web.Configuration;
+    using CommonDataService.Common;
+    using ServicePlatform.Azure.AAD;
+    using ServicePlatform.Communication.Http;
+    using ServicePlatform.Communication.Http.Routers;
+    using ServicePlatform.Configuration;
+    using ServicePlatform.Context;
+    using ServicePlatform.Fabric;
     using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;

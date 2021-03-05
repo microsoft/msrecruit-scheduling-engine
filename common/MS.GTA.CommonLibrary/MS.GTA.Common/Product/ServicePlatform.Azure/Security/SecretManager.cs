@@ -13,18 +13,18 @@ using Castle.Core.Logging;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Azure.KeyVault.Models;
 using Microsoft.Extensions.Logging;
-using MS.GTA.Common.Base.Configuration;
-using MS.GTA.Common.Base.Utilities;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Azure.AAD;
-using MS.GTA.ServicePlatform.Azure.Security.Activities;
-using MS.GTA.ServicePlatform.Configuration;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Tracing;
-using MS.GTA.ServicePlatform.Utils;
+using Common.Base.Configuration;
+using Common.Base.Utilities;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Azure.AAD;
+using ServicePlatform.Azure.Security.Activities;
+using ServicePlatform.Configuration;
+using ServicePlatform.Context;
+using ServicePlatform.Tracing;
+using ServicePlatform.Utils;
 using Newtonsoft.Json;
 
-namespace MS.GTA.ServicePlatform.Azure.Security
+namespace ServicePlatform.Azure.Security
 {
     public sealed class SecretManager : ISecretManager
     {

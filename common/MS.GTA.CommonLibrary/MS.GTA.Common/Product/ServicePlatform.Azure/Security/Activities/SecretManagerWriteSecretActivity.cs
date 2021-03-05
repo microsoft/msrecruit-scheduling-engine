@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-using MS.GTA.ServicePlatform.Context;
+using ServicePlatform.Context;
 
-namespace MS.GTA.ServicePlatform.Azure.Security.Activities
+namespace ServicePlatform.Azure.Security.Activities
 {
     internal class SecretManagerWriteSecretActivity : SingletonActivityType<SecretManagerWriteSecretActivity>
     {

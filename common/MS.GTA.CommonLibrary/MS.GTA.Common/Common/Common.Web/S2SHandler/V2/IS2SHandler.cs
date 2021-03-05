@@ -3,16 +3,16 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Web.S2SHandler.V2
+namespace Common.Web.S2SHandler.V2
 {
     using System.Collections.Generic;
     using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
 
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.ServicePlatform.Communication.Http;
-    using MS.GTA.ServicePlatform.Communication.Http.Routers;
+    using Common.Contracts;
+    using ServicePlatform.Communication.Http;
+    using ServicePlatform.Communication.Http.Routers;
 
     /// <summary>The S2SHandler interface.</summary>
     public interface IS2SHandler

@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ServicePlatform.Tracing
+namespace ServicePlatform.Tracing
 {
     internal sealed class ServicePlatformTrace : TraceSourceBase<ServicePlatformTrace>
     {

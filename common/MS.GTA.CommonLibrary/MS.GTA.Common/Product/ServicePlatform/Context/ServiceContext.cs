@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,13 +8,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.Serialization;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.Flighting;
-using MS.GTA.ServicePlatform.Security;
-using MS.GTA.ServicePlatform.Tracing;
+using CommonDataService.Common.Internal;
+using ServicePlatform.Flighting;
+using ServicePlatform.Security;
+using ServicePlatform.Tracing;
 
 // TODO - 0000: [anbencic] Implement identity context
-namespace MS.GTA.ServicePlatform.Context
+namespace ServicePlatform.Context
 {
     using System.Threading;
 

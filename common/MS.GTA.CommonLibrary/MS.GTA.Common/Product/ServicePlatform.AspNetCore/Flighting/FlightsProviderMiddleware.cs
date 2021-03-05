@@ -6,15 +6,15 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using MS.GTA.CommonDataService.Common.Internal;
-using MS.GTA.ServicePlatform.AspNetCore.Http.Abstractions;
-using MS.GTA.ServicePlatform.Context;
-using MS.GTA.ServicePlatform.Flighting;
-using MS.GTA.ServicePlatform.Tracing;
-using MS.GTA.ServicePlatform.Utils;
+using CommonDataService.Common.Internal;
+using ServicePlatform.AspNetCore.Http.Abstractions;
+using ServicePlatform.Context;
+using ServicePlatform.Flighting;
+using ServicePlatform.Tracing;
+using ServicePlatform.Utils;
 using System.Collections.Generic;
 
-namespace MS.GTA.ServicePlatform.AspNetCore.Flighting
+namespace ServicePlatform.AspNetCore.Flighting
 {
     /// <summary>
     /// Given an implementation of a flights evaluation context provider it invokes the configured flights

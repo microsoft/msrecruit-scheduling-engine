@@ -3,17 +3,17 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.XrmHttp
+namespace Common.XrmHttp
 {
     using System;
     using System.Linq;
     using System.Net;
     using System.Net.Http;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Privacy;
+    using ServicePlatform.Exceptions;
+    using ServicePlatform.Privacy;
     using Newtonsoft.Json;
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", nameof(XrmHttpClientResponseException), MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", nameof(XrmHttpClientResponseException), MonitoredExceptionKind.Remote)]
     public class XrmHttpClientResponseException : MonitoredException
     {
         // Error codes
@@ -218,7 +218,7 @@ namespace MS.GTA.Common.XrmHttp
         public string RemoteStackTrace { get; }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMBadRequest", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMBadRequest", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientBadRequestResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientBadRequestResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -226,7 +226,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.NotFound, "MS.GTA.Common.XrmHttp", "XRMNotFound", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.NotFound, "Common.XrmHttp", "XRMNotFound", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientNotFoundResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientNotFoundResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -234,7 +234,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.Unauthorized, "MS.GTA.Common.XrmHttp", "XRMUnauthorized", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.Unauthorized, "Common.XrmHttp", "XRMUnauthorized", MonitoredExceptionKind.Benign)]
     public class XrmHttpClientUnauthorizedResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientUnauthorizedResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -242,11 +242,11 @@ namespace MS.GTA.Common.XrmHttp
         }
 
         /// <summary>Gets error type</summary>
-        [ExceptionCustomData(Name = MS.GTA.Common.Base.Constants.ExceptionErrorTypeName, PrivacyLevel = PrivacyLevel.PublicData, Serialize = true)]
+        [ExceptionCustomData(Name = Common.Base.Constants.ExceptionErrorTypeName, PrivacyLevel = PrivacyLevel.PublicData, Serialize = true)]
         public int ErrorType => (int)Base.ErrorType.Benign;
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "MS.GTA.Common.XrmHttp", "XRMForbidden", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "Common.XrmHttp", "XRMForbidden", MonitoredExceptionKind.Benign)]
     public class XrmHttpClientForbiddenResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientForbiddenResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -254,11 +254,11 @@ namespace MS.GTA.Common.XrmHttp
         }
 
         /// <summary>Gets error type</summary>
-        [ExceptionCustomData(Name = MS.GTA.Common.Base.Constants.ExceptionErrorTypeName, PrivacyLevel = PrivacyLevel.PublicData, Serialize = true)]
+        [ExceptionCustomData(Name = Common.Base.Constants.ExceptionErrorTypeName, PrivacyLevel = PrivacyLevel.PublicData, Serialize = true)]
         public int ErrorType => (int)Base.ErrorType.Benign;
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.BadGateway, "MS.GTA.Common.XrmHttp", "XRMBadGateway", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadGateway, "Common.XrmHttp", "XRMBadGateway", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientBadGatewayResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientBadGatewayResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -266,7 +266,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMPreconditionFailed", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMPreconditionFailed", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientPreconditionFailedResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientPreconditionFailedResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -274,7 +274,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMTooManyRequests", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMTooManyRequests", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientTooManyRequestsResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientTooManyRequestsResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -282,7 +282,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMConflict", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMConflict", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientConflictResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientConflictResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -290,7 +290,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMInternalServerError", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMInternalServerError", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientInternalServerErrorResponseException : XrmHttpClientResponseException
     {
         public XrmHttpClientInternalServerErrorResponseException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -298,7 +298,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", nameof(XrmHttpClientCustomerPluginException), MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", nameof(XrmHttpClientCustomerPluginException), MonitoredExceptionKind.Benign)]
     public class XrmHttpClientCustomerPluginException : XrmHttpClientResponseException
     {
         public XrmHttpClientCustomerPluginException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -315,11 +315,11 @@ namespace MS.GTA.Common.XrmHttp
         }
 
         /// <summary>Gets error type</summary>
-        [ExceptionCustomData(Name = MS.GTA.Common.Base.Constants.ExceptionErrorTypeName, PrivacyLevel = PrivacyLevel.PublicData, Serialize = true)]
+        [ExceptionCustomData(Name = Common.Base.Constants.ExceptionErrorTypeName, PrivacyLevel = PrivacyLevel.PublicData, Serialize = true)]
         public int ErrorType => (int)Base.ErrorType.Benign;
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMPluginExecutionFailedException", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMPluginExecutionFailedException", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientPluginExecutionFailedException : XrmHttpClientInternalServerErrorResponseException
     {
         public XrmHttpClientPluginExecutionFailedException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -334,7 +334,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XrmMissingAK", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XrmMissingAK", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientMissingAKException : XrmHttpClientBadRequestResponseException
     {
         public XrmHttpClientMissingAKException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -350,7 +350,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XrmRequestHeadersTooLong", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XrmRequestHeadersTooLong", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientRequestHeadersTooLongException : XrmHttpClientBadRequestResponseException
     {
         public XrmHttpClientRequestHeadersTooLongException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -364,7 +364,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMUnrecognizedPath", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMUnrecognizedPath", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientUnrecognizedPathException : XrmHttpClientNotFoundResponseException
     {
         public XrmHttpClientUnrecognizedPathException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -379,7 +379,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMUnknownProperty", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMUnknownProperty", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientUnknownPropertyException : XrmHttpClientBadRequestResponseException
     {
         public XrmHttpClientUnknownPropertyException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -394,7 +394,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "MS.GTA.Common.XrmHttp", "XRMValidationFailed", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Common.XrmHttp", "XRMValidationFailed", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientValidationFailedException : XrmHttpClientBadRequestResponseException
     {
         public XrmHttpClientValidationFailedException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -408,7 +408,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "MS.GTA.Common.XrmHttp", "XRMInvalidCharactersInField", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.BadRequest, "Common.XrmHttp", "XRMInvalidCharactersInField", MonitoredExceptionKind.Benign)]
     public class XrmHttpClientInvalidCharactersInFieldException : XrmHttpClientBadRequestResponseException
     {
         public XrmHttpClientInvalidCharactersInFieldException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -422,7 +422,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.NotFound, "MS.GTA.Common.XrmHttp", "XRMUserDisabled", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.NotFound, "Common.XrmHttp", "XRMUserDisabled", MonitoredExceptionKind.Benign)]
     public class XrmHttpClientUserDisabledException : XrmHttpClientBadRequestResponseException
     {
         public XrmHttpClientUserDisabledException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -440,7 +440,7 @@ namespace MS.GTA.Common.XrmHttp
         public int ErrorType => (int)Base.ErrorType.Benign;
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMDuplicateKeyValues", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMDuplicateKeyValues", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientDuplicateKeyValuesException : XrmHttpClientPreconditionFailedResponseException
     {
         public XrmHttpClientDuplicateKeyValuesException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -454,7 +454,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMDuplicateAlternateKeyValues", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMDuplicateAlternateKeyValues", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientDuplicateAlternateKeyValuesException : XrmHttpClientPreconditionFailedResponseException
     {
         public XrmHttpClientDuplicateAlternateKeyValuesException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -468,7 +468,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "MS.GTA.Common.XrmHttp", "XRMNoUserRolesAssigned", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "Common.XrmHttp", "XRMNoUserRolesAssigned", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientNoUserRolesAssignedException : XrmHttpClientForbiddenResponseException
     {
         public XrmHttpClientNoUserRolesAssignedException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -482,7 +482,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.Common.XrmHttp", "XRMOrganizationServiceFault", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "Common.XrmHttp", "XRMOrganizationServiceFault", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientOrganizationServiceFaultException : XrmHttpClientResponseException
     {
         public XrmHttpClientOrganizationServiceFaultException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -495,7 +495,7 @@ namespace MS.GTA.Common.XrmHttp
         }
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.NotImplemented, "MS.GTA.Common.XrmHttp", "XRMRelevanceSearchNotAllowed", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.NotImplemented, "Common.XrmHttp", "XRMRelevanceSearchNotAllowed", MonitoredExceptionKind.Benign)]
     public class XrmHttpClientRelevanceSearchNotEnabledException : XrmHttpClientResponseException
     {
         public XrmHttpClientRelevanceSearchNotEnabledException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
@@ -509,11 +509,11 @@ namespace MS.GTA.Common.XrmHttp
         }
 
         /// <summary>Gets error type</summary>
-        [ExceptionCustomData(Name = MS.GTA.Common.Base.Constants.ExceptionErrorTypeName, PrivacyLevel = PrivacyLevel.PublicData, Serialize = true)]
+        [ExceptionCustomData(Name = Common.Base.Constants.ExceptionErrorTypeName, PrivacyLevel = PrivacyLevel.PublicData, Serialize = true)]
         public int ErrorType => (int)Base.ErrorType.Benign;
     }
 
-    [MonitoredExceptionMetadata(HttpStatusCode.NotImplemented, "MS.GTA.Common.XrmHttp", "XRMFetchXMLAggregateQueryRecordLimitExceeded", MonitoredExceptionKind.Remote)]
+    [MonitoredExceptionMetadata(HttpStatusCode.NotImplemented, "Common.XrmHttp", "XRMFetchXMLAggregateQueryRecordLimitExceeded", MonitoredExceptionKind.Remote)]
     public class XrmHttpClientFetchXmlAggregateQueryRecordLimitExceededException : XrmHttpClientBadRequestResponseException
     {
         public XrmHttpClientFetchXmlAggregateQueryRecordLimitExceededException(HttpStatusCode statusCode, string reasonPhrase, string contentString, string reqId = null, string authTicketId = null) : base(statusCode, reasonPhrase, contentString, reqId, authTicketId)
