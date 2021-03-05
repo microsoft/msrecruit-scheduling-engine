@@ -23,10 +23,10 @@ jobs:
         dotnet-version: 2.1.811
 
     - name: Install dependencies
-      run: dotnet restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
+      run: dotnet restore CommonLibrary/CommonLibrary.sln
 
     - name: Build
-      run: dotnet build MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln --configuration Release --no-restore
+      run: dotnet build CommonLibrary/CommonLibrary.sln --configuration Release --no-restore
 
     - name: Unit Test
-      run: dotnet test MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln --no-build --configuration Release --verbosity m
+      run: dotnet test CommonLibrary/CommonLibrary.sln --no-build --configuration Release --verbosity m
