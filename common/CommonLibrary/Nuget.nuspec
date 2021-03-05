@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>MSRecruitCommonLibrary</id>
+    <version>1.0.2</version>
+    <authors>Microsoft</authors>
+    <description>MS Recruit Common Library</description>
+    <releaseNotes>Contains common components for Microsoft Recruit applications</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <repository type="git" url="https://github.com/microsoft/msrecruit-scheduling-engine"  />
+    <tags>MSRecruit,Common</tags>
+    <dependencies>
+      <dependency id="Microsoft.ApplicationInsights.AspNetCore" version="2.7.0" />
+      <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="2.2.0" />
+      <dependency id="Microsoft.AspNetCore.Mvc" version="2.2.0" />
+      <dependency id="Microsoft.AspNetCore.Server.Kestrel" version="2.2.0" />
+      <dependency id="Microsoft.AspNetCore" version="2.2.0" />
+      <dependency id="Microsoft.AspNetCore.Hosting" version="2.2.7" />
+      <dependency id="System.Net.Http" version="4.3.4" />
+      <dependency id="Microsoft.Azure.DocumentDB.Core" version="2.5.1" />
+      <dependency id="Microsoft.Azure.KeyVault" version="2.3.2" />
+      <dependency id="Microsoft.Azure.Management.ServiceBus" version="1.0.3" />
+      <dependency id="Microsoft.CrmSdk.CoreAssemblies" version="9.0.0.7" />
+      <dependency id="Microsoft.CSharp" version="4.5.0" />
+      <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="2.2.0" />
+      <dependency id="Microsoft.Extensions.Logging" version="2.2.0" />
+      <dependency id="Microsoft.Extensions.Http" version="2.2.0" />
+      <dependency id="Microsoft.Graph" version="3.0.1" />
+      <dependency id="Microsoft.IdentityModel.Clients.ActiveDirectory" version="3.19.1" />
+      <dependency id="Microsoft.NET.Test.Sdk" version="15.7.0" />
+      <dependency id="Microsoft.ServiceFabric.AspNetCore.Kestrel" version="3.0.480" />
+      <dependency id="Microsoft.ServiceFabric.Data" version="3.0.480" />
+      <dependency id="Microsoft.ServiceFabric.Services" version="3.0.480" />
+      <dependency id="Microsoft.ServiceFabric" version="6.1.480" />
+      <dependency id="Moq" version="4.8.0" />
+      <dependency id="MSTest.TestAdapter" version="1.2.1" />
+      <dependency id="MSTest.TestFramework" version="1.2.1" />
+      <dependency id="Newtonsoft.Json" version="12.0.1" />
+      <dependency id="StackExchange.Redis" version="2.0.601" />
+      <dependency id="System.Data.SqlClient" version="4.4.0" />
+      <dependency id="System.Drawing.Common" version="4.5.1" />
+      <dependency id="System.Runtime" version="4.3.1" />
+      <dependency id="System.ServiceModel.Http" version="4.5.3" />
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.7" />
+      <dependency id="Swashbuckle.AspNetCore" version="4.0.1" />
+      <dependency id="Swashbuckle.AspNetCore.Swagger" version="4.0.1" />
+      <dependency id="Swashbuckle.AspNetCore.SwaggerGen" version="4.0.1" />
+      <dependency id="WindowsAzure.Storage" version="9.3.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="MS.GTA.Talent\bin\Release\**\MS.GTA.*.dll" target="lib" />
+    <file src="MS.GTA.Talent\bin\Release\**\MS.GTA.*.pdb" target="lib" />
+    <file src="MS.GTA.Talent\bin\Release\**\MS.GTA.*.xml" target="lib" />
+    <file src="MS.GTA.BusinessLibrary\bin\Release\**\MS.GTA.BusinessLibrary.dll" target="lib" />
+    <file src="MS.GTA.BusinessLibrary\bin\Release\**\MS.GTA.BusinessLibrary.pdb" target="lib" />
+    <file src="MS.GTA.BusinessLibrary\bin\Release\**\MS.GTA.BusinessLibrary.xml" target="lib" />
+    <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.dll" target="lib" />
+    <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.pdb" target="lib" />
+    <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.xml" target="lib" />
+  </files>
+</package>

@@ -1,0 +1,865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmailMessageTemplate_Candidate" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;body&gt;
+    &lt;table style="width:600px"&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;img src='cid:{HeaderImage}' width='700' height='100' /&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div style='margin-left:60px'&gt;
+                        &lt;h2&gt;Hi {CandidateName},&lt;/h2&gt;
+                        &lt;p&gt;
+                            Thank you for applying for the {PositionTitle} position.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            We’re impressed with your background and want to invite you to interview with us.
+                            &lt;br/&gt; To get you started, we’ve created an online guide for you in the Microsoft Project: "Candidate
+                            Engagement" app.
+                            &lt;br/&gt; Your guide includes company information and contact details for a few people who can answer
+                            questions about the company, the position, and the interview process.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            We look forward to meeting you and discussing the position further!
+                        &lt;/p&gt;
+
+                        &lt;p&gt;&lt;a href='{CandidateEngagementAppLink}'&gt;Get ready&lt;/a&gt;&lt;/p&gt;
+                        &lt;p&gt;Best,&lt;/p&gt;
+                        {HiringManagerName}
+                        &lt;br/&gt; {HiringManagerTitle}
+                    &lt;/div&gt;
+                    {EmailFooterPrivateField}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="EmailMessageTemplate_Interviewer" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;body&gt;
+    &lt;table style="width:600px"&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;img src='cid:{HeaderImage}' width='700' height='100' /&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div style='margin-left:60px'&gt;
+                        &lt;h2&gt;
+                            Hi {InterviewerName},
+                        &lt;/h2&gt;
+                        &lt;p&gt;Thanks for joining my interview team for the new {PositionTitle} position. We’ll be scheduling the
+                            interviews soon, and I’ll send you a meeting invitation when we select your date and time.&lt;/p&gt;
+                        &lt;p&gt;In the meantime, you can visit my hiring site in the Microsoft Project: "Candidate Engagement" app
+                            to get setup as an interviewer and to begin getting to know the candidates and position.&lt;/p&gt;
+                        &lt;p&gt;&lt;a href='{PositionLink}'&gt;View Position&lt;/a&gt;&lt;/p&gt;
+                        &lt;p&gt;Many thanks!&lt;/p&gt;
+                        {HiringManagerName}
+                        &lt;br/&gt; {HiringManagerTitle}
+                    &lt;/div&gt;
+                    {EmailFooterPrivateField}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="EmailMessageTemplate_Interview" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;body&gt;
+    &lt;table style="width:600px"&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;img src='cid:{HeaderImage}' width='700' height='100' /&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div style='margin-left:60px'&gt;
+                        &lt;h2&gt;Hi {FirstName},&lt;/h2&gt;
+                        &lt;p&gt;Thanks for helping with our interviews for the {Position} . We’ve scheduled your interview with {Candidate}
+                            from {StartTime} to {EndTime} {Location}.&lt;/p&gt;
+                        &lt;p&gt;Your next steps are to open the calendar attachment and save the interview to your schedule. And
+                            then, start getting ready for the interview by learning about the position and {Candidate} on
+                            my hiring site in the Microsoft Project: "Candidate Engagement" app.&lt;/p&gt;
+                        &lt;a href='{ButtonLink}'&gt;Get ready&lt;/a&gt;
+                        &lt;p&gt;Many thanks!&lt;/p&gt;
+                        {HiringManagerName}
+                        &lt;br/&gt; {HiringManagerTitle}
+                    &lt;/div&gt;
+                    {EmailFooterPrivateField}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="EmailSubjectTemplate_Candidate" xml:space="preserve">
+    <value>Prepare for your interview</value>
+  </data>
+  <data name="EmailSubjectTemplate_Interviewer" xml:space="preserve">
+    <value>Get set up as an interviewer</value>
+  </data>
+  <data name="EmailSubjectTemplate_Interview" xml:space="preserve">
+    <value>Join our interview team</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="D365BannerImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\D365BannerImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EmailMessageTemplate_PerformanceFeedback" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;body&gt;
+    &lt;table style="width:600px"&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;img src='cid:{HeaderImage}' width='700' height='120' /&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div style='margin-left:60px'&gt;
+                        &lt;h2&gt;
+                            Hi {ReviewerName},
+                        &lt;/h2&gt;
+                        &lt;p&gt;{Message}&lt;/p&gt;
+                        &lt;p&gt;&lt;a href='{ReviewLink}'&gt;Give Feedback&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    {EmailFooterPrivateField}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="EmailSubjectTemplate_PerformanceFeedback" xml:space="preserve">
+    <value>{Requester} has requested feedback from you for {Reviewee}</value>
+  </data>
+  <data name="EmailMessageTemplate_DefaultPerformanceFeedback" xml:space="preserve">
+    <value>&lt;html&gt;
+    &lt;body&gt;
+        &lt;img src='cid:{HeaderImage}'/&gt;
+        &lt;div style='margin-left:60px'&gt;
+        &lt;h2&gt;
+           Hi {ReviewerName},
+        &lt;/h2&gt;
+        &lt;p&gt;I'd like your feedback on a project of ours, {ProjectTitle}. &lt;/p&gt;
+        &lt;p&gt;Please take a few moments to let me know what went well and what needs improvement.&lt;/p&gt;      
+        &lt;p&gt;&lt;a href='{ReviewLink}'&gt;Give Feedback&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Thanks!&lt;p&gt;
+        &lt;/div&gt;
+       {EmailFooterPrivateField}
+    &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="EmailSubjectTemplate_DefaultPerformanceFeedback" xml:space="preserve">
+    <value>{Requester} has requested feedback from you for {Reviewee}</value>
+  </data>
+  <data name="EmailMessageTemplate_NewHire" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;body&gt;
+    &lt;table style="width:600px"&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;img src='cid:{HeaderImage}' width='700' height='120' /&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div style='margin-left:60px'&gt;
+                        &lt;h2&gt;Hi {NewHireName},&lt;/h2&gt;
+                        &lt;p&gt;Welcome to {CompanyName}! We’ve put together some activities, contacts, and resources to help you
+                            get off to a great start in your new job.&lt;/p&gt;
+                        &lt;p&gt;Take a look!&lt;/p&gt;
+                        &lt;p&gt;&lt;a href='{OnboardingAppLink}'&gt;Welcome guide&lt;/a&gt;&lt;/p&gt;
+                        &lt;p&gt;Best,&lt;/p&gt;
+                        &lt;p&gt;{ManagerName}&lt;/p&gt;
+                    &lt;/div&gt;
+                    {EmailFooterPrivateField}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="EmailSubjectTemplate_NewHire" xml:space="preserve">
+    <value>Welcome to {CompanyName}!</value>
+  </data>
+  <data name="EmailMessageTemplateFooter" xml:space="preserve">
+    <value>&lt;table style="width:700px; background-color:#E6E6E6; padding: 25px 35px;"&gt;
+&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+&lt;img src='data:image/png;base64,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'/&gt;
+&lt;font size="2"&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;td&gt;
+    &lt;p style='	height: 80px;	width: 515px;	color: #999999;	font-family: "Segoe UI";	font-size: 14px;	line-height: 20px;'&gt;
+        Microsoft respects your privacy. Review our online &lt;a href='http://go.microsoft.com/fwlink/?LinkId=81184'&gt;Privacy Statement&lt;/a&gt;
+        &lt;br/&gt; Microsoft Corporation
+        &lt;br/&gt; One Microsoft Way Redmond, WA, USA 98052
+        &lt;br/&gt; This email is provided by SendGrid. Review their &lt;a href='https://sendgrid.com/policies/privacy/'&gt;privacy policy&lt;/a&gt;        and &lt;a href='https://sendgrid.com/policies/tos/'&gt;terms of service&lt;/a&gt;.
+    &lt;/p&gt;
+&lt;/font&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="HcmBannerImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\HcmBannerImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MicrosoftLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MicrosoftLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EmailMessageTemplate_ManagerInvite" xml:space="preserve">
+    <value>&lt;html&gt;
+&lt;body style="font-family:Arial"&gt;
+    &lt;table style="width:575px; border-color:#C7C7C7; border-width:1px; border-spacing:0px; border-style:solid;"&gt;
+        &lt;tbody&gt;
+            &lt;tr style="margin:0;padding:0"&gt;
+                &lt;td style="margin:0;padding:0"&gt;
+                    &lt;img src="cid:{HeaderImage}" width="632" height="30" /&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div style='margin: 40px 40px 25px 40px; font-size:14px; letter-spacing: 0.6px'&gt;
+                        &lt;p style="margin-bottom:30px"&gt;Hi {FirstName},&lt;/p&gt;
+
+
+                        &lt;p style="margin-bottom:20px"&gt;There’s a new application waiting for your review on Microsoft&lt;br/&gt;Project “Odin”.&lt;/p&gt;
+                        &lt;p style="margin-bottom:20px"&gt;Sign up now to review your new {PositionTitle} candidate.&lt;/p&gt;
+
+                        &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+                        
+                        &lt;table width="180px" border="0" cellspacing="0" cellpadding="0"&gt;
+                          &lt;tr&gt;
+                            &lt;td&gt;
+                              &lt;table border="0" cellspacing="0" cellpadding="0"&gt;
+                                &lt;tr&gt;
+                                  &lt;td bgcolor="#3FB6C2" style="padding: 8px 28px" align="center"&gt;&lt;a href='https://talent.hcm.dynamics.com/' style="color:white; text-decoration: none;"&gt;Sign up&lt;/a&gt;&lt;/td&gt;
+                                &lt;/tr&gt;
+                              &lt;/table&gt;
+                            &lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/table&gt;
+
+                        &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+                        &lt;p style="font-size:11px; line-height: 1.5; margin-bottom:20px"&gt;Microsoft Project “Odin” makes it easier to review candidates, schedule interviews, and collaborate with the hiring team to get the right candidate for the job.&lt;/p&gt;
+
+                        &lt;p style="font-size:11px"&gt;&lt;a href='https://talent.hcm.dynamics.com/' style="color:#76B0E4;"&gt;Learn more&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr style='background-color: #B3B3B7;letter-spacing: 0.3px'&gt;
+                &lt;td&gt;
+                    &lt;div style='margin:40px'&gt;
+
+                    &lt;div&gt;&lt;img src="cid:{MicrosoftLogo}"&gt;&lt;p style='color:white;font-size:9.0pt; '&gt;
+                    &lt;div&gt;
+                    &lt;p style='font-size:9.0pt; line-height: 1.5'&gt;Microsoft respects your privacy. Review our
+                    online &lt;a
+                    href="https://u3940881.ct.sendgrid.net/wf/click?upn=yl7iS1nDvQiv-2FWaMRONAToib7uKzmeAhW-2FP8nboGI09JAUOcpOZ1Mf8PKpwzb-2FKFFglZvE1mvvSu6-2BfFQK5vGw-3D-3D_5iDVCNyH7gbfdw-2BJ9ybxQDiCvbEfyELFh6Le3GDl1oF3Jv4HnZxh-2B9itISmGzWTfGjX3RC7OPjJ8y2tv2iGBvp6eFHSVxoQL9eE16p1wJScxd-2F0HDgOG3W8EEzU8QgIClzpMwcBVI7xHDw-2BIxTPs43wjtvJpiQdQb5QxjeXcHSBf9m424mKwY0fG8-2Fu-2Bcrv25EVRzytAoZ8-2BT47ng2pZ9oVwLLtt-2FcCpmeEJzIJVMlc-3D" style="color:#619AD0; text-decoration: none;"&gt;Privacy
+                    Statement&lt;/a&gt; &lt;br&gt;
+                    Microsoft Corporation &lt;br&gt;
+                    One Microsoft Way Redmond, WA, USA 98052&lt;br&gt;
+                    This email is provided by SendGrid. Review
+                    their &lt;a
+                    href="https://u3940881.ct.sendgrid.net/wf/click?upn=8-2Fwt9PjuDZ8kJRDoCmPaTZi6pir0ex0za9ID-2B31yThfuDUomw5o-2Bzm9XqC3u4E4J_5iDVCNyH7gbfdw-2BJ9ybxQDiCvbEfyELFh6Le3GDl1oF3Jv4HnZxh-2B9itISmGzWTfQdU7M4Q2Lq75-2FM-2FXf6DLWemCpl5AhBbqACOdBXdNHQ6jzENSMtO9Av1zquu2hOVWw73kDMrQLhziUJcg1wHWzQluaWpY98u9EvAD3yQzKEepeybbcA1GS9ek5GZCpyYmHU5BL1yJ1Cnij7zm4JcC0cuxVims351Y5-2BdUpHbhlI8-3D" style="color:#619AD0; text-decoration: none;"&gt;privacy
+                    policy&lt;/a&gt; and &lt;a
+                    href="https://u3940881.ct.sendgrid.net/wf/click?upn=8-2Fwt9PjuDZ8kJRDoCmPaTZi6pir0ex0za9ID-2B31yThcmXXVazv32NJdKLtLT44Zd_5iDVCNyH7gbfdw-2BJ9ybxQDiCvbEfyELFh6Le3GDl1oF3Jv4HnZxh-2B9itISmGzWTflXAutDuZez-2BopFpAx87kXl4d9yxET705cgB-2F6-2BJpZUGpyXzYKfS8KbzXELLYe9snAPHkYgzwDLPyNz-2FBbRbz7Ah25JZ0DpCea9Ht0rfY3z4-2Fp0CtuW1tHVmgVHDnRFXzS1aWeAfgmNM1YrpAcZ07oHKXSVy9CUxRyMKYgRtLUz4-3D" style="color:#619AD0; text-decoration: none;"&gt;terms
+                    of service&lt;/a&gt;.&lt;/p&gt;
+
+                    &lt;/div&gt;
+                &lt;/td&gt;
+             &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="EmailSubjectTemplate_ManagerInvite" xml:space="preserve">
+    <value>A candidate has applied for {PositionTitle}</value>
+  </data>
+  <data name="EmailMessageTemplate_CandidateInviteToTakeAssessment" xml:space="preserve">
+    <value>&lt;html&gt;
+
+&lt;body&gt;
+    &lt;table style="width:600px"&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;img src='cid:{HeaderImage}' width='700' height='100' /&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;div style='margin-left:60px'&gt;
+                        &lt;h2&gt;Hi {CandidateName},&lt;/h2&gt;
+                        &lt;p&gt;
+                            Thank you for applying for the {PositionTitle} position.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            We’re impressed with your background and want to invite you to complete the following online assessment.
+                            &lt;br /&gt;&lt;a href={AssessmentLink}&gt;{AssessmentName}&lt;/a&gt;
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            We look forward to speaking again soon and discussing the position further!
+                        &lt;/p&gt;
+
+                        &lt;p&gt;Best,&lt;/p&gt;
+                        {HiringManagerName}
+                        &lt;br/&gt; {HiringManagerTitle}
+                    &lt;/div&gt;
+                    {EmailFooterPrivateField}
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+  <data name="EmailSubjectTemplate_CandidateInviteToTakeAssessment" xml:space="preserve">
+    <value>{CompanyName} has invited you to take an online assessment</value>
+  </data>
+  <data name="EmailTemplate_FooterHtml" xml:space="preserve">
+    <value>&lt;p&gt;{Footer_Text}&lt;/p&gt;</value>
+  </data>
+  <data name="EmailTemplate_HeaderHtml" xml:space="preserve">
+    <value>&lt;img alt="Email header image" src="{Header_Image_Url}" /&gt;</value>
+  </data>
+  <data name="EmailTemplate_PrivacyHtml" xml:space="preserve">
+    <value>{Company_Name} respects  your &lt;a aria-label="Privacy policy link" href="{Privacy_Policy_Link}"&gt;privacy&lt;/a&gt;.</value>
+  </data>
+  <data name="EmailTemplate_TermsHtml" xml:space="preserve">
+    <value>See our &lt;a aria-label="Terms and conditions link" href="{Terms_And_Conditions_Link}"&gt;terms of use&lt;/a&gt;.</value>
+  </data>
+  <data name="ReponsiveEmailLayout" xml:space="preserve">
+    <value>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=windows-1256"&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    &lt;title&gt;Dynamics 365 for Talent&lt;/title&gt;
+    &lt;style&gt;
+        /* -------------------------------------
+              GLOBAL RESETS
+          ------------------------------------- */
+        img {
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100%;
+        }
+
+        body {
+            background-color: #f6f6f6;
+            font-family: Segoe UI;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table {
+            border-collapse: separate;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            width: 100%;
+        }
+
+        table td {
+            font-family: Segoe UI;
+            font-size: 14px;
+        }
+
+        /* -------------------------------------
+              BODY &amp; CONTAINER
+          ------------------------------------- */
+
+        .body {
+            background-color: #f6f6f6;
+            width: 100%;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+        .container {
+            display: block;
+            Margin: 0 auto !important;
+            /* makes it centered */
+            max-width: 615px;
+            width: 615px;
+        }
+
+        /* This should also be a block element, so that it will fill 100% of the .container */
+        .content {
+            box-sizing: border-box;
+            display: block;
+            Margin: 0 auto;
+            max-width: 615px;
+            padding-top: 100px;
+        }
+
+        /* -------------------------------------
+              HEADER, FOOTER, MAIN
+          ------------------------------------- */
+        .main {
+            background: #fff;
+            border-radius: 3px;
+            width: 100%;
+            border-spacing: 0px;
+        }
+
+        .wrapper {
+            box-sizing: border-box;
+            padding-top: 32px;
+            padding-left: 32px;
+            padding-right: 32px;
+            color: #212121;
+        }
+
+        .paragraph {
+            margin-bottom: 28px;
+            line-height: 20px;
+        }
+
+        .footer {
+            clear: both;
+            text-align: left;
+            width: 100%;
+        }
+
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+            color: #6D6E6C;
+            font-size: 12px;
+            text-align: left;
+            line-height: 20px;
+        }
+
+        .footer-content {
+            border-top-style: solid;
+            border-width: 1px 0 0 0;
+            border-color: #EAEAEA;
+            padding: 12px 32px 12px 32px;
+            background-color: #FFF;
+        }
+
+        .header-content {
+            border-bottom-style: solid;
+            border-width: 0 0 1px 0;
+            border-color: #EAEAEA;
+            padding: 32px 32px 24px 32px;
+            background-color: #FFF;
+        }
+
+        .closing {
+            margin-bottom: 12px;
+        }
+
+        /* -------------------------------------
+              TYPOGRAPHY
+          ------------------------------------- */
+
+        a {
+            color: #0084BF;
+            text-decoration: underline;
+        }
+
+        /* -------------------------------------
+              BUTTONS
+          ------------------------------------- */
+        .btn {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .btn&gt;tbody&gt;tr&gt;td {
+            padding-bottom: 15px;
+        }
+
+        .btn table {
+            width: auto;
+        }
+
+        .btn table td {
+            background-color: #ffffff;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn a {
+            background-color: #ffffff;
+            border: solid 1px #0084BF;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #0084BF;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+            padding: 12px 25px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .btn-primary table td {
+            background-color: #0084BF;
+        }
+
+        .btn-primary a {
+            background-color: #0084BF;
+            border-color: #0084BF;
+            color: #ffffff;
+        }
+
+        /* -------------------------------------
+              OTHER STYLES THAT MIGHT BE USEFUL
+          ------------------------------------- */
+        .last {
+            margin-bottom: 0;
+        }
+
+        .first {
+            margin-top: 0;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .mt0 {
+            margin-top: 0;
+        }
+
+        .mb0 {
+            margin-bottom: 0;
+        }
+
+        .preheader {
+            color: transparent;
+            display: none;
+            height: 0;
+            max-height: 0;
+            max-width: 0;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+            visibility: hidden;
+            width: 0;
+        }
+
+        .powered-by a {
+            text-decoration: none;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px solid #f6f6f6;
+            Margin: 20px 0;
+        }
+
+        /* -------------------------------------
+              RESPONSIVE AND MOBILE FRIENDLY STYLES
+          ------------------------------------- */
+        @media only screen and (max-width: 620px) {
+            table[class=body] h1 {
+                font-size: 28px !important;
+                margin-bottom: 10px !important;
+            }
+
+            table[class=body] ul,
+            table[class=body] ol,
+            table[class=body] td,
+            table[class=body] span {
+                font-size: 16px !important;
+            }
+
+            table[class=body] .wrapper,
+            table[class=body] .article {
+                padding: 32px 32px 0 32px !important;
+            }
+
+            table[class=body] .content {
+                padding: 0 !important;
+            }
+
+            table[class=body] .container {
+                padding: 0 !important;
+                width: 100% !important;
+            }
+
+            table[class=body] .main {
+                border-left-width: 0 !important;
+                border-radius: 0 !important;
+                border-right-width: 0 !important;
+            }
+
+            table[class=body] .btn table {
+                width: 100% !important;
+            }
+
+            table[class=body] .btn a {
+                width: 100% !important;
+            }
+
+            table[class=body] .img-responsive {
+                height: auto !important;
+                max-width: 100% !important;
+                width: auto !important;
+            }
+        }
+
+        /* -------------------------------------
+              PRESERVE THESE STYLES IN THE HEAD
+          ------------------------------------- */
+        @media all {
+            .ExternalClass {
+                width: 100%;
+            }
+
+            .ExternalClass,
+            .ExternalClass span,
+            .ExternalClass font,
+            .ExternalClass td,
+            .ExternalClass div {
+                line-height: 100%;
+            }
+
+            .apple-link a {
+                color: inherit !important;
+                font-family: inherit !important;
+                font-size: inherit !important;
+                font-weight: inherit !important;
+                line-height: inherit !important;
+                text-decoration: none !important;
+            }
+
+            .btn-primary table td:hover {
+                background-color: #34495e !important;
+            }
+
+            .btn-primary a:hover {
+                background-color: #34495e !important;
+                border-color: #34495e !important;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class=""&gt;
+    &lt;table border="0" cellpadding="0" cellspacing="0" class="body"&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+                &lt;td class="container"&gt;
+                    &lt;div class="content"&gt;
+                        &lt;!-- START CENTERED WHITE CONTAINER --&gt;
+                        &lt;table class="main"&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td class="header-content"&gt;
+                                        &lt;div&gt;{EmailHeader}&lt;/div&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+
+                                &lt;!-- START MAIN CONTENT AREA --&gt;
+                                &lt;tr&gt;
+                                    &lt;td class="wrapper"&gt;
+                                        &lt;table border="0" cellpadding="0" cellspacing="0"&gt;
+                                            &lt;tr&gt;
+                                                &lt;td&gt;
+                                                    {EmailBody}
+                                                    &lt;p class="closing"&gt;{Closing}&lt;/p&gt;
+                                                &lt;/td&gt;
+                                            &lt;/tr&gt;
+                                        &lt;/table&gt;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+
+                                &lt;!-- END MAIN CONTENT AREA --&gt;
+                        &lt;/table&gt;
+
+                        &lt;!-- START FOOTER --&gt;
+                        {CompanyFooterLayout}
+                        &lt;!-- END FOOTER --&gt;
+
+                        &lt;!-- END CENTERED WHITE CONTAINER --&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+            &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</value>
+  </data>
+</root>
