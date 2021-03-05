@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace MS.GTA.Common.Integration.Contracts
+namespace Common.Integration.Contracts
 {
     public enum CandidateExternalSource
     {

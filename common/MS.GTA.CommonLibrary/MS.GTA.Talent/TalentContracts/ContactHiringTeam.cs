@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Attract.Contract
+namespace Common.Attract.Contract
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 
-    using MS.GTA.Common.Email.Contracts;
+    using Common.Email.Contracts;
 
 
     /// <summary>

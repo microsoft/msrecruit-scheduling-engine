@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V1
+namespace Common.OfferManagement.Contracts.V1
 {
     /// <summary>
     /// Custom attributes contract for extended attributes for Job, Position, Candidate

@@ -1,22 +1,22 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.FalconEntities.Attract
+namespace Talent.FalconEntities.Attract
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.Talent.EnumSetModel;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
-    using MS.GTA.Talent.FalconEntities.Attract.Conference;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.DocumentDB.Contracts;
+    using Common.Provisioning.Entities.FalconEntities.Attract;
+    using Common.TalentAttract.Contract;
+    using Common.TalentEntities.Common;
+    using ScheduleService.Contracts.V1;
+    using Talent.EnumSetModel;
+    using Talent.EnumSetModel.SchedulingService;
+    using Talent.FalconEntities.Attract.Conference;
+    using TalentEntities.Enum;
 
     /// <summary>
     /// The <see cref="JobApplicationSchedule"/> class represents the job application schedule entity.

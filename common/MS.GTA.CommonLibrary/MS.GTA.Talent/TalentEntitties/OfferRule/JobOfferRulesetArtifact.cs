@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.OfferRule
+namespace Common.Provisioning.Entities.XrmEntities.OfferRule
 {
     using System;
     using System.Runtime.Serialization;
     using System.ComponentModel.DataAnnotations;
-    using MS.GTA.Common.XrmHttp;
+    using Common.XrmHttp;
 
     [ODataEntity(PluralName = "msdyn_jobofferrulesetartifacts", SingularName = "msdyn_jobofferrulesetartifact")]
     public class JobOfferRulesetArtifact : XrmODataEntity

@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Optionset;
-    using MS.GTA.Common.XrmHttp;
+    using Common.Provisioning.Entities.XrmEntities.Optionset;
+    using Common.XrmHttp;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

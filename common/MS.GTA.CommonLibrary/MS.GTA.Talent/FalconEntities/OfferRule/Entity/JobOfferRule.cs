@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.OfferRule
+namespace Common.Provisioning.Entities.FalconEntities.OfferRule
 {
-    using MS.GTA.Common.DocumentDB.Contracts;
+    using Common.DocumentDB.Contracts;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 

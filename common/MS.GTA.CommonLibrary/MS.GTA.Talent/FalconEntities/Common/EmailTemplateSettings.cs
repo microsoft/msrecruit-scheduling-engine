@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.FalconEntities.Common
+namespace Talent.FalconEntities.Common
 {
-    using MS.GTA.Common.DocumentDB.Contracts;
+    using Common.DocumentDB.Contracts;
     using System.Runtime.Serialization;
 
     [DataContract]

@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 
-namespace MS.GTA.Talent.TalentContracts.InterviewService
+namespace Talent.TalentContracts.InterviewService
 {
-    using MS.GTA.Common.Web.Contracts;
+    using Common.Web.Contracts;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 

@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
+    using Common.DocumentDB.Contracts;
+    using ScheduleService.Contracts.V1;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;

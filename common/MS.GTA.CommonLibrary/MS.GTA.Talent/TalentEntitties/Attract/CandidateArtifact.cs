@@ -2,15 +2,15 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.Common.XrmHttp.Model;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.XrmHttp;
+    using Common.XrmHttp.Model;
+    using TalentEntities.Enum;
 
     [ODataEntity(PluralName = "msdyn_candidateartifacts", SingularName = "msdyn_candidateartifact")]
     public class CandidateArtifact : XrmODataEntity

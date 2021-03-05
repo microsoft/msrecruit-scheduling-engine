@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.TalentContracts.TeamsIntegration
+namespace Talent.TalentContracts.TeamsIntegration
 {
     using System.Runtime.Serialization;
-    using MS.GTA.Talent.TalentContracts.InterviewService;
+    using Talent.TalentContracts.InterviewService;
 
     /// <summary>
     /// Candidacy Details

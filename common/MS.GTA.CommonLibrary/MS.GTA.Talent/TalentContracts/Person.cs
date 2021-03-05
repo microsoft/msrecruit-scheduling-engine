@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
     using System.Runtime.Serialization;
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.TalentEntities.Enum.Common;
+    using Common.Contracts;
+    using Common.TalentEntities.Common;
+    using TalentEntities.Enum.Common;
 
     /// <summary>
     /// The person data contract.

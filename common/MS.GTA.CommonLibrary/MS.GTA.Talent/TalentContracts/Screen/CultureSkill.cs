@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.TalentContracts.Screen
+namespace Talent.TalentContracts.Screen
 {
     using System;
     using System.Runtime.Serialization;

@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.FalconEntities.Attract
+namespace Talent.FalconEntities.Attract
 {
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.DocumentDB.Contracts;
+    using Common.Provisioning.Entities.FalconEntities.Attract;
+    using TalentEntities.Enum;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

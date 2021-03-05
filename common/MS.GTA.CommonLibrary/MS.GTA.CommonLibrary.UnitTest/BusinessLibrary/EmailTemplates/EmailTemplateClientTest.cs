@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
+namespace CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
 {
     using System;
     using System.Collections.Generic;
@@ -12,10 +12,10 @@ namespace MS.GTA.CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.BusinessLibrary.EmailTemplates;
-    using MS.GTA.Data.DataAccess;
-    using MS.GTA.ServicePlatform.Tracing;
+    using Common.Email.Contracts;
+    using BusinessLibrary.EmailTemplates;
+    using Data.DataAccess;
+    using ServicePlatform.Tracing;
 
     [TestClass]
     public class EmailTemplateClientTest

@@ -1,8 +1,8 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.TalentContracts.TaskService
+namespace Talent.TalentContracts.TaskService
 {
     using System.Net.Http;
     using System.Runtime.Serialization;

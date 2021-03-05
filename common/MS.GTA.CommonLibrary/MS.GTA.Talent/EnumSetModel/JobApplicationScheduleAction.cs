@@ -2,15 +2,15 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.TalentEntities.Enum
+namespace TalentEntities.Enum
 {
-    using MS.GTA.Talent.FalconEntities.Attract;
+    using Talent.FalconEntities.Attract;
     using System.Runtime.Serialization;
 
     /// <summary>
     /// Enumeration of the actions that can be performed on a <see cref="JobApplicationSchedule"/>
     /// </summary>
-    [DataContract(Namespace = "MS.GTA.TalentEngagement")]
+    [DataContract(Namespace = "TalentEngagement")]
     public enum JobApplicationScheduleAction
     {
         /// <summary>

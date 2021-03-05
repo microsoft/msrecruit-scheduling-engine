@@ -1,16 +1,16 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.Contracts.V1
+namespace ScheduleService.Contracts.V1
 {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;
     using System.Text;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
+    using Talent.EnumSetModel.SchedulingService;
 
     /// <summary>
     /// User permission for scheduling service

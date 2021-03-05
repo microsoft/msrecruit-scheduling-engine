@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MS.GTA.Common\MS.GTA.Common.csproj" />
-    <ProjectReference Include="..\MS.GTA.Data\MS.GTA.Data.csproj" />
+    <ProjectReference Include="..\MS.GTA.Common\Common.csproj" />
+    <ProjectReference Include="..\MS.GTA.Data\Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,16 +2,16 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Common
+namespace Common.Provisioning.Entities.XrmEntities.Common
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
     using System.Collections.Generic;
-    using MS.GTA.Common.XrmHttp;   
-    ////using MS.GTA.Common.Provisioning.Entities.XrmEntities.Onboard;
-    using MS.GTA.Common.XrmHttp.Model;
-    ////using MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract;
+    using Common.XrmHttp;   
+    ////using Common.Provisioning.Entities.XrmEntities.Onboard;
+    using Common.XrmHttp.Model;
+    ////using Common.Provisioning.Entities.XrmEntities.Attract;
 
     [ODataEntity(PluralName = "cdm_workers", SingularName = "cdm_worker")]
     public class Worker : XrmODataEntity

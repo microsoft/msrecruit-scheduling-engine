@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.CommonLibrary.UnitTest.Common.WebNotifications.Internals
+namespace CommonLibrary.UnitTest.Common.WebNotifications.Internals
 {
     using System;
     using System.Collections.Generic;
@@ -13,10 +13,10 @@ namespace MS.GTA.CommonLibrary.UnitTest.Common.WebNotifications.Internals
     using Microsoft.Extensions.Logging.Abstractions;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.WebNotifications;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.Common.WebNotifications.Internals;
+    using Common.Base.ServiceContext;
+    using Common.WebNotifications;
+    using Common.WebNotifications.Interfaces;
+    using Common.WebNotifications.Internals;
 
     [ExcludeFromCodeCoverage]
     [TestClass]

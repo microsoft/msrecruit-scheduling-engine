@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.FalconEntities.Attract
+namespace Talent.FalconEntities.Attract
 {
     using System;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
+    using Common.DocumentDB.Contracts;
 
     /// <summary>
     /// Timezone Data for jobapplication

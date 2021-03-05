@@ -5,9 +5,9 @@
 
 using System.Runtime.Serialization;
 
-namespace MS.GTA.TalentEngagementService.Data
+namespace TalentEngagementService.Data
 {
-    [DataContract(Namespace = "MS.GTA.TalentEngagement")]
+    [DataContract(Namespace = "TalentEngagement")]
     public enum AccessType
     {
         [EnumMember(Value = "exportData")]

@@ -1,8 +1,8 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.TalentContracts.Flighting
+namespace Talent.TalentContracts.Flighting
 {
     using System.Runtime.Serialization;
 

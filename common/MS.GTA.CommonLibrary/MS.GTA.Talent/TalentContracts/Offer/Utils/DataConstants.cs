@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.Utils
+namespace Common.OfferManagement.Contracts.Utils
 {
     /// <summary>
     /// Data constants

@@ -2,14 +2,14 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-using MS.GTA.Common.XrmHttp;
+using Common.XrmHttp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
     [ODataEntity(PluralName = "msdyn_talenttags", SingularName = "msdyn_talenttag")]
     public class TalentTag : XrmODataEntity

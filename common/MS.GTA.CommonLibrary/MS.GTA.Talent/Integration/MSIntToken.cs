@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Integration.Contracts
+namespace Common.Integration.Contracts
 {
     /// <summary>
     /// MSIntToken

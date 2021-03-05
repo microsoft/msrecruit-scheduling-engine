@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.TalentContracts.ScheduleService
+namespace Talent.TalentContracts.ScheduleService
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.ScheduleService.Contracts.V1;
+    using ScheduleService.Contracts.V1;
 
     /// <summary>
     /// Suggest meeting request

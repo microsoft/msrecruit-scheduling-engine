@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing
+namespace Talent.TalentContracts.ScheduleService.Conferencing
 {
     using Microsoft.Graph;
     using System.Runtime.Serialization;
@@ -51,7 +51,7 @@ namespace MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing
         public string DialInUrl { get; set; }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="AudioConferencing" /> to <see cref="MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing.AudioInfo" />.
+        /// Performs an implicit conversion from <see cref="AudioConferencing" /> to <see cref="Talent.TalentContracts.ScheduleService.Conferencing.AudioInfo" />.
         /// </summary>
         /// <param name="audioConferencing">The instance of <see cref="AudioConferencing"/>.</param>
         /// <returns>

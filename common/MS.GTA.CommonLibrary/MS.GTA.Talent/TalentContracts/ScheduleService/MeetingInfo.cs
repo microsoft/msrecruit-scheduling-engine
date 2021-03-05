@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.Contracts.V1
+namespace ScheduleService.Contracts.V1
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Talent.EnumSetModel;
+    using Talent.EnumSetModel;
 
     /// <summary>
     /// A meeting event

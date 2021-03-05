@@ -1,17 +1,17 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.BusinessLibrary.Requests
+namespace Common.OfferManagement.BusinessLibrary.Requests
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.ServicePlatform.Context;
+    using Common.Base.Security;
+    using ServicePlatform.Context;
 
     /// <summary>
     /// Base request

@@ -1,17 +1,17 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentEntities.Common
+namespace Common.TalentEntities.Common
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Enum.Common;
-    using MS.GTA.Common.Web.Contracts;
+    using Common.DocumentDB.Contracts;
+    using Common.Provisioning.Entities.FalconEntities.Attract;
+    using Common.TalentEntities.Enum.Common;
+    using Common.Web.Contracts;
 
     /// <summary> A contact representing a worker, such as a new hire, worker, manager, etc. </summary>
     [DataContract]

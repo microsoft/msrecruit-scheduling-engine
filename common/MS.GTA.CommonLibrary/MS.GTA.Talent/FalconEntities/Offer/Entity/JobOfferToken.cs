@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -7,11 +7,11 @@
 /// Namespace Offer Management Entities and Enums
 /// </summary>
 
-namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Offer
+namespace Common.Provisioning.Entities.FalconEntities.Offer
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
+    using Common.DocumentDB.Contracts;
 
     [DataContract]
     public class JobOfferToken : DocDbEntity

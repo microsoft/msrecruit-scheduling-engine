@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V2.Gdpr
+namespace Common.OfferManagement.Contracts.V2.Gdpr
 {
     /// <summary>
     /// Contract for Candidate informations details

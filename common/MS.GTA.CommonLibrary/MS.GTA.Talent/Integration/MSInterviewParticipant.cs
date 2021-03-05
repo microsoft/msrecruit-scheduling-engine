@@ -5,7 +5,7 @@
 
 using System;
 
-namespace MS.GTA.Common.Integration.Contracts
+namespace Common.Integration.Contracts
 {
     public enum InvitationResponseStatus
     {

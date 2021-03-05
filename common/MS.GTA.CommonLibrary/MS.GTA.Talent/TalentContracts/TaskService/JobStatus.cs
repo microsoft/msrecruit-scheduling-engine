@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.TalentContracts.TaskService
+namespace Talent.TalentContracts.TaskService
 {
     /// <summary>The job status.</summary>
     public static class JobStatus

@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.Common.Contracts;
+using Common.Contracts;
 using System.Collections.Generic;
 
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
     /// <summary>
     /// Interface paged response.

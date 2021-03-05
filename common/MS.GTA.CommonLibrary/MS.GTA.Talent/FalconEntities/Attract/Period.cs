@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -6,13 +6,13 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using MS.GTA.Common.DocumentDB.Contracts;
-using MS.GTA.Common.TalentEntities.Common;
-using MS.GTA.TalentEntities.Enum;
-using MS.GTA.Common.TalentEntities.Enum.Common;
-using MS.GTA.Talent.FalconEntities.Attract;
+using Common.DocumentDB.Contracts;
+using Common.TalentEntities.Common;
+using TalentEntities.Enum;
+using Common.TalentEntities.Enum.Common;
+using Talent.FalconEntities.Attract;
 
-namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
+namespace Common.Provisioning.Entities.FalconEntities.Attract
 {
     /// <summary>
     /// Entity to store the delegation request period

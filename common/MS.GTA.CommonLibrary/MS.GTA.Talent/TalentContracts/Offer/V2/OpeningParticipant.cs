@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V2
+namespace Common.OfferManagement.Contracts.V2
 {
-    using MS.GTA.Common.OfferManagement.Contracts.Enums.V1;
-    using MS.GTA.Common.TalentEntities.Common;
+    using Common.OfferManagement.Contracts.Enums.V1;
+    using Common.TalentEntities.Common;
 
     /// <summary>
     ///  Opening Participant Contract.

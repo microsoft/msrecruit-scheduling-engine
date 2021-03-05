@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 // Note: This namespace needs to stay the same since the docdb collection name depends on it
-namespace MS.GTA.Common.Attract.Data.DocumentDB
+namespace Common.Attract.Data.DocumentDB
 {
     using System.Runtime.Serialization;
-    using JobPostContract = MS.GTA.TalentJobPosting.Contract;
+    using JobPostContract = TalentJobPosting.Contract;
 
     /// <summary>
     /// The job post class

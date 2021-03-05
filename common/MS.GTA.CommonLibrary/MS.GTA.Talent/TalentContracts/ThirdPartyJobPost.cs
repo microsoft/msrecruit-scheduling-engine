@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
-    using MS.GTA.Common.Attract.Data.DocumentDB;
+    using Common.Attract.Data.DocumentDB;
     using System.Runtime.Serialization;
 
     /// <summary>

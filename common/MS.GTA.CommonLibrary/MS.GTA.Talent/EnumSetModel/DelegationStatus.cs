@@ -2,14 +2,14 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.TalentEntities.Enum
+namespace TalentEntities.Enum
 {
     using System.Runtime.Serialization;
 
     /// <summary>
     /// Enum defining the statuses for the delegation.
     /// </summary>
-    [DataContract(Namespace = "MS.GTA.TalentEngagement")]
+    [DataContract(Namespace = "TalentEngagement")]
     public enum DelegationStatus
     {
         /// <summary>

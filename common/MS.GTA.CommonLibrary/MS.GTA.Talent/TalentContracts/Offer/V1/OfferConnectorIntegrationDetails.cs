@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.Common.OfferManagement.Contracts.Enums.V1;
+using Common.OfferManagement.Contracts.Enums.V1;
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V1
+namespace Common.OfferManagement.Contracts.V1
 {
     /// <summary>
     /// The Entity used to push message to Service bus Queue for communication with Connector Service

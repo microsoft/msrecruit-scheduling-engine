@@ -1,15 +1,15 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.FalconEntities.Offer.Entity
+namespace Talent.FalconEntities.Offer.Entity
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Common.OfferManagement.Contracts.V2;
+    using Common.DocumentDB.Contracts;
+    using Common.OfferManagement.Contracts.V2;
 
     /// <summary>
     /// The job offer setting data contract.

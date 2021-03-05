@@ -2,16 +2,16 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Offer
+namespace Common.Provisioning.Entities.XrmEntities.Offer
 {
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.Common.XrmHttp.Model;
+    using Common.XrmHttp;
+    using Common.XrmHttp.Model;
 
     /// <summary>
     /// Job Offer Package Artifact Annotation
     /// </summary>
-    /// <seealso cref="MS.GTA.Common.XrmHttp.XrmODataEntity" />
+    /// <seealso cref="Common.XrmHttp.XrmODataEntity" />
     [ODataEntity(PluralName = "annotations", SingularName = "annotation")]
     public class JobOfferTemplatePackageArtifactAnnotation : Annotation
     {

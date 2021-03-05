@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.BusinessLibrary.Requests
+namespace Common.OfferManagement.BusinessLibrary.Requests
 {
-    using MS.GTA.Common.OfferManagement.Contracts.V1;
+    using Common.OfferManagement.Contracts.V1;
 
     /// <summary>
     /// Extend Offer Request

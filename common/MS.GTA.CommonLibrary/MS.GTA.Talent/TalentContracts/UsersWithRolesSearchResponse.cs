@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.Contracts;
+    using Common.Contracts;
 
     /// <summary>
     /// Contract class representing a request for a list of users with roles

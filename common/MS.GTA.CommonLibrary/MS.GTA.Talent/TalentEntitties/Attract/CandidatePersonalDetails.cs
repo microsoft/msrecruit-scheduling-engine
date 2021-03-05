@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.XrmHttp;
+    using TalentEntities.Enum;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

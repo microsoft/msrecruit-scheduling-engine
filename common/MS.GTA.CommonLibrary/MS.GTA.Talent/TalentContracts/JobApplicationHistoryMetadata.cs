@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
     using System;
     using System.Runtime.Serialization;
-    using MS.GTA.TalentEntities.Enum;
+    using TalentEntities.Enum;
 
     /// <summary>
     /// Job Metadata Request

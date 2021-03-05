@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.TalentContracts.Offer.V2
+namespace Talent.TalentContracts.Offer.V2
 {
-    using MS.GTA.Common.OfferManagement.Contracts.V2;
-    using MS.GTA.Common.Web.Contracts;
+    using Common.OfferManagement.Contracts.V2;
+    using Common.Web.Contracts;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 

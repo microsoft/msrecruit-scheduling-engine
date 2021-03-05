@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Runtime.Serialization;
 
-namespace MS.GTA.TalentEntities.Enum
+namespace TalentEntities.Enum
 {
-    [DataContract(Namespace = "MS.GTA.TalentEngagement")]
+    [DataContract(Namespace = "TalentEngagement")]
     public enum TalentPoolParticipantRole
     {
         [EnumMember(Value = "Owner")]

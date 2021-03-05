@@ -1,19 +1,19 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Data.Utils
+namespace Data.Utils
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using MS.GTA.Common.Email.GraphContracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.Email.GraphContracts;
+    using ScheduleService.Contracts.V1;
+    using Talent.EnumSetModel.SchedulingService;
+    using TalentEntities.Enum;
     
-    using CommonEmail = MS.GTA.Common.Email;
+    using CommonEmail = Common.Email;
 
     public static class EmailTemplateExtensions
     {

@@ -1,15 +1,15 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.Common.DocumentDB.Contracts;
+using Common.DocumentDB.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace MS.GTA.Talent.FalconEntities.Common
+namespace Talent.FalconEntities.Common
 {
     /// <summary>
     /// IV Pilot criteria for ring 0,1,2..

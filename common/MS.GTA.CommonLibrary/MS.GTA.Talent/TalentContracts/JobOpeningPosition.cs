@@ -1,16 +1,16 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.TalentEntities.Common;
-    using MS.GTA.TalentEntities.Enum;
-    using MS.GTA.TalentEntities.Enum.Common;
+    using Common.Contracts;
+    using TalentEntities.Common;
+    using TalentEntities.Enum;
+    using TalentEntities.Enum.Common;
 
     /// <summary>
     /// The job position data contract.

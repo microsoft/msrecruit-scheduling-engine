@@ -1,10 +1,10 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.FalconEntities.IV.Screen
+namespace Talent.FalconEntities.IV.Screen
 {
-    using MS.GTA.Talent.EnumSetModel;
+    using Talent.EnumSetModel;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 

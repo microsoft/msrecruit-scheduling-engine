@@ -1,10 +1,10 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 // Note: This namespace needs to stay the same since the docdb collection name depends on it.
-namespace MS.GTA.Common.Attract.Contract
+namespace Common.Attract.Contract
 {
     using System.Runtime.Serialization;
 

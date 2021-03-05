@@ -2,14 +2,14 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.XrmHttp;
+    using TalentEntities.Enum;
 
     [ODataEntity(PluralName = "msdyn_jobopeningstages", SingularName = "msdyn_jobopeningstage")]
     public class JobOpeningStage : XrmODataEntity

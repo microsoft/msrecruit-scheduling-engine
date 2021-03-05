@@ -6,7 +6,7 @@
 /// <summary>
 /// Namespace Offer Management Entities and Enums
 /// </summary>
-namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Offer
+namespace Common.Provisioning.Entities.FalconEntities.Offer
 {
     using System.Runtime.Serialization;
     using System.Collections.Generic;

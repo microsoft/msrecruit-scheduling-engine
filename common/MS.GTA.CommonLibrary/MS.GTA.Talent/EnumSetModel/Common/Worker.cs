@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.TalentEntities.Common
+namespace TalentEntities.Common
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.TalentEntities.Enum.Common;
+    using Common.DocumentDB.Contracts;
+    using Common.TalentEntities.Common;
+    using TalentEntities.Enum.Common;
 
     /// <summary> A contact representing a worker, such as a new hire, worker, manager, etc. </summary>
     [DataContract]

@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Optionset
+namespace Common.Provisioning.Entities.XrmEntities.Optionset
 {
     public enum EmploymentType
     {

@@ -21,6 +21,9 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MS.GTA.Common\Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="WireContracts\AadUser.ts">
       <CustomToolNamespace>TalentContracts\Offer\V2\AadUser.cs</CustomToolNamespace>
     </None>
@@ -1716,9 +1719,6 @@
     <None Update="WireContracts\XrmODataEntity.ts">
       <CustomToolNamespace>..\MS.IT.GTA.Common\Common\Common.XrmHttp\Model\XrmODataEntity.cs</CustomToolNamespace>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MS.GTA.Common\MS.GTA.Common.csproj" />
   </ItemGroup>
   <ProjectExtensions><VisualStudio><UserProperties WireContracts_4package_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>
 </Project>

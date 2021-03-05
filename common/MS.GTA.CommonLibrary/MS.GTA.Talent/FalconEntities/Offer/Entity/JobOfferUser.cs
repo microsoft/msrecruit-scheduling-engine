@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.FalconEntities.Offer.Entity
+namespace Talent.FalconEntities.Offer.Entity
 {
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Common.OfferManagement.Contracts.V2;
-    using MS.GTA.Common.Web.Contracts;
+    using Common.DocumentDB.Contracts;
+    using Common.OfferManagement.Contracts.V2;
+    using Common.Web.Contracts;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 

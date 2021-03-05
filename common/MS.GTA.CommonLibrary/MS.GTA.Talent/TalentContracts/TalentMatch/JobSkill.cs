@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace MS.GTA.Talent.TalentContracts.TalentMatch
+namespace Talent.TalentContracts.TalentMatch
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="JobSkill" /> class.

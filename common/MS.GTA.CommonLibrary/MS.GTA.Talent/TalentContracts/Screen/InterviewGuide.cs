@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.TalentContracts.Screen
+namespace Talent.TalentContracts.Screen
 {
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.Talent.EnumSetModel;
+    using Common.Contracts;
+    using Talent.EnumSetModel;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

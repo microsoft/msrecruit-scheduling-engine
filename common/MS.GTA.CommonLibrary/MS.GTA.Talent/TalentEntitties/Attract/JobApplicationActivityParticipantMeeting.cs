@@ -1,10 +1,10 @@
-﻿
 
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Common;
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.Provisioning.Entities.XrmEntities.Common;
+    using Common.XrmHttp;
+    using TalentEntities.Enum;
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;

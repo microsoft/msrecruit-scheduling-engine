@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
     using System.Collections.Generic;
-    using MS.GTA.Common.Email.SendGridContracts;
-    using MS.GTA.Common.Email.GraphContracts;
+    using Common.Email.SendGridContracts;
+    using Common.Email.GraphContracts;
 
     /// <summary>
     /// Email properties

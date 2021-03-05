@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Runtime.Serialization;
 
-namespace MS.GTA.Talent.TalentContracts.TalentMatch
+namespace Talent.TalentContracts.TalentMatch
 {
     /// <summary>
     /// Job Opening Properties

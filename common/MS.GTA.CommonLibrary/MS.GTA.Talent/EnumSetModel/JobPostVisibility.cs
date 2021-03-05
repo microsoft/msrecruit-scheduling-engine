@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.TalentEntities.Enum
+namespace TalentEntities.Enum
 {
     public enum JobPostVisibility
     {

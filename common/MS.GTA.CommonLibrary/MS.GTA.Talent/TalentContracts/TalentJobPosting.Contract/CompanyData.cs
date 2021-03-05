@@ -1,10 +1,10 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.TalentContracts.TalentJobPosting.Contract
+namespace Talent.TalentContracts.TalentJobPosting.Contract
 {
-    using MS.GTA.Common.EnvironmentSettings.Contracts;
+    using Common.EnvironmentSettings.Contracts;
     using System.Runtime.Serialization;
 
     /// <summary>The company data.</summary>

@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.Enums.V1
+namespace Common.OfferManagement.Contracts.Enums.V1
 {
     using System.Runtime.Serialization;
 

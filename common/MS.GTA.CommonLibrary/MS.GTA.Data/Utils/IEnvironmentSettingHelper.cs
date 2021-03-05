@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Data
+namespace Common.Data
 {
     using System.Threading.Tasks;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.TalentAttract.Contract;
+    using Common.DocumentDB;
+    using Common.TalentAttract.Contract;
 
     public interface IEnvironmentSettingHelper
     {

@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.EnumSetModel
+namespace Talent.EnumSetModel
 {
     using System.Runtime.Serialization;
 

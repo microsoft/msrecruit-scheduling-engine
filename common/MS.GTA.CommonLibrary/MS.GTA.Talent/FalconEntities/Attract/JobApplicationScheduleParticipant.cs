@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
+namespace Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System;
     using System.Runtime.Serialization;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.TalentEntities.Enum;
+    using ScheduleService.Contracts.V1;
+    using TalentEntities.Enum;
 
     [DataContract]
     public class JobApplicationScheduleParticipant

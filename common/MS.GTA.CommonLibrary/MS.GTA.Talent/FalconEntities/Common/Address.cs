@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentEntities.Common
+namespace Common.TalentEntities.Common
 {
     using System.Runtime.Serialization;
-    using MS.GTA.Common.TalentEntities.Enum.Common;
+    using Common.TalentEntities.Enum.Common;
 
     [DataContract]
     public class Address

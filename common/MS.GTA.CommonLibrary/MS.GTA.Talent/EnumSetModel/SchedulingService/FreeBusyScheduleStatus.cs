@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.EnumSetModel.SchedulingService
+namespace Talent.EnumSetModel.SchedulingService
 {
     using System;
     using System.Collections.Generic;

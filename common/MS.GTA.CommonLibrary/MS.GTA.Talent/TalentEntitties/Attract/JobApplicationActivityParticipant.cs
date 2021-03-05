@@ -2,18 +2,18 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Common;
+    using Common.XrmHttp;
+    using Common.Provisioning.Entities.XrmEntities.Common;
     // TODO
-    // using MS.GTA.Common.Provisioning.Entities.XrmEntities.Offer;
-    using MS.GTA.TalentEntities.Enum;
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Offer;
+    // using Common.Provisioning.Entities.XrmEntities.Offer;
+    using TalentEntities.Enum;
+    using Common.Provisioning.Entities.XrmEntities.Offer;
 
     [ODataEntity(PluralName = "msdyn_jobapplicationactivityparticipants", SingularName = "msdyn_jobapplicationactivityparticipant")]
     public class JobApplicationActivityParticipant : XrmODataEntity

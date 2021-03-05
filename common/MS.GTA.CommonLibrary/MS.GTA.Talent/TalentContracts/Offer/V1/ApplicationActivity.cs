@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V1
+namespace Common.OfferManagement.Contracts.V1
 {
     using System;
     using System.Collections.Generic;
-    using MS.GTA.Common.OfferManagement.Contracts.Enums.V1;
+    using Common.OfferManagement.Contracts.Enums.V1;
 
     /// <summary>
     /// An activity in a job application

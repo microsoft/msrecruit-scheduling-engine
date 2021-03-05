@@ -1,15 +1,15 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.FalconEntities.Attract.Conference
+namespace Talent.FalconEntities.Attract.Conference
 {
     using System;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
-    using MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing;
+    using Common.DocumentDB.Contracts;
+    using Talent.EnumSetModel.SchedulingService;
+    using Talent.TalentContracts.ScheduleService.Conferencing;
 
     /// <summary>
     /// The <see cref="ConferenceMeeting"/> class represents the conference meeting entity.

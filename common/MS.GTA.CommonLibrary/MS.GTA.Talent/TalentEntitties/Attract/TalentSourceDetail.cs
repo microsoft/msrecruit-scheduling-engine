@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract
+namespace Common.Provisioning.Entities.XrmEntities.Attract
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Common;
+    using Common.XrmHttp;
+    using Common.Provisioning.Entities.XrmEntities.Common;
 
     [ODataEntity(PluralName = "msdyn_talentsourcedetails", SingularName = "msdyn_talentsourcedetail")]
     public class TalentSourceDetail : XrmODataEntity

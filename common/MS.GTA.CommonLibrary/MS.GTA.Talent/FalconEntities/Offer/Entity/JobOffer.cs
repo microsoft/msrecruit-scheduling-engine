@@ -6,12 +6,12 @@
 /// <summary>
 /// Namespace Offer Management Entities and Enums
 /// </summary>
-namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Offer
+namespace Common.Provisioning.Entities.FalconEntities.Offer
 {
     using System;
     using System.Runtime.Serialization;
 
-    using MS.GTA.Common.DocumentDB.Contracts;
+    using Common.DocumentDB.Contracts;
     using System.Collections.Generic;
 
     [DataContract]

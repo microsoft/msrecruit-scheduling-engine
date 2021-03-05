@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V2.Gdpr
+namespace Common.OfferManagement.Contracts.V2.Gdpr
 {
     using System.Collections.Generic;
-    using MS.GTA.TalentEntities.Enum;
+    using TalentEntities.Enum;
 
     /// <summary>
     /// Contract for Job Application Details.

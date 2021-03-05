@@ -4,9 +4,9 @@
 //-----------------------------------------------------------------------
 using System.Runtime.Serialization;
 
-namespace MS.GTA.TalentEntities.Enum
+namespace TalentEntities.Enum
 {
-    [DataContract(Namespace = "MS.GTA.TalentEngagement")]
+    [DataContract(Namespace = "TalentEngagement")]
     public enum JobPostStatusReason
     {
         [EnumMember(Value = "active")]

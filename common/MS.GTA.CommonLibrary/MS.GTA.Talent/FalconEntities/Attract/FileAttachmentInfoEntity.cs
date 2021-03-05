@@ -1,10 +1,10 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 using System.Runtime.Serialization;
 
-namespace MS.GTA.Talent.FalconEntities.Attract
+namespace Talent.FalconEntities.Attract
 {
     [DataContract]
     public class FileAttachmentInfoEntity

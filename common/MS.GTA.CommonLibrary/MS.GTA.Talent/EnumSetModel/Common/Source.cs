@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.TalentEntities.Enum.Common
+namespace TalentEntities.Enum.Common
 {
     using System.Runtime.Serialization;
 

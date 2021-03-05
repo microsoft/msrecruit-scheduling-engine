@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
 
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Optionset
+namespace Common.Provisioning.Entities.XrmEntities.Optionset
 {
     public enum JobOfferParticipantRole
     {

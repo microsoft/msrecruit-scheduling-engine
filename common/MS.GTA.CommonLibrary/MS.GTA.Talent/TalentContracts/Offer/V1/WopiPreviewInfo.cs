@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Data.Contracts.V1
+namespace Common.OfferManagement.Data.Contracts.V1
 {
     using System.Runtime.Serialization;
 

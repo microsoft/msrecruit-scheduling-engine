@@ -1,17 +1,17 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 // Note: This namespace needs to stay the same since the docdb collection name depends on it
-namespace MS.GTA.TalentEngagementService.Data.Candidates.DocumentDB
+namespace TalentEngagementService.Data.Candidates.DocumentDB
 {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.TalentAttract.Contract;
+    using TalentEntities.Enum;
 
     /// <summary> Job Application Invitation </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]

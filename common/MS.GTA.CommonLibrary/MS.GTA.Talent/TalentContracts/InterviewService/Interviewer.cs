@@ -1,12 +1,12 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.TalentContracts.InterviewService
+namespace Talent.TalentContracts.InterviewService
 {
     using System.Runtime.Serialization;
-    using MS.GTA.TalentEntities.Enum;
+    using TalentEntities.Enum;
 
     /// <summary>
     /// The interviewer data contract.

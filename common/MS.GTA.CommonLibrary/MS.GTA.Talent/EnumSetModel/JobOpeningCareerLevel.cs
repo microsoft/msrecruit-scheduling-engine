@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.TalentEntities.Enum
+namespace TalentEntities.Enum
 {
     using System.Runtime.Serialization;
 
     /// <summary>
     /// Job opening career levels.
     /// </summary>
-    [DataContract(Namespace = "MS.GTA.TalentEngagement")]
+    [DataContract(Namespace = "TalentEngagement")]
     public enum JobOpeningCareerLevel
     {
         /// <summary>

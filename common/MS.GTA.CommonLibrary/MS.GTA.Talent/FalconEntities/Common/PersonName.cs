@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentEntities.Common
+namespace Common.TalentEntities.Common
 {
     using System.Runtime.Serialization;
 

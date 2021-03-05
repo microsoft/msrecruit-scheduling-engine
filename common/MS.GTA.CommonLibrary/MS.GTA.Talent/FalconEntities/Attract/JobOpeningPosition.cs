@@ -1,15 +1,15 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
+namespace Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
+    using Common.DocumentDB.Contracts;
     using System.Collections.Generic;
-    using MS.GTA.TalentEntities.Enum;
-    using MS.GTA.Common.TalentEntities.Enum.Common;
+    using TalentEntities.Enum;
+    using Common.TalentEntities.Enum.Common;
 
     [DataContract]
     public class JobOpeningPosition : DocDbEntity

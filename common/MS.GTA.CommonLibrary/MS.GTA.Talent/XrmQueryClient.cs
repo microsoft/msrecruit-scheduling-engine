@@ -1,16 +1,16 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
 
-namespace MS.GTA.Common.Talent.Data.Clients
+namespace Common.Talent.Data.Clients
 {
     using System.Threading.Tasks;
     using CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Tracing;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.XrmHttp;
+    using ServicePlatform.Tracing;
+    using Common.Base.Security.V2;
+    using Common.Base.ServiceContext;
+    using Common.XrmHttp;
     using Microsoft.Extensions.Logging;
 
     /// <summary>

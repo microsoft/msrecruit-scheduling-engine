@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.TalentEntities.Enum;
-    using MS.GTA.TalentEntities.Enum.Common;
+    using Common.Contracts;
+    using TalentEntities.Enum;
+    using TalentEntities.Enum.Common;
 
     /// <summary>
     /// Team member 

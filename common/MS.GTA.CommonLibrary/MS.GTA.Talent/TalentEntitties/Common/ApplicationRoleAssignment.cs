@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Common
+namespace Common.Provisioning.Entities.XrmEntities.Common
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.Web.Contracts;
-    using MS.GTA.Common.XrmHttp;
+    using Common.Web.Contracts;
+    using Common.XrmHttp;
 
     [ODataEntity(PluralName = "msdyn_applicationroleassignments", SingularName = "msdyn_applicationroleassignment")]
     public class ApplicationRoleAssignment : XrmODataEntity

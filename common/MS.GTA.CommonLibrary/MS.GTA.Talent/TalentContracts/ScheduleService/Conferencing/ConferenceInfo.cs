@@ -1,16 +1,16 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing
+namespace Talent.TalentContracts.ScheduleService.Conferencing
 {
     using System;
     using System.Net;
     using System.Runtime.Serialization;
     using Microsoft.Graph;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
-    using MS.GTA.Talent.FalconEntities.Attract.Conference;
+    using Talent.EnumSetModel.SchedulingService;
+    using Talent.FalconEntities.Attract.Conference;
     using Newtonsoft.Json;
 
     /// <summary>

@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Talent.TalentContracts.ScheduleService
+namespace Talent.TalentContracts.ScheduleService
 {
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;

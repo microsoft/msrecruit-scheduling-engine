@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.TalentAttract.Contract
+namespace Common.TalentAttract.Contract
 {
 
     using System.Runtime.Serialization;
-    using MS.GTA.Common.Contracts;
+    using Common.Contracts;
 
     /// <summary>
     /// The talent pool contract.

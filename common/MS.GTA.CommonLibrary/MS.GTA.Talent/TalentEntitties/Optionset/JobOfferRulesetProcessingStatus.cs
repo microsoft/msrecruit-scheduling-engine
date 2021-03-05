@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.OfferRule
+namespace Common.Provisioning.Entities.XrmEntities.OfferRule
 {
     using System.Runtime.Serialization;
 

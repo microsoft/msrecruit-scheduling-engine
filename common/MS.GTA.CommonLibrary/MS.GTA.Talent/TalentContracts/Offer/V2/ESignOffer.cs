@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V2
+namespace Common.OfferManagement.Contracts.V2
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.OfferManagement.Contracts.Enums.V1;
-    using MS.GTA.Common.TalentAttract.Contract;
+    using Common.OfferManagement.Contracts.Enums.V1;
+    using Common.TalentAttract.Contract;
 
     /// <summary>
     /// Esign Used for Offer

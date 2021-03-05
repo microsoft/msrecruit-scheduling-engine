@@ -1,17 +1,17 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-using MS.GTA.Talent.FalconEntities.Attract;
-using MS.GTA.TalentEntities.Enum;
+using Common.Provisioning.Entities.FalconEntities.Attract;
+using Talent.FalconEntities.Attract;
+using TalentEntities.Enum;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace MS.GTA.Talent.FalconEntities
+namespace Talent.FalconEntities
 {
     [DataContract]
     public class JobOpeningStage

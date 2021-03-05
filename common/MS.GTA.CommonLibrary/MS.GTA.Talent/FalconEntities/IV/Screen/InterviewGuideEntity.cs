@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Talent.FalconEntities.IV.Screen
+namespace Talent.FalconEntities.IV.Screen
 {
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Talent.EnumSetModel;
+    using Common.DocumentDB.Contracts;
+    using Talent.EnumSetModel;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

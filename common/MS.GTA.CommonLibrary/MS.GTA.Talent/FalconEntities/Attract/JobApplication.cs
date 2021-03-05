@@ -3,17 +3,17 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract
+namespace Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.TalentEntities.Enum;
-    using MS.GTA.Common.DocumentDB.Contracts;
-    using MS.GTA.Talent.FalconEntities.Attract;
-    using MS.GTA.Talent.FalconEntities;
-    using MS.GTA.Common.Web.Contracts;
-    using MS.GTA.Common.OfferManagement.Contracts.V2;
+    using TalentEntities.Enum;
+    using Common.DocumentDB.Contracts;
+    using Talent.FalconEntities.Attract;
+    using Talent.FalconEntities;
+    using Common.Web.Contracts;
+    using Common.OfferManagement.Contracts.V2;
 
     [DataContract]
     public class JobApplication : DocDbEntity

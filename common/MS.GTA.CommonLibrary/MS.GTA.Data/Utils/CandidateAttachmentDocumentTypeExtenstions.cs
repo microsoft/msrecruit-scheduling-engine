@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.Data.Utils
+namespace Data.Utils
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using MS.GTA.TalentEntities.Enum;
+    using TalentEntities.Enum;
 
     /// <summary>
     /// Extensions for enumerations.

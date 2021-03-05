@@ -1,21 +1,21 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Data.DataAccess
+namespace Data.DataAccess
 {
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
 
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.Common.Routing.Client;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Tracing;
+    using Common.Base.ServiceContext;
+    using Common.DocumentDB;
+    using Common.Email.Contracts;
+    using Common.Routing.Client;
+    using CommonDataService.Common.Internal;
+    using ServicePlatform.Tracing;
 
     public class EmailTemplateDataAccess : IEmailTemplateDataAccess
     {
@@ -183,12 +183,12 @@ namespace MS.GTA.Data.DataAccess
                 client = await this.falconQueryClient.GetFalconClient(hcmServiceContext.FalconCommonContainerId, hcmServiceContext.FalconDatabaseId);
             }
 
-            MS.GTA.Talent.FalconEntities.Common.EmailTemplateSettings emailTemplateSettings = await client.GetFirstOrDefault<MS.GTA.Talent.FalconEntities.Common.EmailTemplateSettings>(f => f.Type == "EmailTemplateSettings");
+            Talent.FalconEntities.Common.EmailTemplateSettings emailTemplateSettings = await client.GetFirstOrDefault<Talent.FalconEntities.Common.EmailTemplateSettings>(f => f.Type == "EmailTemplateSettings");
 
             return this.ConvertToEmailTemplateSettings(emailTemplateSettings);
         }
 
-        private EmailTemplateSettings ConvertToEmailTemplateSettings(MS.GTA.Talent.FalconEntities.Common.EmailTemplateSettings emailTemplateSettingsEntity)
+        private EmailTemplateSettings ConvertToEmailTemplateSettings(Talent.FalconEntities.Common.EmailTemplateSettings emailTemplateSettingsEntity)
         {
             if (emailTemplateSettingsEntity == null)
             {

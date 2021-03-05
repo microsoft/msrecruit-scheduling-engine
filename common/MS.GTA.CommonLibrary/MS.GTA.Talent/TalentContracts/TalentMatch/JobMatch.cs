@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using MS.GTA.Common.TalentEntities.Common;
+using Common.TalentEntities.Common;
 using Newtonsoft.Json;
 
-namespace MS.GTA.Talent.TalentContracts.TalentMatch
+namespace Talent.TalentContracts.TalentMatch
 {
     /// <summary>
     /// Job Match

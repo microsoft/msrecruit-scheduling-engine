@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V1
+namespace Common.OfferManagement.Contracts.V1
 {
     using System.Runtime.Serialization;
-    using MS.GTA.Common.OfferManagement.Contracts.Enums.V1;
-    using MS.GTA.Common.TalentAttract.Contract;
+    using Common.OfferManagement.Contracts.Enums.V1;
+    using Common.TalentAttract.Contract;
 
     /// <summary>
     /// Document for Admin ESign configuration.

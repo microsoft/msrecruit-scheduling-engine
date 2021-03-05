@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V2.Gdpr
+namespace Common.OfferManagement.Contracts.V2.Gdpr
 {
     using System;
     using System.Collections.Generic;
-    using MS.GTA.Common.OfferManagement.Contracts.Enums.V1;
-    using MS.GTA.TalentEntities.Enum;
+    using Common.OfferManagement.Contracts.Enums.V1;
+    using TalentEntities.Enum;
 
     /// <summary>
     /// The person data contract.

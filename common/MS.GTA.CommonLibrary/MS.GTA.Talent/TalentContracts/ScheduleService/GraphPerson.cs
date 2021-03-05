@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.Contracts.V1
+namespace ScheduleService.Contracts.V1
 {
-    using MS.GTA.TalentEntities.Enum;
+    using TalentEntities.Enum;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

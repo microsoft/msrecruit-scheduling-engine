@@ -2,15 +2,15 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace MS.GTA.Common.Provisioning.Entities.XrmEntities.Offer
+namespace Common.Provisioning.Entities.XrmEntities.Offer
 {
     using System;
     using System.Runtime.Serialization;
     using System.ComponentModel.DataAnnotations;
-    using MS.GTA.Common.XrmHttp;
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract;
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Common;
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Optionset;
+    using Common.XrmHttp;
+    using Common.Provisioning.Entities.XrmEntities.Attract;
+    using Common.Provisioning.Entities.XrmEntities.Common;
+    using Common.Provisioning.Entities.XrmEntities.Optionset;
 
     [ODataEntity(PluralName = "msdyn_jobofferparticipants", SingularName = "msdyn_jobofferparticipant")]
     public class JobOfferParticipant : XrmODataEntity

@@ -1,15 +1,15 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.OfferManagement.Contracts.V1
+namespace Common.OfferManagement.Contracts.V1
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.OfferManagement.Contracts.Enums.V1;
-    using MS.GTA.Common.OfferManagement.Contracts.V2;
+    using Common.OfferManagement.Contracts.Enums.V1;
+    using Common.OfferManagement.Contracts.V2;
 
     /// <summary>
     /// Specifies the Data Contract for Template Package Detail
