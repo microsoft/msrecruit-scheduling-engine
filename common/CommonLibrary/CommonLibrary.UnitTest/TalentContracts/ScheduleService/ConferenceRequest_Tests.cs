@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace CommonLibrary.CommonLibrary.UnitTest.TalentContracts.ScheduleService
+namespace CommonLibrary.UnitTest.TalentContracts.ScheduleService
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace CommonLibrary.CommonLibrary.UnitTest.TalentContracts.ScheduleService
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using CommonLibrary.ScheduleService.Contracts.V1;
     using CommonLibrary.Talent.TalentContracts.ScheduleService.Conferencing;
-    using MI = GTA.ScheduleService.Contracts.V1;
+    using MI = CommonLibrary.ScheduleService.Contracts.V1;
 
     [ExcludeFromCodeCoverage]
     [TestClass]

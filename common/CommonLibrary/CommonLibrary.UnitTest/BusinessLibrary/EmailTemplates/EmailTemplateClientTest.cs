@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace CommonLibrary.CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
+namespace CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
 {
     using System;
     using System.Collections.Generic;

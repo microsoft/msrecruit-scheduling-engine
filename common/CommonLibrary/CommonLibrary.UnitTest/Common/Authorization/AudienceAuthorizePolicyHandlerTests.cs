@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace CommonLibrary.CommonLibrary.UnitTest.Common.Authorization
+namespace CommonLibrary.UnitTest.Common.Authorization
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Security.Claims;
