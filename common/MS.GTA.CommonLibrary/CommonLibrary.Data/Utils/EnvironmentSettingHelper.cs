@@ -1,19 +1,19 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Data
+namespace CommonLibrary.Common.Data
 {
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Http;
     using Microsoft.Azure.Documents;
     using Microsoft.Azure.Documents.Client;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Routing.DocumentDb;
-    using MS.GTA.Common.TalentAttract.Contract;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.DocumentDB;
+    using CommonLibrary.Common.Routing.DocumentDb;
+    using CommonLibrary.Common.TalentAttract.Contract;
 
     /// <summary>
     /// Environemtn Settings Helper

@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Data.DataAccess
+namespace CommonLibrary.Data.DataAccess
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Email.Contracts;
+    using CommonLibrary.Common.Email.Contracts;
 
     public interface IEmailTemplateDataAccess
     {

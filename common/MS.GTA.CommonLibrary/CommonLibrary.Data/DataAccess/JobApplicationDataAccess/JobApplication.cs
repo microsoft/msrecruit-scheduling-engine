@@ -1,11 +1,11 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Data.DataAccess
+namespace CommonLibrary.Data.DataAccess
 {
-    using MS.GTA.TalentEntities.Enum;
+    using CommonLibrary.TalentEntities.Enum;
     using System;
     using System.Collections.Generic;
     using System.Text;

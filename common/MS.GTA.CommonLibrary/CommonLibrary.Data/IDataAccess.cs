@@ -1,13 +1,13 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Data
+namespace CommonLibrary.Data
 {
     using System.Threading.Tasks;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.TalentEntities.Enum;
+    using CommonLibrary.Common.TalentAttract.Contract;
+    using CommonLibrary.TalentEntities.Enum;
 
     public interface IDataAccess
     {

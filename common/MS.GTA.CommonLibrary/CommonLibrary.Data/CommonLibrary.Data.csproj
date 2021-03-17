@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
   </PropertyGroup>
@@ -11,8 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MS.GTA.Common\MS.GTA.Common.csproj" />
-    <ProjectReference Include="..\MS.GTA.Talent\MS.GTA.Talent.csproj" />
+    <ProjectReference Include="..\CommonLibrary.Common\CommonLibrary.Common.csproj" />
+    <ProjectReference Include="..\CommonLibrary.Talent\CommonLibrary.Talent.csproj" />
   </ItemGroup>
 
 </Project>

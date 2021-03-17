@@ -1,19 +1,19 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Data.DataAccess
+namespace CommonLibrary.Common.Data.DataAccess
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Attract.Contract;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Tracing;
+    using CommonLibrary.Common.Attract.Contract;
+    using CommonLibrary.Common.Base.Security;
+    using CommonLibrary.Common.TalentAttract.Contract;
+    using CommonLibrary.CommonDataService.Common.Internal;
+    using CommonLibrary.ServicePlatform.Tracing;
 
     /// <summary>
     /// Environment Setting Provider Class

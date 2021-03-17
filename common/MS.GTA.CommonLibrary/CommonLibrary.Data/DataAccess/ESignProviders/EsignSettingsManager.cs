@@ -1,20 +1,20 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
 
-namespace MS.GTA.Common.Data.DataAccess
+namespace CommonLibrary.Common.Data.DataAccess
 {
     using System;
     using System.Threading.Tasks;
 
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Exceptions;
-    using MS.GTA.Common.Base.KeyVault;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.ServicePlatform.Azure.Security;
-    using MS.GTA.ServicePlatform.Tracing;
+    using CommonLibrary.Common.Base.Exceptions;
+    using CommonLibrary.Common.Base.KeyVault;
+    using CommonLibrary.Common.TalentAttract.Contract;
+    using CommonLibrary.ServicePlatform.Azure.Security;
+    using CommonLibrary.ServicePlatform.Tracing;
     
     public class EsignSettingsManager
     {

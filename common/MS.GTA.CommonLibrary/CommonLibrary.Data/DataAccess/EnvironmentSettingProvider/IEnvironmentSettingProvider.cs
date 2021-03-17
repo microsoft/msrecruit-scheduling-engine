@@ -1,14 +1,14 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Common.Data.DataAccess
+namespace CommonLibrary.Common.Data.DataAccess
 {
     using System.Threading.Tasks;
-    using MS.GTA.Common.Attract.Contract;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.TalentAttract.Contract;
+    using CommonLibrary.Common.Attract.Contract;
+    using CommonLibrary.Common.Base.Security;
+    using CommonLibrary.Common.TalentAttract.Contract;
 
     /// <summary>
     /// Environment Setting Provider Interface
