@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+ï»¿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -136,8 +136,8 @@
                             Thank you for applying for the {PositionTitle} position.
                         &lt;/p&gt;
                         &lt;p&gt;
-                            We’re impressed with your background and want to invite you to interview with us.
-                            &lt;br/&gt; To get you started, we’ve created an online guide for you in the Microsoft Project: "Candidate
+                            Weâ€™re impressed with your background and want to invite you to interview with us.
+                            &lt;br/&gt; To get you started, weâ€™ve created an online guide for you in the Microsoft Project: "Candidate
                             Engagement" app.
                             &lt;br/&gt; Your guide includes company information and contact details for a few people who can answer
                             questions about the company, the position, and the interview process.
@@ -177,8 +177,8 @@
                         &lt;h2&gt;
                             Hi {InterviewerName},
                         &lt;/h2&gt;
-                        &lt;p&gt;Thanks for joining my interview team for the new {PositionTitle} position. We’ll be scheduling the
-                            interviews soon, and I’ll send you a meeting invitation when we select your date and time.&lt;/p&gt;
+                        &lt;p&gt;Thanks for joining my interview team for the new {PositionTitle} position. Weâ€™ll be scheduling the
+                            interviews soon, and Iâ€™ll send you a meeting invitation when we select your date and time.&lt;/p&gt;
                         &lt;p&gt;In the meantime, you can visit my hiring site in the Microsoft Project: "Candidate Engagement" app
                             to get setup as an interviewer and to begin getting to know the candidates and position.&lt;/p&gt;
                         &lt;p&gt;&lt;a href='{PositionLink}'&gt;View Position&lt;/a&gt;&lt;/p&gt;
@@ -210,7 +210,7 @@
                 &lt;td&gt;
                     &lt;div style='margin-left:60px'&gt;
                         &lt;h2&gt;Hi {FirstName},&lt;/h2&gt;
-                        &lt;p&gt;Thanks for helping with our interviews for the {Position} . We’ve scheduled your interview with {Candidate}
+                        &lt;p&gt;Thanks for helping with our interviews for the {Position} . Weâ€™ve scheduled your interview with {Candidate}
                             from {StartTime} to {EndTime} {Location}.&lt;/p&gt;
                         &lt;p&gt;Your next steps are to open the calendar attachment and save the interview to your schedule. And
                             then, start getting ready for the interview by learning about the position and {Candidate} on
@@ -309,7 +309,7 @@
                 &lt;td&gt;
                     &lt;div style='margin-left:60px'&gt;
                         &lt;h2&gt;Hi {NewHireName},&lt;/h2&gt;
-                        &lt;p&gt;Welcome to {CompanyName}! We’ve put together some activities, contacts, and resources to help you
+                        &lt;p&gt;Welcome to {CompanyName}! Weâ€™ve put together some activities, contacts, and resources to help you
                             get off to a great start in your new job.&lt;/p&gt;
                         &lt;p&gt;Take a look!&lt;/p&gt;
                         &lt;p&gt;&lt;a href='{OnboardingAppLink}'&gt;Welcome guide&lt;/a&gt;&lt;/p&gt;
@@ -371,7 +371,7 @@
                         &lt;p style="margin-bottom:30px"&gt;Hi {FirstName},&lt;/p&gt;
 
 
-                        &lt;p style="margin-bottom:20px"&gt;There’s a new application waiting for your review on Microsoft&lt;br/&gt;Project “Odin”.&lt;/p&gt;
+                        &lt;p style="margin-bottom:20px"&gt;Thereâ€™s a new application waiting for your review on Microsoft&lt;br/&gt;Project â€œOdinâ€.&lt;/p&gt;
                         &lt;p style="margin-bottom:20px"&gt;Sign up now to review your new {PositionTitle} candidate.&lt;/p&gt;
 
                         &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -390,7 +390,7 @@
 
                         &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 
-                        &lt;p style="font-size:11px; line-height: 1.5; margin-bottom:20px"&gt;Microsoft Project “Odin” makes it easier to review candidates, schedule interviews, and collaborate with the hiring team to get the right candidate for the job.&lt;/p&gt;
+                        &lt;p style="font-size:11px; line-height: 1.5; margin-bottom:20px"&gt;Microsoft Project â€œOdinâ€ makes it easier to review candidates, schedule interviews, and collaborate with the hiring team to get the right candidate for the job.&lt;/p&gt;
 
                         &lt;p style="font-size:11px"&gt;&lt;a href='https://talent.hcm.dynamics.com/' style="color:#76B0E4;"&gt;Learn more&lt;/a&gt;&lt;/p&gt;
                     &lt;/div&gt;
@@ -445,7 +445,7 @@
                             Thank you for applying for the {PositionTitle} position.
                         &lt;/p&gt;
                         &lt;p&gt;
-                            We’re impressed with your background and want to invite you to complete the following online assessment.
+                            Weâ€™re impressed with your background and want to invite you to complete the following online assessment.
                             &lt;br /&gt;&lt;a href={AssessmentLink}&gt;{AssessmentName}&lt;/a&gt;
                         &lt;/p&gt;
                         &lt;p&gt;
