@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.Data", "CommonLibrary.Data\CommonLibrary.Data.csproj", "{EA8DE4DF-7183-4685-A49E-31FEE820EA01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.UnitTest", "CommonLibrary.UnitTest\CommonLibrary.UnitTest.csproj", "{9D0B8A2C-B35E-4F2F-B6C8-E8203B93A1B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{9D0B8A2C-B35E-4F2F-B6C8-E8203B93A1B7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.BusinessLibrary", "CommonLibrary.BusinessLibrary\CommonLibrary.BusinessLibrary.csproj", "{A8647C58-DC54-4317-A26D-5B93D721A600}"
 EndProject
