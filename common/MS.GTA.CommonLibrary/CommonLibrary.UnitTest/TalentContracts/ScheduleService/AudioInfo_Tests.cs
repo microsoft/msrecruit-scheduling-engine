@@ -1,15 +1,15 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.CommonLibrary.UnitTest.TalentContracts.ScheduleService
+namespace CommonLibrary.CommonLibrary.UnitTest.TalentContracts.ScheduleService
 {
     using System;
     using System.Diagnostics.CodeAnalysis;
     using Microsoft.Graph;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing;
+    using CommonLibrary.Talent.TalentContracts.ScheduleService.Conferencing;
 
     [TestClass]
     [ExcludeFromCodeCoverage]

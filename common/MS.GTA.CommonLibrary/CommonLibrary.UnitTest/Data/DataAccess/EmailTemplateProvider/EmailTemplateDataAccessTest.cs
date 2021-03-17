@@ -1,23 +1,23 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
+namespace CommonLibrary.CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
 {
     using Microsoft.Azure.Documents;
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Data.DataAccess;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.Common.Routing.Client;
-    using MS.GTA.ServicePlatform.Tracing;
+    using CommonLibrary.Data.DataAccess;
+    using CommonLibrary.Common.DocumentDB;
+    using CommonLibrary.Common.Email.Contracts;
+    using CommonLibrary.Common.Routing.Client;
+    using CommonLibrary.ServicePlatform.Tracing;
     using System.Collections.Generic;
     using System.Linq.Expressions;
     using System;
-    using MS.GTA.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.ServiceContext;
 
     [TestClass]
     public class EmailTemplateDataAccessTest

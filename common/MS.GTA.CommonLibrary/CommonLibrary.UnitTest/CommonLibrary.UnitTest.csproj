@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -20,10 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MS.GTA.BusinessLibrary\MS.GTA.BusinessLibrary.csproj" />
-    <ProjectReference Include="..\MS.GTA.Common\MS.GTA.Common.csproj" />
-    <ProjectReference Include="..\MS.GTA.Data\MS.GTA.Data.csproj" />
-    <ProjectReference Include="..\MS.GTA.Talent\MS.GTA.Talent.csproj" />
+    <ProjectReference Include="..\CommonLibrary.BusinessLibrary\CommonLibrary.BusinessLibrary.csproj" />
+    <ProjectReference Include="..\CommonLibrary.Common\CommonLibrary.Common.csproj" />
+    <ProjectReference Include="..\CommonLibrary.Data\CommonLibrary.Data.csproj" />
+    <ProjectReference Include="..\CommonLibrary.Talent\CommonLibrary.Talent.csproj" />
   </ItemGroup>
 
 </Project>

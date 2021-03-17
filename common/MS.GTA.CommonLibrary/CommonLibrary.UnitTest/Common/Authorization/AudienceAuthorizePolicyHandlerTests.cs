@@ -1,9 +1,9 @@
-﻿//-----------------------------------------------------------------------
+//-----------------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.CommonLibrary.UnitTest.Common.Authorization
+namespace CommonLibrary.CommonLibrary.UnitTest.Common.Authorization
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Security.Claims;
@@ -13,10 +13,10 @@ namespace MS.GTA.CommonLibrary.UnitTest.Common.Authorization
     using Microsoft.Extensions.Configuration;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Web.Authorization;
-    using MS.GTA.Common.Web.Contracts;
-    using MS.GTA.ServicePlatform.Tracing;
+    using CommonLibrary.Common.Base.Security.V2;
+    using CommonLibrary.Common.Web.Authorization;
+    using CommonLibrary.Common.Web.Contracts;
+    using CommonLibrary.ServicePlatform.Tracing;
 
     /// <summary>
     /// Tests for the Audience Authorize Policy Handlers.
