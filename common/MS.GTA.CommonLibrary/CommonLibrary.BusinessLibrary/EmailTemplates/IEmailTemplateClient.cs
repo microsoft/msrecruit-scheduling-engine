@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.BusinessLibrary.EmailTemplates
+namespace CommonLibrary.BusinessLibrary.EmailTemplates
 {
     using System.Threading.Tasks;
 
-    using MS.GTA.Common.Email.Contracts;
+    using CommonLibrary.Common.Email.Contracts;
     using System.Collections.Generic;
 
     public interface IEmailTemplateClient

@@ -16,7 +16,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.Data", "MS.GTA.Data\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.CommonLibrary.UnitTest", "MS.GTA.CommonLibrary.UnitTest\MS.GTA.CommonLibrary.UnitTest.csproj", "{9D0B8A2C-B35E-4F2F-B6C8-E8203B93A1B7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.BusinessLibrary", "MS.GTA.BusinessLibrary\MS.GTA.BusinessLibrary.csproj", "{A8647C58-DC54-4317-A26D-5B93D721A600}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.BusinessLibrary", "CommonLibrary.BusinessLibrary\CommonLibrary.BusinessLibrary.csproj", "{A8647C58-DC54-4317-A26D-5B93D721A600}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

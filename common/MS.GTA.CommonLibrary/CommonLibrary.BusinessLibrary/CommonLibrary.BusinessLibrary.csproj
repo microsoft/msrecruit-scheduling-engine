@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MS.GTA.Common\MS.GTA.Common.csproj" />
-    <ProjectReference Include="..\MS.GTA.Data\MS.GTA.Data.csproj" />
+    <ProjectReference Include="..\CommonLibrary.Common\CommonLibrary.Common.csproj" />
+    <ProjectReference Include="..\CommonLibrary.Data\CommonLibrary.Data.csproj" />
   </ItemGroup>
 
 </Project>

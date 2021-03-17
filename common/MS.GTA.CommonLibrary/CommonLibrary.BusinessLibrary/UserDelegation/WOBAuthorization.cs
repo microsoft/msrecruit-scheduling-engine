@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------'r'n
 
 
-namespace MS.GTA.BusinessLibrary.UserDelegation
+namespace CommonLibrary.BusinessLibrary.UserDelegation
 {
     using Microsoft.AspNetCore.Http;
     using System;
@@ -13,14 +13,14 @@ namespace MS.GTA.BusinessLibrary.UserDelegation
     using System.Threading.Tasks;
     using System.Linq;
     using Microsoft.Extensions.Caching.Distributed;
-    using MS.GTA.Common.Routing.Client;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.TalentEntities.Enum;
-    using MS.GTA.ServicePlatform.Tracing;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Routing.Client;
+    using CommonLibrary.Common.Base.Configuration;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.TalentEntities.Enum;
+    using CommonLibrary.ServicePlatform.Tracing;
+    using CommonLibrary.ServicePlatform.Exceptions;
+    using CommonLibrary.Common.TalentEntities.Common;
 
     /// <summary>
     /// This is for the authorization of WOB request
