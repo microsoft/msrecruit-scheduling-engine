@@ -5,14 +5,14 @@ VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.Common", "CommonLibrary.Common\CommonLibrary.Common.csproj", "{42BC0461-42CA-46C7-8BB6-A10CB258D472}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.Talent", "MS.GTA.Talent\MS.GTA.Talent.csproj", "{1BE5ED7D-1A68-4ACE-A4C8-01E49958D64F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.Talent", "CommonLibrary.Talent\CommonLibrary.Talent.csproj", "{1BE5ED7D-1A68-4ACE-A4C8-01E49958D64F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{61F07E02-79BE-419A-89D9-B1071202F1F9}"
 	ProjectSection(SolutionItems) = preProject
 		Nuget.nuspec = Nuget.nuspec
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.Data", "MS.GTA.Data\MS.GTA.Data.csproj", "{EA8DE4DF-7183-4685-A49E-31FEE820EA01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.Data", "CommonLibrary.Data\MS.GTA.Data.csproj", "{EA8DE4DF-7183-4685-A49E-31FEE820EA01}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.UnitTest", "CommonLibrary.UnitTest\CommonLibrary.UnitTest.csproj", "{9D0B8A2C-B35E-4F2F-B6C8-E8203B93A1B7}"
 EndProject
