@@ -1,0 +1,32 @@
+name: build-common
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: common # set common/ as working directory
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.1.811
+
+    - name: Install dependencies
+      run: dotnet restore CommonLibrary/CommonLibrary.sln
+
+    - name: Build
+      run: dotnet build CommonLibrary/CommonLibrary.sln --configuration Release --no-restore
+
+    - name: Unit Test
+      run: dotnet test CommonLibrary/CommonLibrary.sln --no-build --configuration Release --verbosity m
