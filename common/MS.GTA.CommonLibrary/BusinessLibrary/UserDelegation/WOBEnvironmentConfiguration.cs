@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.BusinessLibrary.UserDelegation
+namespace Common.BusinessLibrary.UserDelegation
 {
-    using MS.GTA.ServicePlatform.Configuration;
+    using Common.ServicePlatform.Configuration;
     using System;
     using System.Collections.Generic;
     using System.Text;

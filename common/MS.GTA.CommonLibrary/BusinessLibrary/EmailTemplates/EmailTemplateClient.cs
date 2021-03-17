@@ -3,24 +3,24 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.BusinessLibrary.EmailTemplates
+namespace Common.BusinessLibrary.EmailTemplates
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.Common.Email.Exceptions;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.Data.DataAccess;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Tracing;
-    using MS.GTA.Common.Email;
-    using MS.GTA.Common.Common.Common.Email;
+    using Common.Common.Email.Contracts;
+    using Common.Common.Email.Exceptions;
+    using Common.CommonDataService.Common.Internal;
+    using Common.Data.DataAccess;
+    using Common.ServicePlatform.Context;
+    using Common.ServicePlatform.Tracing;
+    using Common.Common.Email;
+    using Common.Common.Common.Common.Email;
 
     /// <summary>Email Template Client class</summary>
-    /// <seealso cref="MS.GTA.Common.Email.EmailTemplates.IEmailTemplateClient" />
+    /// <seealso cref="Common.Common.Email.EmailTemplates.IEmailTemplateClient" />
     public class EmailTemplateClient : IEmailTemplateClient
     {
         private const string LoggerPrefix = "EmailTemplateClient";

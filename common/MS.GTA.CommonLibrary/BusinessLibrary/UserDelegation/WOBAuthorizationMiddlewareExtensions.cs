@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.BusinessLibrary.UserDelegation
+namespace Common.BusinessLibrary.UserDelegation
 {
     using Microsoft.AspNetCore.Builder;
     using System;

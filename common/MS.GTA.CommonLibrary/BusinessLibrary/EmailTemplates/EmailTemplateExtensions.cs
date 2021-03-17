@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------'r'n
 
-namespace MS.GTA.BusinessLibrary.EmailTemplates
+namespace Common.BusinessLibrary.EmailTemplates
 {
     using CommonDataService.Common.Internal;
     using Microsoft.Extensions.DependencyInjection;
-    using MS.GTA.Data.DataAccess;
+    using Common.Data.DataAccess;
 
     /// <summary>Email Template Extensions class</summary>
     public static class EmailTemplateExtensions
