@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.Common", "MS.GTA.Common\MS.GTA.Common.csproj", "{42BC0461-42CA-46C7-8BB6-A10CB258D472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary.Common", "CommonLibrary.Common\CommonLibrary.Common.csproj", "{42BC0461-42CA-46C7-8BB6-A10CB258D472}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.GTA.Talent", "MS.GTA.Talent\MS.GTA.Talent.csproj", "{1BE5ED7D-1A68-4ACE-A4C8-01E49958D64F}"
 EndProject
