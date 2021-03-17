@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace CommonLibrary.UnitTest.Common.WebNotifications.Internals
+namespace UnitTest.Common.WebNotifications.Internals
 {
     using System;
     using System.Collections.Generic;

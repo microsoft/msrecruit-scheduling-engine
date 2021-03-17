@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace CommonLibrary.UnitTest.TalentContracts.ScheduleService
+namespace UnitTest.TalentContracts.ScheduleService
 {
     using Microsoft.Graph;
     using Microsoft.VisualStudio.TestTools.UnitTesting;

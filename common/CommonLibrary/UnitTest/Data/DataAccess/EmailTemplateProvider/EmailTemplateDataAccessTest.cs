@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
+namespace UnitTest.Common.Common.Email.EmailTemplates
 {
     using Microsoft.Azure.Documents;
     using Microsoft.Extensions.Logging;
