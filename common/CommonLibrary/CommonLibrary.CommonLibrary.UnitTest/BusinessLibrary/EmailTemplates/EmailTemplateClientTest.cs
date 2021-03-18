@@ -17,6 +17,7 @@ namespace CommonLibrary.UnitTest.Common.Common.Email.EmailTemplates
     using CommonLibrary.Data.DataAccess;
     using CommonLibrary.ServicePlatform.Tracing;
 
+
     [TestClass]
     public class EmailTemplateClientTest
     {
