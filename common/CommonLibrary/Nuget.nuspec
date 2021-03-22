@@ -49,14 +49,14 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="MS.GTA.Talent\bin\Release\**\MS.GTA.*.dll" target="lib" />
-    <file src="MS.GTA.Talent\bin\Release\**\MS.GTA.*.pdb" target="lib" />
-    <file src="MS.GTA.Talent\bin\Release\**\MS.GTA.*.xml" target="lib" />
-    <file src="MS.GTA.BusinessLibrary\bin\Release\**\MS.GTA.BusinessLibrary.dll" target="lib" />
-    <file src="MS.GTA.BusinessLibrary\bin\Release\**\MS.GTA.BusinessLibrary.pdb" target="lib" />
-    <file src="MS.GTA.BusinessLibrary\bin\Release\**\MS.GTA.BusinessLibrary.xml" target="lib" />
-    <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.dll" target="lib" />
-    <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.pdb" target="lib" />
-    <file src="MS.GTA.Data\bin\Release\**\MS.GTA.Data.xml" target="lib" />
+    <file src="CommonLibrary.Talent\bin\Release\**\CommonLibrary.*.dll" target="lib" />
+    <file src="CommonLibrary.Talent\bin\Release\**\CommonLibrary.*.pdb" target="lib" />
+    <file src="CommonLibrary.Talent\bin\Release\**\CommonLibrary.*.xml" target="lib" />
+    <file src="CommonLibrary.BusinessLibrary\bin\Release\**\CommonLibrary.BusinessLibrary.dll" target="lib" />
+    <file src="CommonLibrary.BusinessLibrary\bin\Release\**\CommonLibrary.BusinessLibrary.pdb" target="lib" />
+    <file src="CommonLibrary.BusinessLibrary\bin\Release\**\CommonLibrary.BusinessLibrary.xml" target="lib" />
+    <file src="CommonLibrary.Data\bin\Release\**\CommonLibrary.Data.dll" target="lib" />
+    <file src="CommonLibrary.Data\bin\Release\**\CommonLibrary.Data.pdb" target="lib" />
+    <file src="CommonLibrary.Data\bin\Release\**\CommonLibrary.Data.xml" target="lib" />
   </files>
 </package>
