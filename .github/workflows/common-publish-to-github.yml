@@ -1,0 +1,36 @@
+name: publish-common-to-github
+on:
+  [workflow_dispatch]
+
+jobs:
+  publish:
+    name: common nuget publish to github packages
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: common
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+
+    - name: Restore Packages
+      run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
+
+    - name: Build Solution
+      run: |
+        msbuild.exe MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln /nologo /nr:false /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release"
+    
+    - name: Pack
+      run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
+
+    # https://github.community/t/github-package-registry-and-github-actions-500-bad-request/14666 for reference.
+    - name: Publish NuGet
+      run: |
+        $path = "."
+        $FileName = Get-ChildItem -Path $path -Recurse -Name -Filter "MSRecruitCommonLibrary.*.nupkg"
+        curl -vX PUT -u "[user]:${{ secrets.GITHUB_TOKEN }}" -F package="@$path\$FileName" https://nuget.pkg.github.com/microsoft/
