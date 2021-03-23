@@ -19,14 +19,14 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
 
     - name: Restore Packages
-      run: nuget restore MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln
+      run: nuget restore CommonLibrary/CommonLibrary.sln
 
     - name: Build Solution
       run: |
-        msbuild.exe MS.GTA.CommonLibrary/MS.GTA.CommonLibrary.sln /nologo /nr:false /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release"
+        msbuild.exe CommonLibrary/CommonLibrary.sln /nologo /nr:false /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release"
     
     - name: Pack
-      run: nuget pack MS.GTA.CommonLibrary/Nuget.nuspec
+      run: nuget pack CommonLibrary/Nuget.nuspec
 
     # https://github.community/t/github-package-registry-and-github-actions-500-bad-request/14666 for reference.
     - name: Publish NuGet
