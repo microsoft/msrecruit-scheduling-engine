@@ -6,9 +6,9 @@
 namespace MS.GTA.ScheduleService.FalconData.ViewModelExtensions
 {
     using System.Collections.Generic;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Email.Contracts;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.TalentEntities.Common;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.Talent.FalconEntities.Attract;
     using MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing;

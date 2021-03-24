@@ -10,10 +10,10 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.MSGraph;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.Common.Web;
+    using CommonLibrary.Common.Base.Security;
+    using CommonLibrary.Common.MSGraph;
+    using CommonLibrary.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Web;
     using MS.GTA.ScheduleService.BusinessLibrary.Providers;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Contracts.V1;

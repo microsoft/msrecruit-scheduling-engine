@@ -10,7 +10,7 @@ namespace MS.GTA.ScheduleService.Contracts
     using System.Diagnostics.CodeAnalysis;
     using System.Linq;
     using System.Net;
-    using MS.GTA.Common.Base.Exceptions;
+    using CommonLibrary.Common.Base.Exceptions;
     using MS.GTA.ServicePlatform.Exceptions;
 
     /// <summary>

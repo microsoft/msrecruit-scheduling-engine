@@ -11,8 +11,8 @@ namespace MS.GTA.ScheduleService.UnitTest.FalconData
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Email.Contracts;
+    using CommonLibrary.Common.TalentEntities.Common;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.ScheduleService.Data.DataProviders;
     using MS.GTA.ScheduleService.FalconData.Query;
@@ -21,7 +21,7 @@ namespace MS.GTA.ScheduleService.UnitTest.FalconData
     using MS.GTA.ServicePlatform.Tracing;
     using MS.GTA.Talent.FalconEntities.Attract;
     using MS.GTA.Talent.FalconEntities.IV.Entity;
-    using Common = MS.GTA.Common;
+    using Common = CommonLibrary.Common;
 
     [TestClass]
     public class FalconQueryTest

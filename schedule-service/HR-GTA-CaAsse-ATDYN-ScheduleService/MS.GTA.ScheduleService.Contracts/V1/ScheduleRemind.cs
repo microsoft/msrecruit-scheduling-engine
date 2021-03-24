@@ -5,7 +5,7 @@
 
 using System;
 using System.Runtime.Serialization;
-using MS.GTA.Common.DocumentDB.Contracts;
+using CommonLibrary.Common.DocumentDB.Contracts;
 using MS.GTA.Talent.EnumSetModel;
 
 namespace MS.GTA.Talent.FalconEntities.Attract

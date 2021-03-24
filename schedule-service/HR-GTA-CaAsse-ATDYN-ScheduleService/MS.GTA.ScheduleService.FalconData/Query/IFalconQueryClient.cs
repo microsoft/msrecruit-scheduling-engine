@@ -6,7 +6,7 @@
 namespace MS.GTA.ScheduleService.FalconData.Query
 {
     using System.Threading.Tasks;
-    using MS.GTA.Common.DocumentDB;
+    using CommonLibrary.Common.DocumentDB;
 
     /// <summary>
     /// Falcon query client used for storing the client across a single request.

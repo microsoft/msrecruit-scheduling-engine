@@ -11,8 +11,8 @@ namespace MS.GTA.ScheduleService.UnitTest.FalconData
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.DocumentDB;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.ScheduleService.Data.DataProviders;
     using MS.GTA.ScheduleService.FalconData.Query;
     using MS.GTA.ServicePlatform.Tracing;

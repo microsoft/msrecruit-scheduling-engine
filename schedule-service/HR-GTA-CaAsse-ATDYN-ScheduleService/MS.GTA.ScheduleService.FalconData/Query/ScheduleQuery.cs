@@ -11,11 +11,11 @@ namespace MS.GTA.ScheduleService.FalconData.Query
     using System.Linq.Expressions;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.Base.Utilities;
+    using CommonLibrary.Common.Contracts;
+    using CommonLibrary.Common.DocumentDB;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.CommonDataService.Common.Internal;
     using MS.GTA.Data.Utils;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Contracts.V1;

@@ -12,10 +12,10 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Common.Common.Web.Extensions;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.Common.Web;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Common.Common.Web.Extensions;
+    using CommonLibrary.Common.TalentAttract.Contract;
+    using CommonLibrary.Common.Web;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;
@@ -76,7 +76,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>Reminder Success response.</returns>
         [HttpPost("remind/interviewer")]
         [MonitorWith("GTAV1SendFeedbackReminder")]
-        public async Task<bool> SendFeedbackReminder([FromBody]PendingFeedback pendingFeedbackRequest)
+        public async Task<bool> SendFeedbackReminder([FromBody] PendingFeedback pendingFeedbackRequest)
         {
             this.logger.LogInformation($"Started {nameof(this.SendFeedbackReminder)} method in {nameof(EmailController)}.");
             if (pendingFeedbackRequest == null || string.IsNullOrEmpty(pendingFeedbackRequest?.JobApplicationId) || string.IsNullOrEmpty(pendingFeedbackRequest?.InterviewerOID))
@@ -167,7 +167,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [MonitorWith("GTAV1SendFeedbackOnlyEmail")]
         [ServiceFilter(typeof(ValidateModelAttribute))]
-        public async Task<IActionResult> SendEmailToInterviewers([FromBody]EmailNotificationRequest notificationRequest)
+        public async Task<IActionResult> SendEmailToInterviewers([FromBody] EmailNotificationRequest notificationRequest)
         {
             IActionResult actionResult = null;
             bool mailSent = false;
@@ -219,7 +219,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>Send email to scheduler for new assignment.</returns>
         [HttpPost("schedulerassignment/sharefeedback")]
         [MonitorWith("GTAV1SendShareFeedbackEmailToAA")]
-        public async Task<bool> SendShareFeedbackEmailToAA(string jobApplicationId, [FromBody]string[] aaOid)
+        public async Task<bool> SendShareFeedbackEmailToAA(string jobApplicationId, [FromBody] string[] aaOid)
         {
             bool isShareFeedbackEmailToAA = false;
             this.logger.LogInformation($"Started {nameof(this.SendShareFeedbackEmailToAA)} method in {nameof(EmailController)}.");

@@ -9,13 +9,13 @@ namespace MS.GTA.ScheduleService.FalconData.Query
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Base.Configuration;
+    using CommonLibrary.Common.Email.Contracts;
+    using CommonLibrary.Common.TalentEntities.Common;
     using MS.GTA.ScheduleService.FalconData.ViewModelExtensions;
-    using MS.GTA.Common.Web.Contracts;
+    using CommonLibrary.Common.Web.Contracts;
     using MS.GTA.Talent.FalconEntities.IV.Entity;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
 
     /// <summary>
     /// The falcon query.

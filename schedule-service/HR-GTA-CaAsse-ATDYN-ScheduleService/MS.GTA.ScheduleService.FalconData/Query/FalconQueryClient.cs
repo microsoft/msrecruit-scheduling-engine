@@ -9,10 +9,10 @@ namespace MS.GTA.ScheduleService.FalconData.Query
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Routing.DocumentDb;
+    using CommonLibrary.Common.Base.Security.V2;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.DocumentDB;
+    using CommonLibrary.Common.Routing.DocumentDb;
 
     /// <summary>
     /// Falcon query Client used for storing the Client across a single request.

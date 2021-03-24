@@ -10,8 +10,8 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Web;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Web;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Contracts.V1;
@@ -63,7 +63,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>Send invitation locks.</returns>
         [HttpPost("getinvitationlocks")]
         [MonitorWith("GTAV1GetInvitationLocks")]
-        public async Task<List<SendInvitationLock>> GetInvitationLocks([FromBody]IList<string> scheduleIds)
+        public async Task<List<SendInvitationLock>> GetInvitationLocks([FromBody] IList<string> scheduleIds)
         {
             List<SendInvitationLock> invitationLocks;
             this.logger.LogInformation($"Started {nameof(this.GetInvitationLocks)} method in {nameof(LockController)}.");
@@ -85,7 +85,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>Reminder Success response.</returns>
         [HttpPost("createinvitationlock")]
         [MonitorWith("GTAV1CreateInvitationLock")]
-        public async Task CreateInvitationLocks([FromBody]SendInvitationLock invitationLock)
+        public async Task CreateInvitationLocks([FromBody] SendInvitationLock invitationLock)
         {
             this.logger.LogInformation($"Started {nameof(this.CreateInvitationLocks)} method in {nameof(LockController)}.");
 
@@ -105,7 +105,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>Reminder Success response.</returns>
         [HttpDelete("deleteinvitationlocks")]
         [MonitorWith("GTAV1DeleteInvitationLocks")]
-        public async Task DeleteInvitationLocks([FromBody]IList<string> scheduleIds)
+        public async Task DeleteInvitationLocks([FromBody] IList<string> scheduleIds)
         {
             this.logger.LogInformation($"Started {nameof(this.DeleteInvitationLocks)} method in {nameof(LockController)}.");
             if (scheduleIds == null || scheduleIds.Count <= 0)
@@ -143,7 +143,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>Reminder Success response.</returns>
         [HttpPost("createnotificationlock")]
         [MonitorWith("GTAV1CreateNotificationLock")]
-        public async Task CreateNotificationLock([FromBody]NotificationMessageLock notificationLock)
+        public async Task CreateNotificationLock([FromBody] NotificationMessageLock notificationLock)
         {
             this.logger.LogInformation($"Started {nameof(this.CreateNotificationLock)} method in {nameof(LockController)}.");
 

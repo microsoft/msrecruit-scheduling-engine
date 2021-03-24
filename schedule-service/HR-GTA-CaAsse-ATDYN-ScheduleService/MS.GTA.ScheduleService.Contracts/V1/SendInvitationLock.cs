@@ -7,7 +7,7 @@ namespace MS.GTA.ScheduleService.Contracts.V1
 {
     using System;
     using System.Runtime.Serialization;
-    using MS.GTA.Common.DocumentDB.Contracts;
+    using CommonLibrary.Common.DocumentDB.Contracts;
 
     /// <summary>
     /// Send invitation lock

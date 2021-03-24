@@ -8,7 +8,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Web;
+    using CommonLibrary.Common.Web;
     using MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters;
 
     /// <summary>

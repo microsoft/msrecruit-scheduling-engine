@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.Common.DocumentDB.V2;
+using CommonLibrary.Common.DocumentDB.V2;
 using MS.GTA.ScheduleService.Contracts.V1;
 using MS.GTA.ServicePlatform.Azure.Security;
 using MS.GTA.ServicePlatform.Configuration;

@@ -14,10 +14,10 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Azure.ServiceBus;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Common.Common.Web.Extensions;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.Web;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Common.Common.Web.Extensions;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Web;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;
@@ -89,7 +89,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         [HttpPut("timezone/{jobApplicationId}")]
         [MonitorWith("GTAV1AddUpdatetimezone")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task AddOrUpdateTimezone(string jobApplicationId, [FromBody]Timezone timezone)
+        public async Task AddOrUpdateTimezone(string jobApplicationId, [FromBody] Timezone timezone)
         {
             this.logger.LogInformation($"Started {nameof(this.AddOrUpdateTimezone)} method in {nameof(ScheduleServiceController)}.");
 
@@ -148,7 +148,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         [ProducesResponseType(typeof(InvalidRequestDataValidationException), 400)]
         [ProducesResponseType(typeof(SchedulerProcessingException), 500)]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<List<MeetingInfo>> GetFreeBusySchedule([FromBody]FreeBusyRequest freeBusyRequest)
+        public async Task<List<MeetingInfo>> GetFreeBusySchedule([FromBody] FreeBusyRequest freeBusyRequest)
         {
             List<MeetingInfo> meetingInfos;
             this.logger.LogInformation($"Started {nameof(this.GetFreeBusySchedule)} method in {nameof(ScheduleServiceController)}.");
@@ -211,7 +211,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>List of suggested schedules.</returns>
         [HttpPost("meetingsuggestions/{jobApplicationId}")]
         [MonitorWith("GTAV1SuggestAndCreateSchedule")]
-        public async Task<IList<MeetingInfo>> SuggestAndCreateSchedules([FromBody]SuggestMeetingsRequest suggestMeetingsRequest, string jobApplicationId)
+        public async Task<IList<MeetingInfo>> SuggestAndCreateSchedules([FromBody] SuggestMeetingsRequest suggestMeetingsRequest, string jobApplicationId)
         {
             IList<Task<MeetingInfo>> createSchedulesTask = new List<Task<MeetingInfo>>();
             IList<MeetingInfo> createdSchedules = new List<MeetingInfo>();
@@ -251,7 +251,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         [HttpPut("updateschedule")]
         [MonitorWith("GTAV1UpdateSchedule")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<MeetingInfo> UpdateSchedule([FromBody]MeetingInfo meetingInfo)
+        public async Task<MeetingInfo> UpdateSchedule([FromBody] MeetingInfo meetingInfo)
         {
             MeetingInfo meetingInfoResult;
             this.logger.LogInformation($"Started {nameof(this.UpdateSchedule)} method in {nameof(ScheduleServiceController)}.");
@@ -372,7 +372,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         [HttpPost("getschedulesbyfreebusyrequest/{jobApplicationId}")]
         [MonitorWith("GTAV1GetSchedulesByFreeBusyReq")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<List<MeetingInfo>> GetSchedulesByFreeBusyReq([FromBody]FreeBusyRequest freeBusyRequest, string jobApplicationId)
+        public async Task<List<MeetingInfo>> GetSchedulesByFreeBusyReq([FromBody] FreeBusyRequest freeBusyRequest, string jobApplicationId)
         {
             List<MeetingInfo> meetingInfos;
             this.logger.LogInformation($"Started {nameof(this.GetSchedulesByFreeBusyRequest)} method in {nameof(ScheduleServiceController)}.");
@@ -397,7 +397,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         [HttpPost("getschedules/{jobApplicationId}")]
         [MonitorWith("GTAV1GetSchedules")]
         [ApiExplorerSettings(IgnoreApi = true)]
-        public async Task<List<MeetingInfo>> GetSchedulesByFreeBusyRequest([FromBody]FreeBusyRequest freeBusyRequest, string jobApplicationId)
+        public async Task<List<MeetingInfo>> GetSchedulesByFreeBusyRequest([FromBody] FreeBusyRequest freeBusyRequest, string jobApplicationId)
         {
             List<MeetingInfo> meetingInfos;
             this.logger.LogInformation($"Started {nameof(this.GetSchedulesByFreeBusyRequest)} method in {nameof(ScheduleServiceController)}.");
@@ -420,7 +420,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>The response.</returns>
         [HttpPost("queueschedule/{scheduleId}")]
         [MonitorWith("GTAV1QueueSchedule")]
-        public async Task<MeetingInfo> SendSchedule(string scheduleId, [FromBody]EmailTemplate emailTemplate)
+        public async Task<MeetingInfo> SendSchedule(string scheduleId, [FromBody] EmailTemplate emailTemplate)
         {
             MeetingInfo meetingInfoResult;
             this.logger.LogInformation($"Started {nameof(this.SendSchedule)} method in {nameof(ScheduleServiceController)}.");

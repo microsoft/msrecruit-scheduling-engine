@@ -10,7 +10,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Web;
+    using CommonLibrary.Common.Web;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Providers;
     using MS.GTA.ScheduleService.Contracts;
@@ -82,7 +82,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         [ProducesResponseType(typeof(GetRoomsUnAuthorizedOrForbiddenException), 403)]
         [ProducesResponseType(typeof(SchedulerGetRoomsException), 500)]
         [ProducesResponseType(typeof(AggregateException), 500)]
-        public async Task<List<Room>> GetRooms([FromRoute]string buildingName)
+        public async Task<List<Room>> GetRooms([FromRoute] string buildingName)
         {
             List<Room> rooms;
             this.logger.LogInformation($"Started {nameof(this.GetRooms)} method in {nameof(RoomController)}.");

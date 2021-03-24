@@ -11,8 +11,8 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Web;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Web;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;
@@ -65,7 +65,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>Successfully processed schedule Ids.</returns>
         [HttpPost("sendcalendarinvite")]
         [MonitorWith("GTAV1SendCalendarInvite")]
-        public async Task<IList<string>> SendCalendarInvite(string serviceAccountName, [FromBody]IList<string> scheduleIds)
+        public async Task<IList<string>> SendCalendarInvite(string serviceAccountName, [FromBody] IList<string> scheduleIds)
         {
             this.logger.LogInformation($"Started {nameof(this.SendCalendarInvite)} method in {nameof(MeetingController)}.");
             if (!scheduleIds?.Any() ?? true)
@@ -87,7 +87,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
         /// <returns>A http 202 response</returns>
         [HttpPost("processNotification")]
         [MonitorWith("GTAV1ProcessNotification")]
-        public async Task<ActionResult> ProcessNotification([FromBody]NotificationContent notificationContent)
+        public async Task<ActionResult> ProcessNotification([FromBody] NotificationContent notificationContent)
         {
             this.logger.LogInformation($"Started {nameof(this.ProcessNotification)} method in {nameof(MeetingController)}.");
             if (notificationContent == null)

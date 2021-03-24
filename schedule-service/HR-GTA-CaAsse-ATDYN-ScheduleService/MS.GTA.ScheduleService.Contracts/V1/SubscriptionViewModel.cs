@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 
 using System.Runtime.Serialization;
-using MS.GTA.Common.DocumentDB.Contracts;
+using CommonLibrary.Common.DocumentDB.Contracts;
 using Newtonsoft.Json;
 
 /*

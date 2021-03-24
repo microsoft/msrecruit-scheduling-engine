@@ -5,7 +5,7 @@
 namespace MS.GTA.ScheduleService.Data.Models
 {
     using System.Collections.Generic;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.Talent.TalentContracts.InterviewService;
 
     /// <summary>

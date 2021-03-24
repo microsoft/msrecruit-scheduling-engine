@@ -8,8 +8,8 @@ namespace MS.GTA.ScheduleService.Data.DataProviders
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.TalentEntities.Common;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.ScheduleService.Data.Models;
     using MS.GTA.Talent.EnumSetModel;
@@ -17,7 +17,7 @@ namespace MS.GTA.ScheduleService.Data.DataProviders
     using MS.GTA.Talent.FalconEntities.Attract.Conference;
     using MS.GTA.Talent.TalentContracts.ScheduleService;
     using MS.GTA.TalentEntities.Enum;
-    using CommonContracts = MS.GTA.Common.Email.Contracts;
+    using CommonContracts = CommonLibrary.Common.Email.Contracts;
 
     /// <summary>
     /// Schedule query definition

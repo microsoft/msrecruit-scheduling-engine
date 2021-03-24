@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using MS.GTA.Common.TalentEntities.Common;
+using CommonLibrary.Common.TalentEntities.Common;
 
 namespace MS.GTA.ScheduleService.Data.Models
 {

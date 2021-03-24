@@ -11,7 +11,7 @@ namespace MS.GTA.ScheduleService.Controllers.V1
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.ServiceContext;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;

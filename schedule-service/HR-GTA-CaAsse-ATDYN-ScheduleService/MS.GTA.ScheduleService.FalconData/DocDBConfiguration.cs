@@ -5,7 +5,7 @@
 
 namespace MS.GTA.ScheduleService.FalconData
 {
-    using MS.GTA.Common.DocumentDB.Configuration;
+    using CommonLibrary.Common.DocumentDB.Configuration;
     using MS.GTA.ServicePlatform.Configuration;
 
     /// <summary>

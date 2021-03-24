@@ -13,10 +13,10 @@ namespace MS.GTA.ScheduleService.UnitTest.FalconData.ScheduleQuery_Tests
     using Microsoft.Extensions.Logging.Abstractions;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Contracts;
-    using MS.GTA.Common.DocumentDB;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Contracts;
+    using CommonLibrary.Common.DocumentDB;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.TalentEntities.Common;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.FalconData.Query;
     using MS.GTA.ServicePlatform.Tracing;

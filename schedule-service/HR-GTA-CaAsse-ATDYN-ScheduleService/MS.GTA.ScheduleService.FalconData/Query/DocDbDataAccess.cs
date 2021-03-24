@@ -10,7 +10,7 @@ namespace MS.GTA.ScheduleService.FalconData.Query
     using System.Linq.Expressions;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Configuration;
+    using CommonLibrary.Common.Base.Configuration;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.ScheduleService.Data.Helper;
     using MS.GTA.ServicePlatform.Exceptions;

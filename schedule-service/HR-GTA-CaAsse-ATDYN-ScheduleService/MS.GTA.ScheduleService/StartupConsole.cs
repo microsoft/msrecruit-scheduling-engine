@@ -8,7 +8,7 @@ namespace MS.GTA.ScheduleService
     using System.Diagnostics;
     using System.IO;
 
-    using MS.GTA.Common.Base.Configuration;
+    using CommonLibrary.Common.Base.Configuration;
     using MS.GTA.ServicePlatform.Azure.Security;
     using MS.GTA.ServicePlatform.Configuration;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
