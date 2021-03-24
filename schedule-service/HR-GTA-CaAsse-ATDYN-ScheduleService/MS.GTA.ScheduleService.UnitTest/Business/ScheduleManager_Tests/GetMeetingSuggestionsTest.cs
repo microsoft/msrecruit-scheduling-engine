@@ -10,7 +10,7 @@ namespace MS.GTA.ScheduleService.UnitTest.Business.ScheduleManager_Tests
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.ServiceContext;
     using MS.GTA.ScheduleService.BusinessLibrary.Business.V1;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.BusinessLibrary.Notification;

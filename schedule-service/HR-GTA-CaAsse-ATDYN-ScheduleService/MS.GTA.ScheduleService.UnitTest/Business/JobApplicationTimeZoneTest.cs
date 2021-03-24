@@ -17,8 +17,8 @@ namespace MS.GTA.ScheduleService.UnitTest.Business
     using MS.GTA.ServicePlatform.Context;
     using MS.GTA.ServicePlatform.Tracing;
     using MS.GTA.ScheduleService.BusinessLibrary.Notification;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using System.Collections.Generic;
     using MS.GTA.Talent.EnumSetModel;
     using System.Threading.Tasks;

@@ -8,7 +8,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Configuration;
+    using CommonLibrary.Common.Base.Configuration;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.BusinessLibrary.Providers;
     using MS.GTA.ScheduleService.Contracts;

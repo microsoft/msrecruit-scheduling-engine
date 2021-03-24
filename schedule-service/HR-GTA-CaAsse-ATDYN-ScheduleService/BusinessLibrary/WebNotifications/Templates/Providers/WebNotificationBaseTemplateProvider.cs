@@ -7,7 +7,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates.Prov
     using System;
     using System.Collections.Generic;
     using System.Resources;
-    using MS.GTA.Common.WebNotifications.Interfaces;
+    using CommonLibrary.Common.WebNotifications.Interfaces;
     using Newtonsoft.Json;
 
     /// <summary>

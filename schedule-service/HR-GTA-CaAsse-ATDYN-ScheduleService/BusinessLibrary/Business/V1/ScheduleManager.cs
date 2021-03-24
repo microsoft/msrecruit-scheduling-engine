@@ -13,12 +13,12 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using System.Resources;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.Base.Security;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.Utilities;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.TalentEntities.Common;
+    using CommonLibrary.CommonDataService.Common.Internal;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
@@ -39,7 +39,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using MS.GTA.Talent.EnumSetModel.SchedulingService;
     using MS.GTA.Talent.TalentContracts.ScheduleService;
     using MS.GTA.ScheduleService.FalconData.Query;
-    using MS.GTA.Common.Web.Contracts;
+    using CommonLibrary.Common.Web.Contracts;
     using MS.GTA.TalentEntities.Enum;
     using TimeZoneConverter;
     using MS.GTA.ScheduleService.Contracts.V1.Flights;

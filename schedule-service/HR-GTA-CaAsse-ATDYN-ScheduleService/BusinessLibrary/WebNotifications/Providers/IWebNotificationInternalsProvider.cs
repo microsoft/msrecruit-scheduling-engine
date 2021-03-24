@@ -5,7 +5,7 @@
 namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Providers
 {
     using System.Collections.Generic;
-    using MS.GTA.Common.WebNotifications.Interfaces;
+    using CommonLibrary.Common.WebNotifications.Interfaces;
     using MS.GTA.ScheduleService.Data.Models;
 
     /// <summary>

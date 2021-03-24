@@ -9,7 +9,7 @@ namespace MS.GTA.ScheduleService.UnitTest.Controller
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.ServiceContext;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Contracts.V1;
@@ -88,7 +88,7 @@ namespace MS.GTA.ScheduleService.UnitTest.Controller
                    var httpContextAccessorMock = MockHttpContextAccessor.GetHttpContextAccessor();
 
                    this.mockNotificationManager.Setup(a => a.ProcessNotificationContent(It.IsAny<NotificationContent>())).ReturnsAsync(true);
-                   var meetingController = new MeetingController(httpContextAccessorMock, this.mockScheduleManager.Object, this.mockNotificationManager.Object,  this.loggerMock.Object);
+                   var meetingController = new MeetingController(httpContextAccessorMock, this.mockScheduleManager.Object, this.mockNotificationManager.Object, this.loggerMock.Object);
 
                    var response = meetingController.ProcessNotification(this.GetMockNotificationContent());
 

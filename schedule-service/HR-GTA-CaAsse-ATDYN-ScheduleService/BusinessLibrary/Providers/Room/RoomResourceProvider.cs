@@ -11,12 +11,12 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using System.Net.Http;
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.MSGraph.Configuration;
+    using CommonLibrary.CommonDataService.Common.Internal;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.MSGraph;
+    using CommonLibrary.Common.Base.Configuration;
+    using CommonLibrary.Common.MSGraph;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.ScheduleService.Utils;
@@ -155,7 +155,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
             {
                 this.httpClient.DefaultRequestHeaders.Authorization = schedulerGraphToken;
 
-                for (int i = 1; i <= MS.GTA.Common.Email.Constants.MaxRetryCount; i++)
+                for (int i = 1; i <= CommonLibrary.Common.Email.Constants.MaxRetryCount; i++)
                 {
                     var message = new HttpRequestMessage(HttpMethod.Get, url);
                     message.Headers.Authorization = schedulerGraphToken;

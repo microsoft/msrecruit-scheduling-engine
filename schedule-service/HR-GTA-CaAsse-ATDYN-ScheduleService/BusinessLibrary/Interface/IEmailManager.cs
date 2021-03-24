@@ -7,7 +7,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.Common.TalentAttract.Contract;
+    using CommonLibrary.Common.TalentAttract.Contract;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.Talent.TalentContracts.InterviewService;
     using MS.GTA.Talent.TalentContracts.ScheduleService;

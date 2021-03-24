@@ -6,7 +6,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.Talent.TalentContracts.ScheduleService;
 

@@ -9,9 +9,9 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
     using System.Net;
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.Common.Email.GraphContracts;
-    using MS.GTA.Common.Email.SendGridContracts;
+    using CommonLibrary.Common.Common.Common.Email.Contracts;
+    using CommonLibrary.Common.Email.GraphContracts;
+    using CommonLibrary.Common.Email.SendGridContracts;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.Talent.EnumSetModel.SchedulingService;
 

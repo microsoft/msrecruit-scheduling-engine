@@ -12,9 +12,9 @@ namespace MS.GTA.ScheduleService.UnitTest.WebNotifications.Extractors
     using Microsoft.Extensions.Logging.Abstractions;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.Common.WebNotifications;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.TalentEntities.Common;
+    using CommonLibrary.Common.WebNotifications;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Extractors;

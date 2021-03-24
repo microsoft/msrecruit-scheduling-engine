@@ -22,10 +22,10 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using MS.GTA.TalentEntities.Enum;
     using MS.GTA.ScheduleService.Data.Models;
     using MS.GTA.ScheduleService.Contracts.V1.Flights;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.Common.WebNotifications.Models;
+    using CommonLibrary.Common.WebNotifications.Interfaces;
+    using CommonLibrary.Common.WebNotifications.Models;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Providers;
-    using MS.GTA.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.ServiceContext;
 
     /// <summary>
     /// Notification Manager

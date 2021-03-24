@@ -11,7 +11,7 @@ namespace MS.GTA.ScheduleService.UnitTest.Business
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.MSGraph.Configuration;
+    using CommonLibrary.Common.MSGraph.Configuration;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.Providers;
     using MS.GTA.ServicePlatform.Configuration;

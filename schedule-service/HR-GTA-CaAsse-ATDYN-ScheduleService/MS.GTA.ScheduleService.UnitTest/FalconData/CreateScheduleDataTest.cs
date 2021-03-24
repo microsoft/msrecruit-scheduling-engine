@@ -17,7 +17,7 @@ namespace MS.GTA.ScheduleService.UnitTest.FalconData
     using MS.GTA.ServicePlatform.Exceptions;
     using MS.GTA.ServicePlatform.Tracing;
     using MS.GTA.Talent.FalconEntities.Attract;
-    using Common = MS.GTA.Common;
+    using Common = CommonLibrary.Common;
 
     [TestClass]
     public class CreateScheduleDataTest

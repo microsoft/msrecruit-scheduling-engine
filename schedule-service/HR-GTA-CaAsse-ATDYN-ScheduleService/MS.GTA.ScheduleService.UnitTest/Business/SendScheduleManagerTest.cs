@@ -10,8 +10,8 @@ namespace MS.GTA.ScheduleService.UnitTest.Business
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.ScheduleService.BusinessLibrary.Business.V1;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;

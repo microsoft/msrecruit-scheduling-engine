@@ -14,13 +14,13 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
     using System.Resources;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.Common.Email;
+    using CommonLibrary.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.Email;
     using MS.GTA.ServicePlatform.Azure.Security;
     using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Email.GraphContracts;
-    using MS.GTA.Common.Email.SendGridContracts;
+    using CommonLibrary.Common.Base.Utilities;
+    using CommonLibrary.Common.Email.GraphContracts;
+    using CommonLibrary.Common.Email.SendGridContracts;
     using MS.GTA.ScheduleService.BusinessLibrary.Providers;
     using MS.GTA.ScheduleService.BusinessLibrary.Utils;
     using MS.GTA.ScheduleService.Contracts.V1;
@@ -29,14 +29,14 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
     using MS.GTA.ScheduleService.BusinessLibrary.Strings;
     using MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters;
     using MS.GTA.Talent.EnumSetModel.SchedulingService;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.Base.Configuration;
+    using CommonLibrary.Common.Base.Security;
+    using CommonLibrary.Common.Base.Configuration;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
+    using CommonLibrary.Common.Common.Common.Email.Contracts;
     using Newtonsoft.Json;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.MSGraph;
+    using CommonLibrary.Common.MSGraph;
     using Microsoft.Extensions.Logging;
 
     /// <summary>The Email Client implementation of notification interface.</summary>

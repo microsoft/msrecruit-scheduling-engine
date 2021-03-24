@@ -14,14 +14,14 @@ namespace MS.GTA.ScheduleService.UnitTest.FalconData
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.ScheduleService.Data.DataProviders;
     using MS.GTA.ScheduleService.FalconData.Query;
-    using MS.GTA.Common.DocumentDB;
+    using CommonLibrary.Common.DocumentDB;
     using MS.GTA.ServicePlatform.Context;
     using MS.GTA.ServicePlatform.Exceptions;
     using MS.GTA.ServicePlatform.Tracing;
     using MS.GTA.Talent.EnumSetModel;
     using MS.GTA.Talent.FalconEntities.Attract;
-    using Common = MS.GTA.Common;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using Common = CommonLibrary.Common;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.Talent.FalconEntities.Attract.Conference;
     using MS.GTA.ScheduleService.Contracts;
 

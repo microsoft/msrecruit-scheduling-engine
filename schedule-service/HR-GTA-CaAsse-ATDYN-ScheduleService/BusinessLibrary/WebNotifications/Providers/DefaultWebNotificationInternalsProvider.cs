@@ -7,7 +7,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Providers
     using System;
     using System.Collections.Generic;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.WebNotifications.Interfaces;
+    using CommonLibrary.Common.WebNotifications.Interfaces;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Extractors;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates.Providers;

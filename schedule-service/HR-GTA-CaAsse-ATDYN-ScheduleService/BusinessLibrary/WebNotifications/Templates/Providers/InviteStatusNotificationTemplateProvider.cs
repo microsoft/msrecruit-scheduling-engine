@@ -7,8 +7,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates.Prov
     using System;
     using System.Collections.Generic;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.WebNotifications.Exceptions;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.WebNotifications.Exceptions;
+    using CommonLibrary.CommonDataService.Common.Internal;
 
     /// <summary>
     /// The <see cref="InviteStatusNotificationTemplateProvider"/> class implements mechanism to provide the web notification template for invite status update event.

@@ -7,7 +7,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Utils
     using System;
     using System.IdentityModel.Tokens.Jwt;
     using System.Linq;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.CommonDataService.Common.Internal;
 
     /// <summary>
     /// Class Access Token

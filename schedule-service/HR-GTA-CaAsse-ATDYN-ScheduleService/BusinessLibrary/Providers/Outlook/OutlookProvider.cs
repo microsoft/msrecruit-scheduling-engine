@@ -16,11 +16,11 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using Microsoft.Azure.ServiceBus;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.MSGraph;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.Base.Configuration;
+    using CommonLibrary.Common.Base.Security;
+    using CommonLibrary.Common.MSGraph;
+    using CommonLibrary.Common.MSGraph.Configuration;
+    using CommonLibrary.CommonDataService.Common.Internal;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Contracts.V1;
@@ -32,7 +32,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using MS.GTA.ServicePlatform.Context;
     using MS.GTA.ServicePlatform.Exceptions;
     using Newtonsoft.Json;
-    using Email = MS.GTA.Common.Email;
+    using Email = CommonLibrary.Common.Email;
     using Message = MS.GTA.ScheduleService.Contracts.V1.Message;
 
     /// <summary>
@@ -400,16 +400,16 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
                     "GTAUpdateCalendarEvent",
                     async () =>
                     {
-                    // var userEmail = EmailUtils.GetUserEmailFromToken(accessToken);
-                    this.logger.LogInformation($"Sending patch update using email {serviceAccountName}");
+                        // var userEmail = EmailUtils.GetUserEmailFromToken(accessToken);
+                        this.logger.LogInformation($"Sending patch update using email {serviceAccountName}");
 
-                    var relativePath = $"/users/{serviceAccountName}/events/{eventRequest?.Id}";
+                        var relativePath = $"/users/{serviceAccountName}/events/{eventRequest?.Id}";
 
-                    var url = $"{this.graphBaseUrl}{relativePath}";
+                        var url = $"{this.graphBaseUrl}{relativePath}";
 
-                    // Force refreshing cache so that the cached resource token from the user principle isn't returned
-                    var schedulerGraphToken = await this.GetBearerTokenFromUserToken(accessToken, serviceAccountName, TokenCachingOptions.ForceRefreshCache);
-                    var exceptions = new List<Exception>();
+                        // Force refreshing cache so that the cached resource token from the user principle isn't returned
+                        var schedulerGraphToken = await this.GetBearerTokenFromUserToken(accessToken, serviceAccountName, TokenCachingOptions.ForceRefreshCache);
+                        var exceptions = new List<Exception>();
                         using (var httpClient = new HttpClient())
                         {
                             httpClient.DefaultRequestHeaders.Authorization = schedulerGraphToken;

@@ -12,9 +12,9 @@ namespace MS.GTA.ScheduleService.UnitTest.Business.NotifyCandidate
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Base.Security.V2;
+    using CommonLibrary.Common.Common.Common.Email.Contracts;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.BusinessLibrary.Notification;

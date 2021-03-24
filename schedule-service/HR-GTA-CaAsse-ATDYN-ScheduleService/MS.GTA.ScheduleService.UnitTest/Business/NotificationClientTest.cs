@@ -12,10 +12,10 @@ namespace MS.GTA.ScheduleService.UnitTest.Business
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Email;
-    using MS.GTA.Common.Email.GraphContracts;
-    using MS.GTA.Common.Email.SendGridContracts;
-    using MS.GTA.Common.MSGraph;
+    using CommonLibrary.Common.Email;
+    using CommonLibrary.Common.Email.GraphContracts;
+    using CommonLibrary.Common.Email.SendGridContracts;
+    using CommonLibrary.Common.MSGraph;
     using MS.GTA.ScheduleService.BusinessLibrary.Business.V1;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.BusinessLibrary.Notification;

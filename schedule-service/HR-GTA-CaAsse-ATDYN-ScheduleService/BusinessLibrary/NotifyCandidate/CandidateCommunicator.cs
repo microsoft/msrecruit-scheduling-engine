@@ -14,10 +14,10 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.Base.Utilities;
+    using CommonLibrary.Common.Common.Common.Email.Contracts;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.CommonDataService.Common.Internal;
     using MS.GTA.ScheduleService.BusinessLibrary.Strings;
     using MS.GTA.ScheduleService.BusinessLibrary.Utils;
     using MS.GTA.ScheduleService.Contracts.V1;

@@ -8,7 +8,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Helpers
     using System;
     using System.Threading.Tasks;
     using Microsoft.Azure.ServiceBus;
-    using MS.GTA.Common.Base.Configuration;
+    using CommonLibrary.Common.Base.Configuration;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;

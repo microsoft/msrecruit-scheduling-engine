@@ -13,11 +13,11 @@ namespace MS.GTA.ScheduleService.UnitTest.Business.EmailManager
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Base.Security;
+    using CommonLibrary.Common.Common.Common.Email.Contracts;
+    using CommonLibrary.Common.Email.Contracts;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.TalentEntities.Common;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
@@ -65,7 +65,7 @@ namespace MS.GTA.ScheduleService.UnitTest.Business.EmailManager
             this.mockScheduleQuery = new Mock<IScheduleQuery>();
             this.loggerMock = new Mock<ILogger<BEM.EmailManager>>();
             this.internalsProviderMock = new Mock<IInternalsProvider>();
-            this.manager = new BEM.EmailManager( this.notificationClient.Object, this.falconQuery.Object, this.mockConfiguarationManager.Object, this.mockTraceSource.Object, this.mockScheduleQuery.Object, this.emailHelperMock.Object, this.internalsProviderMock.Object, this.loggerMock.Object);
+            this.manager = new BEM.EmailManager(this.notificationClient.Object, this.falconQuery.Object, this.mockConfiguarationManager.Object, this.mockTraceSource.Object, this.mockScheduleQuery.Object, this.emailHelperMock.Object, this.internalsProviderMock.Object, this.loggerMock.Object);
         }
 
         [TestMethod]

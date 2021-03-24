@@ -5,7 +5,7 @@
 namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
 {
     using System.Threading.Tasks;
-    using MS.GTA.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.ServiceContext;
     using MS.GTA.ScheduleService.Contracts.V1;
 
     /// <summary>

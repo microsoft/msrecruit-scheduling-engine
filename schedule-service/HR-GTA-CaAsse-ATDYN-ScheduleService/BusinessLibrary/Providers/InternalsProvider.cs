@@ -20,8 +20,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using Microsoft.Extensions.Logging;
     using Microsoft.Graph;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.MSGraph.Configuration;
+    using CommonLibrary.Common.Base.Configuration;
+    using CommonLibrary.Common.MSGraph.Configuration;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.BusinessLibrary.Notification;

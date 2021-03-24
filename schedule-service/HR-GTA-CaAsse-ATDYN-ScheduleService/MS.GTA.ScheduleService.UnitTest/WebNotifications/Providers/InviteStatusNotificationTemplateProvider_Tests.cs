@@ -9,7 +9,7 @@ namespace MS.GTA.ScheduleService.UnitTest.WebNotifications.Roviders
     using System.Diagnostics.CodeAnalysis;
     using Microsoft.Extensions.Logging.Abstractions;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using MS.GTA.Common.WebNotifications.Exceptions;
+    using CommonLibrary.Common.WebNotifications.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications;
     using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates.Providers;
 

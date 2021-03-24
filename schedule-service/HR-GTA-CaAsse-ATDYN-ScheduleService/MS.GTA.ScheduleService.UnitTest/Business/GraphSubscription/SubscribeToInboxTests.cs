@@ -9,7 +9,7 @@ namespace MS.GTA.ScheduleService.UnitTest.Business.GraphSubscription
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.Configuration;
+    using CommonLibrary.Common.Base.Configuration;
     using MS.GTA.ScheduleService.BusinessLibrary.Business;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.BusinessLibrary.Providers;

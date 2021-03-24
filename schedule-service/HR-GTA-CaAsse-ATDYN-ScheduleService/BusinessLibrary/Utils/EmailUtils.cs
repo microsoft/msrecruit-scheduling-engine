@@ -15,14 +15,14 @@ namespace MS.GTA.ScheduleService.Utils
     using System.Net.Http;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Http;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.Common.Common.Email.Contracts;
+    using CommonLibrary.CommonDataService.Common.Internal;
     using MS.GTA.ScheduleService.BusinessLibrary;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.ServicePlatform.Tracing;
     using MS.GTA.Talent.TalentContracts.InterviewService;
     using MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing;
-    using Email = MS.GTA.Common.Email;
+    using Email = CommonLibrary.Common.Email;
 
     /// <summary>
     /// Contract utilities

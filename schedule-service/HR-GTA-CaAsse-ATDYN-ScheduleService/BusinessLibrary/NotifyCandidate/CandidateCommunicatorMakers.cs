@@ -4,8 +4,8 @@
 //-----------------------------------------------------------------------
 namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
 {
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.Security.V2;
+    using CommonLibrary.Common.Base.ServiceContext;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.BusinessLibrary.Notification;
     using MS.GTA.ScheduleService.Data.DataProviders;

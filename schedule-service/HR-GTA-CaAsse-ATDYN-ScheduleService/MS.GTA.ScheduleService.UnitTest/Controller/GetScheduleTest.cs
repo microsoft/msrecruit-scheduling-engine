@@ -11,7 +11,7 @@ namespace MS.GTA.ScheduleService.UnitTest.Controller
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Base.ServiceContext;
+    using CommonLibrary.Common.Base.ServiceContext;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Controllers.V1;

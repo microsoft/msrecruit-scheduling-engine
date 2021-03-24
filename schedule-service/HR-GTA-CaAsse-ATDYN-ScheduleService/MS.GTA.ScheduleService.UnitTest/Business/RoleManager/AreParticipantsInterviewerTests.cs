@@ -12,7 +12,7 @@ namespace MS.GTA.ScheduleService.UnitTest.Business.RoleManager
     using Microsoft.Extensions.Logging.Abstractions;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.ScheduleService.BusinessLibrary.Business.V1;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Data.DataProviders;

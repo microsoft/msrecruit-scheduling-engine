@@ -15,10 +15,10 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers.User
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.MSGraph;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.Base.Configuration;
+    using CommonLibrary.Common.MSGraph;
+    using CommonLibrary.Common.MSGraph.Configuration;
+    using CommonLibrary.CommonDataService.Common.Internal;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;

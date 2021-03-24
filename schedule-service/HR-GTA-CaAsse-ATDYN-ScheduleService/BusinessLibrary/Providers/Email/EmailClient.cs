@@ -14,11 +14,11 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Email;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.Common.TestBase;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.Common.Base.Configuration;
+    using CommonLibrary.Common.Email;
+    using CommonLibrary.Common.MSGraph.Configuration;
+    using CommonLibrary.Common.TestBase;
+    using CommonLibrary.CommonDataService.Common.Internal;
     using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
     using MS.GTA.ScheduleService.Utils;
     using MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters;
@@ -81,7 +81,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
         {
             if (string.IsNullOrWhiteSpace(userEmail))
             {
-               this.logger.LogInformation($"GetServiceAccountTokenByEmail: user email is empty");
+                this.logger.LogInformation($"GetServiceAccountTokenByEmail: user email is empty");
                 return null;
             }
 
@@ -95,7 +95,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
         /// <returns>The scheduler service token</returns>
         private async Task<string> TryGetSystemServiceAccountTokenByEmail(string userEmail)
         {
-           this.logger.LogInformation("TryGetSystemServiceAccountTokenByEmail: Request to retrieve accountToken by email.");
+            this.logger.LogInformation("TryGetSystemServiceAccountTokenByEmail: Request to retrieve accountToken by email.");
 
             return await this.accessTokenCache.GetOrAddAccessTokenAsync(userEmail, async () =>
             {
@@ -144,7 +144,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
                         schedulerServiceToken = await this.HttpAuthenticationAsync(authConfig.Authority, this.configurationManager.Get<MsGraphSetting>().ClientId, userEmail, primaryPassword); // authContext.AcquireTokenAsync(new HttpCommunicationClientFactory(), authContextUri, userEmail, primaryPassword, resourceId, clientId);
                         if (!string.IsNullOrWhiteSpace(schedulerServiceToken))
                         {
-                           this.logger.LogInformation("Successfully retrieved access token from azure active directory using primary password");
+                            this.logger.LogInformation("Successfully retrieved access token from azure active directory using primary password");
                             return schedulerServiceToken;
                         }
 
@@ -165,7 +165,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
                             schedulerServiceToken = await this.HttpAuthenticationAsync(authConfig.Authority, clientId, userEmail, primaryPassword); // authContext.AcquireTokenAsync(new HttpCommunicationClientFactory(), authContextUri, userEmail, secondaryPassword, resourceId, clientId);
                             if (!string.IsNullOrWhiteSpace(schedulerServiceToken))
                             {
-                               this.logger.LogInformation("Successfully retrieved access token from azure active directory using secondary Password");
+                                this.logger.LogInformation("Successfully retrieved access token from azure active directory using secondary Password");
                                 return schedulerServiceToken;
                             }
 

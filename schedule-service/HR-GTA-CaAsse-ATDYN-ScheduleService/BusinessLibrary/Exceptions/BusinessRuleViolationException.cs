@@ -6,7 +6,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Exceptions
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Net;
-    using MS.GTA.Common.Base.Exceptions;
+    using CommonLibrary.Common.Base.Exceptions;
     using MS.GTA.ServicePlatform.Exceptions;
 
     /// <summary>

@@ -11,7 +11,7 @@ namespace MS.GTA.ScheduleService.UnitTest.FalconData
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.ScheduleService.Data.DataProviders;
@@ -22,7 +22,7 @@ namespace MS.GTA.ScheduleService.UnitTest.FalconData
     using MS.GTA.Talent.EnumSetModel;
     using MS.GTA.Talent.FalconEntities.Attract;
     using MS.GTA.Talent.FalconEntities.Attract.Conference;
-    using Common = MS.GTA.Common;
+    using Common = CommonLibrary.Common;
 
     [TestClass]
     public class UpdateScheduleDetailsTest

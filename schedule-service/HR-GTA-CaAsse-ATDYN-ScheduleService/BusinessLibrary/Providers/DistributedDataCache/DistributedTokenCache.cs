@@ -9,7 +9,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using Microsoft.Extensions.Caching.Distributed;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using CommonLibrary.CommonDataService.Common.Internal;
 
     /// <summary>
     /// Implementation of Distributed cache

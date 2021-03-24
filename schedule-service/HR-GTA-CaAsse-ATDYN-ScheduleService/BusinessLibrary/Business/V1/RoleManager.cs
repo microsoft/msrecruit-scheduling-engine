@@ -11,8 +11,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using System.Threading.Tasks;
     using Castle.Core.Internal;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.Web.Contracts;
+    using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
+    using CommonLibrary.Common.Web.Contracts;
     using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;
     using MS.GTA.ScheduleService.Contracts;

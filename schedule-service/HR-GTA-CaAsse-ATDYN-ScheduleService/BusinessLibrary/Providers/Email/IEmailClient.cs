@@ -8,7 +8,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using System.Collections.Generic;
     using System.Net;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Email.GraphContracts;
+    using CommonLibrary.Common.Email.GraphContracts;
     using MS.GTA.Talent.EnumSetModel.SchedulingService;
 
     /// <summary>The EmailClient interface.</summary>

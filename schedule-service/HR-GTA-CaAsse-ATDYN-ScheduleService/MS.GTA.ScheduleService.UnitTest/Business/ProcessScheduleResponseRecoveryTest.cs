@@ -8,8 +8,8 @@ namespace MS.GTA.ScheduleService.UnitTest.Business
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.Common.WebNotifications.Interfaces;
+    using CommonLibrary.Common.TalentEntities.Common;
+    using CommonLibrary.Common.WebNotifications.Interfaces;
     using MS.GTA.Data.DataAccess;
     using MS.GTA.ScheduleService.BusinessLibrary.Business.V1;
     using MS.GTA.ScheduleService.BusinessLibrary.Interface;

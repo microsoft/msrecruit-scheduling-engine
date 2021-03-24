@@ -7,8 +7,8 @@
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using MS.GTA.Common.Provisioning.Entities.XrmEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Common;
+    using CommonLibrary.Common.Provisioning.Entities.XrmEntities.Attract;
+    using CommonLibrary.Common.TalentEntities.Common;
     using MS.GTA.ScheduleService.Contracts;
     using MS.GTA.ScheduleService.Contracts.V1;
     using MS.GTA.ScheduleService.Data.DataProviders;
@@ -20,7 +20,7 @@
     using MS.GTA.Talent.FalconEntities.Attract;
     using MS.GTA.Talent.FalconEntities.Attract.Conference;
     using MS.GTA.Talent.TalentContracts.ScheduleService;
-    using Common = MS.GTA.Common;
+    using Common = CommonLibrary.Common;
 
     [TestClass]
     public class UpdateScheduleDataTest
