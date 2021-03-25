@@ -39,7 +39,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
-	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.2" />
+	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MS.GTA.ScheduleService.Contracts\MS.GTA.ScheduleService.Contracts.csproj" />

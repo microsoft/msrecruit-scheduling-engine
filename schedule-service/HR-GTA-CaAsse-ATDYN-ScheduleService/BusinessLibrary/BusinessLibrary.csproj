@@ -32,7 +32,7 @@
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="4.0.0" />
     <PackageReference Include="Microsoft.Graph" Version="3.0.1" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
-	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.2" />
+	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.3" />
     <PackageReference Include="RestSharpSigned" Version="105.2.3" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
     <PackageReference Include="System.Security.Permissions" Version="4.5.0" />
