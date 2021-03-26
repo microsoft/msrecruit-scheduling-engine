@@ -11,7 +11,7 @@ namespace HR.TA.Talent.TalentContracts.ScheduleService.Conferencing
     using System.Linq;
     using System.Runtime.Serialization;
     using Microsoft.Graph;
-    using MI = GTA.ScheduleService.Contracts.V1;
+    using MI = TA.ScheduleService.Contracts.V1;
 
 
     /// <summary>
