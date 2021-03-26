@@ -12,7 +12,7 @@ namespace CommonLibrary.Talent.FalconEntities.Attract
     using CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract;
     using CommonLibrary.Common.TalentAttract.Contract;
     using CommonLibrary.Common.TalentEntities.Common;
-    using CommonLibrary.ScheduleService.Contracts.V1;
+    using ScheduleService.Contracts.V1;
     using CommonLibrary.Talent.EnumSetModel;
     using CommonLibrary.Talent.EnumSetModel.SchedulingService;
     using CommonLibrary.Talent.FalconEntities.Attract.Conference;

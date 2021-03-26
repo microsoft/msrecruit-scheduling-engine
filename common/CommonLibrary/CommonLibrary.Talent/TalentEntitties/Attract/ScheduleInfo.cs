@@ -7,7 +7,7 @@ namespace CommonLibrary.Common.Provisioning.Entities.XrmEntities.Attract
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using CommonLibrary.Common.DocumentDB.Contracts;
-    using CommonLibrary.ScheduleService.Contracts.V1;
+    using ScheduleService.Contracts.V1;
     using CommonLibrary.Talent.EnumSetModel;
 
     /// <summary>

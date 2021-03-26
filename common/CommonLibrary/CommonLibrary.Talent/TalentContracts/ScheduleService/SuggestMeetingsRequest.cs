@@ -8,7 +8,7 @@ namespace CommonLibrary.Talent.TalentContracts.ScheduleService
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using CommonLibrary.ScheduleService.Contracts.V1;
+    using ScheduleService.Contracts.V1;
 
     /// <summary>
     /// Suggest meeting request

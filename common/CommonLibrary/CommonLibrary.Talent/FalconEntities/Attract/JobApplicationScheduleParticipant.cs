@@ -7,7 +7,7 @@ namespace CommonLibrary.Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System;
     using System.Runtime.Serialization;
-    using CommonLibrary.ScheduleService.Contracts.V1;
+    using ScheduleService.Contracts.V1;
     using CommonLibrary.TalentEntities.Enum;
 
     [DataContract]

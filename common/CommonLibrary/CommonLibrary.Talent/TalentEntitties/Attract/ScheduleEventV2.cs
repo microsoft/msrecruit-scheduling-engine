@@ -5,7 +5,7 @@
 namespace CommonLibrary.Common.Provisioning.Entities.XrmEntities.Attract
 {
     using CommonLibrary.Common.DocumentDB.Contracts;
-    using CommonLibrary.ScheduleService.Contracts.V1;
+    using ScheduleService.Contracts.V1;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;
