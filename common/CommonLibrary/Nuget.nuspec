@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>MSRecruitCommonLibrary</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <authors>Microsoft</authors>
     <description>MS Recruit Common Library</description>
     <releaseNotes>Contains common components for Microsoft Recruit applications</releaseNotes>
@@ -49,14 +49,14 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="CommonLibrary.Talent\bin\Release\**\CommonLibrary.*.dll" target="lib" />
-    <file src="CommonLibrary.Talent\bin\Release\**\CommonLibrary.*.pdb" target="lib" />
-    <file src="CommonLibrary.Talent\bin\Release\**\CommonLibrary.*.xml" target="lib" />
-    <file src="CommonLibrary.BusinessLibrary\bin\Release\**\CommonLibrary.BusinessLibrary.dll" target="lib" />
-    <file src="CommonLibrary.BusinessLibrary\bin\Release\**\CommonLibrary.BusinessLibrary.pdb" target="lib" />
-    <file src="CommonLibrary.BusinessLibrary\bin\Release\**\CommonLibrary.BusinessLibrary.xml" target="lib" />
-    <file src="CommonLibrary.Data\bin\Release\**\CommonLibrary.Data.dll" target="lib" />
-    <file src="CommonLibrary.Data\bin\Release\**\CommonLibrary.Data.pdb" target="lib" />
-    <file src="CommonLibrary.Data\bin\Release\**\CommonLibrary.Data.xml" target="lib" />
+    <file src="HR.TA.Talent\bin\Release\**\HR.TA.*.dll" target="lib" />
+    <file src="HR.TA.Talent\bin\Release\**\HR.TA.*.pdb" target="lib" />
+    <file src="HR.TA.Talent\bin\Release\**\HR.TA.*.xml" target="lib" />
+    <file src="HR.TA.BusinessLibrary\bin\Release\**\HR.TA.BusinessLibrary.dll" target="lib" />
+    <file src="HR.TA.BusinessLibrary\bin\Release\**\HR.TA.BusinessLibrary.pdb" target="lib" />
+    <file src="HR.TA.BusinessLibrary\bin\Release\**\HR.TA.BusinessLibrary.xml" target="lib" />
+    <file src="HR.TA.Data\bin\Release\**\HR.TA.Data.dll" target="lib" />
+    <file src="HR.TA.Data\bin\Release\**\HR.TA.Data.pdb" target="lib" />
+    <file src="HR.TA.Data\bin\Release\**\HR.TA.Data.xml" target="lib" />
   </files>
 </package>

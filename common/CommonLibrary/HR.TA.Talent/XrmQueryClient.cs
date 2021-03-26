@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
 
-namespace MS.GTA.Common.Talent.Data.Clients
+namespace HR.TA.Common.Talent.Data.Clients
 {
     using System.Threading.Tasks;
     using CommonDataService.Common.Internal;
-    using MS.GTA.ServicePlatform.Tracing;
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.XrmHttp;
+    using HR.TA.ServicePlatform.Tracing;
+    using HR.TA.Common.Base.Security.V2;
+    using HR.TA.Common.Base.ServiceContext;
+    using HR.TA.Common.XrmHttp;
     using Microsoft.Extensions.Logging;
 
     /// <summary>
