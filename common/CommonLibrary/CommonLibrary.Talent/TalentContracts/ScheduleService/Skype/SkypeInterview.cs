@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace CommonLibrary.ScheduleService.Contracts.V1
+namespace ScheduleService.Contracts.V1
 {
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;

@@ -5,7 +5,7 @@
 
 namespace CommonLibrary.Talent.TalentContracts.ScheduleService
 {
-    using CommonLibrary.ScheduleService.Contracts.V1;
+    using ScheduleService.Contracts.V1;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;

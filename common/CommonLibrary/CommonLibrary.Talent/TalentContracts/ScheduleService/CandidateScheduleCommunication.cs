@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace CommonLibrary.Talent.TalentContracts.ScheduleService
+namespace Talent.TalentContracts.ScheduleService
 {
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;

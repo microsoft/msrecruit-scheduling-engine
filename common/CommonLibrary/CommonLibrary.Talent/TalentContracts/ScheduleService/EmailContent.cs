@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace CommonLibrary.ScheduleService.Contracts.V1
+namespace ScheduleService.Contracts.V1
 {
     using CommonLibrary.Talent.EnumSetModel.SchedulingService;
     using System.Runtime.Serialization;
