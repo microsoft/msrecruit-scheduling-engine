@@ -13,7 +13,7 @@ namespace HR.TA.CommonLibrary.UnitTest.TalentContracts.ScheduleService
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using HR.TA.ScheduleService.Contracts.V1;
     using HR.TA.Talent.TalentContracts.ScheduleService.Conferencing;
-    using MI = GTA.ScheduleService.Contracts.V1;
+    using MI = TA.ScheduleService.Contracts.V1;
 
     [ExcludeFromCodeCoverage]
     [TestClass]
