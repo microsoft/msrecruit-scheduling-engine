@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Talent.FalconEntities.Common
+namespace HR.TA.Talent.FalconEntities.Common
 {
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
 
     /// <summary>
     /// The Organization entity.

@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     using System;
     using System.Runtime.Serialization;

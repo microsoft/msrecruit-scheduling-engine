@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V1
+namespace HR.TA.Common.OfferManagement.Contracts.V1
 {
     using System.Runtime.Serialization;
-    using HR.TA..Common.OfferManagement.Contracts.Enums.V1;
-    using HR.TA..Common.TalentAttract.Contract;
+    using HR.TA.Common.OfferManagement.Contracts.Enums.V1;
+    using HR.TA.Common.TalentAttract.Contract;
 
     /// <summary>
     /// Document for ESign Offer.

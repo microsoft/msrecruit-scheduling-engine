@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.Screen
+namespace HR.TA.Talent.TalentContracts.Screen
 {
     using System;
     using System.Runtime.Serialization;

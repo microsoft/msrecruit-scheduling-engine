@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System;
     using System.Runtime.Serialization;

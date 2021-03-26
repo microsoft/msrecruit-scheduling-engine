@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.ScheduleService
+namespace HR.TA.Talent.TalentContracts.ScheduleService
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Contracts.V1;
 
     /// <summary>
     /// Suggest meeting request

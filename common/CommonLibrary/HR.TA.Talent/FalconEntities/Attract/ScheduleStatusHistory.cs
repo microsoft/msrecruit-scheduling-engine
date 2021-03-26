@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.FalconEntities.Attract
+namespace HR.TA.Talent.FalconEntities.Attract
 {
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Talent.EnumSetModel;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Talent.EnumSetModel;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

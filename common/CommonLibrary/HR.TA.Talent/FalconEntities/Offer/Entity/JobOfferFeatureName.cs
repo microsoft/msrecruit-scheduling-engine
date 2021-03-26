@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.FalconEntities.Offer.Entity
+namespace HR.TA.Talent.FalconEntities.Offer.Entity
 {
     using System.Runtime.Serialization;
 

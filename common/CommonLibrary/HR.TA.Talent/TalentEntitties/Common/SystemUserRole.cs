@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Common
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Common
 {
     using System;
     using System.Runtime.Serialization;
-    using HR.TA..Common.XrmHttp;
+    using HR.TA.Common.XrmHttp;
 
     [ODataEntity(PluralName = "systemuserrolescollection", SingularName = "systemuserroles")]
     public class SystemUserRole : XrmODataEntity

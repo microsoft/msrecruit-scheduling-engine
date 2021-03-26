@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Common.OfferManagement.Contracts.V1
+namespace HR.TA.Common.OfferManagement.Contracts.V1
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.OfferManagement.Contracts.Enums.V1;
-    using HR.TA..Common.OfferManagement.Contracts.V2;
+    using HR.TA.Common.OfferManagement.Contracts.Enums.V1;
+    using HR.TA.Common.OfferManagement.Contracts.V2;
 
     /// <summary>
     /// Specifies the Data Contract for Template Package Detail

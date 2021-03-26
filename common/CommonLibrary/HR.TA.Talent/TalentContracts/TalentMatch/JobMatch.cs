@@ -5,10 +5,10 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using HR.TA..Common.TalentEntities.Common;
+using HR.TA.Common.TalentEntities.Common;
 using Newtonsoft.Json;
 
-namespace HR.TA..Talent.TalentContracts.TalentMatch
+namespace HR.TA.Talent.TalentContracts.TalentMatch
 {
     /// <summary>
     /// Job Match

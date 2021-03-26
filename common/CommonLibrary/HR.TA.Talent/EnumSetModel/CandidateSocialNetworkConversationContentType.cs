@@ -5,9 +5,9 @@
 
 using System.Runtime.Serialization;
 
-namespace HR.TA..TalentEngagementService.Data
+namespace HR.TA.TalentEngagementService.Data
 {
-    [DataContract(Namespace = "HR.TA..TalentEngagement")]
+    [DataContract(Namespace = "HR.TA.TalentEngagement")]
     public enum CandidateSocialNetworkConversationContentType
     {
         [EnumMember(Value = "mail")]

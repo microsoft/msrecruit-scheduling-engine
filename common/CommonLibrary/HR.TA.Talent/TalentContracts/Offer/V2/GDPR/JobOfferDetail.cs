@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V2.Gdpr
+namespace HR.TA.Common.OfferManagement.Contracts.V2.Gdpr
 {
     using System;
     using System.Collections.Generic;
-    using HR.TA..Common.OfferManagement.Contracts.Enums.V1;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.OfferManagement.Contracts.Enums.V1;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// The person data contract.

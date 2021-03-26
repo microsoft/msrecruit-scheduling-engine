@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace HR.TA..Talent.TalentContracts.TalentMatch
+namespace HR.TA.Talent.TalentContracts.TalentMatch
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="JobSkill" /> class.

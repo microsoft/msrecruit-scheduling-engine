@@ -2,14 +2,14 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..TalentEntities.Enum
+namespace HR.TA.TalentEntities.Enum
 {
     using System.Runtime.Serialization;
 
     /// <summary>
     /// Enum defining the delegation request status.
     /// </summary>
-    [DataContract(Namespace = "HR.TA..TalentEngagement")]
+    [DataContract(Namespace = "HR.TA.TalentEngagement")]
     public enum RequestStatus
     {
         /// <summary>

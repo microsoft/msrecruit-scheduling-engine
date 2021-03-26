@@ -2,15 +2,15 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Offer
 {
     using System;
     using System.Runtime.Serialization;
     using System.ComponentModel.DataAnnotations;
-    using HR.TA..Common.XrmHttp;
-    using HR.TA..Common.Provisioning.Entities.XrmEntities.Attract;
-    using HR.TA..Common.Provisioning.Entities.XrmEntities.Common;
-    using HR.TA..Common.Provisioning.Entities.XrmEntities.Optionset;
+    using HR.TA.Common.XrmHttp;
+    using HR.TA.Common.Provisioning.Entities.XrmEntities.Attract;
+    using HR.TA.Common.Provisioning.Entities.XrmEntities.Common;
+    using HR.TA.Common.Provisioning.Entities.XrmEntities.Optionset;
 
     [ODataEntity(PluralName = "msdyn_jobofferparticipants", SingularName = "msdyn_jobofferparticipant")]
     public class JobOfferParticipant : XrmODataEntity

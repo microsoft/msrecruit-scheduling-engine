@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.FalconEntities.Offer.Entity
+namespace HR.TA.Talent.FalconEntities.Offer.Entity
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Common.OfferManagement.Contracts.V2;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Common.OfferManagement.Contracts.V2;
 
     /// <summary>
     /// The job offer setting data contract.

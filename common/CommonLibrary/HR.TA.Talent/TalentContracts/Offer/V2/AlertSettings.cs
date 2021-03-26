@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V2
+namespace HR.TA.Common.OfferManagement.Contracts.V2
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;

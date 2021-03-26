@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Offer
 {
     public enum ESignatureType
     {

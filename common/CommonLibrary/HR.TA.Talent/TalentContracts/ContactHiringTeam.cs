@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Attract.Contract
+namespace HR.TA.Common.Attract.Contract
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 
-    using HR.TA..Common.Email.Contracts;
+    using HR.TA.Common.Email.Contracts;
 
 
     /// <summary>

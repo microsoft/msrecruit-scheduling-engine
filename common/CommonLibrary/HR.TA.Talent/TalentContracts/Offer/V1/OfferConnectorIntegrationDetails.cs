@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using HR.TA..Common.OfferManagement.Contracts.Enums.V1;
+using HR.TA.Common.OfferManagement.Contracts.Enums.V1;
 
-namespace HR.TA..Common.OfferManagement.Contracts.V1
+namespace HR.TA.Common.OfferManagement.Contracts.V1
 {
     /// <summary>
     /// The Entity used to push message to Service bus Queue for communication with Connector Service

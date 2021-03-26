@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Talent.TalentContracts.Screen
+namespace HR.TA.Talent.TalentContracts.Screen
 {
-    using HR.TA..Common.Contracts;
-    using HR.TA..Talent.EnumSetModel;
+    using HR.TA.Common.Contracts;
+    using HR.TA.Talent.EnumSetModel;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

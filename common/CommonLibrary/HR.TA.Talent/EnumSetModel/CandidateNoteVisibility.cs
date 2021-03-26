@@ -4,9 +4,9 @@
 //-----------------------------------------------------------------------
 using System.Runtime.Serialization;
 
-namespace HR.TA..TalentEntities.Enum
+namespace HR.TA.TalentEntities.Enum
 {
-    [DataContract(Namespace = "HR.TA..TalentEngagement")]
+    [DataContract(Namespace = "HR.TA.TalentEngagement")]
     public enum CandidateNoteVisibility
     {
         [EnumMember(Value = "private")]

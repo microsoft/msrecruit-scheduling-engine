@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using System.Runtime.Serialization;
 
-namespace HR.TA..Talent.FalconEntities.Attract
+namespace HR.TA.Talent.FalconEntities.Attract
 {
     [DataContract]
     public class FileAttachmentInfoEntity

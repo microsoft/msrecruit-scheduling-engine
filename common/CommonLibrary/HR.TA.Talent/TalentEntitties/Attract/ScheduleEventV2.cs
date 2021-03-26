@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Attract
 {
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..ScheduleService.Contracts.V1;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.ScheduleService.Contracts.V1;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;

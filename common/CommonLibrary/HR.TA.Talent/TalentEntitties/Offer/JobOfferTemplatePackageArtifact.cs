@@ -2,20 +2,20 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Offer
 {
     using System;
     using System.Runtime.Serialization;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using HR.TA..Common.XrmHttp;
-    using HR.TA..Common.Provisioning.Entities.XrmEntities.Optionset;
-    using HR.TA..Common.XrmHttp.Model;
+    using HR.TA.Common.XrmHttp;
+    using HR.TA.Common.Provisioning.Entities.XrmEntities.Optionset;
+    using HR.TA.Common.XrmHttp.Model;
 
     /// <summary>
     /// Job Offer Package Artifact
     /// </summary>
-    /// <seealso cref="HR.TA..Common.XrmHttp.XrmODataEntity" />
+    /// <seealso cref="HR.TA.Common.XrmHttp.XrmODataEntity" />
     [ODataEntity(PluralName = "msdyn_joboffertemplatepackageartifacts", SingularName = "msdyn_joboffertemplatepackageartifact")]
     public class JobOfferTemplatePackageArtifact : XrmODataEntity
     {

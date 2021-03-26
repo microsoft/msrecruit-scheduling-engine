@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V1
+namespace HR.TA.Common.OfferManagement.Contracts.V1
 {
     using System;
     using System.Runtime.Serialization;
     ////using Microsoft.AspNetCore.Http;
-    using HR.TA..Common.OfferManagement.Contracts.Enums.V1;
-    using HR.TA..Common.OfferManagement.Contracts.V2;
+    using HR.TA.Common.OfferManagement.Contracts.Enums.V1;
+    using HR.TA.Common.OfferManagement.Contracts.V2;
 
     /// <summary>
     /// The Offer note data contract.

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V2.Gdpr
+namespace HR.TA.Common.OfferManagement.Contracts.V2.Gdpr
 {
     /// <summary>
     /// Contract for Candidate informations details

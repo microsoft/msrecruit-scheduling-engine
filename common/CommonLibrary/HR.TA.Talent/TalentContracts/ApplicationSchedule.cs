@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// Contract for Job closing. 

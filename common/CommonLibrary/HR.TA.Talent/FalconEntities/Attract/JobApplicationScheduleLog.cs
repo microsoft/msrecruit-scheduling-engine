@@ -3,15 +3,15 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.FalconEntities.Attract
+namespace HR.TA.Talent.FalconEntities.Attract
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Common.Provisioning.Entities.FalconEntities.Attract;
-    using HR.TA..Common.TalentEntities.Common;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// The <see cref="JobApplicationScheduleLog"/> class represents the audit log entry for every action taken on job application schedule.

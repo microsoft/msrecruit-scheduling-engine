@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     using System.Runtime.Serialization;
     using System.Collections.Generic;
-    using HR.TA..Common.Contracts;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.Contracts;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// The job data contract.

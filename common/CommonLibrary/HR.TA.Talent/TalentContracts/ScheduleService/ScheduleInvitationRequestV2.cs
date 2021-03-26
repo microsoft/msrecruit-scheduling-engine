@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.ScheduleService
+namespace HR.TA.Talent.TalentContracts.ScheduleService
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

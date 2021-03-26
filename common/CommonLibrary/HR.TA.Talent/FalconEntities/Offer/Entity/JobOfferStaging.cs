@@ -6,14 +6,14 @@
 /// <summary>
 /// Namespace Offer Management Entities and Enums
 /// </summary>
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Offer
 {
     using System;
     using System.Runtime.Serialization;
 
-    using HR.TA..Common.DocumentDB.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
     using System.Collections.Generic;
-    using HR.TA..Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
 
     [DataContract]
     public class JobOfferStaging : DocDbEntity

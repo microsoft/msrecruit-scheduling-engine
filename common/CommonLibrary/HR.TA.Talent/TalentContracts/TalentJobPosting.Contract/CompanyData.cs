@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Talent.TalentContracts.TalentJobPosting.Contract
+namespace HR.TA.Talent.TalentContracts.TalentJobPosting.Contract
 {
-    using HR.TA..Common.EnvironmentSettings.Contracts;
+    using HR.TA.Common.EnvironmentSettings.Contracts;
     using System.Runtime.Serialization;
 
     /// <summary>The company data.</summary>

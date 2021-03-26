@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Talent.FalconEntities.IV.Screen
+namespace HR.TA.Talent.FalconEntities.IV.Screen
 {
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Talent.EnumSetModel;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Talent.EnumSetModel;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

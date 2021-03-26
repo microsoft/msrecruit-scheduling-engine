@@ -4,14 +4,14 @@
 //-----------------------------------------------------------------------
 
 // Note: This namespace needs to stay the same since the docdb collection name depends on it
-namespace HR.TA..TalentEngagementService.Data.Candidates.DocumentDB
+namespace HR.TA.TalentEngagementService.Data.Candidates.DocumentDB
 {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;
-    using HR.TA..Common.TalentAttract.Contract;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.TalentAttract.Contract;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary> Job Application Invitation </summary>
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Small closely related classes may be combined.")]

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Data.Contracts.V1
+namespace HR.TA.Common.OfferManagement.Data.Contracts.V1
 {
     using System.Runtime.Serialization;
 

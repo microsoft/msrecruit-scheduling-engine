@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..ScheduleService.Contracts.V1
+namespace HR.TA.ScheduleService.Contracts.V1
 {
-    using HR.TA..Talent.TalentContracts.InterviewService;
+    using HR.TA.Talent.TalentContracts.InterviewService;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 

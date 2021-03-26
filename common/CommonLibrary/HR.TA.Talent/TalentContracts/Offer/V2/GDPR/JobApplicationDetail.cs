@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V2.Gdpr
+namespace HR.TA.Common.OfferManagement.Contracts.V2.Gdpr
 {
     using System.Collections.Generic;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// Contract for Job Application Details.

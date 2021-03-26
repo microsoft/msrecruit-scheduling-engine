@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Talent.TalentContracts.InterviewService
+namespace HR.TA.Talent.TalentContracts.InterviewService
 {
-    using HR.TA..Common.TalentAttract.Contract;
+    using HR.TA.Common.TalentAttract.Contract;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

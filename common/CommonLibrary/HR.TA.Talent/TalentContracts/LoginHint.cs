@@ -5,7 +5,7 @@
 
 using System.Runtime.Serialization;
 
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     /// <summary>
     /// The information required for a login hint.

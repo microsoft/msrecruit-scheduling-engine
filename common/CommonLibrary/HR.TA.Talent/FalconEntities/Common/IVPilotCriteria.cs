@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using HR.TA..Common.DocumentDB.Contracts;
+using HR.TA.Common.DocumentDB.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace HR.TA..Talent.FalconEntities.Common
+namespace HR.TA.Talent.FalconEntities.Common
 {
     /// <summary>
     /// IV Pilot criteria for ring 0,1,2..

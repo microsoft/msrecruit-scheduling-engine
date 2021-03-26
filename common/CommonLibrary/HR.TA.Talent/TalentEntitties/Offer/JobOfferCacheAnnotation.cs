@@ -2,10 +2,10 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Offer
 {
-    using HR.TA..Common.XrmHttp;
-    using HR.TA..Common.XrmHttp.Model;
+    using HR.TA.Common.XrmHttp;
+    using HR.TA.Common.XrmHttp.Model;
     using System.Runtime.Serialization;
 
     [ODataEntity(PluralName = "annotations", SingularName = "annotation")]

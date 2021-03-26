@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.OfferRule
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.OfferRule
 {
-    using HR.TA..Common.DocumentDB.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
 

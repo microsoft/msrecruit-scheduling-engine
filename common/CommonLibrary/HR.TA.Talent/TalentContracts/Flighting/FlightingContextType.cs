@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Talent.TalentContracts.Flighting
+namespace HR.TA.Talent.TalentContracts.Flighting
 {
     using System.Runtime.Serialization;
 

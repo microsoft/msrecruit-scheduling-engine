@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..ScheduleService.Contracts.V1
+namespace HR.TA.ScheduleService.Contracts.V1
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;

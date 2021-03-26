@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Common.TalentEntities.Common;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// Entity to store the delegation request

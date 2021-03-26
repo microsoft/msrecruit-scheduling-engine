@@ -5,7 +5,7 @@
 
 using System;
 
-namespace HR.TA..Common.Integration.Contracts
+namespace HR.TA.Common.Integration.Contracts
 {
     public enum InvitationResponseStatus
     {

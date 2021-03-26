@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.InterviewService
+namespace HR.TA.Talent.TalentContracts.InterviewService
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;

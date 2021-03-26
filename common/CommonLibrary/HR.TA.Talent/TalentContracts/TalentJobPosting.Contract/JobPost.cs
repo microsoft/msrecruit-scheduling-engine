@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..TalentJobPosting.Contract
+namespace HR.TA.TalentJobPosting.Contract
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.TalentAttract.Contract;
-    using HR.TA..Common.TalentEntities.Common;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.TalentAttract.Contract;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// The job post data contract.

@@ -3,16 +3,16 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Common.TalentEntities.Common;
-    using HR.TA..Talent.FalconEntities;
-    using HR.TA..Talent.FalconEntities.Attract;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.Talent.FalconEntities;
+    using HR.TA.Talent.FalconEntities.Attract;
+    using HR.TA.TalentEntities.Enum;
 
     [DataContract]
     public class JobOpening : DocDbEntity

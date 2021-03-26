@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..TalentEntities.Enum
+namespace HR.TA.TalentEntities.Enum
 {
     using System.Runtime.Serialization;
 
     /// <summary>
     /// Job grade types.
     /// </summary>
-    [DataContract(Namespace = "HR.TA..TalentEngagement")]
+    [DataContract(Namespace = "HR.TA.TalentEngagement")]
     public enum JobOpeningJobGrade
     {
         /// <summary>

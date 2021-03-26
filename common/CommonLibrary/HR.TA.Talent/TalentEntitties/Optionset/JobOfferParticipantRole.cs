@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Optionset
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Optionset
 {
     public enum JobOfferParticipantRole
     {

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.EnumSetModel
+namespace HR.TA.Talent.EnumSetModel
 {
      using System.Runtime.Serialization;
 

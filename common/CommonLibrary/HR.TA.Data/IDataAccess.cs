@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.Data
+namespace HR.TA.Data
 {
     using System.Threading.Tasks;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.TalentEntities.Enum;
+    using HR.TA.Common.TalentAttract.Contract;
+    using HR.TA.TalentEntities.Enum;
 
     public interface IDataAccess
     {

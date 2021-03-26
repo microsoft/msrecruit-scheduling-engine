@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.EnumSetModel.SchedulingService
+namespace HR.TA.Talent.EnumSetModel.SchedulingService
 {
     using System.Runtime.Serialization;
 

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Integration.Contracts
+namespace HR.TA.Common.Integration.Contracts
 {
     using System.Collections.Generic;
 

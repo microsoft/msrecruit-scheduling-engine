@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace HR.TA..Talent.FalconEntities.Attract
+namespace HR.TA.Talent.FalconEntities.Attract
 {
     [DataContract]
     public class Skill

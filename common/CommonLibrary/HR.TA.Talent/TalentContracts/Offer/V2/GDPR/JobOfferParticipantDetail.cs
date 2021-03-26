@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V2.Gdpr
+namespace HR.TA.Common.OfferManagement.Contracts.V2.Gdpr
 {
-    using HR.TA..Common.OfferManagement.Contracts.Enums.V1;
+    using HR.TA.Common.OfferManagement.Contracts.Enums.V1;
 
     /// <summary>
     /// The person data contract.

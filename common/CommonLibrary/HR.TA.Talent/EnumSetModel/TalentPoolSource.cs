@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using System.Runtime.Serialization;
 
-namespace HR.TA..TalentEntities.Enum
+namespace HR.TA.TalentEntities.Enum
 {
     [DataContract]
     public enum TalentPoolSource

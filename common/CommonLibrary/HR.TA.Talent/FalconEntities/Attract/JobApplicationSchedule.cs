@@ -3,20 +3,20 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.FalconEntities.Attract
+namespace HR.TA.Talent.FalconEntities.Attract
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Common.Provisioning.Entities.FalconEntities.Attract;
-    using HR.TA..Common.TalentAttract.Contract;
-    using HR.TA..Common.TalentEntities.Common;
-    using HR.TA..ScheduleService.Contracts.V1;
-    using HR.TA..Talent.EnumSetModel;
-    using HR.TA..Talent.EnumSetModel.SchedulingService;
-    using HR.TA..Talent.FalconEntities.Attract.Conference;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Common.TalentAttract.Contract;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.Talent.EnumSetModel;
+    using HR.TA.Talent.EnumSetModel.SchedulingService;
+    using HR.TA.Talent.FalconEntities.Attract.Conference;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// The <see cref="JobApplicationSchedule"/> class represents the job application schedule entity.

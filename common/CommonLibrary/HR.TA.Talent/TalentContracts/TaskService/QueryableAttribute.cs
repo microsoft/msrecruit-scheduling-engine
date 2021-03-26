@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Talent.TalentContracts.TaskService
+namespace HR.TA.Talent.TalentContracts.TaskService
 {
     using System;
     using System.Collections.Generic;

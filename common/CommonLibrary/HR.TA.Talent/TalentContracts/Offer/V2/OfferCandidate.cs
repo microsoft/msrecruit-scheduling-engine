@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V2
+namespace HR.TA.Common.OfferManagement.Contracts.V2
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.OfferManagement.Contracts.V1;
+    using HR.TA.Common.OfferManagement.Contracts.V1;
 
     /// <summary>
     /// The OfferCandidate data contract

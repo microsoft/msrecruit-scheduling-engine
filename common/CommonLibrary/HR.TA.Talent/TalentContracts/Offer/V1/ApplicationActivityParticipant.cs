@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V1
+namespace HR.TA.Common.OfferManagement.Contracts.V1
 {
     using System;
-    using HR.TA..Common.OfferManagement.Contracts.Enums.V1;
+    using HR.TA.Common.OfferManagement.Contracts.Enums.V1;
 
     /// <summary>
     /// The participant for a job application activity.

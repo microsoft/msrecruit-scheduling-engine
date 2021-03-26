@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.TeamsIntegration
+namespace HR.TA.Talent.TalentContracts.TeamsIntegration
 {
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.TalentEntities.Enum;
     using System.Runtime.Serialization;
 
     /// <summary>

@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Attract
 {
     using System;
     using System.Runtime.Serialization;
-    using HR.TA..Common.TalentEntities.Common;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.TalentEntities.Enum;
 
     [DataContract]
     public class CandidateNote

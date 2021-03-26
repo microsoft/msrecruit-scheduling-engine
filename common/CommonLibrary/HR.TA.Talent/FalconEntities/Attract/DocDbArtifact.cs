@@ -4,9 +4,9 @@
 //-----------------------------------------------------------------------
 
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Attract
 {
-    using HR.TA..Common.DocumentDB.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
 
     /// <summary>The doc DB artifact.</summary>
     public class DocDbArtifact : DocDbEntity

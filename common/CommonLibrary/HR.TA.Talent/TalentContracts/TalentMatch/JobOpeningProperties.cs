@@ -5,7 +5,7 @@
 
 using System.Runtime.Serialization;
 
-namespace HR.TA..Talent.TalentContracts.TalentMatch
+namespace HR.TA.Talent.TalentContracts.TalentMatch
 {
     /// <summary>
     /// Job Opening Properties

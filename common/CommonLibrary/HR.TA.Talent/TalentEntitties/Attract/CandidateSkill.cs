@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Attract
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using HR.TA..Common.XrmHttp;
+    using HR.TA.Common.XrmHttp;
 
     [ODataEntity(PluralName = "msdyn_candidateskills", SingularName = "msdyn_candidateskill")]
     public class CandidateSkill : XrmODataEntity

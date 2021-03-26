@@ -7,9 +7,9 @@
 /// Namespace Offer Management Entities and Enums
 /// </summary>
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Offer
 {
-    using HR.TA..Common.DocumentDB.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
     using System.Runtime.Serialization;
 
     [DataContract]

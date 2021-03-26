@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.FalconEntities.IV.Screen
+namespace HR.TA.Talent.FalconEntities.IV.Screen
 {
-    using HR.TA..Common.DocumentDB.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
     using System;
     using System.Runtime.Serialization;
 

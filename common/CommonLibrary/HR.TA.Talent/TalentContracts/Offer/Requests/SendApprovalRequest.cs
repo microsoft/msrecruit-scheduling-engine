@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.BusinessLibrary.Requests
+namespace HR.TA.Common.OfferManagement.BusinessLibrary.Requests
 {
-    using HR.TA..Common.OfferManagement.Contracts.V1;
+    using HR.TA.Common.OfferManagement.Contracts.V1;
 
     /// <summary>
     /// Extend Offer Request

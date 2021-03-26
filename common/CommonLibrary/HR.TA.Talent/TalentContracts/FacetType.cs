@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 
 
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     using System.Runtime.Serialization;
 

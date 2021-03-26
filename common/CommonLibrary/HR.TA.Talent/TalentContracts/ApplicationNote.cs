@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     using System;
     using System.Runtime.Serialization;
-    using HR.TA..Common.Contracts;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.Contracts;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// The Application note data contract.

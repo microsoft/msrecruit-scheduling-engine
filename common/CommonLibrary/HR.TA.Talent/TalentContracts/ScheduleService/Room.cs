@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..ScheduleService.Contracts.V1
+namespace HR.TA.ScheduleService.Contracts.V1
 {
     using System.Runtime.Serialization;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// Room contract

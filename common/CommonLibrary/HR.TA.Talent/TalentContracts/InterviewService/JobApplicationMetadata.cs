@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.InterviewService
+namespace HR.TA.Talent.TalentContracts.InterviewService
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.Provisioning.Entities.FalconEntities.Attract;
-    using HR.TA..Common.TalentEntities.Common;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// Applicants Metadata contract

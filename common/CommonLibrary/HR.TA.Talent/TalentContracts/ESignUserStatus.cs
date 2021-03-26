@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..TalentEngagementService.Data;
+    using HR.TA.TalentEngagementService.Data;
 
     /// <summary>
     /// Specifies the Data Contract for ESign Account (This will be moved to Key Vault)

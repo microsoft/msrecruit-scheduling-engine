@@ -6,7 +6,7 @@
 /// <summary>
 /// Namespace Offer Management Entities and Enums
 /// </summary>
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Offer
 {
     using System.Runtime.Serialization;
 

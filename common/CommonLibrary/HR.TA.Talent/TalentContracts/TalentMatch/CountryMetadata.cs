@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.TalentMatch
+namespace HR.TA.Talent.TalentContracts.TalentMatch
 {
     using System.Runtime.Serialization;
 

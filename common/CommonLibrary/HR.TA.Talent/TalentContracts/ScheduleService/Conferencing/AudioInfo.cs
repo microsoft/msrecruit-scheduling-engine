@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.ScheduleService.Conferencing
+namespace HR.TA.Talent.TalentContracts.ScheduleService.Conferencing
 {
     using Microsoft.Graph;
     using System.Runtime.Serialization;
@@ -51,7 +51,7 @@ namespace HR.TA..Talent.TalentContracts.ScheduleService.Conferencing
         public string DialInUrl { get; set; }
 
         /// <summary>
-        /// Performs an implicit conversion from <see cref="AudioConferencing" /> to <see cref="HR.TA..Talent.TalentContracts.ScheduleService.Conferencing.AudioInfo" />.
+        /// Performs an implicit conversion from <see cref="AudioConferencing" /> to <see cref="HR.TA.Talent.TalentContracts.ScheduleService.Conferencing.AudioInfo" />.
         /// </summary>
         /// <param name="audioConferencing">The instance of <see cref="AudioConferencing"/>.</param>
         /// <returns>

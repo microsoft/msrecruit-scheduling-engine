@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using HR.TA..Common.DocumentDB.Contracts;
+using HR.TA.Common.DocumentDB.Contracts;
 using System.Runtime.Serialization;
 
-namespace HR.TA..Talent.FalconEntities.Common
+namespace HR.TA.Talent.FalconEntities.Common
 {
     /// <summary>
     /// IV Pilot Hiring Manger criteria for ring 0,1,2..

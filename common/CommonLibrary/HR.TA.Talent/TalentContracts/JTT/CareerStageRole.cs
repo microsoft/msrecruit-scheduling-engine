@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.JTT
+namespace HR.TA.Talent.TalentContracts.JTT
 {
     using System;
     using System.Runtime.Serialization;

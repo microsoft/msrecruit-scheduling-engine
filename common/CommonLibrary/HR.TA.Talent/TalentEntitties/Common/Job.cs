@@ -2,14 +2,14 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Common
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Common
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.XrmHttp;
-    using HR.TA..Common.Provisioning.Entities.XrmEntities.Attract;
+    using HR.TA.Common.XrmHttp;
+    using HR.TA.Common.Provisioning.Entities.XrmEntities.Attract;
 
     [ODataEntity(PluralName = "cdm_jobs", SingularName = "cdm_job")]
     public class Job : XrmODataEntity

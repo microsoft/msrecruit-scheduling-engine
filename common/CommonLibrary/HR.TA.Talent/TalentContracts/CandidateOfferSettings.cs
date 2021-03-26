@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Attract.Contract
+namespace HR.TA.Common.Attract.Contract
 {
-    using HR.TA..Common.TalentAttract.Contract;
+    using HR.TA.Common.TalentAttract.Contract;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

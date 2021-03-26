@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using System.Runtime.Serialization;
 
-namespace HR.TA..Talent.TalentContracts.InterviewService
+namespace HR.TA.Talent.TalentContracts.InterviewService
 {
     [DataContract]
     public class FileAttachmentInfo

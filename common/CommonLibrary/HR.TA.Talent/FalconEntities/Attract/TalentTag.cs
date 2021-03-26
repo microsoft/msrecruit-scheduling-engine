@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using HR.TA..Common.DocumentDB.Contracts;
+using HR.TA.Common.DocumentDB.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace HR.TA..Talent.FalconEntities.Attract
+namespace HR.TA.Talent.FalconEntities.Attract
 {
     [DataContract]
     public class TalentTag : DocDbEntity

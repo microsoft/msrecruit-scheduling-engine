@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.TeamsIntegration
+namespace HR.TA.Talent.TalentContracts.TeamsIntegration
 {
     using System.Runtime.Serialization;
-    using HR.TA..Talent.TalentContracts.InterviewService;
+    using HR.TA.Talent.TalentContracts.InterviewService;
 
     /// <summary>
     /// Candidacy Details

@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.InterviewService
+namespace HR.TA.Talent.TalentContracts.InterviewService
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Talent.TalentContracts.InterviewService;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Talent.TalentContracts.InterviewService;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// The upcoming interviews for candidate data contract.

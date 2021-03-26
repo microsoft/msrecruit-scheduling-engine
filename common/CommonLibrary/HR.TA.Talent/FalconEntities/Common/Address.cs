@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.TalentEntities.Common
+namespace HR.TA.Common.TalentEntities.Common
 {
     using System.Runtime.Serialization;
-    using HR.TA..Common.TalentEntities.Enum.Common;
+    using HR.TA.Common.TalentEntities.Enum.Common;
 
     [DataContract]
     public class Address

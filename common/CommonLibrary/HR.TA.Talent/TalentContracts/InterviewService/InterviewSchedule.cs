@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.InterviewService
+namespace HR.TA.Talent.TalentContracts.InterviewService
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.TalentAttract.Contract;
-    using HR.TA..Talent.EnumSetModel;
+    using HR.TA.Common.TalentAttract.Contract;
+    using HR.TA.Talent.EnumSetModel;
 
     /// <summary>
     /// The interview schedule data contract.

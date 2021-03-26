@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.FalconEntities.Attract.Conference
+namespace HR.TA.Talent.FalconEntities.Attract.Conference
 {
     using System;
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Talent.EnumSetModel.SchedulingService;
-    using HR.TA..Talent.TalentContracts.ScheduleService.Conferencing;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Talent.EnumSetModel.SchedulingService;
+    using HR.TA.Talent.TalentContracts.ScheduleService.Conferencing;
 
     /// <summary>
     /// The <see cref="ConferenceMeeting"/> class represents the conference meeting entity.

@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Offer
 {
     using System;
     using System.Runtime.Serialization;
     using System.ComponentModel.DataAnnotations;
     using System.Collections.Generic;
-    using HR.TA..Common.XrmHttp;
+    using HR.TA.Common.XrmHttp;
 
     [ODataEntity(PluralName = "msdyn_joboffertokenvalues", SingularName = "msdyn_joboffertokenvalue")]
     public class JobOfferTokenValue : XrmODataEntity

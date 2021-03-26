@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..ScheduleService.Contracts.V1
+namespace HR.TA.ScheduleService.Contracts.V1
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Talent.EnumSetModel;
+    using HR.TA.Talent.EnumSetModel;
 
     /// <summary>
     /// A meeting event

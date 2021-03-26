@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.ScheduleService
+namespace HR.TA.Talent.TalentContracts.ScheduleService
 {
     using Microsoft.AspNetCore.Http;
     using System.Collections.Generic;

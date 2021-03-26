@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..TalentEntities.Common
+namespace HR.TA.TalentEntities.Common
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Common.TalentEntities.Common;
-    using HR.TA..TalentEntities.Enum.Common;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.TalentEntities.Enum.Common;
 
     /// <summary> A contact representing a worker, such as a new hire, worker, manager, etc. </summary>
     [DataContract]

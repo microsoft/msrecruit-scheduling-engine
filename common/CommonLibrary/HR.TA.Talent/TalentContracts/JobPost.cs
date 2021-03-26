@@ -4,10 +4,10 @@
 //-----------------------------------------------------------------------
 
 // Note: This namespace needs to stay the same since the docdb collection name depends on it
-namespace HR.TA..Common.Attract.Data.DocumentDB
+namespace HR.TA.Common.Attract.Data.DocumentDB
 {
     using System.Runtime.Serialization;
-    using JobPostContract = HR.TA..TalentJobPosting.Contract;
+    using JobPostContract = HR.TA.TalentJobPosting.Contract;
 
     /// <summary>
     /// The job post class

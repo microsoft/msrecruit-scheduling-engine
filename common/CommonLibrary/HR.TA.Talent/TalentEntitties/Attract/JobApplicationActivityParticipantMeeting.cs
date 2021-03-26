@@ -1,10 +1,10 @@
 ﻿
 
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Attract
 {
-    using HR.TA..Common.Provisioning.Entities.XrmEntities.Common;
-    using HR.TA..Common.XrmHttp;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.Provisioning.Entities.XrmEntities.Common;
+    using HR.TA.Common.XrmHttp;
+    using HR.TA.TalentEntities.Enum;
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.OfferRule
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.OfferRule
 {
     using System.Runtime.Serialization;
 

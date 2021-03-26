@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..ScheduleService.Contracts.V1
+namespace HR.TA.ScheduleService.Contracts.V1
 {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;
     using System.Text;
-    using HR.TA..Talent.EnumSetModel.SchedulingService;
+    using HR.TA.Talent.EnumSetModel.SchedulingService;
 
     /// <summary>
     /// User permission for scheduling service

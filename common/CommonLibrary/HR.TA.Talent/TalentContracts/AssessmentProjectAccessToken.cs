@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 
 // Note: This namespace needs to stay the same since the docdb collection name depends on it.
-namespace HR.TA..Common.Attract.Contract
+namespace HR.TA.Common.Attract.Contract
 {
     using System.Runtime.Serialization;
 

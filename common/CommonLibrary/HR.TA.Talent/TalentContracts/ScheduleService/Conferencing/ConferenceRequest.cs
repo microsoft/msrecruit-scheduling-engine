@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.ScheduleService.Conferencing
+namespace HR.TA.Talent.TalentContracts.ScheduleService.Conferencing
 {
     using System;
     using System.Collections.Generic;

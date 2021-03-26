@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.ScheduleService.Conferencing
+namespace HR.TA.Talent.TalentContracts.ScheduleService.Conferencing
 {
     using System;
     using System.Net;
     using System.Runtime.Serialization;
     using Microsoft.Graph;
-    using HR.TA..Talent.EnumSetModel.SchedulingService;
-    using HR.TA..Talent.FalconEntities.Attract.Conference;
+    using HR.TA.Talent.EnumSetModel.SchedulingService;
+    using HR.TA.Talent.FalconEntities.Attract.Conference;
     using Newtonsoft.Json;
 
     /// <summary>

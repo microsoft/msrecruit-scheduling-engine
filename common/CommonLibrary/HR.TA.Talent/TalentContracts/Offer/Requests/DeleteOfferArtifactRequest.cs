@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.BusinessLibrary.Requests
+namespace HR.TA.Common.OfferManagement.BusinessLibrary.Requests
 {
     using System.IO;
 

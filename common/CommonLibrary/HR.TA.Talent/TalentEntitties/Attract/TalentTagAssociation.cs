@@ -2,15 +2,15 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-using HR.TA..Common.XrmHttp;
-using HR.TA..TalentEntities.Enum;
+using HR.TA.Common.XrmHttp;
+using HR.TA.TalentEntities.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Attract
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Attract
 {
     [ODataEntity(PluralName = "msdyn_talenttagassociations", SingularName = "msdyn_talenttagassociation")]
     public class TalentTagAssociation : XrmODataEntity

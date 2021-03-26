@@ -3,15 +3,15 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using HR.TA..Common.Provisioning.Entities.FalconEntities.Attract;
-using HR.TA..Talent.FalconEntities.Attract;
-using HR.TA..TalentEntities.Enum;
+using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+using HR.TA.Talent.FalconEntities.Attract;
+using HR.TA.TalentEntities.Enum;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace HR.TA..Talent.FalconEntities
+namespace HR.TA.Talent.FalconEntities
 {
     [DataContract]
     public class JobOpeningStage

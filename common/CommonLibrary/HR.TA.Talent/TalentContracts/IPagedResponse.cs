@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-using HR.TA..Common.Contracts;
+using HR.TA.Common.Contracts;
 using System.Collections.Generic;
 
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     /// <summary>
     /// Interface paged response.

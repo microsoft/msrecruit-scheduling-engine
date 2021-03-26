@@ -4,7 +4,7 @@
 //-----------------------------------------------------------------------
 using System.Runtime.Serialization;
 
-namespace HR.TA..Talent.EnumSetModel.SchedulingService
+namespace HR.TA.Talent.EnumSetModel.SchedulingService
 {
     /// <summary>
     /// The <see cref="ConferenceProvider"/> enumeration has meeting provider values.

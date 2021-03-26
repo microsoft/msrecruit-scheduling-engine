@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.V1
+namespace HR.TA.Common.OfferManagement.Contracts.V1
 {
     using System.Collections.Generic;
-    using HR.TA..TalentEntities.Enum;
-    using HR.TA..Common.OfferManagement.Contracts.V2;
+    using HR.TA.TalentEntities.Enum;
+    using HR.TA.Common.OfferManagement.Contracts.V2;
 
     /// <summary>
     /// Job application contract.

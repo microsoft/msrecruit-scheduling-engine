@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace HR.TA..Common.Integration.Contracts
+namespace HR.TA.Common.Integration.Contracts
 {
     public enum CandidateExternalSource
     {

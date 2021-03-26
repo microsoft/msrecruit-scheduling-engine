@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Common.OfferManagement.Contracts.V2
+namespace HR.TA.Common.OfferManagement.Contracts.V2
 {
     using System.Runtime.Serialization;
 

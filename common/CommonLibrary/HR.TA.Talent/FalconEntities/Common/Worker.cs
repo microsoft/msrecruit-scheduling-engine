@@ -3,15 +3,15 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.TalentEntities.Common
+namespace HR.TA.Common.TalentEntities.Common
 {
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Common.Provisioning.Entities.FalconEntities.Attract;
-    using HR.TA..Common.TalentEntities.Enum.Common;
-    using HR.TA..Common.Web.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Common.TalentEntities.Enum.Common;
+    using HR.TA.Common.Web.Contracts;
 
     /// <summary> A contact representing a worker, such as a new hire, worker, manager, etc. </summary>
     [DataContract]

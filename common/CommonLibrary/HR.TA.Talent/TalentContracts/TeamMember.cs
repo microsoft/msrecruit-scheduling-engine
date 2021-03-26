@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.Serialization;
-    using HR.TA..Common.Contracts;
-    using HR.TA..TalentEntities.Enum;
-    using HR.TA..TalentEntities.Enum.Common;
+    using HR.TA.Common.Contracts;
+    using HR.TA.TalentEntities.Enum;
+    using HR.TA.TalentEntities.Enum.Common;
 
     /// <summary>
     /// Team member 

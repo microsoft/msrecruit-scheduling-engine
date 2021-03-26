@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities
 {
     using System;
 

@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..TalentEntities.Enum
+namespace HR.TA.TalentEntities.Enum
 {
     using System.Runtime.Serialization;
 

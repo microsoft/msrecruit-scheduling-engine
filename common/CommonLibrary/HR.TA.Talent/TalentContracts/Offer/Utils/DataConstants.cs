@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.Contracts.Utils
+namespace HR.TA.Common.OfferManagement.Contracts.Utils
 {
     /// <summary>
     /// Data constants

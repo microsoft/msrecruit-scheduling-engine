@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace HR.TA..Talent.FalconEntities.Common
+namespace HR.TA.Talent.FalconEntities.Common
 {
     [DataContract]
     public enum IVRequisitionPilotType

@@ -3,15 +3,15 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.OfferManagement.BusinessLibrary.Requests
+namespace HR.TA.Common.OfferManagement.BusinessLibrary.Requests
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using HR.TA..Common.Base.Security;
-    using HR.TA..ServicePlatform.Context;
+    using HR.TA.Common.Base.Security;
+    using HR.TA.ServicePlatform.Context;
 
     /// <summary>
     /// Base request

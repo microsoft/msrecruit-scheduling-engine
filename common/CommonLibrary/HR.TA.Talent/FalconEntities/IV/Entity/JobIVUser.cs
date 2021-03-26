@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.FalconEntities.IV.Entity
+namespace HR.TA.Talent.FalconEntities.IV.Entity
 {
-    using HR.TA..Common.Web.Contracts;
-    using HR.TA..Common.DocumentDB.Contracts;
-    using HR.TA..Talent.TalentContracts.InterviewService;
+    using HR.TA.Common.Web.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
+    using HR.TA.Talent.TalentContracts.InterviewService;
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System;

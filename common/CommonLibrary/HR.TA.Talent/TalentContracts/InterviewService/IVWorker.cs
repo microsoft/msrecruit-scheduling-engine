@@ -4,9 +4,9 @@
 //-----------------------------------------------------------------------
 
 
-namespace HR.TA..Talent.TalentContracts.InterviewService
+namespace HR.TA.Talent.TalentContracts.InterviewService
 {
-    using HR.TA..Common.TalentEntities.Common;
+    using HR.TA.Common.TalentEntities.Common;
     using System.Runtime.Serialization;
 
     /// <summary>

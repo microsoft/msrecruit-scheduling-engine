@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
-    using HR.TA..Common.Attract.Data.DocumentDB;
+    using HR.TA.Common.Attract.Data.DocumentDB;
     using System.Runtime.Serialization;
 
     /// <summary>

@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..Talent.TalentContracts.InterviewService
+namespace HR.TA.Talent.TalentContracts.InterviewService
 {
-    using HR.TA..Common.TalentAttract.Contract;
-    using HR.TA..Talent.FalconEntities.Attract;
-    using HR.TA..TalentEntities.Enum;
+    using HR.TA.Common.TalentAttract.Contract;
+    using HR.TA.Talent.FalconEntities.Attract;
+    using HR.TA.TalentEntities.Enum;
     using System;
     using System.Collections.Generic;
     using System.Runtime.Serialization;

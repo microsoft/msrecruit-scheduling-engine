@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.TaskService
+namespace HR.TA.Talent.TalentContracts.TaskService
 {
     /// <summary>The job status.</summary>
     public static class JobStatus

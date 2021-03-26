@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.TalentAttract.Contract
+namespace HR.TA.Common.TalentAttract.Contract
 {
     using System.Runtime.Serialization;
-    using HR.TA..TalentJobPosting.Contract;
+    using HR.TA.TalentJobPosting.Contract;
 
     /// <summary>The job post application with profile.</summary>
     [DataContract]

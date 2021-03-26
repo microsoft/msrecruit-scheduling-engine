@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Talent.TalentContracts.QueryStringParameters
+namespace HR.TA.Talent.TalentContracts.QueryStringParameters
 {
     using System.Runtime.Serialization;
 

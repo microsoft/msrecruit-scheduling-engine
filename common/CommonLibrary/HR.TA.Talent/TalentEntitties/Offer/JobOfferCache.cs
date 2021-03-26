@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //------------------------------------------------------------------------
-namespace HR.TA..Common.Provisioning.Entities.XrmEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.XrmEntities.Offer
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.Runtime.Serialization;
-    using HR.TA..Common.XrmHttp;
+    using HR.TA.Common.XrmHttp;
 
     [ODataEntity(PluralName = "msdyn_offercaches", SingularName = "msdyn_offercache")]
     public class JobOfferCache : XrmODataEntity

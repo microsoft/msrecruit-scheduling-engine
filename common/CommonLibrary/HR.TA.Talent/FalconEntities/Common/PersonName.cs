@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.TalentEntities.Common
+namespace HR.TA.Common.TalentEntities.Common
 {
     using System.Runtime.Serialization;
 

@@ -2,15 +2,15 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA..TalentEntities.Enum
+namespace HR.TA.TalentEntities.Enum
 {
-    using HR.TA..Talent.FalconEntities.Attract;
+    using HR.TA.Talent.FalconEntities.Attract;
     using System.Runtime.Serialization;
 
     /// <summary>
     /// Enumeration of the actions that can be performed on a <see cref="JobApplicationSchedule"/>
     /// </summary>
-    [DataContract(Namespace = "HR.TA..TalentEngagement")]
+    [DataContract(Namespace = "HR.TA.TalentEngagement")]
     public enum JobApplicationScheduleAction
     {
         /// <summary>

@@ -3,10 +3,10 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace HR.TA..Common.Provisioning.Entities.FalconEntities.Offer
+namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Offer
 {
     using System.Runtime.Serialization;
-    using HR.TA..Common.DocumentDB.Contracts;
+    using HR.TA.Common.DocumentDB.Contracts;
 
     [DataContract]
     public class ESignDetail : DocDbEntity
