@@ -19,7 +19,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
 
     - name: Restore Packages
-      run: nuget restore CommonLibrary/CommonLibrary.sln
+      run: nuget restore HR.TA.CommonLibrary/HR.TA.CommonLibrary.sln
 
     - name: Build Solution
       run: |
