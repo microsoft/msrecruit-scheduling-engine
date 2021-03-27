@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
+namespace HR.TA.ScheduleService.BusinessLibrary.NotifyCandidate
 {
-    using MS.GTA.Common.Base.Security.V2;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.BusinessLibrary.Notification;
-    using MS.GTA.ScheduleService.Data.DataProviders;
+    using HR.TA.Common.Base.Security.V2;
+    using HR.TA.Common.Base.ServiceContext;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.BusinessLibrary.Notification;
+    using HR.TA.ScheduleService.Data.DataProviders;
 
     /// <summary>
     /// The <see cref="CandidateCommunicatorMakers"/> stores object references essential to construct <see cref="CandidateCommunicator"/>.

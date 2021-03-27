@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.Providers
 {
     using System;
     using System.Collections.Generic;
@@ -11,20 +11,20 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using System.Net.Http;
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using HR.TA.Common.MSGraph.Configuration;
+    using HR.TA.CommonDataService.Common.Internal;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.MSGraph;
-    using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Utils;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
+    using HR.TA.Common.Base.Configuration;
+    using HR.TA.Common.MSGraph;
+    using HR.TA.ScheduleService.BusinessLibrary.Configurations;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Utils;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Context;
     using Newtonsoft.Json;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ScheduleService.Contracts;
+    using HR.TA.ServicePlatform.Exceptions;
+    using HR.TA.ScheduleService.Contracts;
 
     /// <summary>
     /// Class to work on room resources
@@ -155,7 +155,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
             {
                 this.httpClient.DefaultRequestHeaders.Authorization = schedulerGraphToken;
 
-                for (int i = 1; i <= MS.GTA.Common.Email.Constants.MaxRetryCount; i++)
+                for (int i = 1; i <= HR.TA.Common.Email.Constants.MaxRetryCount; i++)
                 {
                     var message = new HttpRequestMessage(HttpMethod.Get, url);
                     message.Headers.Authorization = schedulerGraphToken;

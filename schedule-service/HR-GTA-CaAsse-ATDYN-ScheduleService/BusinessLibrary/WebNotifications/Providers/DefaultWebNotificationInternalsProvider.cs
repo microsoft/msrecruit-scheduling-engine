@@ -2,18 +2,18 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Providers
 {
     using System;
     using System.Collections.Generic;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Configurations;
-    using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Extractors;
-    using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates.Providers;
-    using MS.GTA.ScheduleService.Data.DataProviders;
-    using MS.GTA.ScheduleService.Data.Models;
-    using MS.GTA.ServicePlatform.Configuration;
+    using HR.TA.Common.WebNotifications.Interfaces;
+    using HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Configurations;
+    using HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Extractors;
+    using HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Templates.Providers;
+    using HR.TA.ScheduleService.Data.DataProviders;
+    using HR.TA.ScheduleService.Data.Models;
+    using HR.TA.ServicePlatform.Configuration;
 
     /// <summary>
     /// The <see cref="DefaultWebNotificationInternalsProvider"/> class implements internal objects factory.

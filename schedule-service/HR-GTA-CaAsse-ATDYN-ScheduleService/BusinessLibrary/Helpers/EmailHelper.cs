@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Helpers
+namespace HR.TA.ScheduleService.BusinessLibrary.Helpers
 {
     using System;
     using System.Collections.Generic;
@@ -11,11 +11,11 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Helpers
     using System.Text;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Data.DataProviders;
-    using MS.GTA.ScheduleService.Utils;
-    using MS.GTA.Talent.TalentContracts.ScheduleService;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Data.DataProviders;
+    using HR.TA.ScheduleService.Utils;
+    using HR.TA.Talent.TalentContracts.ScheduleService;
     using TimeZoneConverter;
     using TimeZoneNames;
 

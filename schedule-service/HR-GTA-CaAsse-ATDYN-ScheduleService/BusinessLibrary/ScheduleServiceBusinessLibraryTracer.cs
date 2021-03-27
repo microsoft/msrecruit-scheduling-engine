@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary
+namespace HR.TA.ScheduleService.BusinessLibrary
 {
-    using MS.GTA.ServicePlatform.Tracing;
+    using HR.TA.ServicePlatform.Tracing;
 
     /// <summary>
     /// The user directory service tracer.

@@ -2,30 +2,30 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
+namespace HR.TA.ScheduleService.BusinessLibrary.Business.V1
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.BusinessLibrary.Notification;
-    using MS.GTA.ScheduleService.BusinessLibrary.Providers;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Data.DataProviders;
-    using MS.GTA.ScheduleService.FalconData.Query;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.Data.DataAccess;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.BusinessLibrary.Notification;
+    using HR.TA.ScheduleService.BusinessLibrary.Providers;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Data.DataProviders;
+    using HR.TA.ScheduleService.FalconData.Query;
+    using HR.TA.ServicePlatform.Exceptions;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.Data.DataAccess;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.TalentEntities.Enum;
-    using MS.GTA.ScheduleService.Data.Models;
-    using MS.GTA.ScheduleService.Contracts.V1.Flights;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.Common.WebNotifications.Models;
-    using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Providers;
-    using MS.GTA.Common.Base.ServiceContext;
+    using HR.TA.TalentEntities.Enum;
+    using HR.TA.ScheduleService.Data.Models;
+    using HR.TA.ScheduleService.Contracts.V1.Flights;
+    using HR.TA.Common.WebNotifications.Interfaces;
+    using HR.TA.Common.WebNotifications.Models;
+    using HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Providers;
+    using HR.TA.Common.Base.ServiceContext;
 
     /// <summary>
     /// Notification Manager

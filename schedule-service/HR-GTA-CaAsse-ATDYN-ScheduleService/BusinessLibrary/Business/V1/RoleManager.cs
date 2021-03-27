@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
+namespace HR.TA.ScheduleService.BusinessLibrary.Business.V1
 {
     using System;
     using System.Collections.Generic;
@@ -11,16 +11,16 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using System.Threading.Tasks;
     using Castle.Core.Internal;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.Web.Contracts;
-    using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ScheduleService.Contracts.V1.Flights;
-    using MS.GTA.ScheduleService.Data.DataProviders;
-    using MS.GTA.ScheduleService.FalconData.Query;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.TalentEntities.Enum;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Common.Web.Contracts;
+    using HR.TA.ScheduleService.BusinessLibrary.Exceptions;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ScheduleService.Contracts.V1.Flights;
+    using HR.TA.ScheduleService.Data.DataProviders;
+    using HR.TA.ScheduleService.FalconData.Query;
+    using HR.TA.ServicePlatform.Exceptions;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// Role Manager implementation

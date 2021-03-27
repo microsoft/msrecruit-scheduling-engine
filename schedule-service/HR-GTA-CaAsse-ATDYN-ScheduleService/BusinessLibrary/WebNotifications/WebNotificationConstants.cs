@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications
+namespace HR.TA.ScheduleService.BusinessLibrary.WebNotifications
 {
     /// <summary>
     /// The <see cref="WebNotificationConstants"/> class holds the constants specific to web notifications.

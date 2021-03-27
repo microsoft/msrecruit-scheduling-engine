@@ -3,11 +3,11 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary
+namespace HR.TA.ScheduleService.BusinessLibrary
 {
     using System;
     using System.Linq;
-    using MS.GTA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Configuration;
 
     /// <summary>
     /// Scheduler user configuration settings class

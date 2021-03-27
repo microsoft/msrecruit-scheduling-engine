@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Providers
 {
     using System.Collections.Generic;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.ScheduleService.Data.Models;
+    using HR.TA.Common.WebNotifications.Interfaces;
+    using HR.TA.ScheduleService.Data.Models;
 
     /// <summary>
     /// The <see cref="IWebNotificationInternalsProvider"/> interface provides a mechanism for internal objects factory.

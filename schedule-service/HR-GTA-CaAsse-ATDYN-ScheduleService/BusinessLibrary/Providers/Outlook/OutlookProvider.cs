@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.Providers
 {
     using System;
     using System.Collections.Generic;
@@ -16,24 +16,24 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using Microsoft.Azure.ServiceBus;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.MSGraph;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Data.Helper;
-    using MS.GTA.ScheduleService.Utils;
-    using MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters;
-    using MS.GTA.ServicePlatform.Azure.Security;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using HR.TA.Common.Base.Configuration;
+    using HR.TA.Common.Base.Security;
+    using HR.TA.Common.MSGraph;
+    using HR.TA.Common.MSGraph.Configuration;
+    using HR.TA.CommonDataService.Common.Internal;
+    using HR.TA.ScheduleService.BusinessLibrary.Configurations;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Data.Helper;
+    using HR.TA.ScheduleService.Utils;
+    using HR.TA.ServicePlatform.AspNetCore.Mvc.Filters;
+    using HR.TA.ServicePlatform.Azure.Security;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Context;
+    using HR.TA.ServicePlatform.Exceptions;
     using Newtonsoft.Json;
-    using Email = MS.GTA.Common.Email;
-    using Message = MS.GTA.ScheduleService.Contracts.V1.Message;
+    using Email = HR.TA.Common.Email;
+    using Message = HR.TA.ScheduleService.Contracts.V1.Message;
 
     /// <summary>
     /// The provider class for the outlook graph.

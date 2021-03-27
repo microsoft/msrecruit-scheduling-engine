@@ -2,28 +2,28 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Extractors
+namespace HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Extractors
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.WebNotifications;
-    using MS.GTA.Common.WebNotifications.Exceptions;
-    using MS.GTA.Common.WebNotifications.Interfaces;
-    using MS.GTA.Common.WebNotifications.Models;
-    using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
-    using MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Configurations;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Data.DataProviders;
-    using MS.GTA.ScheduleService.Data.Models;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.Talent.TalentContracts.InterviewService;
-    using MS.GTA.TalentEntities.Enum;
+    using HR.TA.Common.Base.Security;
+    using HR.TA.Common.Base.ServiceContext;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Common.WebNotifications;
+    using HR.TA.Common.WebNotifications.Exceptions;
+    using HR.TA.Common.WebNotifications.Interfaces;
+    using HR.TA.Common.WebNotifications.Models;
+    using HR.TA.ScheduleService.BusinessLibrary.Exceptions;
+    using HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Configurations;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Data.DataProviders;
+    using HR.TA.ScheduleService.Data.Models;
+    using HR.TA.ServicePlatform.Context;
+    using HR.TA.Talent.TalentContracts.InterviewService;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// The <see cref="InviteStatusNotificationDataExtractor"/> class helps to extract the invite status update event's web notification properties.

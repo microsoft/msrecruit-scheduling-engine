@@ -3,17 +3,17 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
+namespace HR.TA.ScheduleService.BusinessLibrary.Notification
 {
     using System.Collections.Generic;
     using System.Net;
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.Common.Email.GraphContracts;
-    using MS.GTA.Common.Email.SendGridContracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
+    using HR.TA.Common.Common.Common.Email.Contracts;
+    using HR.TA.Common.Email.GraphContracts;
+    using HR.TA.Common.Email.SendGridContracts;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.Talent.EnumSetModel.SchedulingService;
 
     /// <summary>The Notification client interface.</summary>
     public interface INotificationClient

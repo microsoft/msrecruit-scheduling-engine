@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
+namespace HR.TA.ScheduleService.BusinessLibrary.Interface
 {
     using System.Threading.Tasks;
 

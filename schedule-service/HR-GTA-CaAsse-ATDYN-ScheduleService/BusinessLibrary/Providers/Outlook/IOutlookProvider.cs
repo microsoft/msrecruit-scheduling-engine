@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.Providers
 {
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Contracts.V1;
 
     /// <summary>
     /// The interface for the outlook service provider.

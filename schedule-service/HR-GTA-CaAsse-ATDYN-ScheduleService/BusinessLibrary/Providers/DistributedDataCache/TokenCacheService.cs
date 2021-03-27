@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.Providers
 {
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.DataProtection;
     using Microsoft.Extensions.Caching.Distributed;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using HR.TA.CommonDataService.Common.Internal;
 
     /// <summary>
     /// Implementation of Token service class.

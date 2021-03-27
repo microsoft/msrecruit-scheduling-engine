@@ -3,9 +3,9 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary
+namespace HR.TA.ScheduleService.BusinessLibrary
 {
-    using MS.GTA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Configuration;
 
     /// <summary>
     /// Graph Configuration

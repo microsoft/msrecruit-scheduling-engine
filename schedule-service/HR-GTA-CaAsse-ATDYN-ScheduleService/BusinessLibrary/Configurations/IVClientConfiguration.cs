@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Configurations
+namespace HR.TA.ScheduleService.BusinessLibrary.Configurations
 {
-    using MS.GTA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Configuration;
 
     /// <summary>The IV client configuration.</summary>
     [SettingsSection("IVClientConfiguration")]

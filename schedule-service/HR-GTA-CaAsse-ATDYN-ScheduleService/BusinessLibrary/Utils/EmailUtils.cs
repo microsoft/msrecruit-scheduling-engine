@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.Utils
+namespace HR.TA.ScheduleService.Utils
 {
     using System;
     using System.Collections.Generic;
@@ -15,14 +15,14 @@ namespace MS.GTA.ScheduleService.Utils
     using System.Net.Http;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Http;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ScheduleService.BusinessLibrary;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ServicePlatform.Tracing;
-    using MS.GTA.Talent.TalentContracts.InterviewService;
-    using MS.GTA.Talent.TalentContracts.ScheduleService.Conferencing;
-    using Email = MS.GTA.Common.Email;
+    using HR.TA.Common.Common.Common.Email.Contracts;
+    using HR.TA.CommonDataService.Common.Internal;
+    using HR.TA.ScheduleService.BusinessLibrary;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ServicePlatform.Tracing;
+    using HR.TA.Talent.TalentContracts.InterviewService;
+    using HR.TA.Talent.TalentContracts.ScheduleService.Conferencing;
+    using Email = HR.TA.Common.Email;
 
     /// <summary>
     /// Contract utilities

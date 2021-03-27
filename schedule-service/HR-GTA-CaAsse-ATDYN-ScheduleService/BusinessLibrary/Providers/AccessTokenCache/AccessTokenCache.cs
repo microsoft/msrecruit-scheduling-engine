@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.Providers
 {
     using System;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Caching.Memory;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.ScheduleService.BusinessLibrary.Utils;
+    using HR.TA.ScheduleService.BusinessLibrary.Utils;
 
     /// <summary>
     /// Access token cache. It only saves the non empty token

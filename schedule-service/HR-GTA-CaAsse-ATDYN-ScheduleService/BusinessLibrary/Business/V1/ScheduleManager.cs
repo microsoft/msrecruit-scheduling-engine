@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
+namespace HR.TA.ScheduleService.BusinessLibrary.Business.V1
 {
     using System;
     using System.Collections.Concurrent;
@@ -13,36 +13,36 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using System.Resources;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
-    using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.BusinessLibrary.Notification;
-    using MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate;
-    using MS.GTA.ScheduleService.BusinessLibrary.Providers;
-    using MS.GTA.ScheduleService.BusinessLibrary.Strings;
-    using MS.GTA.ScheduleService.BusinessLibrary.Utils;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ScheduleService.Contracts.Enum;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Data.DataProviders;
-    using MS.GTA.ScheduleService.Data.Helper;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.Talent.EnumSetModel;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
-    using MS.GTA.Talent.TalentContracts.ScheduleService;
-    using MS.GTA.ScheduleService.FalconData.Query;
-    using MS.GTA.Common.Web.Contracts;
-    using MS.GTA.TalentEntities.Enum;
+    using HR.TA.Common.Base.Security;
+    using HR.TA.Common.Base.ServiceContext;
+    using HR.TA.Common.Base.Utilities;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.CommonDataService.Common.Internal;
+    using HR.TA.ScheduleService.BusinessLibrary.Configurations;
+    using HR.TA.ScheduleService.BusinessLibrary.Exceptions;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.BusinessLibrary.Notification;
+    using HR.TA.ScheduleService.BusinessLibrary.NotifyCandidate;
+    using HR.TA.ScheduleService.BusinessLibrary.Providers;
+    using HR.TA.ScheduleService.BusinessLibrary.Strings;
+    using HR.TA.ScheduleService.BusinessLibrary.Utils;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ScheduleService.Contracts.Enum;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Data.DataProviders;
+    using HR.TA.ScheduleService.Data.Helper;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Context;
+    using HR.TA.ServicePlatform.Exceptions;
+    using HR.TA.Talent.EnumSetModel;
+    using HR.TA.Talent.EnumSetModel.SchedulingService;
+    using HR.TA.Talent.TalentContracts.ScheduleService;
+    using HR.TA.ScheduleService.FalconData.Query;
+    using HR.TA.Common.Web.Contracts;
+    using HR.TA.TalentEntities.Enum;
     using TimeZoneConverter;
-    using MS.GTA.ScheduleService.Contracts.V1.Flights;
+    using HR.TA.ScheduleService.Contracts.V1.Flights;
 
     /// <summary>
     /// ScheduleManager implementation

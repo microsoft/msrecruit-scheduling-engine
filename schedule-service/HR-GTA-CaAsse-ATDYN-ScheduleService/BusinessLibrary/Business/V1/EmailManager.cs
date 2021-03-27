@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
+namespace HR.TA.ScheduleService.BusinessLibrary.Business.V1
 {
     using System;
     using System.Collections.Generic;
@@ -14,32 +14,32 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.Common.Email.Contracts;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.Common.TalentEntities.Common;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
-    using MS.GTA.ScheduleService.BusinessLibrary.Exceptions;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.BusinessLibrary.Notification;
-    using MS.GTA.ScheduleService.BusinessLibrary.Utils;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Contracts.V1.Flights;
-    using MS.GTA.ScheduleService.Data.DataProviders;
-    using MS.GTA.ScheduleService.FalconData.Query;
-    using MS.GTA.ScheduleService.Utils;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Tracing;
-    using MS.GTA.Talent.FalconEntities.Attract;
-    using MS.GTA.Talent.TalentContracts.InterviewService;
-    using MS.GTA.Talent.TalentContracts.ScheduleService;
-    using MS.GTA.TalentEntities.Enum;
+    using HR.TA.Common.Base.Security;
+    using HR.TA.Common.Base.Utilities;
+    using HR.TA.Common.Common.Common.Email.Contracts;
+    using HR.TA.Common.Email.Contracts;
+    using HR.TA.Common.TalentAttract.Contract;
+    using HR.TA.Common.TalentEntities.Common;
+    using HR.TA.CommonDataService.Common.Internal;
+    using HR.TA.ScheduleService.BusinessLibrary.Configurations;
+    using HR.TA.ScheduleService.BusinessLibrary.Exceptions;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.BusinessLibrary.Notification;
+    using HR.TA.ScheduleService.BusinessLibrary.Utils;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Contracts.V1.Flights;
+    using HR.TA.ScheduleService.Data.DataProviders;
+    using HR.TA.ScheduleService.FalconData.Query;
+    using HR.TA.ScheduleService.Utils;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Context;
+    using HR.TA.ServicePlatform.Exceptions;
+    using HR.TA.ServicePlatform.Tracing;
+    using HR.TA.Talent.FalconEntities.Attract;
+    using HR.TA.Talent.TalentContracts.InterviewService;
+    using HR.TA.Talent.TalentContracts.ScheduleService;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// EmailManager implementation

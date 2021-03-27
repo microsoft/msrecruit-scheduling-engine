@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
+namespace HR.TA.ScheduleService.BusinessLibrary.Notification
 {
     using System;
     using System.Net.Http;
@@ -14,29 +14,29 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Notification
     using System.Net.Http.Headers;
     using System.Threading.Tasks;
     using System.Resources;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.Common.Email;
-    using MS.GTA.ServicePlatform.Azure.Security;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Email.GraphContracts;
-    using MS.GTA.Common.Email.SendGridContracts;
-    using MS.GTA.ScheduleService.BusinessLibrary.Providers;
-    using MS.GTA.ScheduleService.BusinessLibrary.Utils;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ScheduleService.BusinessLibrary.Strings;
-    using MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
-    using MS.GTA.Common.Base.Security;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
+    using HR.TA.CommonDataService.Common.Internal;
+    using HR.TA.Common.Email;
+    using HR.TA.ServicePlatform.Azure.Security;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.Common.Base.Utilities;
+    using HR.TA.Common.Email.GraphContracts;
+    using HR.TA.Common.Email.SendGridContracts;
+    using HR.TA.ScheduleService.BusinessLibrary.Providers;
+    using HR.TA.ScheduleService.BusinessLibrary.Utils;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ServicePlatform.Exceptions;
+    using HR.TA.ScheduleService.BusinessLibrary.Strings;
+    using HR.TA.ServicePlatform.AspNetCore.Mvc.Filters;
+    using HR.TA.Talent.EnumSetModel.SchedulingService;
+    using HR.TA.Common.Base.Security;
+    using HR.TA.Common.Base.Configuration;
+    using HR.TA.ScheduleService.BusinessLibrary.Configurations;
+    using HR.TA.ServicePlatform.Context;
+    using HR.TA.Common.Common.Common.Email.Contracts;
     using Newtonsoft.Json;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.MSGraph;
+    using HR.TA.Common.MSGraph;
     using Microsoft.Extensions.Logging;
 
     /// <summary>The Email Client implementation of notification interface.</summary>

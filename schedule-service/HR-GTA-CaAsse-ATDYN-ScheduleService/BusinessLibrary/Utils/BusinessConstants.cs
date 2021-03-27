@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Utils
+namespace HR.TA.ScheduleService.BusinessLibrary.Utils
 {
     /// <summary>
     /// Constants across Offer Engagement service.
