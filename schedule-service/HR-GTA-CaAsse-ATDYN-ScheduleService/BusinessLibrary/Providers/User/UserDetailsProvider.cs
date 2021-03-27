@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Providers.User
+namespace HR.TA.ScheduleService.BusinessLibrary.Providers.User
 {
     using System;
     using System.Globalization;
@@ -15,17 +15,17 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers.User
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.MSGraph;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Context;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using HR.TA.Common.Base.Configuration;
+    using HR.TA.Common.MSGraph;
+    using HR.TA.Common.MSGraph.Configuration;
+    using HR.TA.CommonDataService.Common.Internal;
+    using HR.TA.ScheduleService.BusinessLibrary.Configurations;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Context;
+    using HR.TA.ServicePlatform.Exceptions;
     using Newtonsoft.Json;
 
     /// <summary>

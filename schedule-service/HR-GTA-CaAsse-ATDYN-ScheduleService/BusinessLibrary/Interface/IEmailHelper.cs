@@ -3,12 +3,12 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
+namespace HR.TA.ScheduleService.BusinessLibrary.Interface
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.Talent.TalentContracts.ScheduleService;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.Talent.TalentContracts.ScheduleService;
 
     /// <summary>
     /// Email helper definition

@@ -2,13 +2,13 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
+namespace HR.TA.ScheduleService.BusinessLibrary.NotifyCandidate
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.Talent.TalentContracts.ScheduleService;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.Talent.TalentContracts.ScheduleService;
 
     /// <summary>
     /// The <see cref="ICandidateCommunicator"/> provides mechanism to communicate with candidate.

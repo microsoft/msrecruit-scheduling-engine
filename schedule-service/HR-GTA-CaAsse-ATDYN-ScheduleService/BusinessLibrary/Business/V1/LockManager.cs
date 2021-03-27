@@ -3,15 +3,15 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Business.V1
+namespace HR.TA.ScheduleService.BusinessLibrary.Business.V1
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Data.DataProviders;
-    using MS.GTA.ServicePlatform.Tracing;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Data.DataProviders;
+    using HR.TA.ServicePlatform.Tracing;
 
     /// <summary>
     /// Lock manager

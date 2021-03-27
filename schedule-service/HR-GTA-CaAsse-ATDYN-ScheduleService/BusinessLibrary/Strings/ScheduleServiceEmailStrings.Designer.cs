@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Strings {
+namespace HR.TA.ScheduleService.BusinessLibrary.Strings {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Strings {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MS.GTA.ScheduleService.BusinessLibrary.Strings.ScheduleServiceEmailStrings", typeof(ScheduleServiceEmailStrings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HR.TA.ScheduleService.BusinessLibrary.Strings.ScheduleServiceEmailStrings", typeof(ScheduleServiceEmailStrings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

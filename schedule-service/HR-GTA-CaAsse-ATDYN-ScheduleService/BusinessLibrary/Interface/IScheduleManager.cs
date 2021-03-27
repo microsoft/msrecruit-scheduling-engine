@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
+namespace HR.TA.ScheduleService.BusinessLibrary.Interface
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.Talent.EnumSetModel;
-    using MS.GTA.Talent.TalentContracts.ScheduleService;
-    using MS.GTA.TalentEntities.Enum;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.Talent.EnumSetModel;
+    using HR.TA.Talent.TalentContracts.ScheduleService;
+    using HR.TA.TalentEntities.Enum;
 
     /// <summary>
     /// IScheduleManager interface

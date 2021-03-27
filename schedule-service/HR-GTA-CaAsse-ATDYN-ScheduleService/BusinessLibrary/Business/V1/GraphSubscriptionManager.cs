@@ -2,20 +2,20 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Business
+namespace HR.TA.ScheduleService.BusinessLibrary.Business
 {
     using System;
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.BusinessLibrary.Providers;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.FalconData.Query;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using HR.TA.Common.Base.Configuration;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.BusinessLibrary.Providers;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.FalconData.Query;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Exceptions;
 
     /// <summary>
     /// Graph subscription manager

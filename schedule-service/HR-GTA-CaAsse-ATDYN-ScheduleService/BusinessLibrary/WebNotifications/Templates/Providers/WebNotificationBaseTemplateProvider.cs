@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Templates.Providers
 {
     using System;
     using System.Collections.Generic;
     using System.Resources;
-    using MS.GTA.Common.WebNotifications.Interfaces;
+    using HR.TA.Common.WebNotifications.Interfaces;
     using Newtonsoft.Json;
 
     /// <summary>

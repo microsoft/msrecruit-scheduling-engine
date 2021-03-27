@@ -2,8 +2,8 @@
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <ProjectGuid>bb5e52b0-ce31-4936-8970-3d57bf735d05</ProjectGuid>
-    <RootNamespace>MS.GTA.ScheduleService.BusinessLibrary</RootNamespace>
-    <AssemblyName>MS.GTA.ScheduleService.BusinessLibrary</AssemblyName>
+    <RootNamespace>HR.TA.ScheduleService.BusinessLibrary</RootNamespace>
+    <AssemblyName>HR.TA.ScheduleService.BusinessLibrary</AssemblyName>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <DelaySign>true</DelaySign>
@@ -32,9 +32,8 @@
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="4.0.0" />
     <PackageReference Include="Microsoft.Graph" Version="3.0.1" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.8" />
-	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.2" />
+	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.5" />
     <PackageReference Include="RestSharpSigned" Version="105.2.3" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
     <PackageReference Include="System.Security.Permissions" Version="4.5.0" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
     <PackageReference Include="TimeZoneConverter" Version="3.3.0" />
@@ -86,9 +85,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MS.GTA.ScheduleService.Contracts\MS.GTA.ScheduleService.Contracts.csproj" />
-    <ProjectReference Include="..\MS.GTA.ScheduleService.Data\MS.GTA.ScheduleService.Data.csproj" />
-    <ProjectReference Include="..\MS.GTA.ScheduleService.FalconData\MS.GTA.ScheduleService.FalconData.csproj" />
+    <ProjectReference Include="..\HR.TA.ScheduleService.Contracts\HR.TA.ScheduleService.Contracts.csproj" />
+    <ProjectReference Include="..\HR.TA.ScheduleService.Data\HR.TA.ScheduleService.Data.csproj" />
+    <ProjectReference Include="..\HR.TA.ScheduleService.FalconData\HR.TA.ScheduleService.FalconData.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Providers\Room\" />

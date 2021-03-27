@@ -3,17 +3,17 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Exceptions
+namespace HR.TA.ScheduleService.BusinessLibrary.Exceptions
 {
     using System.Diagnostics.CodeAnalysis;
     using System.Net;
-    using MS.GTA.ServicePlatform.Exceptions;
+    using HR.TA.ServicePlatform.Exceptions;
 
     /// <summary>
     /// The <see cref="OperationNotAllowedException"/> class represents the exception scenario preventing the further operation.
     /// </summary>
     /// <seealso cref="MonitoredException" />
-    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "MS.GTA.SchedulerService.Exceptions", "BusinessConditionsNotMet", MonitoredExceptionKind.Benign)]
+    [MonitoredExceptionMetadata(HttpStatusCode.Forbidden, "HR.TA.SchedulerService.Exceptions", "BusinessConditionsNotMet", MonitoredExceptionKind.Benign)]
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:File may only contain a single class", Justification = "Small closely related classes may be combined.")]
     public class OperationNotAllowedException : MonitoredException
     {
@@ -30,8 +30,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Exceptions
     /// <summary>
     /// The <see cref="OperationFailedException"/> class represents the exceptional case of failed operation.
     /// </summary>
-    /// <seealso cref="MS.GTA.ServicePlatform.Exceptions.MonitoredException" />
-    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "MS.GTA.SchedulerService.Exceptions", "OperationFailure", MonitoredExceptionKind.Service)]
+    /// <seealso cref="HR.TA.ServicePlatform.Exceptions.MonitoredException" />
+    [MonitoredExceptionMetadata(HttpStatusCode.InternalServerError, "HR.TA.SchedulerService.Exceptions", "OperationFailure", MonitoredExceptionKind.Service)]
     [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:File may only contain a single class", Justification = "Small closely related classes may be combined.")]
     public class OperationFailedException : MonitoredException
     {

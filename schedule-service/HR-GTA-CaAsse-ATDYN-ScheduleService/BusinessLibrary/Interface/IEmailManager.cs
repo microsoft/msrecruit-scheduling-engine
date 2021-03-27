@@ -3,14 +3,14 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
+namespace HR.TA.ScheduleService.BusinessLibrary.Interface
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using MS.GTA.Common.TalentAttract.Contract;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.Talent.TalentContracts.InterviewService;
-    using MS.GTA.Talent.TalentContracts.ScheduleService;
+    using HR.TA.Common.TalentAttract.Contract;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.Talent.TalentContracts.InterviewService;
+    using HR.TA.Talent.TalentContracts.ScheduleService;
 
     /// <summary>
     /// IEmailManager interface

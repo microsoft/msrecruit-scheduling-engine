@@ -3,7 +3,7 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.Providers
 {
     using System;
     using System.Collections.Generic;
@@ -14,17 +14,17 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.Common.Email;
-    using MS.GTA.Common.MSGraph.Configuration;
-    using MS.GTA.Common.TestBase;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
-    using MS.GTA.ScheduleService.Utils;
-    using MS.GTA.ServicePlatform.AspNetCore.Mvc.Filters;
-    using MS.GTA.ServicePlatform.Azure.Security;
-    using MS.GTA.ServicePlatform.Configuration;
-    using MS.GTA.ServicePlatform.Tracing;
+    using HR.TA.Common.Base.Configuration;
+    using HR.TA.Common.Email;
+    using HR.TA.Common.MSGraph.Configuration;
+    using HR.TA.Common.TestBase;
+    using HR.TA.CommonDataService.Common.Internal;
+    using HR.TA.ScheduleService.BusinessLibrary.Configurations;
+    using HR.TA.ScheduleService.Utils;
+    using HR.TA.ServicePlatform.AspNetCore.Mvc.Filters;
+    using HR.TA.ServicePlatform.Azure.Security;
+    using HR.TA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Tracing;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
 

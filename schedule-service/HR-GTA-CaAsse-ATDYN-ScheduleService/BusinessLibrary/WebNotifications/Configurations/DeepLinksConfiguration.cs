@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Configurations
+namespace HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Configurations
 {
-    using MS.GTA.ServicePlatform.Configuration;
+    using HR.TA.ServicePlatform.Configuration;
 
     /// <summary>
     /// The <see cref="DeepLinksConfiguration"/> class stores the deep links templates.

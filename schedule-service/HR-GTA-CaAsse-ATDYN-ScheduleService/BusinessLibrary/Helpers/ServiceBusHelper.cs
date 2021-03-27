@@ -3,20 +3,20 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Helpers
+namespace HR.TA.ScheduleService.BusinessLibrary.Helpers
 {
     using System;
     using System.Threading.Tasks;
     using Microsoft.Azure.ServiceBus;
-    using MS.GTA.Common.Base.Configuration;
-    using MS.GTA.ScheduleService.BusinessLibrary.Configurations;
-    using MS.GTA.ScheduleService.BusinessLibrary.Interface;
-    using MS.GTA.ScheduleService.Contracts;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ServicePlatform.Azure.AAD;
-    using MS.GTA.ServicePlatform.Azure.Security;
-    using MS.GTA.ServicePlatform.Exceptions;
-    using MS.GTA.ServicePlatform.Tracing;
+    using HR.TA.Common.Base.Configuration;
+    using HR.TA.ScheduleService.BusinessLibrary.Configurations;
+    using HR.TA.ScheduleService.BusinessLibrary.Interface;
+    using HR.TA.ScheduleService.Contracts;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ServicePlatform.Azure.AAD;
+    using HR.TA.ServicePlatform.Azure.Security;
+    using HR.TA.ServicePlatform.Exceptions;
+    using HR.TA.ServicePlatform.Tracing;
     using Newtonsoft.Json;
 
     /// <summary>The view model extensions for meeting info.</summary>

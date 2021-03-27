@@ -2,11 +2,11 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Interface
+namespace HR.TA.ScheduleService.BusinessLibrary.Interface
 {
     using System.Threading.Tasks;
-    using MS.GTA.Common.Base.ServiceContext;
-    using MS.GTA.ScheduleService.Contracts.V1;
+    using HR.TA.Common.Base.ServiceContext;
+    using HR.TA.ScheduleService.Contracts.V1;
 
     /// <summary>
     /// Notification Manager interface

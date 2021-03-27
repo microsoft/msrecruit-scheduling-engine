@@ -2,12 +2,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.Utils
+namespace HR.TA.ScheduleService.BusinessLibrary.Utils
 {
     using System;
     using System.IdentityModel.Tokens.Jwt;
     using System.Linq;
-    using MS.GTA.CommonDataService.Common.Internal;
+    using HR.TA.CommonDataService.Common.Internal;
 
     /// <summary>
     /// Class Access Token

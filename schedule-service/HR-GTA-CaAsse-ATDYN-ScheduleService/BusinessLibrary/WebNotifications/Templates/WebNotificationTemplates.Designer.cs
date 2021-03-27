@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates {
+namespace HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Templates {
     using System;
     
     
@@ -39,8 +39,8 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MS.GTA.ScheduleService.BusinessLibrary.WebNotifications.Templates.WebNotification" +
-                            "Templates", typeof(WebNotificationTemplates).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Templates.WebNotificationT" +
+                            "emplates", typeof(WebNotificationTemplates).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

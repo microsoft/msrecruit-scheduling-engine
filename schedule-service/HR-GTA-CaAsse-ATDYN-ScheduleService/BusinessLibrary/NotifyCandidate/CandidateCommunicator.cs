@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
+namespace HR.TA.ScheduleService.BusinessLibrary.NotifyCandidate
 {
     using System;
     using System.Collections.Generic;
@@ -14,15 +14,15 @@ namespace MS.GTA.ScheduleService.BusinessLibrary.NotifyCandidate
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Logging;
-    using MS.GTA.Common.Base.Utilities;
-    using MS.GTA.Common.Common.Common.Email.Contracts;
-    using MS.GTA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using MS.GTA.CommonDataService.Common.Internal;
-    using MS.GTA.ScheduleService.BusinessLibrary.Strings;
-    using MS.GTA.ScheduleService.BusinessLibrary.Utils;
-    using MS.GTA.ScheduleService.Contracts.V1;
-    using MS.GTA.ScheduleService.Utils;
-    using MS.GTA.Talent.TalentContracts.ScheduleService;
+    using HR.TA.Common.Base.Utilities;
+    using HR.TA.Common.Common.Common.Email.Contracts;
+    using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.CommonDataService.Common.Internal;
+    using HR.TA.ScheduleService.BusinessLibrary.Strings;
+    using HR.TA.ScheduleService.BusinessLibrary.Utils;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Utils;
+    using HR.TA.Talent.TalentContracts.ScheduleService;
 
     /// <summary>
     /// The <see cref="CandidateCommunicator"/> implements the mechanism to communicate with the candidate.

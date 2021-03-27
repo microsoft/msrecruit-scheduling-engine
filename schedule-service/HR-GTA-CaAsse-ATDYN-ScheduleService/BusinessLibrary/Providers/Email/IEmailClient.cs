@@ -3,13 +3,13 @@
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
 
-namespace MS.GTA.ScheduleService.BusinessLibrary.Providers
+namespace HR.TA.ScheduleService.BusinessLibrary.Providers
 {
     using System.Collections.Generic;
     using System.Net;
     using System.Threading.Tasks;
-    using MS.GTA.Common.Email.GraphContracts;
-    using MS.GTA.Talent.EnumSetModel.SchedulingService;
+    using HR.TA.Common.Email.GraphContracts;
+    using HR.TA.Talent.EnumSetModel.SchedulingService;
 
     /// <summary>The EmailClient interface.</summary>
     public interface IEmailClient
