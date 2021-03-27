@@ -3,8 +3,10 @@ name: build-common
 on:
   push:
     branches: [ main ]
+    paths: common/**
   pull_request:
     branches: [ main ]
+    paths: common/**
 
 jobs:
   build:
