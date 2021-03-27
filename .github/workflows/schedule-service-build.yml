@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         env:
           TOKEN: ${{secrets.TOKEN}}
-          USERNAME: ${{$secrets.USERNAME}}
+          USERNAME: ${{secrets.USERNAME}}
         run: dotnet restore HR-GTA-CaAsse-ATDYN-ScheduleService/MS.GTA.ScheduleService.sln
 
       - name: Build
