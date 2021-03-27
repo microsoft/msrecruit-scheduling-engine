@@ -32,4 +32,3 @@ jobs:
 
       - name: Unit Test
         run: dotnet test HR-GTA-CaAsse-ATDYN-ScheduleService/MS.GTA.ScheduleService.sln --no-build --configuration Release --verbosity m
-© 2021 GitHub, Inc.
