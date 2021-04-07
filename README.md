@@ -1,6 +1,7 @@
 # Microsoft Recruit Scheduling Engine 
 
 ![build](https://github.com/microsoft/msrecruit-scheduling-engine/workflows/build-common/badge.svg?branch=main)
+![build](https://github.com/microsoft/msrecruit-scheduling-engine/workflows/schedule-service-build/badge.svg?branch=main)
 
 > This repo has been populated by an initial template to help get you started. Please
 > make sure to update the content to build a great experience for community-building.
