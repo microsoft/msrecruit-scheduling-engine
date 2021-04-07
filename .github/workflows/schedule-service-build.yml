@@ -2,8 +2,13 @@ name: schedule-service-build
 
 # Controls when the action will run. 
 on:
-  [workflow_dispatch]
-
+  push:
+    branches: [ main ]
+    paths: schedule-service/**
+  pull_request:
+    branches: [ main ]
+    paths: schedule-service/**
+    
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
