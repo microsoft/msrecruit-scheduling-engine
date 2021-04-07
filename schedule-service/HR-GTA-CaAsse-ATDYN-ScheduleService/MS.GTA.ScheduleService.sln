@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLibrary", "Business
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.TA.ScheduleService", "HR.TA.ScheduleService\HR.TA.ScheduleService.csproj", "{CC903419-3DD8-4ACC-85B3-EFEFE4FC51B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.TA.ScheduleService.LoadTest", "HR.TA.ScheduleService.LoadTest\HR.TA.ScheduleService.LoadTest.csproj", "{345764B2-0A0F-432E-A20F-1F533A46B66E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR.TA.ScheduleService.UnitTest", "HR.TA.ScheduleService.UnitTest\HR.TA.ScheduleService.UnitTest.csproj", "{FB75232F-82AA-433D-A1D1-15D48A6077AA}"
 EndProject
 Global
