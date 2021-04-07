@@ -2,7 +2,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 //-----------------------------------------------------------------------
-namespace HR.TA.ScheduleService.Controllers.V1
+namespace HR.TA.ScheduleService.Controllers.V1 
 {
     using System;
     using System.Collections.Generic;
