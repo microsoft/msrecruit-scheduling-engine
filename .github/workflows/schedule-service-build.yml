@@ -31,7 +31,7 @@ jobs:
         run: dotnet restore HR-GTA-CaAsse-ATDYN-ScheduleService/MS.GTA.ScheduleService.sln
 
       - name: Build
-        run: dotnet build HR-GTA-CaAsse-ATDYN-ScheduleService/MS.GTA.ScheduleService.sln --configuration Release --no-restore
+        run: dotnet build HR-GTA-CaAsse-ATDYN-ScheduleService/HR.TA.ScheduleService/HR.TA.ScheduleService.csproj --configuration Release --no-restore
 
       - name: Unit Test
         run: dotnet test HR-GTA-CaAsse-ATDYN-ScheduleService/MS.GTA.ScheduleService.sln --no-build --configuration Release --verbosity m
