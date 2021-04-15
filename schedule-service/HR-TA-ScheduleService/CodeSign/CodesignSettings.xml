@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSignSettings xmlns="IdCodeSign/CodeSignSettings">
+  <Product>D365-HCM-Common</Product>
+  <BuildNumber>%BuildNumber%</BuildNumber>
+  <SourceControlServer>vstfrd:8080/Azure/One/_git</SourceControlServer>
+  <BranchName>master</BranchName>  
+  <Description>Microsoft HCM offer rule service</Description>
+  <SourcePath>%BinariesBuildTypeArchDirectory%</SourcePath>
+  <StrongNameCert>72</StrongNameCert>
+  <AuthenticodeCert>401</AuthenticodeCert>
+  <FileDescription>Microsoft HCM offer rule service</FileDescription>
+  <BatchDescription>Microsoft HCM offer rule service</BatchDescription>
+  <Approvers>johnheal;arthurgr</Approvers>
+  <Keywords>Dynamics365;D365;HCM;</Keywords>
+  <FileUrl>https://www.microsoft.com/en-us/dynamics/default.aspx</FileUrl>
+  <CopyBack>true</CopyBack>
+
+  <Directories>
+    <SourceDirectory>
+      <PathFromRootSource>Microsoft.D365.HCM.OfferRuleService</PathFromRootSource>
+      <FileData>
+        <FileTypes>.exe</FileTypes>
+      </FileData>
+    </SourceDirectory>
+    <SourceDirectory>
+      <PathFromRootSource>Microsoft.D365.HCM.OfferRuleService.Contracts</PathFromRootSource>
+      <FileData>
+        <FileTypes>.dll</FileTypes>
+      </FileData>
+    </SourceDirectory>
+    <SourceDirectory>
+      <PathFromRootSource>Microsoft.D365.HCM.OfferRuleService.Data</PathFromRootSource>
+      <FileData>
+        <FileTypes>.dll</FileTypes>
+      </FileData>
+    </SourceDirectory>
+  </Directories>
+
+</CodeSignSettings>
