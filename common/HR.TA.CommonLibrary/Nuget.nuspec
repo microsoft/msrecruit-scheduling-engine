@@ -2,10 +2,11 @@
 <package>
   <metadata>
     <id>MSRecruitCommonLibrary</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <authors>Microsoft</authors>
     <description>MS Recruit Common Library</description>
     <releaseNotes>Contains common components for Microsoft Recruit applications</releaseNotes>
+    <license type="expression">MIT</license>
     <copyright>Copyright 2020</copyright>
     <repository type="git" url="https://github.com/microsoft/msrecruit-scheduling-engine"  />
     <tags>MSRecruit,Common</tags>
