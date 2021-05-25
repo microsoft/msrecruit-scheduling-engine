@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>MSRecruitCommonLibrary</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <authors>Microsoft</authors>
     <description>MS Recruit Common Library</description>
     <releaseNotes>Contains common components for Microsoft Recruit applications</releaseNotes>
