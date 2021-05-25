@@ -34,3 +34,12 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+
+## Steps to Build the Solution
+
+Step 1 : Clone the Git Repository.<br />
+Step 2 : Generate a personal access token on GitHub by clicking on Settings -> Developer Settings -> Personal Access Tokens.<br />
+Step 3 : Generate a new token with "read:org" and "read:packages" permissions with SSO enabled.<br />
+Step 4 : Replace the user name with the GitHub username and password with access token generated in the nuget config.<br />
+
