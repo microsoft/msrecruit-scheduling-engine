@@ -41,5 +41,5 @@ Any use of third-party trademarks or logos are subject to those third-party's po
 Step 1 : Clone the Git Repository.<br />
 Step 2 : Generate a personal access token on GitHub by clicking on Settings -> Developer Settings -> Personal Access Tokens.<br />
 Step 3 : Generate a new token with "read:org" and "read:packages" permissions with SSO enabled.<br />
-Step 4 : Replace the user name with the GitHub username and password with access token generated in the nuget config.<br />
+Step 4 : Replace the user name with the GitHub username and password with access token generated in the nuget config("msrecruit-scheduling-engine\schedule-service\nuget.config").<br />
 
