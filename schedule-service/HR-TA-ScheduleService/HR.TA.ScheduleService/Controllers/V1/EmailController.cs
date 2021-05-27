@@ -126,7 +126,7 @@ namespace HR.TA.ScheduleService.Controllers.V1
             {
                 throw new InvalidRequestDataValidationException("Input request does not contain a valid schedule id").EnsureLogged(this.logger);
             }
-
+            //TBD: Need enhancements here.
             isInviteReminderSent = await this.emailManager.SendInviteFailReminder(scheduleId);
             this.logger.LogInformation($"Finished {nameof(this.SendInviteFailReminder)} method in {nameof(EmailController)}.");
             return isInviteReminderSent;
