@@ -2,3 +2,6 @@ copyRight.ps1
 
 .vs/
 desktop.ini
+/schedule workers/HR.TA.NotificationProcessor/obj
+/schedule workers/HR.TA.SendInvitationWorker/obj
+/schedule workers/HR.TA.SubscribeToInbox/obj
