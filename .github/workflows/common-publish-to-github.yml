@@ -1,4 +1,4 @@
-name: publish-common-to-github
+name: publish-common-to-github-and-nuget
 on:
   [workflow_dispatch]
 
@@ -34,3 +34,9 @@ jobs:
         $path = "."
         $FileName = Get-ChildItem -Path $path -Recurse -Name -Filter "MSRecruitCommonLibrary.*.nupkg"
         curl -vX PUT -u "[user]:${{ secrets.GITHUB_TOKEN }}" -F package="@$path\$FileName" https://nuget.pkg.github.com/microsoft/
+        
+    - name: PushNuget
+      run: |
+        $path = "."
+        $FileName = Get-ChildItem -Path $path -Recurse -Name -Filter "MSRecruitCommonLibrary.*.nupkg"
+        dotnet nuget push $path\$FileName --source https://api.nuget.org/v3/index.json --api-key ${{secrets.PUBLISH_TO_NUGET_ORG}}
