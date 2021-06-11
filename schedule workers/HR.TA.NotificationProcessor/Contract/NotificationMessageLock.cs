@@ -9,10 +9,10 @@ namespace HR.TA.NotificationProcessor.Contract
 
     public class NotificationMessageLock
     {
-        [DataMember(Name = "ServiceBusMessageId", EmitDefaultValue = true, IsRequired = true)]
+        [DataMember(Name = "serviceBusMessageId", EmitDefaultValue = true, IsRequired = true)]
         public string ServiceBusMessageId { get; set; }
 
-        [DataMember(Name = "LockedTime", EmitDefaultValue = true, IsRequired = true)]
+        [DataMember(Name = "lockedTime", EmitDefaultValue = true, IsRequired = true)]
         public DateTime LockedTime { get; set; }
     }
 }
