@@ -21,7 +21,6 @@ namespace HR.TA.ScheduleService.UnitTest.FalconData
     using HR.TA.ServicePlatform.Tracing;
     using HR.TA.Talent.EnumSetModel;
     using HR.TA.Talent.FalconEntities.Attract;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
     using Common = HR.TA.Common;
 
     [TestClass]

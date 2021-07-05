@@ -32,15 +32,11 @@
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.1.3" />
     <PackageReference Include="Microsoft.Graph" Version="3.34.0" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.9" />
-	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.7" />
     <PackageReference Include="RestSharpSigned" Version="105.2.3" />
     <PackageReference Include="System.Security.Permissions" Version="5.0.0" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" />
     <PackageReference Include="TimeZoneConverter" Version="3.5.0" />
     <PackageReference Include="TimeZoneNames" Version="4.2.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <AdditionalFiles Include="..\stylecop.json" />
   </ItemGroup>
   <ItemGroup>
     <None Update="AppData\PlaceholderInfo.json">

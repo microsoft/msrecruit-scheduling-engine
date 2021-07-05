@@ -29,6 +29,7 @@ namespace HR.TA.ScheduleService.Controllers.V1
     using HR.TA.Talent.TalentContracts.InterviewService;
     using HR.TA.Talent.TalentContracts.ScheduleService;
     using HR.TA.TalentEntities.Enum;
+    using HR.TA.Common.Common.Common.Email.Contracts;
 
     // TODO: Enable authentication for the APIs.
 

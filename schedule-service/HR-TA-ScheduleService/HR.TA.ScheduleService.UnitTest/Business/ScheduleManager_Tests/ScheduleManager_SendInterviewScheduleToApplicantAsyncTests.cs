@@ -27,7 +27,6 @@ namespace HR.TA.ScheduleService.UnitTest.Business.ScheduleManager_Tests
     using HR.TA.ScheduleService.Data.DataProviders;
     using HR.TA.ScheduleService.FalconData.Query;
     using HR.TA.ServicePlatform.Configuration;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
     using HR.TA.Talent.TalentContracts.ScheduleService;
     using HR.TA.TalentEntities.Enum;
     using Newtonsoft.Json;

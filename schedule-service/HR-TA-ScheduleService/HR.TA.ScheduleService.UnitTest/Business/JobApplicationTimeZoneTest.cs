@@ -24,7 +24,6 @@ namespace HR.TA.ScheduleService.UnitTest.Business
     using System.Threading.Tasks;
     using HR.TA.ScheduleService.FalconData.Query;
     using HR.TA.ServicePlatform.Configuration;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
 
     [TestClass]
     public class JobApplicationTimeZoneTest

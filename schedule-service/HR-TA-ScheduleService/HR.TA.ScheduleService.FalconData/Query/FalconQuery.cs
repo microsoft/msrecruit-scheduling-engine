@@ -14,8 +14,8 @@ namespace HR.TA.ScheduleService.FalconData.Query
     using HR.TA.Common.TalentEntities.Common;
     using HR.TA.ScheduleService.FalconData.ViewModelExtensions;
     using HR.TA.Common.Web.Contracts;
-    using HR.TA.Talent.FalconEntities.IV.Entity;
     using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
+    using HR.TA.Talent.FalconEntities.IV.Entity;
 
     /// <summary>
     /// The falcon query.

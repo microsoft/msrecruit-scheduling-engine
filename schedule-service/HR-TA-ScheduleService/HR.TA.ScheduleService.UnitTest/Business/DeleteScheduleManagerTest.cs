@@ -24,7 +24,6 @@ namespace HR.TA.ScheduleService.UnitTest.Business
     using HR.TA.Talent.EnumSetModel;
     using HR.TA.ScheduleService.FalconData.Query;
     using HR.TA.ServicePlatform.Configuration;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
 
     [TestClass]
     public class DeleteScheduleManagerTest

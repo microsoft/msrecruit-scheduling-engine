@@ -61,8 +61,6 @@ namespace HR.TA.ScheduleService
     using HR.TA.ServicePlatform.Flighting;
     using HR.TA.ServicePlatform.Security;
     using HR.TA.ServicePlatform.Tracing;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
-    using HR.TA.BusinessLibrary.UserDelegation;
     using CommonFalconQuery = HR.TA.Common.Routing.Client;
     using FalconQuery = HR.TA.ScheduleService.FalconData.Query;
 
@@ -285,7 +283,6 @@ namespace HR.TA.ScheduleService
                 });
             app.UseSwaggerInGTA(this.ServiceDetailsToPublish);
             app.SetTelemetryConfiguration(configManager, this.Configuration);
-            app.UseWobAuthMiddleware();
             app.UseMvc();
         }
 

@@ -24,7 +24,7 @@ namespace HR.TA.ScheduleService.Controllers.V1
     using HR.TA.ServicePlatform.Exceptions;
     using HR.TA.Talent.TalentContracts.InterviewService;
     using HR.TA.Talent.TalentContracts.ScheduleService;
-    using HR.TA.TalentEntities.Enum;
+    using HR.TA.Common.Common.Common.Email.Contracts;
 
     /// <summary>
     /// The Email Controller.
@@ -76,24 +76,26 @@ namespace HR.TA.ScheduleService.Controllers.V1
         /// <returns>Reminder Success response.</returns>
         [HttpPost("remind/interviewer")]
         [MonitorWith("GTAV1SendFeedbackReminder")]
-        public async Task<bool> SendFeedbackReminder([FromBody]PendingFeedback pendingFeedbackRequest)
+        public Task<bool> SendFeedbackReminder([FromBody]PendingFeedback pendingFeedbackRequest)
         {
-            this.logger.LogInformation($"Started {nameof(this.SendFeedbackReminder)} method in {nameof(EmailController)}.");
-            if (pendingFeedbackRequest == null || string.IsNullOrEmpty(pendingFeedbackRequest?.JobApplicationId) || string.IsNullOrEmpty(pendingFeedbackRequest?.InterviewerOID))
-            {
-                throw new BusinessRuleViolationException("Input request does not contain a valid application or interviewer").EnsureLogged(this.logger);
-            }
+            //this.logger.LogInformation($"Started {nameof(this.SendFeedbackReminder)} method in {nameof(EmailController)}.");
+            //if (pendingFeedbackRequest == null || string.IsNullOrEmpty(pendingFeedbackRequest?.JobApplicationId) || string.IsNullOrEmpty(pendingFeedbackRequest?.InterviewerOID))
+            //{
+            //    throw new BusinessRuleViolationException("Input request does not contain a valid application or interviewer").EnsureLogged(this.logger);
+            //}
 
-            var hcmContextUserId = this.hcmServiceContext.UserId;
-            if (await this.roleManager.IsUserInJobApplicationParticipants(hcmContextUserId, pendingFeedbackRequest?.JobApplicationId, string.Empty).ConfigureAwait(false))
-            {
-                this.logger.LogInformation($"Finished {nameof(this.SendFeedbackReminder)} method in {nameof(EmailController)}.");
-                return await this.emailManager.SendFeedbackReminder(pendingFeedbackRequest);
-            }
-            else
-            {
-                throw new UnauthorizedStatusException("Pending Feedback request failed as user is not part of Job Application Participants list.").EnsureLogged(this.logger);
-            }
+            //var hcmContextUserId = this.hcmServiceContext.UserId;
+            //if (await this.roleManager.IsUserInJobApplicationParticipants(hcmContextUserId, pendingFeedbackRequest?.JobApplicationId, string.Empty).ConfigureAwait(false))
+            //{
+            //    this.logger.LogInformation($"Finished {nameof(this.SendFeedbackReminder)} method in {nameof(EmailController)}.");
+            //    return await this.emailManager.SendFeedbackReminder(pendingFeedbackRequest);
+            //}
+            //else
+            //{
+            //    throw new UnauthorizedStatusException("Pending Feedback request failed as user is not part of Job Application Participants list.").EnsureLogged(this.logger);
+            //}
+
+            throw new NotImplementedException();
         }
 
         /// <summary>
