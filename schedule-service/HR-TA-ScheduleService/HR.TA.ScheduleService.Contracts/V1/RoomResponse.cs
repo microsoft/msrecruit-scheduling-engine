@@ -6,7 +6,6 @@ namespace HR.TA.ScheduleService.Contracts.V1
 {
     using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using HR.TA.ScheduleService.Contracts.V1;
     using Newtonsoft.Json;
 
     /// <summary>

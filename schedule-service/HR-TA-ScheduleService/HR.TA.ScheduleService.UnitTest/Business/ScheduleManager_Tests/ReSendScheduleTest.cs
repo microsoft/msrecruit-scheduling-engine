@@ -24,7 +24,6 @@ namespace HR.TA.ScheduleService.UnitTest.Business
     using HR.TA.ServicePlatform.Context;
     using HR.TA.ServicePlatform.Tracing;
     using HR.TA.Talent.EnumSetModel;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
 
     [TestClass]
     public class ReSendScheduleTest

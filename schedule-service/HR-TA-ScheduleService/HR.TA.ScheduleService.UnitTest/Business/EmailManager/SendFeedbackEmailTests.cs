@@ -23,7 +23,6 @@ namespace HR.TA.ScheduleService.UnitTest.Business.EmailManager
     using HR.TA.ScheduleService.FalconData.Query;
     using HR.TA.ServicePlatform.Configuration;
     using HR.TA.ServicePlatform.Tracing;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
     using HR.TA.Talent.TalentContracts.ScheduleService;
     using HR.TA.TalentEntities.Enum;
     using BEM = BusinessLibrary.Business.V1;

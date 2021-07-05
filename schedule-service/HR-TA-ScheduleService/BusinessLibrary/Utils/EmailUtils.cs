@@ -182,7 +182,7 @@ namespace HR.TA.ScheduleService.Utils
         /// </summary>
         /// <param name="emailAttachments"> Email Attachments.</param>
         /// <returns>The instance of <see cref="NotificationAttachment"/>.</returns>
-        public static IList<NotificationAttachment> PrepareEmailAttachments(Talent.TalentContracts.InterviewService.FileAttachmentRequest emailAttachments)
+        public static IList<NotificationAttachment> PrepareEmailAttachments(FileAttachmentRequest emailAttachments)
         {
             IList<NotificationAttachment> attachments = new List<NotificationAttachment>();
 

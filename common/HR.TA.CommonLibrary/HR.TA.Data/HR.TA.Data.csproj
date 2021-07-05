@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HR.TA.Common\HR.TA.Common.csproj" />
-    <ProjectReference Include="..\HR.TA.Talent\HR.TA.Talent.csproj" />
   </ItemGroup>
 
 </Project>

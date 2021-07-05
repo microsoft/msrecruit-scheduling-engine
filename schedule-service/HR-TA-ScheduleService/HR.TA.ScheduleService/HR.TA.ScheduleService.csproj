@@ -47,15 +47,12 @@
     <PackageReference Include="Microsoft.ServiceFabric.Data" Version="5.0.521" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Caching.Redis" version="2.2.0" />
-	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.7" />
     <PackageReference Include="StackExchange.Redis.StrongName" version="1.2.6" />
     <PackageReference Include="System.Reactive.Linq" Version="5.0.0" />
     <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="..\stylecop.json" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\common\HR.TA.CommonLibrary\HR.TA.Data\HR.TA.Data.csproj" />
     <ProjectReference Include="..\BusinessLibrary\BusinessLibrary.csproj" />
     <ProjectReference Include="..\HR.TA.ScheduleService.Data\HR.TA.ScheduleService.Data.csproj" />
     <ProjectReference Include="..\HR.TA.ScheduleService.FalconData\HR.TA.ScheduleService.FalconData.csproj" />

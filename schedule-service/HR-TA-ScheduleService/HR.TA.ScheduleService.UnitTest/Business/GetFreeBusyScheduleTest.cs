@@ -22,7 +22,6 @@ namespace HR.TA.ScheduleService.UnitTest.Business
     using HR.TA.Common.Base.ServiceContext;
     using HR.TA.ServicePlatform.Configuration;
     using HR.TA.ScheduleService.FalconData.Query;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
 
     [TestClass]
     public class GetFreeBusyScheduleTest

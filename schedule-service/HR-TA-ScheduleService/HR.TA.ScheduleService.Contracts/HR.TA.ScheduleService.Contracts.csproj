@@ -13,7 +13,7 @@
     <CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>NU1701</NoWarn>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <RuntimeFrameworkVersion>2.1.*</RuntimeFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -21,6 +21,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>Full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <PlatformTarget>x64</PlatformTarget>
@@ -31,14 +32,14 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.9" />
-    <PackageReference Include="MSRecruitCommonLibrary" Version="1.0.7" />
     <PackageReference Include="System.Security.Principal.Windows" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="..\stylecop.json" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <ProjectReference Include="..\..\..\common\HR.TA.CommonLibrary\HR.TA.Common\HR.TA.Common.csproj" />
+    <ProjectReference Include="..\..\..\common\HR.TA.CommonLibrary\HR.TA.Data\HR.TA.Data.csproj" />
   </ItemGroup>
   <Target Name="GetSDKTools">
     <Message Text="Copy the SDK development tools" />

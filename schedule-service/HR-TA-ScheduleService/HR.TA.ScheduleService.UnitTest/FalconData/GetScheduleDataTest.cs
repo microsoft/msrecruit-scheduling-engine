@@ -22,7 +22,6 @@ namespace HR.TA.ScheduleService.UnitTest.FalconData
     using HR.TA.Talent.FalconEntities.Attract;
     using Common = HR.TA.Common;
     using HR.TA.Common.Provisioning.Entities.FalconEntities.Attract;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
     using HR.TA.ScheduleService.Contracts;
 
     [TestClass]

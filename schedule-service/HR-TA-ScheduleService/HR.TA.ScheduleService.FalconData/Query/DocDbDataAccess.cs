@@ -11,10 +11,10 @@ namespace HR.TA.ScheduleService.FalconData.Query
     using System.Threading.Tasks;
     using Microsoft.Extensions.Logging;
     using HR.TA.Common.Base.Configuration;
-    using HR.TA.ScheduleService.Contracts.V1;
-    using HR.TA.ScheduleService.Data.Helper;
     using HR.TA.ServicePlatform.Exceptions;
     using HR.TA.ServicePlatform.Tracing;
+    using HR.TA.ScheduleService.Contracts.V1;
+    using HR.TA.ScheduleService.Data.Helper;
 
     /// <summary>
     /// Data Access for all document db connections

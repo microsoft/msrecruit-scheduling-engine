@@ -104,7 +104,7 @@ namespace HR.TA.ScheduleService.UnitTest.Business.EmailManager
                 PrimaryEmailRecipients = new List<string>() { "abc@xyz.com" },
                 CcEmailAddressList = new List<string>() { "def@xyz.com" },
                 EmailContent = "Email content",
-                EmailAttachments = new Talent.TalentContracts.InterviewService.FileAttachmentRequest(),
+                EmailAttachments = new FileAttachmentRequest(),
             };
 
             emailDetails.EmailAttachments.FileLabels = new List<string>() { "attachment1" };

@@ -14,7 +14,6 @@ namespace HR.TA.ScheduleService.Data.DataProviders
     using HR.TA.ScheduleService.Data.Models;
     using HR.TA.Talent.EnumSetModel;
     using HR.TA.Talent.FalconEntities.Attract;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
     using HR.TA.Talent.TalentContracts.ScheduleService;
     using HR.TA.TalentEntities.Enum;
     using CommonContracts = HR.TA.Common.Email.Contracts;

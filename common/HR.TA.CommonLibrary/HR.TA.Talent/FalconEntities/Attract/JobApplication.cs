@@ -13,7 +13,6 @@ namespace HR.TA.Common.Provisioning.Entities.FalconEntities.Attract
     using HR.TA.Talent.FalconEntities.Attract;
     using HR.TA.Talent.FalconEntities;
     using HR.TA.Common.Web.Contracts;
-    using HR.TA.Common.OfferManagement.Contracts.V2;
 
     [DataContract]
     public class JobApplication : DocDbEntity

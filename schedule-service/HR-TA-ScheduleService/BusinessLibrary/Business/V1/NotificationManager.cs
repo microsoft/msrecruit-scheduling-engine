@@ -17,7 +17,6 @@ namespace HR.TA.ScheduleService.BusinessLibrary.Business.V1
     using HR.TA.ScheduleService.FalconData.Query;
     using HR.TA.ServicePlatform.Exceptions;
     using HR.TA.ServicePlatform.Configuration;
-    using HR.TA.Data.DataAccess;
     using Microsoft.Extensions.Logging;
     using HR.TA.TalentEntities.Enum;
     using HR.TA.ScheduleService.Data.Models;
@@ -26,6 +25,7 @@ namespace HR.TA.ScheduleService.BusinessLibrary.Business.V1
     using HR.TA.Common.WebNotifications.Models;
     using HR.TA.ScheduleService.BusinessLibrary.WebNotifications.Providers;
     using HR.TA.Common.Base.ServiceContext;
+    using HR.TA.Data.DataAccess;
 
     /// <summary>
     /// Notification Manager

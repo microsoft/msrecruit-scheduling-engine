@@ -23,7 +23,6 @@ namespace HR.TA.ScheduleService.UnitTest.Business
     using HR.TA.ScheduleService.FalconData.Query;
     using HR.TA.ServicePlatform.Context;
     using HR.TA.ServicePlatform.Tracing;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
     using HR.TA.ScheduleService.BusinessLibrary.Exceptions;
 
     [TestClass]
