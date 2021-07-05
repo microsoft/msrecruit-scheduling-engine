@@ -7,7 +7,6 @@
     using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using HR.TA.Common.Provisioning.Entities.XrmEntities.Attract;
     using HR.TA.Common.TalentEntities.Common;
     using HR.TA.ScheduleService.Contracts;
     using HR.TA.ScheduleService.Contracts.V1;
@@ -18,7 +17,6 @@
     using HR.TA.ServicePlatform.Tracing;
     using HR.TA.Talent.EnumSetModel;
     using HR.TA.Talent.FalconEntities.Attract;
-    using HR.TA.Talent.FalconEntities.Attract.Conference;
     using HR.TA.Talent.TalentContracts.ScheduleService;
     using Common = HR.TA.Common;
 

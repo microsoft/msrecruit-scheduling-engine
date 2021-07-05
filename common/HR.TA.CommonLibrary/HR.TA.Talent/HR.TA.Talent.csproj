@@ -1718,6 +1718,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\schedule-service\HR-TA-ScheduleService\HR.TA.ScheduleService.Contracts\HR.TA.ScheduleService.Contracts.csproj" />
     <ProjectReference Include="..\HR.TA.Common\HR.TA.Common.csproj" />
   </ItemGroup>
   <ProjectExtensions><VisualStudio><UserProperties WireContracts_4package_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>

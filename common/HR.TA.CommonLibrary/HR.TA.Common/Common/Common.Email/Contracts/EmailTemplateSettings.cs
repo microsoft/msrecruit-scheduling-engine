@@ -5,12 +5,13 @@
 
 namespace HR.TA.Common.Email.Contracts
 {
+    using HR.TA.Common.DocumentDB.Contracts;
     using System.Runtime.Serialization;
 
     /// <summary>
     /// Email Template Settings Class
     /// </summary>
-    public class EmailTemplateSettings
+    public class EmailTemplateSettings : DocDbEntity
     {
         [DataMember(Name = "emailTemplatePrivacyPolicyLink", IsRequired = false, EmitDefaultValue = false)]
         public string EmailTemplatePrivacyPolicyLink { get; set; }

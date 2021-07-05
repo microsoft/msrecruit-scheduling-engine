@@ -18,13 +18,6 @@ namespace HR.TA.ScheduleService.BusinessLibrary.Interface
     public interface IEmailManager
     {
         /// <summary>
-        /// Sends a reminder to interviewer to complete the feedback.
-        /// </summary>
-        /// <param name="pendingFeedbackRequest">Pending Feedback information.</param>
-        /// <returns>Reminder Success response.</returns>
-        Task<bool> SendFeedbackReminder(PendingFeedback pendingFeedbackRequest);
-
-        /// <summary>
         /// Notify scheduler when interviewer decline or tentatively accepted the invitation
         /// </summary>
         /// <param name="interviewerResponseNotification">interviewer response for notification</param>

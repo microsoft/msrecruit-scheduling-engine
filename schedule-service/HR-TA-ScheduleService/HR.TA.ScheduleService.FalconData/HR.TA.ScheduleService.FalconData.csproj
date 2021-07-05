@@ -34,17 +34,13 @@
     <QCustomInput Include="JSON\NamespaceMap.json" />
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Include="..\stylecop.json" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.9" />
-	<PackageReference Include="MSRecruitCommonLibrary" Version="1.0.7" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\common\HR.TA.CommonLibrary\HR.TA.Data\HR.TA.Data.csproj" />
     <ProjectReference Include="..\HR.TA.ScheduleService.Contracts\HR.TA.ScheduleService.Contracts.csproj" />
     <ProjectReference Include="..\HR.TA.ScheduleService.Data\HR.TA.ScheduleService.Data.csproj" />
-    <ProjectReference Include="..\HR.TA.ScheduleService.Contracts\HR.TA.ScheduleService.Contracts.csproj" />
   </ItemGroup>
   <Target Name="GetSDKTools">
     <Message Text="Copy the SDK development tools" />
